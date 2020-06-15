@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "CEQPushEventCodes"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CEQNotificationEvents.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-admit\">admit</a></td><td>Admit</td><td>Admission event</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-discharge\">discharge</a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transfer\">transfer</a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-arrival\">arrival</a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-caregap\">caregap</a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer\">refer</a></td><td>Referral</td><td>Referral to another practitioner</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CEQNotificationEvents.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-admit\">admit</a></td><td>Admit</td><td>Admission event</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-discharge\">discharge</a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transfer\">transfer</a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-arrival\">arrival</a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-caregap\">caregap</a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer\">refer</a></td><td>Referral</td><td>Referral to another practitioner</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-delete\">delete</a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "CEQPushEventCodes"];
   fhir:ValueSet.title [ fhir:value "Carequality Push Notification Events"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-06-15T15:25:00-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-06-15T15:55:03-04:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -50,6 +50,9 @@
        ], [
          fhir:index 5;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "refer" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "delete" ]
        ]
      ]
   ] .

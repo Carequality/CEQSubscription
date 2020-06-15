@@ -10,7 +10,7 @@
   "name": "CarequalitySubscriptionImplementationGuideforPushNotifications",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
   "status": "active",
-  "date": "2020-06-15T15:25:00-04:00",
+  "date": "2020-06-15T15:55:03-04:00",
   "contact": [
     {
       "name": "David Pyke",
@@ -314,7 +314,8 @@
         "reference": {
           "reference": "StructureDefinition/CEQSubscriptionBundle"
         },
-        "name": "Bundle to be submitted for Carequality subscription enrollment",
+        "name": "Carequality Subscription Bundle",
+        "description": "Bundle to be submitted for Carequality subscription enrollment",
         "exampleBoolean": false
       },
       {
@@ -440,6 +441,7 @@
           "reference": "Subscription/CEQExample"
         },
         "name": "Example Subscribing",
+        "description": "Example of the full Resource for a Carequality Subscription",
         "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"
       },
       {
@@ -457,6 +459,7 @@
           "reference": "Practitioner/DrDavidAnydoc"
         },
         "name": "Dr. David Anydoc",
+        "description": "Practitioner for example use",
         "exampleBoolean": true
       },
       {

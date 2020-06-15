@@ -30,6 +30,7 @@ Description: "The codes to define each of the permitted events for Carequality N
 * #arrival "Arrival" "Arrival at a port of call or other location where people arrive"
 * #caregap "Gap in Care" "Implementer Defined"
 * #refer "Referral" "Referral to another practitioner"
+* #delete "Delete Subscription" "Cancel subscription to all events"
 
 ValueSet: CEQPushEventCodes
 Title: "Carequality Push Notification Events"

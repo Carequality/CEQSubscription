@@ -141,7 +141,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: CEQExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: ph: 212-877-3307&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: Dec. 31, 2020, 7:00:00 p.m.&lt;/p&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;: Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: carequality&lt;/p&gt;&lt;h3&gt;Channels&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;rest-hook&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://www.example.org/fhir/subscription/sub123\&quot;&gt;http://www.example.org/fhir/subscription/sub123&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: CEQExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: ph: 212-877-3307 ext 5001&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: Dec. 31, 2020, 7:00:00 p.m.&lt;/p&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;: Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: carequality&lt;/p&gt;&lt;h3&gt;Channels&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;rest-hook&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://www.example.org/fhir/subscription/sub123\&quot;&gt;http://www.example.org/fhir/subscription/sub123&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.extension">extension</a>" : [
     {
@@ -149,6 +149,13 @@
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "subIdentifier",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "sub123"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "eventCode",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "admit"
+          }
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "patientId",
@@ -177,13 +184,6 @@
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
             "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/DrDavidAnydoc"
           }
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "eventCode",
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "admit"
-          }
         }
       ],
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension"
@@ -193,7 +193,7 @@
   "<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.contact">contact</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "212-877-3307"
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "212-877-3307 ext 5001"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.end">end</a>" : "2021-01-01T00:00:00Z",
@@ -219,7 +219,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 15, 2020 15:25-0400">2020-06-15</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 15, 2020 15:55-0400">2020-06-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

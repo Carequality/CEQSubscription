@@ -38,7 +38,12 @@
       "code": "refer",
       "display": "Referral",
       "definition": "Referral to another practitioner"
+    },
+    {
+      "code": "delete",
+      "display": "Delete Subscription",
+      "definition": "Cancel subscription to all events"
     }
   ],
-  "count": 6
+  "count": 7
 }

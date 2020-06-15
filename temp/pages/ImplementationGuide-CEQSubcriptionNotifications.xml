@@ -11,7 +11,7 @@
   <name value="CarequalitySubscriptionImplementationGuideforPushNotifications"/>
   <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
   <status value="active"/>
-  <date value="2020-06-15T15:25:00-04:00"/>
+  <date value="2020-06-15T15:55:03-04:00"/>
   <contact>
     <name value="David Pyke"/>
     <telecom>
@@ -199,7 +199,8 @@
       <reference>
         <reference value="StructureDefinition/CEQSubscriptionBundle"/>
       </reference>
-      <name value="Bundle to be submitted for Carequality subscription enrollment"/>
+      <name value="Carequality Subscription Bundle"/>
+      <description value="Bundle to be submitted for Carequality subscription enrollment"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -297,6 +298,7 @@
         <reference value="Subscription/CEQExample"/>
       </reference>
       <name value="Example Subscribing"/>
+      <description value="Example of the full Resource for a Carequality Subscription"/>
       <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"/>
     </resource>
     <resource>
@@ -310,6 +312,7 @@
         <reference value="Practitioner/DrDavidAnydoc"/>
       </reference>
       <name value="Dr. David Anydoc"/>
+      <description value="Practitioner for example use"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

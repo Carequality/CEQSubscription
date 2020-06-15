@@ -4,7 +4,7 @@
   "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
   "version": "0.1.0",
   "name": "CEQSubscriptionBundle",
-  "title": "Bundle to be submitted for Carequality subscription enrollment",
+  "title": "Carequality Subscription Bundle",
   "status": "draft",
   "experimental": true,
   "publisher": "Carequality",
@@ -26,6 +26,7 @@
       ]
     }
   ],
+  "description": "Bundle to be submitted for Carequality subscription enrollment",
   "jurisdiction": [
     {
       "coding": [

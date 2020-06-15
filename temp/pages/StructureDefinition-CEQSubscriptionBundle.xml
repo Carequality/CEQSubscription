@@ -23,10 +23,10 @@
   <url value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"/>
   <version value="0.1.0"/>
   <name value="CEQSubscriptionBundle"/>
-  <title value="Bundle to be submitted for Carequality subscription enrollment"/>
+  <title value="Carequality Subscription Bundle"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-06-15T15:25:00-04:00"/>
+  <date value="2020-06-15T15:55:03-04:00"/>
   <publisher value="Carequality"/>
   <contact>
     <name value="David Pyke"/>
@@ -35,6 +35,7 @@
       <value value="mailto:david.pyke@readycomputing.com"/>
     </telecom>
   </contact>
+  <description value="Bundle to be submitted for Carequality subscription enrollment"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -16,6 +16,13 @@
           "valueString": "sub123"
         },
         {
+          "url": "eventCode",
+          "valueCoding": {
+            "code": "admit",
+            "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
+          }
+        },
+        {
           "url": "patientId",
           "valueIdentifier": {
             "type": {
@@ -42,13 +49,6 @@
           "valueReference": {
             "reference": "Practitioner/DrDavidAnydoc"
           }
-        },
-        {
-          "url": "eventCode",
-          "valueCoding": {
-            "code": "admit",
-            "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
-          }
         }
       ]
     }
@@ -61,7 +61,7 @@
   "contact": [
     {
       "system": "phone",
-      "value": "212-877-3307"
+      "value": "212-877-3307 ext 5001"
     }
   ],
   "end": "2021-01-01T00:00:00Z",

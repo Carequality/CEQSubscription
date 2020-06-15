@@ -51,7 +51,8 @@ Mixins: FHIRPushStructureDefinitionContent
 
 Profile: CEQSubscriptionBundle
 Parent: Bundle
-Title: "Bundle to be submitted for Carequality subscription enrollment"
+Title: "Carequality Subscription Bundle"
+Description: "Bundle to be submitted for Carequality subscription enrollment"
 
 Mixins: FHIRPushStructureDefinitionContent
 

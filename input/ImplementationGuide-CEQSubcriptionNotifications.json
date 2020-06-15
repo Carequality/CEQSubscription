@@ -37,7 +37,8 @@
         "reference": {
           "reference": "StructureDefinition/CEQSubscriptionBundle"
         },
-        "name": "Bundle to be submitted for Carequality subscription enrollment",
+        "name": "Carequality Subscription Bundle",
+        "description": "Bundle to be submitted for Carequality subscription enrollment",
         "exampleBoolean": false
       },
       {
@@ -93,6 +94,7 @@
           "reference": "Subscription/CEQExample"
         },
         "name": "Example Subscribing",
+        "description": "Example of the full Resource for a Carequality Subscription",
         "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"
       },
       {
@@ -100,6 +102,7 @@
           "reference": "Practitioner/DrDavidAnydoc"
         },
         "name": "Dr. David Anydoc",
+        "description": "Practitioner for example use",
         "exampleBoolean": true
       },
       {

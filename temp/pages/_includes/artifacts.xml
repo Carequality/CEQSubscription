@@ -35,9 +35,9 @@
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CEQSubscriptionBundle.html"
-                     title="StructureDefinition/CEQSubscriptionBundle">Bundle to be submitted for Carequality subscription enrollment</a>
+                     title="StructureDefinition/CEQSubscriptionBundle">Carequality Subscription Bundle</a>
                </td>
-               <td/>
+               <td>Bundle to be submitted for Carequality subscription enrollment</td>
             </tr>
             <tr>
                <td style="column-width:30%">
@@ -129,14 +129,14 @@ and an identifier be added to the resource.  The identifier element is the endpo
                <td style="column-width:30%">
                   <a href="Subscription-CEQExample.html" title="Subscription/CEQExample">Example Subscribing</a>
                </td>
-               <td/>
+               <td>Example of the full Resource for a Carequality Subscription</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Practitioner-DrDavidAnydoc.html"
                      title="Practitioner/DrDavidAnydoc">Dr. David Anydoc</a>
                </td>
-               <td/>
+               <td>Practitioner for example use</td>
             </tr>
             <tr>
                <td style="column-width:30%">

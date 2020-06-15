@@ -15,10 +15,10 @@
   fhir:StructureDefinition.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "CEQSubscriptionBundle"];
-  fhir:StructureDefinition.title [ fhir:value "Bundle to be submitted for Carequality subscription enrollment"];
+  fhir:StructureDefinition.title [ fhir:value "Carequality Subscription Bundle"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-15T15:25:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-15T15:55:03-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Carequality"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -29,6 +29,7 @@
        fhir:ContactPoint.value [ fhir:value "mailto:david.pyke@readycomputing.com" ]
      ]
   ];
+  fhir:StructureDefinition.description [ fhir:value "Bundle to be submitted for Carequality subscription enrollment"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

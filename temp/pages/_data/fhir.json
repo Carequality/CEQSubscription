@@ -14,7 +14,7 @@
   "toolingVersionFull": "4.4.0 (3)",
   "totalFiles": 11,
   "processedFiles": 26,
-  "genDate": "Mon, Jun 15, 2020 15:25-0400",
+  "genDate": "Mon, Jun 15, 2020 15:55-0400",
   "genDay": "15/06/2020",
   "ig": {
     "id": "CEQSubcriptionNotifications",
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2020-06-15T15:25:00-04:00",
+    "date": "2020-06-15T15:55:03-04:00",
     "description": "An Implementation Guide for the Carequality Subscription Use Case",
     "fhirVersion": "4.0.1"
   },

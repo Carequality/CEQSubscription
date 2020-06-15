@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "CEQNotificationEvents"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">admit<a name=\"CEQNotificationEvents-admit\"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"CEQNotificationEvents-discharge\"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"CEQNotificationEvents-transfer\"> </a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style=\"white-space:nowrap\">arrival<a name=\"CEQNotificationEvents-arrival\"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style=\"white-space:nowrap\">caregap<a name=\"CEQNotificationEvents-caregap\"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style=\"white-space:nowrap\">refer<a name=\"CEQNotificationEvents-refer\"> </a></td><td>Referral</td><td>Referral to another practitioner</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">admit<a name=\"CEQNotificationEvents-admit\"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"CEQNotificationEvents-discharge\"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"CEQNotificationEvents-transfer\"> </a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style=\"white-space:nowrap\">arrival<a name=\"CEQNotificationEvents-arrival\"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style=\"white-space:nowrap\">caregap<a name=\"CEQNotificationEvents-caregap\"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style=\"white-space:nowrap\">refer<a name=\"CEQNotificationEvents-refer\"> </a></td><td>Referral</td><td>Referral to another practitioner</td></tr><tr><td style=\"white-space:nowrap\">delete<a name=\"CEQNotificationEvents-delete\"> </a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "CEQNotificationEvents"];
   fhir:CodeSystem.title [ fhir:value "Carequality Push Notification Events"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-06-15T15:25:00-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-06-15T15:55:03-04:00"^^xsd:dateTime];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -29,7 +29,7 @@
   ];
   fhir:CodeSystem.description [ fhir:value "The codes to define each of the permitted events for Carequality Network Subscriptions"];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "admit" ];
@@ -60,6 +60,11 @@
      fhir:CodeSystem.concept.code [ fhir:value "refer" ];
      fhir:CodeSystem.concept.display [ fhir:value "Referral" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Referral to another practitioner" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "delete" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Delete Subscription" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cancel subscription to all events" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

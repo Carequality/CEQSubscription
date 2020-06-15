@@ -69,7 +69,7 @@
     "Bundle": [
       {
         "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
-        "title": "Bundle to be submitted for Carequality subscription enrollment"
+        "title": "Carequality Subscription Bundle"
       }
     ],
     "Subscription": [

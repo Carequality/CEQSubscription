@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: CEQExample</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>contact</b>: ph: 212-877-3307</p><p><b>end</b>: Dec. 31, 2020, 7:00:00 p.m.</p><p><b>reason</b>: Example</p><p><b>criteria</b>: carequality</p><h3>Channels</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>rest-hook</td><td><a href=\"http://www.example.org/fhir/subscription/sub123\">http://www.example.org/fhir/subscription/sub123</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: CEQExample</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>contact</b>: ph: 212-877-3307 ext 5001</p><p><b>end</b>: Dec. 31, 2020, 7:00:00 p.m.</p><p><b>reason</b>: Example</p><p><b>criteria</b>: carequality</p><h3>Channels</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>rest-hook</td><td><a href=\"http://www.example.org/fhir/subscription/sub123\">http://www.example.org/fhir/subscription/sub123</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -27,6 +27,13 @@
        fhir:Extension.valueString [ fhir:value "sub123" ]
      ], [
        fhir:index 1;
+       fhir:Extension.url [ fhir:value "eventCode" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents" ];
+         fhir:Coding.code [ fhir:value "admit" ]
+       ]
+     ], [
+       fhir:index 2;
        fhir:Extension.url [ fhir:value "patientId" ];
        fhir:Extension.valueIdentifier [
          fhir:Identifier.type [
@@ -40,25 +47,18 @@
          fhir:Identifier.value [ fhir:value "MRN123" ]
        ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Extension.url [ fhir:value "subPurpose" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse" ];
          fhir:Coding.code [ fhir:value "TREATMENT" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Extension.url [ fhir:value "subscriber" ];
        fhir:Extension.valueReference [
          fhir:link <https://sequoiaproject.org/fhir/sphd-r4/Practitioner/DrDavidAnydoc>;
          fhir:Reference.reference [ fhir:value "Practitioner/DrDavidAnydoc" ]
-       ]
-     ], [
-       fhir:index 4;
-       fhir:Extension.url [ fhir:value "eventCode" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents" ];
-         fhir:Coding.code [ fhir:value "admit" ]
        ]
      ];
      fhir:Extension.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension" ]
@@ -67,7 +67,7 @@
   fhir:Subscription.contact [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "212-877-3307" ]
+     fhir:ContactPoint.value [ fhir:value "212-877-3307 ext 5001" ]
   ];
   fhir:Subscription.end [ fhir:value "2021-01-01T00:00:00Z"^^xsd:dateTime];
   fhir:Subscription.reason [ fhir:value "Example"];

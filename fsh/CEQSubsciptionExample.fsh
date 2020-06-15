@@ -1,6 +1,8 @@
 Instance:   DrDavidAnydoc
 InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
 Title:  "Dr. David Anydoc"
+Description: "Practitioner for example use"
+
 Usage:  #example
 * name[0].family = "Anydoc"
 * name[0].given[0] = "David"
@@ -13,6 +15,7 @@ Alias: SubPoU = https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOf
 Instance:  CEQsubscriptionExample
 InstanceOf: CEQsubscription
 Title:   "Example Subscribing"
+Description: "Example of the full Resource for a Carequality Subscription"
 Usage:  #example
 
 

@@ -61,7 +61,7 @@
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 4
+        "min": 5
       },
       {
         "id": "Extension.extension:subIdentifier",
@@ -97,7 +97,7 @@
         "sliceName": "eventCode",
         "short": "The Carequality code for the Event",
         "comment": "One or more of the Carequality defined set of notification codes.  Sending the payload has obvious security implications. The server is responsible for ensuring that the content is appropriately secured",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "mustSupport": true
       },

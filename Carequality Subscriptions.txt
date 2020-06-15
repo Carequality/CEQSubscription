@@ -1,0 +1,57 @@
+title Carequality Subscriptions
+
+Note Left of Subscriber
+Subscriber sends Subscription 
+Resource To DataSource to 
+start subscription
+end note
+Subscriber->DataSource: Submit Subscriber Resource
+note right of Subscriber
+{
+  "resourceType": "Subscription",
+  "status": "active",
+  "contact": {
+    "system": "phone",
+    "value": "212-877-3307 ext 5001"
+  },
+  "end": "2021-01-01T00:00:00Z",
+  "reason": "Example",
+  "criteria": "Carequality",
+  "channel": {
+    "type": "rest-hook",
+    "endpoint": "http://www.example.org/fhir/subscription/sub123"
+  },
+  "extension": [ {
+      "url": "http://hl7.org/fhir/us/ceq/StructureDefinition/ceq-subscription-patientid",
+      "extension": [ {
+          "ValueIdentifier": {
+            "type": "MR",
+            "system": "urn:oid:1.2.36.146.595.217.0.1",
+            "value": "MRN123"
+          } } ] },
+    {
+      "url": "http://hl7.org/fhir/us/ceq/StructureDefinition/ceq-subscription-eventUri",
+      "extension": [ {
+          "valueUri": "urn:ceq:fhir:notification:admit"
+        } ] },
+    {
+      "url": "http://hl7.org/fhir/us/ceq/StructureDefinition/ceq-subscription-identifier",
+      "extension": [ {
+          "ValueString": "sub123"
+        } ] }
+      ]
+}
+
+end note
+DataSource->Subscriber: 200 OK 
+
+
+Note Right of DataSource
+DataSource knocks on Subscriber 
+endpoint with notification of 
+Encounter that for patient
+end note  
+DataSource->Subscriber: Empty Notification to endpoint
+Note left of DataSource
+POST https://www.myserver.org/fhir/Encounter/ba90f9ab-fc56-4012-be4c-77cb9cf4cb84
+end note

@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
+  "code" : "TREATMENT"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+      "concept" : [{
+        "code" : "TREATMENT"
+      },
+      {
+        "code" : "PAYMENT"
+      },
+      {
+        "code" : "OPERATIONS"
+      },
+      {
+        "code" : "PUBLICHEALTH"
+      },
+      {
+        "code" : "REQUEST"
+      },
+      {
+        "code" : "COVERAGE"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "CodeSystem uri 'https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse' is unknown"
+}
+-------------------------------------------------------------------------------------

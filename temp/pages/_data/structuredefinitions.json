@@ -10,7 +10,7 @@
     "basename": "Bundle",
     "basepath": "http://hl7.org/fhir/R4/bundle.html",
     "status": "draft",
-    "date": "Mon Jun 15 14:54:40 EDT 2020",
+    "date": "Mon Jun 15 15:25:00 EDT 2020",
     "publisher": "Carequality"
   },
   "CEQsubscription": {
@@ -24,7 +24,7 @@
     "basename": "Subscription",
     "basepath": "http://hl7.org/fhir/R4/subscription.html",
     "status": "draft",
-    "date": "Mon Jun 15 14:54:40 EDT 2020",
+    "date": "Mon Jun 15 15:25:00 EDT 2020",
     "publisher": "Carequality",
     "description": "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]"
   },
@@ -39,7 +39,7 @@
     "basename": "Extension",
     "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "status": "draft",
-    "date": "Mon Jun 15 14:54:40 EDT 2020",
+    "date": "Mon Jun 15 15:25:00 EDT 2020",
     "publisher": "Carequality",
     "description": "Additional Elements to Support Carequality Subscription Notifications",
     "contexts": [

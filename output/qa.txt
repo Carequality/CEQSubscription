@@ -3,34 +3,34 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: v1.0.100-SNAPSHOT
-Generated Mon Jun 15 14:54:48 EDT 2020. FHIR version 4.0.1 for CEQSubcriptionNotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+Generated Mon Jun 15 15:25:08 EDT 2020. FHIR version 4.0.1 for CEQSubcriptionNotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
  Build Errors : 0 / 3
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/ImplementationGuide-CEQSubcriptionNotifications : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/examples/OperationDefinition-ceqsubscribe : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/examples/Practitioner-DrDavidAnydoc : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/examples/Subscription-CEQExample : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/extensions/StructureDefinition-CEQextension : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/profiles/StructureDefinition-CEQSubscriptionBundle : 0 / 1
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/profiles/StructureDefinition-CEQsubscription : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/CodeSystem-CEQNotificationEvents : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/CodeSystem-NHINPurposeOfUse : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/ValueSet-CEQPushEventCodes : 0 / 0
- /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-CEQSubcriptionNotifications : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/examples/OperationDefinition-ceqsubscribe : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/examples/Practitioner-DrDavidAnydoc : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/examples/Subscription-CEQExample : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/extensions/StructureDefinition-CEQextension : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQSubscriptionBundle : 0 / 1
+ /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQsubscription : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQNotificationEvents : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-NHINPurposeOfUse : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQPushEventCodes : 0 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse : 0 / 0
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CEQSubscriptionBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Subscription/CEQExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/DrDavidAnydoc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/ImplementationGuide-CEQSubcriptionNotifications.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/examples/OperationDefinition-ceqsubscribe.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/examples/Practitioner-DrDavidAnydoc.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/examples/Subscription-CEQExample.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/extensions/StructureDefinition-CEQextension.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/profiles/StructureDefinition-CEQSubscriptionBundle.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-CEQSubcriptionNotifications.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/examples/OperationDefinition-ceqsubscribe.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/examples/Practitioner-DrDavidAnydoc.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/examples/Subscription-CEQExample.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/extensions/StructureDefinition-CEQextension.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQSubscriptionBundle.json ==
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle'): The Implementation Guide contains no examples for this profile
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/profiles/StructureDefinition-CEQsubscription.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/CodeSystem-CEQNotificationEvents.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/CodeSystem-NHINPurposeOfUse.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/ValueSet-CEQPushEventCodes.json ==
-== /media/veracrypt1/ownCloud/Ready/Sequoia/CQPush/Profile/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQsubscription.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQNotificationEvents.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-NHINPurposeOfUse.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQPushEventCodes.json ==
+== /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse.json ==

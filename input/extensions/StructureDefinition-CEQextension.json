@@ -1,0 +1,225 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CEQextension",
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension",
+  "version": "0.1.0",
+  "name": "CEQextension",
+  "title": "Carequality Subscription Required Elements",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Carequality",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://carequality.org/get-involved/technical-workgroup/"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:david.pyke@readycomputing.com"
+        }
+      ]
+    }
+  ],
+  "description": "Additional Elements to Support Carequality Subscription Notifications",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 4
+      },
+      {
+        "id": "Extension.extension:subIdentifier",
+        "path": "Extension.extension",
+        "sliceName": "subIdentifier",
+        "short": "A Business Identifier",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:subIdentifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subIdentifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subIdentifier"
+      },
+      {
+        "id": "Extension.extension:subIdentifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:eventCode",
+        "path": "Extension.extension",
+        "sliceName": "eventCode",
+        "short": "The Carequality code for the Event",
+        "comment": "One or more of the Carequality defined set of notification codes.  Sending the payload has obvious security implications. The server is responsible for ensuring that the content is appropriately secured",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:eventCode.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:eventCode.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "eventCode"
+      },
+      {
+        "id": "Extension.extension:eventCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:patientId",
+        "path": "Extension.extension",
+        "sliceName": "patientId",
+        "short": "The DataSource Patient MRN",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:patientId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:patientId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "patientId"
+      },
+      {
+        "id": "Extension.extension:patientId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subPurpose",
+        "path": "Extension.extension",
+        "sliceName": "subPurpose",
+        "short": "Purpose of Use for this Subscription",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:subPurpose.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subPurpose.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subPurpose"
+      },
+      {
+        "id": "Extension.extension:subPurpose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subscriber",
+        "path": "Extension.extension",
+        "sliceName": "subscriber",
+        "short": "End subscriber for the information",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:subscriber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subscriber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subscriber"
+      },
+      {
+        "id": "Extension.extension:subscriber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CEQSubscriptionBundle",
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
+  "version": "0.1.0",
+  "name": "CEQSubscriptionBundle",
+  "title": "Bundle to be submitted for Carequality subscription enrollment",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Carequality",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://carequality.org/get-involved/technical-workgroup/"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:david.pyke@readycomputing.com"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "transaction"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "Resource"
+            }
+          ],
+          "rules": "closed",
+          "description": "Slice based on the entry.resource type"
+        },
+        "min": 2
+      },
+      {
+        "id": "Bundle.entry:subsciptionentry",
+        "path": "Bundle.entry",
+        "sliceName": "subsciptionentry",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:subsciptionentry.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Subscription",
+            "profile": [
+              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:subsciptionentry.request.method",
+        "path": "Bundle.entry.request.method",
+        "patternCode": "POST"
+      },
+      {
+        "id": "Bundle.entry:subscriberentry",
+        "path": "Bundle.entry",
+        "sliceName": "subscriberentry",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:subscriberentry.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            ]
+          },
+          {
+            "code": "Practitioner",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+            ]
+          },
+          {
+            "code": "RelatedPerson"
+          },
+          {
+            "code": "Organization",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:subscriberentry.request.method",
+        "path": "Bundle.entry.request.method",
+        "patternCode": "POST"
+      }
+    ]
+  }
+}

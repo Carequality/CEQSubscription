@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CEQPushEventCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-CEQNotificationEvents.html"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-admit">admit</a></td><td>Admit</td><td>Admission event</td></tr><tr><td><a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-discharge">discharge</a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td><a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transfer">transfer</a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td><a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-arrival">arrival</a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td><a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-caregap">caregap</a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td><a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer">refer</a></td><td>Referral</td><td>Referral to another practitioner</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"/>
+  <version value="0.1.0"/>
+  <name value="CEQPushEventCodes"/>
+  <title value="Carequality Push Notification Events"/>
+  <status value="active"/>
+  <date value="2020-06-15T14:54:40-04:00"/>
+  <contact>
+    <name value="David Pyke"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:david.pyke@readycomputing.com"/>
+    </telecom>
+  </contact>
+  <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
+  <compose>
+    <include>
+      <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
+      <concept>
+        <code value="admit"/>
+      </concept>
+      <concept>
+        <code value="discharge"/>
+      </concept>
+      <concept>
+        <code value="transfer"/>
+      </concept>
+      <concept>
+        <code value="arrival"/>
+      </concept>
+      <concept>
+        <code value="caregap"/>
+      </concept>
+      <concept>
+        <code value="refer"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

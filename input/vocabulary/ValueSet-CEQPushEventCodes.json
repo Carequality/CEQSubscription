@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CEQPushEventCodes",
+  "id": "CEQPushEventCodes",
+  "title": "Carequality Push Notification Events",
+  "description": "The codes to define each of the permitted events for Carequality Network Subscriptions",
+  "version": "0.1.0",
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+        "concept": [
+          {
+            "code": "admit"
+          },
+          {
+            "code": "discharge"
+          },
+          {
+            "code": "transfer"
+          },
+          {
+            "code": "arrival"
+          },
+          {
+            "code": "caregap"
+          },
+          {
+            "code": "refer"
+          }
+        ]
+      }
+    ]
+  }
+}

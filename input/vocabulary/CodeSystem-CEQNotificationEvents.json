@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CEQNotificationEvents",
+  "id": "CEQNotificationEvents",
+  "title": "Carequality Push Notification Events",
+  "description": "The codes to define each of the permitted events for Carequality Network Subscriptions",
+  "version": "0.1.0",
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+  "concept": [
+    {
+      "code": "admit",
+      "display": "Admit",
+      "definition": "Admission event"
+    },
+    {
+      "code": "discharge",
+      "display": "Discharge",
+      "definition": "Discharge event"
+    },
+    {
+      "code": "transfer",
+      "display": "Transfer",
+      "definition": "Transfer of a Patient"
+    },
+    {
+      "code": "arrival",
+      "display": "Arrival",
+      "definition": "Arrival at a port of call or other location where people arrive"
+    },
+    {
+      "code": "caregap",
+      "display": "Gap in Care",
+      "definition": "Implementer Defined"
+    },
+    {
+      "code": "refer",
+      "display": "Referral",
+      "definition": "Referral to another practitioner"
+    }
+  ],
+  "count": 6
+}

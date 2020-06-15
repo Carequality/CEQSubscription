@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "NHINPurposeOfUse"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">TREATMENT<a name=\"NHINPurposeOfUse-TREATMENT\"> </a></td><td>Treatment</td><td>Per 45 CFR § 164.501</td></tr><tr><td style=\"white-space:nowrap\">PAYMENT<a name=\"NHINPurposeOfUse-PAYMENT\"> </a></td><td>Payment</td><td>Per 45 CFR § 164.501</td></tr><tr><td style=\"white-space:nowrap\">OPERATIONS<a name=\"NHINPurposeOfUse-OPERATIONS\"> </a></td><td>Health Care Operations</td><td>Per 45 CFR § 164.501</td></tr><tr><td style=\"white-space:nowrap\">PUBLICHEALTH<a name=\"NHINPurposeOfUse-PUBLICHEALTH\"> </a></td><td>Public Health Activities</td><td>Per 45 CFR § 164.512(b)</td></tr><tr><td style=\"white-space:nowrap\">REQUEST<a name=\"NHINPurposeOfUse-REQUEST\"> </a></td><td>Patient Request</td><td>Directly initiated by the patient or the patient’s personal representative as defined by 45 CFR 164.502(g), via a personal health record or other consumer-facing application</td></tr><tr><td style=\"white-space:nowrap\">COVERAGE<a name=\"NHINPurposeOfUse-COVERAGE\"> </a></td><td>Coverage Determination</td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NHINPurposeOfUse"];
+  fhir:CodeSystem.title [ fhir:value "NHIN Purpose Of Use"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2020-06-15T14:54:40-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "David Pyke" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:david.pyke@readycomputing.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "These are the permitted Purpose of Use within the Carequality network"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "TREATMENT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Treatment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Per 45 CFR § 164.501" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "PAYMENT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Payment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Per 45 CFR § 164.501" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "OPERATIONS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Health Care Operations" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Per 45 CFR § 164.501" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "PUBLICHEALTH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Public Health Activities" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Per 45 CFR § 164.512(b)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "REQUEST" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Request" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Directly initiated by the patient or the patient’s personal representative as defined by 45 CFR 164.502(g), via a personal health record or other consumer-facing application" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "COVERAGE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coverage Determination" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

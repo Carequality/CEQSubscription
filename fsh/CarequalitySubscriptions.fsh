@@ -4,7 +4,7 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 Mixins: FHIRPushStructureDefinitionContent
 * extension contains
     subIdentifier 1..1 MS and
-    eventCode 0..* MS and
+    eventCode 1..* MS and
     patientId 1..1 MS and
     subPurpose 1..1 MS and
     subscriber 1..1 MS
@@ -42,7 +42,7 @@ Mixins: FHIRPushStructureDefinitionContent
 * channel.type = #rest-hook (exactly)
 
 * extension[ceqPushExtension].extension[subIdentifier] 1..1
-* extension[ceqPushExtension].extension[eventCode] 0..*
+* extension[ceqPushExtension].extension[eventCode] 1..*
 * extension[ceqPushExtension].extension[eventCode].valueCoding from CEQPushEventCodes (required)
 * extension[ceqPushExtension].extension[patientId] 1..1
 * extension[ceqPushExtension].extension[subPurpose] 1..1
@@ -66,5 +66,6 @@ Mixins: FHIRPushStructureDefinitionContent
 
 * entry[subsciptionentry].resource only CEQsubscription
 * entry[subsciptionentry].request.method = #POST
+
 * entry[subscriberentry].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or http://hl7.org/fhir/StructureDefinition/RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 * entry[subscriberentry].request.method = #POST

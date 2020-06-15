@@ -41,3 +41,4 @@ Description: "The codes to define each of the permitted events for Carequality N
 * CEQNotificationEvents#arrival
 * CEQNotificationEvents#caregap
 * CEQNotificationEvents#refer
+* CEQNotificationEvents#delete

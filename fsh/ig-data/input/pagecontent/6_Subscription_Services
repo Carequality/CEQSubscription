@@ -1,0 +1,37 @@
+#  Subscription Service in Push Notifications
+## Definition
+An Implementer or CC with the declared role of an Subscription Service provides
+subscription data management, and forwards patient specific subscriptions,
+subscription requests, and push notifications sent to them by Implementers or
+CCs in the Notification Generator, Notification Receiver, and Subscription Service
+roles. In addition, Subscription Services provide a list of Implementers and/or CCs in the
+Notification Generator or Receiver role who potentially have, likely have, or are
+known to have a clinical relationship with the patient who is the subject of a
+subscription.
+* An Implementer in the Subscription Service (Subserv) role may have CCs in
+other roles, even if the Implementer itself only plays the Subscription Servicev role.
+* An Implementer or CC with the declared role of a Subscription Service shall support the
+technical actor(s) specified in Section XXXX of this Guide, and comply with any
+other requirements throughout this Guide that are specifically described as
+applying to the Subscription Service role.
+* The Subscription Service must have a Business Associate relationship with organizations for whom they
+are managing subscriptions.
+
+## Limitations to Subscription Services
+A Subscription Service may not impose any additional terms beyond the
+Carequality Elements, including fees, on Notification Recipients or Notification
+Generators on any organization that is using the Subscription Service endpoint only to send,
+pass on, or receive notifications or subscriptions, but are not otherwise
+contractually bound to that Subscription Service.
+* Subscription Services may impose additional terms on their client organizations as they see
+fit.
+A Subscription Service must pass along subscriptions and notifications carrying a
+Carequality Certificate ONLY if those subscriptions come from an Implementer or
+CC that is validated as such according to the Carequality Technical Trust Policy.
+* For Example, a Subscription Service may pass a subscription request from Notification Receiver A to
+Notification Generator B, even if Notification Receiver A is not a Carequality
+participant, however, they MAY NOT use a Carequality Certificate for that
+transaction.
+* Subscription Services may communicate subscriptions and notifications for and to entities
+outside of the Carequality community, however Generators may choose not to
+honor those subscriptions.

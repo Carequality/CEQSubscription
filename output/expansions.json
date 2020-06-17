@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d8b87af5-c981-4f1a-be6e-8ddc6a8d9bf0",
+  "id" : "564f410f-bbd3-41d6-80c6-25206cb9da91",
   "meta" : {
-    "lastUpdated" : "2020-06-15T15:55:03.193-04:00"
+    "lastUpdated" : "2020-06-17T13:02:39.858-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,14 +12,14 @@
       "id" : "CEQPushEventCodes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CEQNotificationEvents.html\">Carequality Push Notification Events v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-CEQNotificationEvents.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-admit\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-admit\">admit</a></td><td>Admit</td><td>Admission event</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-discharge\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-discharge\">discharge</a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-transfer\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transfer\">transfer</a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-arrival\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-arrival\">arrival</a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-caregap\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-caregap\">caregap</a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-refer\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer\">refer</a></td><td>Referral</td><td>Referral to another practitioner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-delete\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-delete\">delete</a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CEQNotificationEvents.html\">Carequality Push Notification Events v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-CEQNotificationEvents.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-admit\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-admit\">admit</a></td><td>Admit</td><td>Admission event</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-discharge\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-discharge\">discharge</a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-transfer\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transfer\">transfer</a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-arrival\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-arrival\">arrival</a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-caregap\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-caregap\">caregap</a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-refer\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer\">refer</a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-delete\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-delete\">delete</a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>"
       },
       "url" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
       "version" : "0.1.0",
       "name" : "CEQPushEventCodes",
       "title" : "Carequality Push Notification Events",
       "status" : "active",
-      "date" : "2020-06-15T15:55:03-04:00",
+      "date" : "2020-06-17T13:02:39-04:00",
       "contact" : [{
         "name" : "David Pyke",
         "telecom" : [{
@@ -29,8 +29,8 @@
       }],
       "description" : "The codes to define each of the permitted events for Carequality Network Subscriptions",
       "expansion" : {
-        "identifier" : "urn:uuid:dc0b6f2e-1c5d-4012-852f-590fe71b1206",
-        "timestamp" : "2020-06-15T15:55:07-04:00",
+        "identifier" : "urn:uuid:994778d5-e2af-496b-b28d-038b3cb94d84",
+        "timestamp" : "2020-06-17T13:02:47-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -92,7 +92,7 @@
       "name" : "CEQSubscriberPurposeofUse",
       "title" : "Permitted Purposes Of Use",
       "status" : "active",
-      "date" : "2020-06-15T15:55:03-04:00",
+      "date" : "2020-06-17T13:02:39-04:00",
       "contact" : [{
         "name" : "David Pyke",
         "telecom" : [{
@@ -102,8 +102,8 @@
       }],
       "description" : "These are the permitted Purpose of Use within the Carequality network",
       "expansion" : {
-        "identifier" : "urn:uuid:ad0fbbfc-09ea-49d8-8c2d-07692fc59e48",
-        "timestamp" : "2020-06-15T15:55:07-04:00",
+        "identifier" : "urn:uuid:f8d61a8e-e7ca-403e-bded-c267b1ab0ef1",
+        "timestamp" : "2020-06-17T13:02:47-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",

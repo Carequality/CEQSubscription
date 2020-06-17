@@ -37,7 +37,7 @@
     {
       "code": "refer",
       "display": "Referral",
-      "definition": "Referral to another practitioner"
+      "definition": "A Secondary Referral to another practitioner"
     },
     {
       "code": "delete",

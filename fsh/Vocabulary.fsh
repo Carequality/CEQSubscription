@@ -29,7 +29,7 @@ Description: "The codes to define each of the permitted events for Carequality N
 * #transfer "Transfer" "Transfer of a Patient"
 * #arrival "Arrival" "Arrival at a port of call or other location where people arrive"
 * #caregap "Gap in Care" "Implementer Defined"
-* #refer "Referral" "Referral to another practitioner"
+* #refer "Referral" "A Secondary Referral to another practitioner"
 * #delete "Delete Subscription" "Cancel subscription to all events"
 
 ValueSet: CEQPushEventCodes

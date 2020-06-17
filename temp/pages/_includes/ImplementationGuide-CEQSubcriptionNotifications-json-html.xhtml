@@ -4,14 +4,14 @@
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.id">id</a>" : "CEQSubcriptionNotifications",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;CarequalitySubscriptionImplementationGuideforPushNotifications&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications&lt;/pre&gt;&lt;div&gt;&lt;p&gt;An Implementation Guide for the Carequality Subscription Use Case&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;CarequalitySubscriptionImplementationGuide&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications&lt;/pre&gt;&lt;div&gt;&lt;p&gt;An Implementation Guide for the Carequality Subscription Use Case&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.url">url</a>" : "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.name">name</a>" : "CarequalitySubscriptionImplementationGuideforPushNotifications",
+  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.name">name</a>" : "CarequalitySubscriptionImplementationGuide",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.title">title</a>" : "Carequality Subscription Implementation Guide for Push Notifications",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.date">date</a>" : "2020-06-15T15:55:03-04:00",
+  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.date">date</a>" : "2020-06-17T13:02:39-04:00",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.contact">contact</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "David Pyke",
@@ -334,7 +334,7 @@
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/CEQsubscription"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Carequality Subscription Profile",
-        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {

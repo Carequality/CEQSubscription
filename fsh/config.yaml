@@ -13,7 +13,7 @@
 id: CEQSubcriptionNotifications
 canonical: https://sequoiaproject.org/fhir/sphd-r4
 version: 0.1.0
-name: CarequalitySubscriptionImplementationGuideforPushNotifications
+name: CarequalitySubscriptionImplementationGuide
 title: Carequality Subscription Implementation Guide for Push Notifications
 status: active
 publisher: Carequality

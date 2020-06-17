@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CEQNotificationEvents"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">admit<a name="CEQNotificationEvents-admit"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style="white-space:nowrap">discharge<a name="CEQNotificationEvents-discharge"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style="white-space:nowrap">transfer<a name="CEQNotificationEvents-transfer"> </a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style="white-space:nowrap">arrival<a name="CEQNotificationEvents-arrival"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style="white-space:nowrap">caregap<a name="CEQNotificationEvents-caregap"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style="white-space:nowrap">refer<a name="CEQNotificationEvents-refer"> </a></td><td>Referral</td><td>Referral to another practitioner</td></tr><tr><td style="white-space:nowrap">delete<a name="CEQNotificationEvents-delete"> </a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">admit<a name="CEQNotificationEvents-admit"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style="white-space:nowrap">discharge<a name="CEQNotificationEvents-discharge"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style="white-space:nowrap">transfer<a name="CEQNotificationEvents-transfer"> </a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style="white-space:nowrap">arrival<a name="CEQNotificationEvents-arrival"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style="white-space:nowrap">caregap<a name="CEQNotificationEvents-caregap"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style="white-space:nowrap">refer<a name="CEQNotificationEvents-refer"> </a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td style="white-space:nowrap">delete<a name="CEQNotificationEvents-delete"> </a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>
   </text>
   <url value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
   <version value="0.1.0"/>
   <name value="CEQNotificationEvents"/>
   <title value="Carequality Push Notification Events"/>
   <status value="active"/>
-  <date value="2020-06-15T15:55:03-04:00"/>
+  <date value="2020-06-17T13:02:39-04:00"/>
   <contact>
     <name value="David Pyke"/>
     <telecom>
@@ -49,7 +49,7 @@
   <concept>
     <code value="refer"/>
     <display value="Referral"/>
-    <definition value="Referral to another practitioner"/>
+    <definition value="A Secondary Referral to another practitioner"/>
   </concept>
   <concept>
     <code value="delete"/>

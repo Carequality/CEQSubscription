@@ -2,7 +2,7 @@
   "path": "http://hl7.org/fhir/R4/",
   "canonical": "https://sequoiaproject.org/fhir/sphd-r4",
   "igId": "CEQSubcriptionNotifications",
-  "igName": "CarequalitySubscriptionImplementationGuideforPushNotifications",
+  "igName": "CarequalitySubscriptionImplementationGuide",
   "packageId": "CEQSubcriptionNotifications",
   "igVer": "0.1.0",
   "errorCount": 0,
@@ -14,11 +14,11 @@
   "toolingVersionFull": "4.4.0 (3)",
   "totalFiles": 11,
   "processedFiles": 26,
-  "genDate": "Mon, Jun 15, 2020 15:55-0400",
-  "genDay": "15/06/2020",
+  "genDate": "Wed, Jun 17, 2020 13:02-0400",
+  "genDay": "17/06/2020",
   "ig": {
     "id": "CEQSubcriptionNotifications",
-    "name": "CarequalitySubscriptionImplementationGuideforPushNotifications",
+    "name": "CarequalitySubscriptionImplementationGuide",
     "title": "Carequality Subscription Implementation Guide for Push Notifications",
     "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications",
     "version": "0.1.0",
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2020-06-15T15:55:03-04:00",
+    "date": "2020-06-17T13:02:39-04:00",
     "description": "An Implementation Guide for the Carequality Subscription Use Case",
     "fhirVersion": "4.0.1"
   },

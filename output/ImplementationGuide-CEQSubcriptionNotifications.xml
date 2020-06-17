@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="CEQSubcriptionNotifications"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CarequalitySubscriptionImplementationGuideforPushNotifications</h2><p>The official URL for this implementation guide is: </p><pre>https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications</pre><div><p>An Implementation Guide for the Carequality Subscription Use Case</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CarequalitySubscriptionImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications</pre><div><p>An Implementation Guide for the Carequality Subscription Use Case</p>
 </div></div>
   </text>
   <url value="https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications"/>
   <version value="0.1.0"/>
-  <name value="CarequalitySubscriptionImplementationGuideforPushNotifications"/>
+  <name value="CarequalitySubscriptionImplementationGuide"/>
   <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
   <status value="active"/>
-  <date value="2020-06-15T15:55:03-04:00"/>
+  <date value="2020-06-17T13:02:39-04:00"/>
   <contact>
     <name value="David Pyke"/>
     <telecom>
@@ -214,7 +214,7 @@
         <reference value="StructureDefinition/CEQsubscription"/>
       </reference>
       <name value="Carequality Subscription Profile"/>
-      <description value="Extended Elements and Constraints Specific to the Carequality Use Case&#xA;Carequality has defined a custom flow for a Subscription that removes the criteria use&#xA;in favour of specific events defined as URIs.  This adds requirements that the PatientID&#xA;and an identifier be added to the resource.  The identifier element is the endpoint id&#xA;[Base]/fhir/Subscription/[identifier]"/>
+      <description value="Extended Elements and Constraints Specific to the Carequality Use Case&#xA;Carequality has defined a custom flow for a Subscription that removes the criteria use&#xA;in favour of specific events defined as URIs.  This adds requirements that the PatientID&#xA;and an identifier be added to the resource.  The identifier element is the endpoint id&#xA;[Base]/fhir/Subscription/[identifier]&#xA;A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

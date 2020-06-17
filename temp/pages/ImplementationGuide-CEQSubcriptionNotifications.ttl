@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "CEQSubcriptionNotifications"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CarequalitySubscriptionImplementationGuideforPushNotifications</h2><p>The official URL for this implementation guide is: </p><pre>https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications</pre><div><p>An Implementation Guide for the Carequality Subscription Use Case</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CarequalitySubscriptionImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications</pre><div><p>An Implementation Guide for the Carequality Subscription Use Case</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
-  fhir:ImplementationGuide.name [ fhir:value "CarequalitySubscriptionImplementationGuideforPushNotifications"];
+  fhir:ImplementationGuide.name [ fhir:value "CarequalitySubscriptionImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Carequality Subscription Implementation Guide for Push Notifications"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-15T15:55:03-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-17T13:02:39-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -320,7 +320,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/CEQsubscription" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Carequality Subscription Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d8b87af5-c981-4f1a-be6e-8ddc6a8d9bf0"/>
+  <id value="564f410f-bbd3-41d6-80c6-25206cb9da91"/>
   <meta>
-    <lastUpdated value="2020-06-15T15:55:03.193-04:00"/>
+    <lastUpdated value="2020-06-17T13:02:39.858-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -81,7 +81,7 @@
                   <a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer">refer</a>
                 </td>
                 <td>Referral</td>
-                <td>Referral to another practitioner</td>
+                <td>A Secondary Referral to another practitioner</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -99,7 +99,7 @@
         <name value="CEQPushEventCodes"/>
         <title value="Carequality Push Notification Events"/>
         <status value="active"/>
-        <date value="2020-06-15T15:55:03-04:00"/>
+        <date value="2020-06-17T13:02:39-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -109,8 +109,8 @@
         </contact>
         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
         <expansion>
-          <identifier value="urn:uuid:dc0b6f2e-1c5d-4012-852f-590fe71b1206"/>
-          <timestamp value="2020-06-15T15:55:07-04:00"/>
+          <identifier value="urn:uuid:994778d5-e2af-496b-b28d-038b3cb94d84"/>
+          <timestamp value="2020-06-17T13:02:47-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -244,7 +244,7 @@
         <name value="CEQSubscriberPurposeofUse"/>
         <title value="Permitted Purposes Of Use"/>
         <status value="active"/>
-        <date value="2020-06-15T15:55:03-04:00"/>
+        <date value="2020-06-17T13:02:39-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -254,8 +254,8 @@
         </contact>
         <description value="These are the permitted Purpose of Use within the Carequality network"/>
         <expansion>
-          <identifier value="urn:uuid:ad0fbbfc-09ea-49d8-8c2d-07692fc59e48"/>
-          <timestamp value="2020-06-15T15:55:07-04:00"/>
+          <identifier value="urn:uuid:f8d61a8e-e7ca-403e-bded-c267b1ab0ef1"/>
+          <timestamp value="2020-06-17T13:02:47-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>

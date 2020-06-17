@@ -14,6 +14,7 @@
     <sch:rule context="f:Subscription">
       <sch:assert test="count(f:extension[@url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension']) &gt;= 1">extension with URL = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension']) &lt;= 1">extension with URL = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:end) &gt;= 1">end: minimum cardinality of 'end' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

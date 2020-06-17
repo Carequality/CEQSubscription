@@ -11,11 +11,11 @@ NOT focused on unsolicited notifications
 * Project results may be useful as a building block or launching point
 
 ## Topic
-* Is a well-defined event: ‘admission’, ‘discharge’, ‘gap in care' , etc.
+* Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care' , etc.
 * Servers choose which Topics to support.
 
 ## Subscription
-* Is a request for notifications based on a one or more Topics.
+* Is a request for notifications based on a one or more Topics.  The end date is required and is a maximum of two years, without renewal.
 
 ## Notification
 * Is a simple http 'knock' using POST and the FullURL of the Encounter resource created

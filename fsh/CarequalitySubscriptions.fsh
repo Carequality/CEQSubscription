@@ -34,10 +34,12 @@ Carequality has defined a custom flow for a Subscription that removes the criter
 in favour of specific events defined as URIs.  This adds requirements that the PatientID
 and an identifier be added to the resource.  The identifier element is the endpoint id
 [Base]/fhir/Subscription/[identifier]
+A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.
 """
 Mixins: FHIRPushStructureDefinitionContent
 * extension contains CEQextension named ceqPushExtension 1..1
 
+* end 1..1
 * criteria = "carequality" (exactly)
 * channel.type = #rest-hook (exactly)
 

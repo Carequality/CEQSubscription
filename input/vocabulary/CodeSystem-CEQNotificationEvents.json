@@ -15,6 +15,26 @@
       "definition": "Admission event"
     },
     {
+      "code": "edadmit",
+      "display": "ED Admit",
+      "definition": "Emergency Department Admission"
+    },
+    {
+      "code": "acadmit",
+      "display": "Acute Admit",
+      "definition": "Acute Care Admission"
+    },
+    {
+      "code": "ambadmit",
+      "display": "Ambulatory Admit",
+      "definition": "Ambulatory Care Admission"
+    },
+    {
+      "code": "snradmit",
+      "display": "Skilled/Rehab Admit",
+      "definition": "SKilled Nursing or Rehabilitation Center Admission"
+    },
+    {
       "code": "discharge",
       "display": "Discharge",
       "definition": "Discharge event"
@@ -45,5 +65,5 @@
       "definition": "Cancel subscription to all events"
     }
   ],
-  "count": 7
+  "count": 11
 }

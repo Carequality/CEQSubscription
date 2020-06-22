@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CEQNotificationEvents"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">admit<a name="CEQNotificationEvents-admit"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style="white-space:nowrap">discharge<a name="CEQNotificationEvents-discharge"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style="white-space:nowrap">transfer<a name="CEQNotificationEvents-transfer"> </a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style="white-space:nowrap">arrival<a name="CEQNotificationEvents-arrival"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style="white-space:nowrap">caregap<a name="CEQNotificationEvents-caregap"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style="white-space:nowrap">refer<a name="CEQNotificationEvents-refer"> </a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td style="white-space:nowrap">delete<a name="CEQNotificationEvents-delete"> </a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">admit<a name="CEQNotificationEvents-admit"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style="white-space:nowrap">edadmit<a name="CEQNotificationEvents-edadmit"> </a></td><td>ED Admit</td><td>Emergency Department Admission</td></tr><tr><td style="white-space:nowrap">acadmit<a name="CEQNotificationEvents-acadmit"> </a></td><td>Acute Admit</td><td>Acute Care Admission</td></tr><tr><td style="white-space:nowrap">ambadmit<a name="CEQNotificationEvents-ambadmit"> </a></td><td>Ambulatory Admit</td><td>Ambulatory Care Admission</td></tr><tr><td style="white-space:nowrap">snradmit<a name="CEQNotificationEvents-snradmit"> </a></td><td>Skilled/Rehab Admit</td><td>SKilled Nursing or Rehabilitation Center Admission</td></tr><tr><td style="white-space:nowrap">discharge<a name="CEQNotificationEvents-discharge"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style="white-space:nowrap">transfer<a name="CEQNotificationEvents-transfer"> </a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style="white-space:nowrap">arrival<a name="CEQNotificationEvents-arrival"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style="white-space:nowrap">caregap<a name="CEQNotificationEvents-caregap"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style="white-space:nowrap">refer<a name="CEQNotificationEvents-refer"> </a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td style="white-space:nowrap">delete<a name="CEQNotificationEvents-delete"> </a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>
   </text>
   <url value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
   <version value="0.1.0"/>
   <name value="CEQNotificationEvents"/>
   <title value="Carequality Push Notification Events"/>
   <status value="active"/>
-  <date value="2020-06-22T13:03:30-04:00"/>
+  <date value="2020-06-22T13:56:29-04:00"/>
   <contact>
     <name value="David Pyke"/>
     <telecom>
@@ -20,11 +20,31 @@
   </contact>
   <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
   <content value="complete"/>
-  <count value="7"/>
+  <count value="11"/>
   <concept>
     <code value="admit"/>
     <display value="Admit"/>
     <definition value="Admission event"/>
+  </concept>
+  <concept>
+    <code value="edadmit"/>
+    <display value="ED Admit"/>
+    <definition value="Emergency Department Admission"/>
+  </concept>
+  <concept>
+    <code value="acadmit"/>
+    <display value="Acute Admit"/>
+    <definition value="Acute Care Admission"/>
+  </concept>
+  <concept>
+    <code value="ambadmit"/>
+    <display value="Ambulatory Admit"/>
+    <definition value="Ambulatory Care Admission"/>
+  </concept>
+  <concept>
+    <code value="snradmit"/>
+    <display value="Skilled/Rehab Admit"/>
+    <definition value="SKilled Nursing or Rehabilitation Center Admission"/>
   </concept>
   <concept>
     <code value="discharge"/>

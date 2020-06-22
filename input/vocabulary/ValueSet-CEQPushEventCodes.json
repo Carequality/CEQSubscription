@@ -16,6 +16,18 @@
             "code": "admit"
           },
           {
+            "code": "edadmit"
+          },
+          {
+            "code": "ambadmit"
+          },
+          {
+            "code": "snradmit"
+          },
+          {
+            "code": "acadmit"
+          },
+          {
             "code": "discharge"
           },
           {

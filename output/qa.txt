@@ -3,9 +3,9 @@
 
 err = 0, warn = 1, info = 0
 IG Publisher Version: v1.0.100-SNAPSHOT
-Generated Mon Jun 22 13:03:38 EDT 2020. FHIR version 4.0.1 for CEQSubcriptionNotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+Generated Mon Jun 22 13:56:38 EDT 2020. FHIR version 4.0.1 for CEQSubcriptionNotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
- Build Errors : 0 / 0
+ Build Errors : 62 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-CEQSubcriptionNotifications : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/examples/OperationDefinition-ceqsubscribe : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/examples/Practitioner-DrDavidAnydoc : 0 / 0
@@ -19,6 +19,68 @@ Generated Mon Jun 22 13:03:38 EDT 2020. FHIR version 4.0.1 for CEQSubcriptionNot
  /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse : 0 / 0
 </table>
 == n/a ==
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Actors_and_Transactions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Background.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-CEQNotificationEvents.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-CEQNotificationEvents.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-CEQNotificationEvents.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-CEQNotificationEvents.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-NHINPurposeOfUse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-NHINPurposeOfUse.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-NHINPurposeOfUse.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/CodeSystem-NHINPurposeOfUse.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Definition_of_Roles.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/OperationDefinition-ceqsubscribe.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/OperationDefinition-ceqsubscribe.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/OperationDefinition-ceqsubscribe.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/OperationDefinition-ceqsubscribe.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Practitioner-DrDavidAnydoc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Practitioner-DrDavidAnydoc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Practitioner-DrDavidAnydoc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Practitioner-DrDavidAnydoc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Scenarios.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Service_Level_Requirements.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQSubscriptionBundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQsubscription.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Subscription-CEQExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Subscription-CEQExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Subscription-CEQExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/Subscription-CEQExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQPushEventCodes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQPushEventCodes.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQPushEventCodes.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQPushEventCodes.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQSubscriberPurposeofUse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQSubscriberPurposeofUse.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQSubscriberPurposeofUse.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ValueSet-CEQSubscriberPurposeofUse.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 86, column 10: The link 'Notifications.html' for "Notifications" cannot be resolved
 == /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-CEQSubcriptionNotifications.json ==
 == /home/loftwyr/FHIR/CEQSubscription/input/examples/OperationDefinition-ceqsubscribe.json ==
 == /home/loftwyr/FHIR/CEQSubscription/input/examples/Practitioner-DrDavidAnydoc.json ==

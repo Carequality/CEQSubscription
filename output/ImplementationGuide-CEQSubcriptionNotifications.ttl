@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CarequalitySubscriptionImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Carequality Subscription Implementation Guide for Push Notifications"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-22T13:03:30-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-22T13:56:29-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -503,11 +503,6 @@
          fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Actors_and_Transactions.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Actors and Transactions" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 6;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Notifications.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Notifications" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

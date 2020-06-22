@@ -10,7 +10,7 @@
   "name": "CarequalitySubscriptionImplementationGuide",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
   "status": "active",
-  "date": "2020-06-22T13:03:30-04:00",
+  "date": "2020-06-22T13:56:29-04:00",
   "contact": [
     {
       "name": "David Pyke",
@@ -514,11 +514,6 @@
         {
           "nameUrl": "Actors_and_Transactions.html",
           "title": "Actors and Transactions",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "Notifications.html",
-          "title": "Notifications",
           "generation": "markdown"
         }
       ]

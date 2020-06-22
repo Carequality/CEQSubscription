@@ -25,6 +25,10 @@ Title: "Carequality Push Notification Events"
 Description: "The codes to define each of the permitted events for Carequality Network Subscriptions"
 
 * #admit "Admit" "Admission event"
+* #edadmit "ED Admit" "Emergency Department Admission"
+* #acadmit "Acute Admit" "Acute Care Admission"
+* #ambadmit "Ambulatory Admit" "Ambulatory Care Admission"
+* #snradmit "Skilled/Rehab Admit" "SKilled Nursing or Rehabilitation Center Admission"
 * #discharge "Discharge" "Discharge event"
 * #transfer "Transfer" "Transfer of a Patient"
 * #arrival "Arrival" "Arrival at a port of call or other location where people arrive"
@@ -37,6 +41,10 @@ Title: "Carequality Push Notification Events"
 Description: "The codes to define each of the permitted events for Carequality Network Subscriptions"
 
 * CEQNotificationEvents#admit
+* CEQNotificationEvents#edadmit
+* CEQNotificationEvents#ambadmit
+* CEQNotificationEvents#snradmit
+* CEQNotificationEvents#acadmit
 * CEQNotificationEvents#discharge
 * CEQNotificationEvents#transfer
 * CEQNotificationEvents#arrival

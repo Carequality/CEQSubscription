@@ -15,10 +15,10 @@ When a patient has been checked into the EHR system.  Codes vary by venue type.
 |ED | Patient is triaged| edadmit |
 |Acute | An admission order has been issued and bed is assigned | acadmit|
 |Ambulatory | Admitted to an ambulatory encounter |ambadmit|
-|Skilled Nursing/Rehab | Bed is assigned and patient has arrived| snradmit|
+|Skilled Nursing/<br> Rehab | Bed is assigned and patient has arrived| snradmit|
 
 #### Discharge
-Push Notification Implementers should use the same criteria for the Discharge Trigger that they use for meaningful use reporting.  (i.e., patient's status is changed to "discharged"). Notes, such as Against Medical Advice, are included in or attached to the resulting Encounter Resource
+Push Notification Implementers should use the same criteria for the Discharge trigger that they use for meaningful use reporting.  (i.e., patient's status is changed to "discharged"). Notes, such as Against Medical Advice, are included in or attached to the resulting Encounter Resource
 
 #### Referrals
 Only applies to Secondary Referrals.  Internal consults are not included.

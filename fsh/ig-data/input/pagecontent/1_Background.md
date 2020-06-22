@@ -11,7 +11,7 @@ When a patient has been checked into the EHR system.  Codes vary by venue type.
 
 |Venue | Definition | Code |
 |--------------|---------------|---|
-|General | Patient has been checked in to the EHR, includes all subsidiary admit events | admit |
+|General | Patient has been checked in to the EHR, <br> includes all subsidiary admit events | admit |
 |ED | Patient is triaged| edadmit |
 |Acute | An admission order has been issued and bed is assigned | acadmit|
 |Ambulatory | Admitted to an ambulatory encounter |ambadmit|

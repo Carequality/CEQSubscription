@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CarequalitySubscriptionImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Carequality Subscription Implementation Guide for Push Notifications"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-17T13:02:39-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-22T13:03:30-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -481,28 +481,33 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "1_Background.html" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Background.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Background" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Notifications.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Notifications" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Scenarios.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Scenarios" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Service_Level_Requirements.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Service Level Requirements" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
          fhir:index 4;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "4_Background.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Background" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Definition_of_Roles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Definition of Roles" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Actors_and_Transactions.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Actors and Transactions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Notifications.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Notifications" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

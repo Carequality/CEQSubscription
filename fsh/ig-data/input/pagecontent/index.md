@@ -1,25 +1,25 @@
-# Introduction
-## Goals
+### Introduction
+#### Goals
 * Remove the need to poll for solicited:
- * High-frequency events.
- * High-urgency events.
+  *  High-frequency events.
+  *  High-urgency events.
 * Allow clients to discover missed events.
 * Ensure a “low bar” for server and client implementation.
 * Consider security, confidentiality, and scale during design.
-
-NOT focused on unsolicited notifications
+* **NOT focused on unsolicited notifications**
 * Project results may be useful as a building block or launching point
 
-## Topic
-* Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care' , etc.
+### Definitions
+#### Topic
+* Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care', etc.
 * Servers choose which Topics to support.
 
-## Subscription
+#### Subscription
 * Is a request for notifications based on a one or more Topics.  The end date is required and is a maximum of two years, without renewal.
 
-## Notification
+#### Notification
 * Is a simple http 'knock' using POST and the FullURL of the Encounter resource created
 
-## Security Notes
+#### Security Notes
 * It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization
 * Servers should perform authorization checks prior to creating a Subscription to ensure it is valid.

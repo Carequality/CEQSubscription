@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CEQSUBCRIPTIONNOTIFICATIONS\Background - FHIR v4.0.1</title>
+    <title>CEQSUBCRIPTIONNOTIFICATIONS\Definition of Roles - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -102,7 +102,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Background</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Definition of Roles</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -120,52 +120,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Carequality Subscription Implementation Guide for Push Notifications - Local Development build (v0.1.0). See the <a href="https://sequoiaproject.org/fhir/sphd-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Background</h2>
+  <h2>Definition of Roles</h2>
   
   
   
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#background" id="markdown-toc-background">Background</a>    <ul>
-      <li><a href="#triggering-events-for-each-notification-type" id="markdown-toc-triggering-events-for-each-notification-type">Triggering Events for Each Notification Type</a>        <ul>
-          <li><a href="#discharge" id="markdown-toc-discharge">Discharge</a></li>
-          <li><a href="#admission" id="markdown-toc-admission">Admission</a></li>
-          <li><a href="#transfer" id="markdown-toc-transfer">Transfer</a></li>
-          <li><a href="#gaps-in-care" id="markdown-toc-gaps-in-care">Gaps in Care</a></li>
-          <li><a href="#referrals" id="markdown-toc-referrals">Referrals</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <li><a href="#notification-generator" id="markdown-toc-notification-generator">Notification Generator</a></li>
+  <li><a href="#notification-recipient" id="markdown-toc-notification-recipient">Notification Recipient</a></li>
+  <li><a href="#subscription-service" id="markdown-toc-subscription-service">Subscription Service</a></li>
+  <li><a href="#multiple-roles" id="markdown-toc-multiple-roles">Multiple Roles</a></li>
 </ul>
 
 </div>
-<!-- 4_Background.md  -->
-<h1 id="background">Background</h1>
+<!-- Definition_of_Roles.md  -->
+
+<p>The concept of a role within the use case is central to this Implementation Guide and to defining the rights, obligations, and responsibilities of Carequality Implementers. Implementers play a declared role or roles, and Implementers must indicate to Carequality, during the application process for each use case, which role or roles the Implementer will fill, and which role or roles each of its  fill.
+By default, any requirement specified in Sections 3 through 6 of this Guide applies to any Implementer regardless of role. Requirements that apply only to those Implementers with a particular role or roles will clearly indicate the role or roles to which they apply.</p>
+<h3 id="notification-generator">Notification Generator</h3>
+<p>An Implementer with the declared role of a Notification Generator is any organization, vendor, or other entity that initiates a push notification in response to a triggering event within the generator’s system to a Notification Recipient.
+An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section —– of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.</p>
+<h3 id="notification-recipient">Notification Recipient</h3>
+<p>An Implementer with the declared role of a Receiving System is any system that manages subscriptions and receives notifications.</p>
+<h3 id="subscription-service">Subscription Service</h3>
+<h4 id="definition">Definition</h4>
+<p>An Implementer or CC with the declared role of an Subscription Service provides subscription data management, and forwards patient specific subscriptions, subscription requests, and push notifications sent to them by Implementers or CCs in the Notification Generator, Notification Receiver, and Subscription Service roles. In addition, Subscription Services provide a list of Implementers and/or CCs in the Notification Generator or Receiver role who potentially have, likely have, or are
+known to have a clinical relationship with the patient who is the subject of a subscription.</p>
 <ul>
-  <li>Based on the Use Case Proposal, Notification Types define:</li>
-  <li>What information is sent</li>
-  <li>Policies around who is able to subscribe and when</li>
-  <li>What triggers are used</li>
-  <li>Technical Specifications
-Asserting that you support a Notification Type means that agree to abide by that Notification Type’s specific policies and requirements</li>
+  <li>An Implementer in the Subscription Service (Subserv) role may have CCs in other roles, even if the Implementer itself only plays the Subscription Service role.</li>
+  <li>An Implementer or CC with the declared role of a Subscription Service shall support the technical actor(s) specified in Section XXXX of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Subscription Service role.</li>
+  <li>The Subscription Service must have a Business Associate relationship with organizations for whom they are managing subscriptions.</li>
 </ul>
 
-<h2 id="triggering-events-for-each-notification-type">Triggering Events for Each Notification Type</h2>
-<h3 id="discharge">Discharge</h3>
-<p>Push Notification Implementers should use the same criteria for the Discharge Trigger that they use for meaningful use reporting.</p>
-
-<h3 id="admission">Admission</h3>
-<p>The point at which a person begins an episode of care.</p>
-
-<h3 id="transfer">Transfer</h3>
-<p>Push Notification Implementers should use the same criteria for the Transfer Trigger that they use for meaningful use reporting.</p>
-
-<h3 id="gaps-in-care">Gaps in Care</h3>
-<p>Parameters: Set by the Implementers</p>
-
-<h3 id="referrals">Referrals</h3>
-<p>??</p>
+<h4 id="limitations-to-subscription-services">Limitations to Subscription Services</h4>
+<p>A Subscription Service may not impose any additional terms beyond the
+Carequality Elements, including fees, on Notification Recipients or Notification Generators on any organization that is using the Subscription Service endpoint only to send, pass on, or receive notifications or subscriptions, but are not otherwise contractually bound to that Subscription Service.</p>
+<ul>
+  <li>Subscription Services may impose additional terms on their client organizations as they see fit. A Subscription Service must pass along subscriptions and notifications carrying a Carequality Certificate ONLY if those subscriptions come from an Implementer or CC that is validated as such according to the Carequality Technical Trust Policy.</li>
+  <li>For Example, a Subscription Service may pass a subscription request from Notification Receiver A to Notification Generator B, even if Notification Receiver A is not a Carequality participant, however, they MAY NOT use a Carequality Certificate for that transaction.</li>
+  <li>Subscription Services may communicate subscriptions and notifications for and to entities outside of the Carequality community, however Generators may choose not to honor those subscriptions.
+    <h3 id="multiple-roles">Multiple Roles</h3>
+    <p>Carequality does not restrict any Implementer from acting in multiple roles within this Use Case.</p>
+  </li>
+</ul>
 
 
 </div>
@@ -179,7 +176,7 @@ Asserting that you support a Notification Type means that agree to abide by that
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2020 13:02-0400">2020-06-17</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 22, 2020 13:03-0400">2020-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

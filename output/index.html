@@ -126,51 +126,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
-      <li><a href="#goals" id="markdown-toc-goals">Goals</a></li>
-      <li><a href="#topic" id="markdown-toc-topic">Topic</a></li>
-      <li><a href="#subscription" id="markdown-toc-subscription">Subscription</a></li>
-      <li><a href="#notification" id="markdown-toc-notification">Notification</a></li>
-      <li><a href="#security-notes" id="markdown-toc-security-notes">Security Notes</a></li>
-    </ul>
-  </li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#definitions" id="markdown-toc-definitions">Definitions</a></li>
 </ul>
 
 </div>
 <!-- index.md  -->
-<h1 id="introduction">Introduction</h1>
-<h2 id="goals">Goals</h2>
+<h3 id="introduction">Introduction</h3>
+<h4 id="goals">Goals</h4>
 <ul>
-  <li>Remove the need to poll for solicited:</li>
-  <li>High-frequency events.</li>
-  <li>High-urgency events.</li>
+  <li>Remove the need to poll for solicited:
+    <ul>
+      <li>High-frequency events.</li>
+      <li>High-urgency events.</li>
+    </ul>
+  </li>
   <li>Allow clients to discover missed events.</li>
   <li>Ensure a “low bar” for server and client implementation.</li>
   <li>Consider security, confidentiality, and scale during design.</li>
-</ul>
-
-<p>NOT focused on unsolicited notifications</p>
-<ul>
+  <li><strong>NOT focused on unsolicited notifications</strong></li>
   <li>Project results may be useful as a building block or launching point</li>
 </ul>
 
-<h2 id="topic">Topic</h2>
+<h3 id="definitions">Definitions</h3>
+<h4 id="topic">Topic</h4>
 <ul>
-  <li>Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care’ , etc.</li>
+  <li>Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care’, etc.</li>
   <li>Servers choose which Topics to support.</li>
 </ul>
 
-<h2 id="subscription">Subscription</h2>
+<h4 id="subscription">Subscription</h4>
 <ul>
   <li>Is a request for notifications based on a one or more Topics.  The end date is required and is a maximum of two years, without renewal.</li>
 </ul>
 
-<h2 id="notification">Notification</h2>
+<h4 id="notification">Notification</h4>
 <ul>
   <li>Is a simple http ‘knock’ using POST and the FullURL of the Encounter resource created</li>
 </ul>
 
-<h2 id="security-notes">Security Notes</h2>
+<h4 id="security-notes">Security Notes</h4>
 <ul>
   <li>It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization</li>
   <li>Servers should perform authorization checks prior to creating a Subscription to ensure it is valid.</li>
@@ -188,7 +183,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2020 13:02-0400">2020-06-17</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 22, 2020 13:03-0400">2020-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

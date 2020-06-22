@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "564f410f-bbd3-41d6-80c6-25206cb9da91",
+  "id" : "7a7f5881-f066-4fd4-beab-56fc42f61044",
   "meta" : {
-    "lastUpdated" : "2020-06-17T13:02:39.858-04:00"
+    "lastUpdated" : "2020-06-22T13:03:30.580-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "CEQPushEventCodes",
       "title" : "Carequality Push Notification Events",
       "status" : "active",
-      "date" : "2020-06-17T13:02:39-04:00",
+      "date" : "2020-06-22T13:03:30-04:00",
       "contact" : [{
         "name" : "David Pyke",
         "telecom" : [{
@@ -29,8 +29,8 @@
       }],
       "description" : "The codes to define each of the permitted events for Carequality Network Subscriptions",
       "expansion" : {
-        "identifier" : "urn:uuid:994778d5-e2af-496b-b28d-038b3cb94d84",
-        "timestamp" : "2020-06-17T13:02:47-04:00",
+        "identifier" : "urn:uuid:5fe13053-b121-401f-9329-0efffc986757",
+        "timestamp" : "2020-06-22T13:03:34-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -92,7 +92,7 @@
       "name" : "CEQSubscriberPurposeofUse",
       "title" : "Permitted Purposes Of Use",
       "status" : "active",
-      "date" : "2020-06-17T13:02:39-04:00",
+      "date" : "2020-06-22T13:03:30-04:00",
       "contact" : [{
         "name" : "David Pyke",
         "telecom" : [{
@@ -102,8 +102,8 @@
       }],
       "description" : "These are the permitted Purpose of Use within the Carequality network",
       "expansion" : {
-        "identifier" : "urn:uuid:f8d61a8e-e7ca-403e-bded-c267b1ab0ef1",
-        "timestamp" : "2020-06-17T13:02:47-04:00",
+        "identifier" : "urn:uuid:f6ba3d5e-e19a-4d37-b3c2-bd4bd74f5e4d",
+        "timestamp" : "2020-06-22T13:03:34-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",

@@ -126,23 +126,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#background" id="markdown-toc-background">Background</a>    <ul>
-      <li><a href="#triggering-events-for-each-notification-type" id="markdown-toc-triggering-events-for-each-notification-type">Triggering Events for Each Notification Type</a>        <ul>
-          <li><a href="#discharge" id="markdown-toc-discharge">Discharge</a></li>
-          <li><a href="#admission" id="markdown-toc-admission">Admission</a></li>
-          <li><a href="#discharge-1" id="markdown-toc-discharge-1">Discharge</a></li>
-          <li><a href="#transfer" id="markdown-toc-transfer">Transfer</a></li>
-          <li><a href="#gaps-in-care" id="markdown-toc-gaps-in-care">Gaps in Care</a></li>
-          <li><a href="#referrals" id="markdown-toc-referrals">Referrals</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <li><a href="#triggering-events-for-each-notification-type" id="markdown-toc-triggering-events-for-each-notification-type">Triggering Events for Each Notification Type</a></li>
 </ul>
 
 </div>
-<!-- 1_Background.md  -->
-<h1 id="background">Background</h1>
+<!-- Background.md  -->
 <ul>
   <li>Based on the Use Case Proposal, Notification Types define:
     <ul>
@@ -155,29 +143,24 @@ Asserting that you support a Notification Type means that agree to abide by that
   </li>
 </ul>
 
-<h2 id="triggering-events-for-each-notification-type">Triggering Events for Each Notification Type</h2>
-<h3 id="discharge">Discharge</h3>
+<h3 id="triggering-events-for-each-notification-type">Triggering Events for Each Notification Type</h3>
+<h4 id="discharge">Discharge</h4>
 <p>Push Notification Implementers should use the same criteria for the Discharge Trigger that they use for meaningful use reporting.</p>
 
-<h3 id="admission">Admission</h3>
-<p>When a patient has been checked into the EHR system.
-URI for the admission notification ceq:fhir:notification:admit</p>
+<h4 id="admission">Admission</h4>
+<p>When a patient has been checked into the EHR system.  Codes vary by location</p>
 
-<h3 id="discharge-1">Discharge</h3>
-<p>When a patient has left the facility
-URI for the discharge notification ceq:fhir:notification:discharge</p>
+<h4 id="discharge-1">Discharge</h4>
+<p>When a patient has left the facility.  Notes, such as Against Medical Advice, are included in the resulting Encounter Resource</p>
 
-<h3 id="transfer">Transfer</h3>
-<p>Push Notification Implementers should use the same criteria for the Transfer Trigger that they use for meaningful use reporting.
-URI for the transfer notification ceq:fhir:notification:transfer</p>
+<h4 id="referrals">Referrals</h4>
+<p>Only applies to Secondary Referrals.  Internal consults are not included.</p>
 
-<h3 id="gaps-in-care">Gaps in Care</h3>
-<p>Parameters: Set by the Implementers
-URI for the caregap notification ceq:fhir:notification:caregap</p>
+<h4 id="transfer">Transfer</h4>
+<p>Push Notification Implementers should use the same criteria for the Transfer Trigger that they use for meaningful use reporting.</p>
 
-<h3 id="referrals">Referrals</h3>
-<p>??
-URI for the referral notification ceq:fhir:notification:referral</p>
+<h4 id="gaps-in-care">Gaps in Care</h4>
+<p>Parameters: Set by the Implementers</p>
 
 
 </div>
@@ -191,7 +174,7 @@ URI for the referral notification ceq:fhir:notification:referral</p>
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2020 13:02-0400">2020-06-17</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 22, 2020 13:03-0400">2020-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -124,13 +124,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "1_Background.html",
+          "nameUrl": "Background.html",
           "title": "Background",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "Notifications.html",
-          "title": "Notifications",
           "generation": "markdown"
         },
         {
@@ -139,13 +134,23 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "4_Background.html",
-          "title": "Background",
+          "nameUrl": "Service_Level_Requirements.html",
+          "title": "Service Level Requirements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Definition_of_Roles.html",
+          "title": "Definition of Roles",
           "generation": "markdown"
         },
         {
           "nameUrl": "Actors_and_Transactions.html",
           "title": "Actors and Transactions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Notifications.html",
+          "title": "Notifications",
           "generation": "markdown"
         }
       ]

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CarequalitySubscriptionImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Carequality Subscription Implementation Guide for Push Notifications"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-22T14:00:03-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-23T10:44:02-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -468,6 +468,24 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CEQsubscription" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-ceqsubscribe-capabilitystatement.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://sequoiaproject.org/fhir/sphd-r4/CapabilityStatement/ceqsubscribe-capabilitystatement>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/ceqsubscribe-capabilitystatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CEQSubscription-Recipient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Capability Statement to describe the requirements for a Notification Recipient Actor" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

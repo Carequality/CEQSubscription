@@ -67,8 +67,10 @@ Mixins: FHIRPushStructureDefinitionContent
 	subsciptionentry 1..1 and
 	subscriberentry 1..1
 
+* entry[subsciptionentry].resource 1..1
 * entry[subsciptionentry].resource only CEQsubscription
 * entry[subsciptionentry].request.method = #POST
 
+* entry[subscriberentry].resource 1..1
 * entry[subscriberentry].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or http://hl7.org/fhir/StructureDefinition/RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 * entry[subscriberentry].request.method = #POST

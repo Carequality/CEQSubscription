@@ -111,6 +111,13 @@
         },
         "name": "CEQsubscription",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/ceqsubscribe-capabilitystatement"
+        },
+        "name": "CEQSubscription-Recipient",
+        "exampleBoolean": true
       }
     ],
     "page": {

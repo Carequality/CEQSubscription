@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "CEQSubscriberPurposeofUse"];
   fhir:ValueSet.title [ fhir:value "Permitted Purposes Of Use"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-06-22T14:00:03-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-06-23T10:44:02-04:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];

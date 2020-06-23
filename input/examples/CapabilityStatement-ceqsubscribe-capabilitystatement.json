@@ -1,0 +1,43 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "ceqsubscribe-capabilitystatement",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-05-07",
+  "publisher": "Carequality",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json",
+    "xml"
+  ],
+  "implementationGuide": [
+    "https://build.fhir.org/ig/DavidPyke/CEQSubscription/index.html"
+  ],
+  "name": "CEQsubscribeCapabilityStatement",
+  "title": "Carequality Subscription Submission Capability Statement",
+  "description": "Capability Statement to describe the requirements for a Notification Recipient Actor",
+  "rest": [
+    {
+      "mode": "client",
+      "security": {
+        "service": [
+          {
+            "coding": [
+              {
+                "code": "CEQFHIR"
+              }
+            ]
+          }
+        ],
+        "description": "Requires adherence to the Carequality FHIR Implementation Guide"
+      },
+      "resource": [
+        {
+          "profile": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
+          "type": "Bundle"
+        }
+      ]
+    }
+  ]
+}

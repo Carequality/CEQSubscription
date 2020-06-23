@@ -336,6 +336,13 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Bundle/f:entry</sch:title>
+    <sch:rule context="f:Bundle/f:entry">
+      <sch:assert test="count(f:resource) &gt;= 1">resource: minimum cardinality of 'resource' is 1</sch:assert>
+      <sch:assert test="count(f:resource) &gt;= 1">resource: minimum cardinality of 'resource' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Bundle.entry.resource</sch:title>
     <sch:rule context="f:Bundle/f:entry/f:resource">
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>

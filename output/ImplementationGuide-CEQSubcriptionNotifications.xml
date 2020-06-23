@@ -11,7 +11,7 @@
   <name value="CarequalitySubscriptionImplementationGuide"/>
   <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
   <status value="active"/>
-  <date value="2020-06-22T14:00:03-04:00"/>
+  <date value="2020-06-23T10:44:02-04:00"/>
   <contact>
     <name value="David Pyke"/>
     <telecom>
@@ -327,6 +327,20 @@
       </reference>
       <name value="CEQsubscription"/>
       <description value="Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-ceqsubscribe-capabilitystatement.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ceqsubscribe-capabilitystatement"/>
+      </reference>
+      <name value="CEQSubscription-Recipient"/>
+      <description value="Capability Statement to describe the requirements for a Notification Recipient Actor"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

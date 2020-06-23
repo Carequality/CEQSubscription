@@ -97,6 +97,7 @@
       {
         "id": "Bundle.entry:subsciptionentry.resource",
         "path": "Bundle.entry.resource",
+        "min": 1,
         "type": [
           {
             "code": "Subscription",
@@ -121,6 +122,7 @@
       {
         "id": "Bundle.entry:subscriberentry.resource",
         "path": "Bundle.entry.resource",
+        "min": 1,
         "type": [
           {
             "code": "Patient",

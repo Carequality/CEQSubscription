@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Carequality Subscription Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-22T14:00:03-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-23T10:44:02-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Carequality"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

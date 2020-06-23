@@ -146,6 +146,13 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
                </td>
                <td>Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons</td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-ceqsubscribe-capabilitystatement.html"
+                     title="CapabilityStatement/ceqsubscribe-capabilitystatement">CEQSubscription-Recipient</a>
+               </td>
+               <td>Capability Statement to describe the requirements for a Notification Recipient Actor</td>
+            </tr>
          </tbody>
       </table>
    </p>

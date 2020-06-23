@@ -19,8 +19,8 @@ The Push Notifications defines 4 Actors
 ### Transactions
 These Actors have 3 possible transactions
 1. RegisterSubscription -- Push a subscription (bundle) to the receiver
-1a. UpdateSubscription -- Push a subscription bundle with changed events to the receiver
-1b. TerminateSubscription -- Push a subscription bundle with a "delete" event to the receiver
+1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver
+1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver
 2. NotifyEvent -- Push a notification "knock"
 3. RetrieveEncounter -- Retrieve Resource include in knock -- outside of scope for the Subscription IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
 
@@ -28,31 +28,31 @@ The Actors work with the Transactions as follows:
 
 |Actor|Transactions|Optionality|
 |-------------|-------------------------------|:-----:|
-|SubscriberSMS |RegisterSubscription<br>RetrieveEncounter |R<BR>O<sup>1|
-|Subscriber |RegisterSubscription<br>RetrieveEncounter |R<BR>O<sup>1|
-|DataSource |NotifyEvent |R|
-|DataSMS |NotifyEvent |R|
+|RecipientSMS |RegisterSubscription<br>RetrieveEncounter |R<BR>O<sup>1|
+|Notification Recipient |RegisterSubscription<br>RetrieveEncounter |R<BR>O<sup>1|
+|Notification Generator |NotifyEvent |R|
+|GeneratorSMS |NotifyEvent |R|
 
-<sup>1</sup> The Subscriber and SubscriberSMS may or may not fetch the notification listed Resource depending on business requirements
+<sup>1</sup> The Notification Recipient and RecipientSMS may or may not fetch the notification listed Resource depending on business requirements
 
 #### RegisterSubscription
-The Subscriber or SubscriberSMS creates the Subscription resource.  The Subscription is Bundled with the Resource that defines the Subscriber (Practitioner, Organization, Patient or RelatedPerson)
+The Notification Recipient or RecipientSMS creates the Subscription resource.  The Subscription is Bundled with the Resource that defines the Notification Recipient (Practitioner, Organization, Patient or RelatedPerson)
 
 
 #### NotifyEvent
-The DataSource creates the Event and either requests the DataSMS to notify the receiver or sends the notification to the receiver directly, depending on business requirements.
+The Notification Generator creates the Event and either requests the GeneratorSMS to notify the receiver or sends the notification to the receiver directly, depending on business requirements.
 
 A notification consists of a POST to the endpoint listed in the Subscription consisting only of a full URL to the Resource.  This "knock on the door" can activate the RetrieveEncounter transaction.
 
-Notifications from event triggers are simplified to just an http 'knock'.  This follows the basic format of a POST to the subscriber's endpoint with the FullURL of the encounter that has the data for the associated event.  
+Notifications from event triggers are simplified to just an http 'knock'.  This follows the basic format of a POST to the Notification Recipient's endpoint with the FullURL of the encounter that has the data for the associated event.  
 
 ``` POST https://www.myserver.org/fhir/Encounter/ba90f9ab-fc56-4012-be4c-77cb9cf4cb84 ```
 
-This is sent to the endpoint specified in the Subscription resource that was POSTed to the DataSource e.g.,
+This is sent to the endpoint specified in the Subscription resource that was POSTed to the Notification Generator e.g.,
 
 ```http://www.example.org/fhir/subscription/sub123```
 
 
 #### RetrieveEncounter
 
-Once notified via the NotifyEvent transaction the Subscriber/SubscriberSMS can retrieve the Resource and internalize it as dictated by business processes.
+Once notified via the NotifyEvent transaction the Notification Recipient/RecipientSMS can retrieve the Resource and internalize it as dictated by business processes.

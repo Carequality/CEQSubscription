@@ -10,7 +10,7 @@
   "name": "CarequalitySubscriptionImplementationGuide",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
   "status": "active",
-  "date": "2020-06-22T14:00:03-04:00",
+  "date": "2020-06-23T10:44:02-04:00",
   "contact": [
     {
       "name": "David Pyke",
@@ -478,6 +478,24 @@
         },
         "name": "CEQsubscription",
         "description": "Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-ceqsubscribe-capabilitystatement.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/ceqsubscribe-capabilitystatement"
+        },
+        "name": "CEQSubscription-Recipient",
+        "description": "Capability Statement to describe the requirements for a Notification Recipient Actor",
         "exampleBoolean": true
       }
     ],

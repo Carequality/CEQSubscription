@@ -1,4 +1,4 @@
-The Carequality Push Notifcation IG defines specific Actors and Transactions to define
+The Carequality Push Notifcation IG defines specific Actors and Transactions
 ### Actors
 The Push Notifications defines 4 Actors
 1. Notification Recipient -- the actor who requests the subscription
@@ -12,14 +12,14 @@ These Actors have 3 possible transactions
 1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver
 1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver
 2. NotifyEvent -- Push a notification "knock"
-3. RetrieveEncounter -- Retrieve Resource include in knock -- outside of scope for the Subscription IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
+3. RetrieveResource -- Retrieve Resource included in the knock  -- outside of scope for the Subscription IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
 
 The Actors work with the Transactions as follows:
 
 |Actor|Transactions|Optionality|
 |-------------|-------------------------------|:-----:|
-|RecipientSMS |RegisterSubscription<br>RetrieveEncounter |R<BR>O<sup>1|
-|Notification Recipient |RegisterSubscription<br>RetrieveEncounter |R<BR>O<sup>1|
+|RecipientSMS |RegisterSubscription<br>RetrieveResource |R<BR>O<sup>1|
+|Notification Recipient |RegisterSubscription<br>RetrieveResource |R<BR>O<sup>1|
 |Notification Generator |NotifyEvent |R|
 |GeneratorSMS |NotifyEvent |R|
 
@@ -32,9 +32,9 @@ The Notification Recipient or RecipientSMS creates the Subscription resource.  T
 #### NotifyEvent
 The Notification Generator creates the Event and either requests the GeneratorSMS to notify the receiver or sends the notification to the receiver directly, depending on business requirements.
 
-A notification consists of a POST to the endpoint listed in the Subscription consisting only of a full URL to the Resource.  This "knock on the door" can activate the RetrieveEncounter transaction.
+A notification consists of a POST to the endpoint listed in the Subscription consisting only of a full URL to the Resource.  This "knock on the door" can activate the RetrieveResource transaction.
 
-Notifications from event triggers are simplified to just an http 'knock'.  This follows the basic format of a POST to the Notification Recipient's endpoint with the FullURL of the encounter that has the data for the associated event.  
+Notifications from event triggers are simplified to just an http 'knock'.  This follows the basic format of a POST to the Notification Recipient's endpoint with the FullURL of the Resource that has the data for the associated event.  
 
 ``` POST https://www.myserver.org/fhir/Encounter/ba90f9ab-fc56-4012-be4c-77cb9cf4cb84 ```
 
@@ -43,6 +43,6 @@ This is sent to the endpoint specified in the Subscription resource that was POS
 ```http://www.example.org/fhir/subscription/sub123```
 
 
-#### RetrieveEncounter
+#### RetrieveResource
 
 Once notified via the NotifyEvent transaction the Notification Recipient/RecipientSMS can retrieve the Resource and internalize it as dictated by business processes.

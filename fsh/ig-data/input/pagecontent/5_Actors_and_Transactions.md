@@ -1,4 +1,5 @@
-The Carequality Push Notifcation IG defines specific Actors and Transactions
+The Carequality Push Notifcation IG defines specific Actors and Transactions.  All transactions require following the policies and requirements of the Carequality FHIR Implementation Guide, available at: [LINK]
+
 ### Actors
 The Push Notifications defines 4 Actors:
 1. Notification Recipient -- the actor who requests the subscription.
@@ -32,7 +33,7 @@ The Notification Recipient or RecipientSMS creates the Subscription resource.  T
 #### NotifyEvent
 The Notification Generator creates the Event and either requests the GeneratorSMS to notify the receiver or sends the notification to the receiver directly, depending on business requirements.
 
-A notification consists of a POST to the endpoint listed in the Subscription consisting only of a full URL to the Resource.  This "knock on the door" can activate the RetrieveResource transaction.
+A notification consists of a POST to the endpoint listed in the Subscription consisting only of a full URL to the Resource.  This "knock on the door" can activate the RetrieveResource transaction depending on the policy and procedures of the receiving organization.
 
 Notifications from event triggers are simplified to just an http 'knock'.  This follows the basic format of a POST to the Notification Recipient's endpoint with the FullURL of the Resource that has the data for the associated event.  e.g.,
 

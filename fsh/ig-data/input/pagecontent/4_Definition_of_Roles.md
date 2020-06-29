@@ -6,6 +6,10 @@ An Implementer with the declared role of a Notification Generator is any organiz
 An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section ----- of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.
 ### Notification Recipient
 An Implementer with the declared role of a Receiving System is any system that manages subscriptions and receives notifications.
+<span style="display:block;text-align:center">
+![Usage Scenario 1, No Intermediary](Scenario1.png "Scenario 1, No Intermediary")
+</span>
+
 ### Subscription Service
 #### Definition
 An Implementer or CC with the declared role of an Subscription Service provides subscription data management, and forwards patient specific subscriptions, subscription requests, and push notifications sent to them by Implementers or CCs in the Notification Generator, Notification Receiver, and Subscription Service roles. In addition, Subscription Services provide a list of Implementers and/or CCs in the Notification Generator or Receiver role who potentially have, likely have, or are
@@ -13,6 +17,17 @@ known to have a clinical relationship with the patient who is the subject of a s
 * An Implementer in the Subscription Service (Subserv) role may have CCs in other roles, even if the Implementer itself only plays the Subscription Service role.
 * An Implementer or CC with the declared role of a Subscription Service shall support the technical actor(s) specified in Section XXXX of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Subscription Service role.
 * The Subscription Service must have a Business Associate relationship with organizations for whom they are managing subscriptions.
+<span style="display:block;text-align:center">
+![Scenario 2: Notification Receiver has Subscription Service](Scenario2.png "Scenario 2: Notification Receiver has Subscription Service")
+</span><span style="display:block;text-align:center">
+![Scenario 3: Notification Generator has Subscription Service](Scenario3.png "Scenario 3: Notification Generator has Subscription Service")
+</span><span style="display:block;text-align:center">
+![Scenario 4: Both Actors have Subscription Service](Scenario4.png "Scenario 4: Both Actors have Subscription Service")
+</span>
+
+
+
+
 
 #### Limitations to Subscription Services
 A Subscription Service may not impose any additional terms beyond the
@@ -20,5 +35,6 @@ Carequality Elements, including fees, on Notification Recipients or Notification
 * Subscription Services may impose additional terms on their client organizations as they see fit. A Subscription Service must pass along subscriptions and notifications carrying a Carequality Certificate ONLY if those subscriptions come from an Implementer or CC that is validated as such according to the Carequality Technical Trust Policy.
 * For Example, a Subscription Service may pass a subscription request from Notification Receiver A to Notification Generator B, even if Notification Receiver A is not a Carequality participant, however, they MAY NOT use a Carequality Certificate for that transaction.
 * Subscription Services may communicate subscriptions and notifications for and to entities outside of the Carequality community, however Generators may choose not to honor those subscriptions.
+
 ### Multiple Roles
 Carequality does not restrict any Implementer from acting in multiple roles within this Use Case.

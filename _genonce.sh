@@ -10,7 +10,7 @@ publisher_jar=org.hl7.fhir.publisher.jar
 input_cache_path=./input-cache/
 set -e
 echo Checking internet connection...
-curl -sSf tx.fhir.org > /dev/null
+#curl -sSf tx.fhir.org > /dev/null
 
 if [ $? -eq 0 ]; then
 	echo "Online"

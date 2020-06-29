@@ -127,7 +127,11 @@ By default, any requirement specified in Sections 3 through 6 of this Guide appl
 <p>An Implementer with the declared role of a Notification Generator is any organization, vendor, or other entity that initiates a push notification in response to a triggering event within the generator’s system to a Notification Recipient.
 An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section —– of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.</p>
 <h3 id="notification-recipient">Notification Recipient</h3>
-<p>An Implementer with the declared role of a Receiving System is any system that manages subscriptions and receives notifications.</p>
+<p>An Implementer with the declared role of a Receiving System is any system that manages subscriptions and receives notifications.
+<span style="display:block;text-align:center">
+<img src="Scenario1.png" alt="Usage Scenario 1, No Intermediary" title="Scenario 1, No Intermediary" />
+</span></p>
+
 <h3 id="subscription-service">Subscription Service</h3>
 <h4 id="definition">Definition</h4>
 <p>An Implementer or CC with the declared role of an Subscription Service provides subscription data management, and forwards patient specific subscriptions, subscription requests, and push notifications sent to them by Implementers or CCs in the Notification Generator, Notification Receiver, and Subscription Service roles. In addition, Subscription Services provide a list of Implementers and/or CCs in the Notification Generator or Receiver role who potentially have, likely have, or are
@@ -135,7 +139,14 @@ known to have a clinical relationship with the patient who is the subject of a s
 <ul>
   <li>An Implementer in the Subscription Service (Subserv) role may have CCs in other roles, even if the Implementer itself only plays the Subscription Service role.</li>
   <li>An Implementer or CC with the declared role of a Subscription Service shall support the technical actor(s) specified in Section XXXX of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Subscription Service role.</li>
-  <li>The Subscription Service must have a Business Associate relationship with organizations for whom they are managing subscriptions.</li>
+  <li>The Subscription Service must have a Business Associate relationship with organizations for whom they are managing subscriptions.
+<span style="display:block;text-align:center">
+<img src="Scenario2.png" alt="Scenario 2: Notification Receiver has Subscription Service" title="Scenario 2: Notification Receiver has Subscription Service" />
+</span><span style="display:block;text-align:center">
+<img src="Scenario3.png" alt="Scenario 3: Notification Generator has Subscription Service" title="Scenario 3: Notification Generator has Subscription Service" />
+</span><span style="display:block;text-align:center">
+<img src="Scenario4.png" alt="Scenario 4: Both Actors have Subscription Service" title="Scenario 4: Both Actors have Subscription Service" />
+</span></li>
 </ul>
 
 <h4 id="limitations-to-subscription-services">Limitations to Subscription Services</h4>
@@ -162,7 +173,7 @@ Carequality Elements, including fees, on Notification Recipients or Notification
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 10:44-0400">2020-06-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 13:49-0400">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -16,6 +16,10 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/ignoreWarnings.txt                                   | generated |                                                               |
 | package-list.json                                          | generated | fsh/config.yaml                                               |
 | input/images/NotificationFlow.png                          | copied    | fsh/ig-data/input/images/NotificationFlow.png                 |
+| input/images/Scenario1.png                                 | copied    | fsh/ig-data/input/images/Scenario1.png                        |
+| input/images/Scenario2.png                                 | copied    | fsh/ig-data/input/images/Scenario2.png                        |
+| input/images/Scenario3.png                                 | copied    | fsh/ig-data/input/images/Scenario3.png                        |
+| input/images/Scenario4.png                                 | copied    | fsh/ig-data/input/images/Scenario4.png                        |
 | input/images/SubscriptionFlow.png                          | copied    | fsh/ig-data/input/images/SubscriptionFlow.png                 |
 | input/includes/menu.xml                                    | copied    | fsh/ig-data/input/includes/menu.xml                           |
 | input/pagecontent/Actors_and_Transactions.md               | copied    | fsh/ig-data/input/pagecontent/5_Actors_and_Transactions.md    |

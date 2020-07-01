@@ -45,5 +45,6 @@ Carequality Elements, including fees, on Notification Recipients or Notification
 * Subscription Services may impose additional terms on their client organizations as they see fit. A Subscription Service must pass along subscriptions and notifications carrying a Carequality Certificate ONLY if those subscriptions come from an Implementer or CC that is validated as such according to the Carequality Technical Trust Policy.
 * For Example, a Subscription Service may pass a subscription request from Notification Receiver A to Notification Generator B, even if Notification Receiver A is not a Carequality participant, however, they MAY NOT use a Carequality Certificate for that transaction.
 * Subscription Services may communicate subscriptions and notifications for and to entities outside of the Carequality community, however Generators may choose not to honor those subscriptions.
+
 ### Multiple Roles
 Carequality does not restrict any Implementer from acting in multiple roles within this Use Case.

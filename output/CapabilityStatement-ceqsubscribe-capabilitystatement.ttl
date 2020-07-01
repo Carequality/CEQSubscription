@@ -18,7 +18,7 @@
   fhir:CapabilityStatement.title [ fhir:value "Carequality Subscription Submission Capability Statement"];
   fhir:CapabilityStatement.status [ fhir:value "draft"];
   fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:CapabilityStatement.date [ fhir:value "2020-05-07T00:00:00-04:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.date [ fhir:value "2020-05-07"^^xsd:date];
   fhir:CapabilityStatement.publisher [ fhir:value "Carequality"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;

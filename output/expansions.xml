@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="953b0d68-d70e-4033-b76e-9d3f463bc65f"/>
+  <id value="fbcb108c-c1d2-4905-85c3-d53b8ce3ce84"/>
   <meta>
-    <lastUpdated value="2020-06-29T13:49:41.388-04:00"/>
+    <lastUpdated value="2020-07-01T09:12:06.597-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -131,7 +131,7 @@
         <name value="CEQPushEventCodes"/>
         <title value="Carequality Push Notification Events"/>
         <status value="active"/>
-        <date value="2020-06-29T13:49:41-04:00"/>
+        <date value="2020-07-01T09:12:06-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -141,8 +141,8 @@
         </contact>
         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
         <expansion>
-          <identifier value="urn:uuid:961ef0c9-c744-45a3-bfde-4076fd02c6c5"/>
-          <timestamp value="2020-06-29T13:49:45-04:00"/>
+          <identifier value="urn:uuid:ade63c26-0adb-4695-9afd-9676a3c2c9d4"/>
+          <timestamp value="2020-07-01T09:12:11-04:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -246,7 +246,7 @@
                   <a href="CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-TREATMENT">TREATMENT</a>
                 </td>
                 <td>Treatment</td>
-                <td>Per 45 CFR &#xA7; 164.501</td>
+                <td>Per 45 CFR § 164.501</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -254,7 +254,7 @@
                   <a href="CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-PAYMENT">PAYMENT</a>
                 </td>
                 <td>Payment</td>
-                <td>Per 45 CFR &#xA7; 164.501</td>
+                <td>Per 45 CFR § 164.501</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -262,7 +262,7 @@
                   <a href="CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-OPERATIONS">OPERATIONS</a>
                 </td>
                 <td>Health Care Operations</td>
-                <td>Per 45 CFR &#xA7; 164.501</td>
+                <td>Per 45 CFR § 164.501</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -270,7 +270,7 @@
                   <a href="CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-PUBLICHEALTH">PUBLICHEALTH</a>
                 </td>
                 <td>Public Health Activities</td>
-                <td>Per 45 CFR &#xA7; 164.512(b)</td>
+                <td>Per 45 CFR § 164.512(b)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -278,7 +278,7 @@
                   <a href="CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-REQUEST">REQUEST</a>
                 </td>
                 <td>Patient Request</td>
-                <td>Directly initiated by the patient or the patient&#x2019;s personal representative as defined by 45 CFR 164.502(g), via a personal health record or other consumer-facing application</td>
+                <td>Directly initiated by the patient or the patient’s personal representative as defined by 45 CFR 164.502(g), via a personal health record or other consumer-facing application</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -296,7 +296,7 @@
         <name value="CEQSubscriberPurposeofUse"/>
         <title value="Permitted Purposes Of Use"/>
         <status value="active"/>
-        <date value="2020-06-29T13:49:41-04:00"/>
+        <date value="2020-07-01T09:12:06-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -306,8 +306,8 @@
         </contact>
         <description value="These are the permitted Purpose of Use within the Carequality network"/>
         <expansion>
-          <identifier value="urn:uuid:7fefa824-8dcd-4400-bb4b-d815d905d1e2"/>
-          <timestamp value="2020-06-29T13:49:45-04:00"/>
+          <identifier value="urn:uuid:23209e2c-5208-4da9-a9fa-da29716450f2"/>
+          <timestamp value="2020-07-01T09:12:11-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>

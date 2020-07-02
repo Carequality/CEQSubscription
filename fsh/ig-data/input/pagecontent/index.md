@@ -1,4 +1,7 @@
 ### Introduction
+#### Vision
+Improve care management across settings/systems for patients via push notifications.
+
 #### Goals
 * Remove the need to poll for solicited:
   *  High-frequency events.
@@ -8,6 +11,8 @@
 * Consider security, confidentiality, and scale during design.
 * **NOT focused on unsolicited notifications**
 * Project results may be useful as a building block or launching point
+
+Subscriptions are system to system and the receiver of these subscriptions (Subscription Server or subscriber) must be able to route these messages to the appropriate end user (clinician(s), care team members) within their system. For auditing purposes, identification of a specific user is accomplished through FHIR authorizations as described in the FHIR Implementation Guide through SMART or oAuth.
 
 ### Definitions
 #### Topic

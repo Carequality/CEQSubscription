@@ -1,3 +1,7 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -41,7 +45,8 @@
     h3,h4,h5,h6{--heading-prefix:"7.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Carequality Subscription Implementation Guide for Push Notifications</span><br/>0.1.0 - CI Build</p>
@@ -97,45 +102,68 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
-
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Carequality Subscription Implementation Guide for Push Notifications - Local Development build (v0.1.0). See the <a href="https://sequoiaproject.org/fhir/sphd-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <ul class="nav nav-tabs">
-    <li class="active">
-      <a href="#">Content</a>
-    </li>
-    <li>
-      <a href="StructureDefinition-CEQSubscriptionBundle-definitions.html">Detailed Descriptions</a>
-    </li>
+  
 
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-CEQSubscriptionBundle-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
     <li>
       <a href="StructureDefinition-CEQSubscriptionBundle-mappings.html">Mappings</a>
     </li>
+  
 
-    <li>
-      <a href="StructureDefinition-CEQSubscriptionBundle-examples.html">Examples</a>
-    </li>
 
+
+
+
+  
     <li>
       <a href="StructureDefinition-CEQSubscriptionBundle.profile.xml.html">XML</a>
     </li>
+  
 
 
+  
     <li>
       <a href="StructureDefinition-CEQSubscriptionBundle.profile.json.html">JSON</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="StructureDefinition-CEQSubscriptionBundle.profile.ttl.html">Turtle</a>
+      <a href="StructureDefinition-CEQSubscriptionBundle.profile.ttl.html">TTL</a>
     </li>
+  
 
-  </ul>
+
+</ul>
+
+
   <a name="root"> </a>
-
   <h2 id="root">Resource Profile: CEQSubscriptionBundle</h2>
   <p><p>Bundle to be submitted for Carequality subscription enrollment</p>
 </p>
@@ -144,13 +172,16 @@
   </p>
   <pre>https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle</pre>
 
-  
-  
+<!-- insert intro if present -->
+
+
+
+
   <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
   <p>
-    <a href="http://hl7.org/fhir/R4/profiling.html#representation">Description of Profiles, Differentials, Snapshots and how the different presentations work</a>.
+    <a href="http://hl7.org/fhir/R4/profiling.html#presentation">Description of Profiles, Differentials, Snapshots and how the different presentations work</a>.
   </p>
   <div id="tabs">
     <ul>
@@ -162,6 +193,9 @@
       </li>
       <li>
         <a href="#tabs-snap">Snapshot Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snapms">Snapshot Table (Must Support)</a>
       </li>
 
 <!--      <li>
@@ -524,6 +558,15 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       </div>
     </div>-->
 
+    <a name="tabs-snapms"> </a>
+    <div id="tabs-snapms">
+      <div id="tbl-snap">
+        <div id="tbl-snap-inner">
+          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="CEQSubscriptionBundles"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" onload="fhirTableInit(this)"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-CEQSubscriptionBundle-definitions.html#Bundle" title="A container for a collection of resources.">Bundle</a><a name="Bundle"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element has or is affected by some invariants (bdl-1, bdl-2, bdl-3, bdl-4, bdl-7, bdl-9, bdl-10, bdl-11, bdl-12)">I</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+        </div>
+      </div>
+    </div>
     <a name="tabs-all"> </a>
     <div id="tabs-all">
       <div id="all-summ">
@@ -870,7 +913,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   <p>Other representations of profile: <a href="StructureDefinition-CEQSubscriptionBundle.sch">Schematron</a>
   </p>
   <a name="tx"> </a>
-  <h3 id="tx">Terminology Bindings</h3>
+  <!--Terminology Bindings heading in the fragment -->
   <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td></tr>
@@ -886,17 +929,18 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 
   <a name="inv"> </a>
-  <h3 id="inv">Constraints</h3>
+  <!--Constraints  heading in the fragment -->
   <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
 </table>
 
 
-  
-  
+<!-- insert notes if present -->
 
-  
+
+
+
 </div>
 
         </div>  <!-- /inner-wrapper -->
@@ -904,9 +948,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-
-  <script type="text/javascript" src="jquery.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
   <script type="text/javascript">
     try {
       var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
@@ -930,11 +974,18 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     });
   </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 1, 2020 09:12-0400">2020-07-01</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 6, 2020 13:00-0400">2020-07-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -954,7 +1005,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

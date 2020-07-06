@@ -1,3 +1,7 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -41,7 +45,8 @@
     h3,h4,h5,h6{--heading-prefix:"7.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Carequality Subscription Implementation Guide for Push Notifications</span><br/>0.1.0 - CI Build</p>
@@ -97,46 +102,86 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
 <div style="counter-reset: section 5" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Carequality Subscription Implementation Guide for Push Notifications - Local Development build (v0.1.0). See the <a href="https://sequoiaproject.org/fhir/sphd-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="StructureDefinition-CEQsubscription.html">Content</a>
-    </li>
-    <li>
-      <a href="StructureDefinition-CEQsubscription-definitions.html">Detailed Descriptions</a>
-    </li>
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-CEQsubscription.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-CEQsubscription-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
     <li class="active">
       <a href="#">Mappings</a>
     </li>
-    <li>
-      <a href="StructureDefinition-CEQsubscription-examples.html">Examples</a>
-    </li>
+  
 
+
+
+
+  
+    
+      <li>
+        <a href="StructureDefinition-CEQsubscription-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
+
+  
     <li>
       <a href="StructureDefinition-CEQsubscription.profile.xml.html">XML</a>
     </li>
+  
 
 
+  
     <li>
       <a href="StructureDefinition-CEQsubscription.profile.json.html">JSON</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="StructureDefinition-CEQsubscription.profile.ttl.html">Turtle</a>
+      <a href="StructureDefinition-CEQsubscription.profile.ttl.html">TTL</a>
     </li>
-
-  </ul>
-  <a name="root"> </a>
-
-  <h2 id="root">Resource Profile: CEQsubscription - Mappings</h2>
-  <p>Mappings for the  Profile.</p>
   
+
+
+</ul>
+
+
+<a name="root"> </a>
+<h2 id="root">Resource Profile: CEQsubscription - Mappings</h2>
+
+<p>Mappings for the CEQsubscription resource profile.</p>
+
+  <!-- insert intro if present -->
   
+
+
 
   <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>CEQsubscription</b></td></tr>
@@ -184,8 +229,11 @@
 </table>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
 
         </div>  <!-- /inner-wrapper -->
@@ -193,9 +241,9 @@
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-
-  <script type="text/javascript" src="jquery.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
   <script type="text/javascript">
     try {
       var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
@@ -219,11 +267,18 @@
     });
   </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 1, 2020 09:12-0400">2020-07-01</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 6, 2020 13:00-0400">2020-07-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -243,7 +298,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

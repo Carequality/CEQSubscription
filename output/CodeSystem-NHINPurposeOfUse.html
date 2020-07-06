@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"7.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Carequality Subscription Implementation Guide for Push Notifications</span><br/>0.1.0 - CI Build</p>
@@ -99,10 +100,51 @@
           <div class="inner-wrapper">
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Carequality Subscription Implementation Guide for Push Notifications - Local Development build (v0.1.0). See the <a href="https://sequoiaproject.org/fhir/sphd-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-NHINPurposeOfUse.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-NHINPurposeOfUse.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-NHINPurposeOfUse.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
   <a name="root"> </a>
   <h2 id="root">CodeSystem: NHIN Purpose Of Use</h2>
+
+  <!-- insert intro if present -->
   
-  
+
+
+
   <p>
     <b>Summary</b>
   </p>
@@ -124,7 +166,7 @@
   <p>
   This Code system is referenced in the content logical definition of the following value sets:
   </p>
-  
+
   
 <ul>
  <li><a href="ValueSet-CEQSubscriberPurposeofUse.html">CEQSubscriberPurposeofUse</a></li>
@@ -133,21 +175,34 @@
 
   <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">TREATMENT<a name="NHINPurposeOfUse-TREATMENT"> </a></td><td>Treatment</td><td>Per 45 CFR &sect; 164.501</td></tr><tr><td style="white-space:nowrap">PAYMENT<a name="NHINPurposeOfUse-PAYMENT"> </a></td><td>Payment</td><td>Per 45 CFR &sect; 164.501</td></tr><tr><td style="white-space:nowrap">OPERATIONS<a name="NHINPurposeOfUse-OPERATIONS"> </a></td><td>Health Care Operations</td><td>Per 45 CFR &sect; 164.501</td></tr><tr><td style="white-space:nowrap">PUBLICHEALTH<a name="NHINPurposeOfUse-PUBLICHEALTH"> </a></td><td>Public Health Activities</td><td>Per 45 CFR &sect; 164.512(b)</td></tr><tr><td style="white-space:nowrap">REQUEST<a name="NHINPurposeOfUse-REQUEST"> </a></td><td>Patient Request</td><td>Directly initiated by the patient or the patient’s personal representative as defined by 45 CFR 164.502(g), via a personal health record or other consumer-facing application</td></tr><tr><td style="white-space:nowrap">COVERAGE<a name="NHINPurposeOfUse-COVERAGE"> </a></td><td>Coverage Determination</td><td></td></tr></table></div>
 
+  <!-- insert notes if present -->
   
+
+
+
   
-  
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 1, 2020 09:12-0400">2020-07-01</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 6, 2020 13:00-0400">2020-07-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -167,7 +222,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

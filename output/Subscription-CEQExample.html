@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"7.8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Carequality Subscription Implementation Guide for Push Notifications</span><br/>0.1.0 - CI Build</p>
@@ -97,59 +98,87 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Carequality Subscription Implementation Guide for Push Notifications - Local Development build (v0.1.0). See the <a href="https://sequoiaproject.org/fhir/sphd-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Subscription-CEQExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Subscription-CEQExample.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Subscription-CEQExample.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
   <a name="root"> </a>
 
 
   <h2 id="root">Example Subscription: Example Subscribing</h2>
-  <p>
-    Format(s):
-  </p>
-  <ul>
-
-    <li>
-      <a href="Subscription-CEQExample.xml.html">XML</a>
-    </li>
 
 
-    <li>
-      <a href="Subscription-CEQExample.json.html">JSON</a> 
-    </li>
 
-
-    <li>
-      <a href="Subscription-CEQExample.ttl.html">Turtle</a>
-    </li>
-
-  </ul>
-
-  
+  <!-- insert intro if present -->
   
 
-  <p>
-    <b>Narrative view</b>
-  </p>
+
+
   <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: CEQExample</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>contact</b>: ph: 212-877-3307 ext 5001</p><p><b>end</b>: Dec. 31, 2020, 7:00:00 p.m.</p><p><b>reason</b>: Example</p><p><b>criteria</b>: carequality</p><h3>Channels</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>rest-hook</td><td><a href="http://www.example.org/fhir/subscription/sub123">http://www.example.org/fhir/subscription/sub123</a></td></tr></table></div>
 
+  <!-- insert notes if present -->
   
-  
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 1, 2020 09:12-0400">2020-07-01</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 6, 2020 13:00-0400">2020-07-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -169,7 +198,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

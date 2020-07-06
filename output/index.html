@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Carequality Subscription Implementation Guide for Push Notifications</span><br/>0.1.0 - CI Build</p>
@@ -119,6 +120,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <!-- index.md  -->
 <h3 id="introduction">Introduction</h3>
+<h4 id="vision">Vision</h4>
+<p>Improve care management across settings/systems for patients via push notifications.</p>
+
 <h4 id="goals">Goals</h4>
 <ul>
   <li>Remove the need to poll for solicited:
@@ -133,6 +137,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>NOT focused on unsolicited notifications</strong></li>
   <li>Project results may be useful as a building block or launching point</li>
 </ul>
+
+<p>Subscriptions are system to system and the receiver of these subscriptions (Subscription Server or subscriber) must be able to route these messages to the appropriate end user (clinician(s), care team members) within their system. For auditing purposes, identification of a specific user is accomplished through FHIR authorizations as described in the FHIR Implementation Guide through SMART or oAuth.</p>
 
 <h3 id="definitions">Definitions</h3>
 <h4 id="topic">Topic</h4>
@@ -164,12 +170,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 1, 2020 09:12-0400">2020-07-01</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 6, 2020 13:00-0400">2020-07-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -189,7 +204,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

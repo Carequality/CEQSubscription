@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CarequalitySubscriptionImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Carequality Subscription Implementation Guide for Push Notifications"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-07-01T09:12:06-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-06T13:00:32-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -566,14 +566,18 @@
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
      ], [
        fhir:index 10;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
      ], [
        fhir:index 11;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
      ], [
        fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 13;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]

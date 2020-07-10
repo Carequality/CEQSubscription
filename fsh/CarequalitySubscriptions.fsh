@@ -23,7 +23,7 @@ Mixins: FHIRPushStructureDefinitionContent
 * extension[subPurpose].value[x] only Coding
 
 * extension[subscriber] ^short = "End subscriber for the information"
-* extension[subscriber].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient | http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner | RelatedPerson | http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
+* extension[subscriber].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
 
 
 Profile: CEQsubscription

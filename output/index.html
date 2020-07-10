@@ -144,7 +144,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="topic">Topic</h4>
 <ul>
   <li>Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care’, etc.</li>
-  <li>Servers choose which Topics to support.</li>
+  <li>Implementers (Notification Generators) choose which Topics to support.</li>
 </ul>
 
 <h4 id="subscription">Subscription</h4>
@@ -154,13 +154,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="notification">Notification</h4>
 <ul>
-  <li>Is a simple http ‘knock’ using POST and the FullURL of the Encounter resource created</li>
+  <li>Is a simple http ‘knock’ using POST and contaning only the FullURL of the Encounter resource created</li>
 </ul>
 
 <h4 id="security-notes">Security Notes</h4>
 <ul>
-  <li>It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization</li>
-  <li>Servers should perform authorization checks prior to creating a Subscription to ensure it is valid.</li>
+  <li>
+    <p>It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization</p>
+  </li>
+  <li>
+    <p>Servers should perform authorization checks prior to creating a Subscription to ensure it is valid.</p>
+  </li>
 </ul>
 
 
@@ -184,7 +188,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 6, 2020 13:00-0400">2020-07-06</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package CEQSubcriptionNotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 10, 2020 14:40-0400">2020-07-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

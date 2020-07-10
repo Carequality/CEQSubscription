@@ -131,11 +131,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "Background.html",
-          "title": "Background",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "Scenarios.html",
           "title": "Scenarios",
           "generation": "markdown"
@@ -153,6 +148,11 @@
         {
           "nameUrl": "Actors_and_Transactions.html",
           "title": "Actors and Transactions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Notification_Triggers.html",
+          "title": "Notification Triggers",
           "generation": "markdown"
         }
       ]

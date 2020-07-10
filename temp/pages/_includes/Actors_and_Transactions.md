@@ -18,7 +18,7 @@ The Push Notifications defines 4 Actors:
 4. GeneratorSMS (Data Source Subscription Management Service) an aggregator for one or more Notification Generators.
 
 ### Transactions
-These Actors have 3 possible transactions:
+ These Actors have 3 possible transactions:
 1. RegisterSubscription -- Push a subscription (bundle) to the receiver.
 1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver.
 1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver.

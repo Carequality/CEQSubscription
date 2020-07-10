@@ -23,8 +23,8 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/images/SubscriptionFlow.png                          | copied    | fsh/ig-data/input/images/SubscriptionFlow.png                 |
 | input/includes/menu.xml                                    | copied    | fsh/ig-data/input/includes/menu.xml                           |
 | input/pagecontent/Actors_and_Transactions.md               | copied    | fsh/ig-data/input/pagecontent/5_Actors_and_Transactions.md    |
-| input/pagecontent/Background.md                            | copied    | fsh/ig-data/input/pagecontent/1_Background.md                 |
 | input/pagecontent/Definition_of_Roles.md                   | copied    | fsh/ig-data/input/pagecontent/4_Definition_of_Roles.md        |
+| input/pagecontent/Notification_Triggers.md                 | copied    | fsh/ig-data/input/pagecontent/6_Notification_Triggers.md      |
 | input/pagecontent/Scenarios.md                             | copied    | fsh/ig-data/input/pagecontent/2_Scenarios.md                  |
 | input/pagecontent/Service_Level_Requirements.md            | copied    | fsh/ig-data/input/pagecontent/3_Service_Level_Requirements.md |
 | input/pagecontent/index.md                                 | copied    | fsh/ig-data/input/pagecontent/index.md                        |

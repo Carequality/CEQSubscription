@@ -17,14 +17,15 @@ Subscriptions are system to system and the receiver of these subscriptions (Subs
 ### Definitions
 #### Topic
 * Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care', etc.
-* Servers choose which Topics to support.
+* Implementers (Notification Generators) choose which Topics to support.
 
 #### Subscription
 * Is a request for notifications based on a one or more Topics.  The end date is required and is a maximum of two years, without renewal.
 
 #### Notification
-* Is a simple http 'knock' using POST and the FullURL of the Encounter resource created
+* Is a simple http 'knock' using POST and contaning only the FullURL of the Encounter resource created
 
 #### Security Notes
 * It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization
+
 * Servers should perform authorization checks prior to creating a Subscription to ensure it is valid.

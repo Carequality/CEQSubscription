@@ -11,7 +11,7 @@
   <name value="CarequalitySubscriptionImplementationGuide"/>
   <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
   <status value="active"/>
-  <date value="2020-07-06T13:00:32-04:00"/>
+  <date value="2020-07-10T14:40:54-04:00"/>
   <contact>
     <name value="David Pyke"/>
     <telecom>
@@ -353,11 +353,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="Background.html"/>
-        <title value="Background"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="Scenarios.html"/>
         <title value="Scenarios"/>
         <generation value="markdown"/>
@@ -375,6 +370,11 @@
       <page>
         <nameUrl value="Actors_and_Transactions.html"/>
         <title value="Actors and Transactions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="Notification_Triggers.html"/>
+        <title value="Notification Triggers"/>
         <generation value="markdown"/>
       </page>
     </page>

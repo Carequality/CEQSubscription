@@ -16,7 +16,7 @@ When a patient has been checked into the EHR system.  Codes vary by venue type.
 <tbody>
 <tr>
 <td>General</td>
-<td>Patient has been checked in to the EHR, <br> includes all subsidiary admit events</td>
+<td>Patient has been checked in to the EHR, includes all subsidiary admit events</td>
 <td>admit</td>
 </tr>
 <tr>

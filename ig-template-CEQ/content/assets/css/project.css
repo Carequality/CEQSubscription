@@ -26,7 +26,7 @@ var(--publish-box-border); */
 :root {
 
   --ig-status-text-color: rgb(162, 220, 57); /* 1. IG Title and status text color */
-  --navbar-bg-color: rgb(20, 164, 211); /* 2. Header container color */
+  --navbar-bg-color: white; /* 2. Header container color */
   --footer-bg-color: rgb(20, 164, 211); /* 3. Footer background color*/
   --footer-container-color: rgb(20, 164, 211); /* 4. Footer container color */
   --stripe-bg-color: rgb(162, 220, 57); /* 5. Header strip color */
@@ -50,8 +50,8 @@ var(--publish-box-border); */
   --stu-note-background-color: rgb(20, 164, 211); /* 19. (STU) Note box background color */
   --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
 
-  --ig-header-color: rgb(20, 164, 211); /* 21. Header color (sides) */
-  --ig-header-container-color: #ffffff; /* 22. Header container color (center) */
+  --ig-header-color: white; /* 21. Header color (sides) */
+  --ig-header-container-color: rgb(20, 164, 211); /* 22. Header container color (center) */
 
 }
 

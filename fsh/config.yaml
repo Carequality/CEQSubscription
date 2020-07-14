@@ -35,7 +35,7 @@ releaseLabel: CI Build
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-template: ig-template-CEQ/
+template: fhir.carequality.template
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯

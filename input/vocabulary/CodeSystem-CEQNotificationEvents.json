@@ -40,9 +40,14 @@
       "definition": "Discharge event"
     },
     {
-      "code": "transfer",
-      "display": "Transfer",
-      "definition": "Transfer of a Patient"
+      "code": "transferall",
+      "display": "All Transfers",
+      "definition": "Any time a transfer order is generated"
+    },
+    {
+      "code": "transfersome",
+      "display": "Relevant Transfers",
+      "definition": "Transfers that require separate subscriptions or to a separate facility"
     },
     {
       "code": "arrival",
@@ -65,5 +70,5 @@
       "definition": "Cancel subscription to all events"
     }
   ],
-  "count": 11
+  "count": 12
 }

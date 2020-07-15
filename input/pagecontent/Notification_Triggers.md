@@ -59,7 +59,12 @@ Push Notification Implementers should use the same criteria for the Discharge tr
 Only applies to Secondary Referrals (i.e., referrals not made by the Notification Recipient).  Internal consults are not included.
 
 #### Transfer
-The issuance of a transfer order that will not create an admit notification from the same system and is not originating from the Notification Recipient.
+Transfer Type 1: When a transfer is ordered to any external (any location that would not trigger an internal Admit notification) location. For example:
+    • Any transfer that crosses between EHRs (even when internal to one organization) shall generate a notification; and/or
+    • Any transfer within a system that crosses between settings (ED, Skilled Nursing, etc.) shall generate a notification.
+Transfer Type 2: Any time a transfer order is generated.
+
+
 
 #### Gaps in Care
 A trigger based on the [eCQM as defined by CMS](https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/ClinicalQualityMeasures "Electronic Clinical Quality Measures Basics") or other request for follow-up based on Notification Generator policy or process.

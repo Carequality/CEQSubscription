@@ -1,12 +1,12 @@
-﻿CarequalitySubscriptionImplementationGuide : Validation Results
+﻿Carequality_Subscription_Implementation_Guide : Validation Results
 =========================================
 
 err = 0, warn = 2, info = 0
-IG Publisher Version: v1.1.0 Out of date - current version is ?pub-ver-1?
-Generated Tue Jul 14 10:25:57 EDT 2020. FHIR version 4.0.1 for CEQSubcriptionNotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+IG Publisher Version: v1.1.2 Out of date - current version is ?pub-ver-1?
+Generated Wed Jul 15 15:37:53 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
- Build Errors : 0 / 0
- /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-CEQSubcriptionNotifications : 0 / 0
+ Build Errors : 7 / 0
+ /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/examples/CapabilityStatement-ceqsubscribe-capabilitystatement : 0 / 1
  /home/loftwyr/FHIR/CEQSubscription/input/examples/OperationDefinition-ceqsubscribe : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/examples/Practitioner-DrDavidAnydoc : 0 / 0
@@ -20,17 +20,37 @@ Generated Tue Jul 14 10:25:57 EDT 2020. FHIR version 4.0.1 for CEQSubcriptionNot
  /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse : 0 / 0
 </table>
 == n/a ==
-== /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-CEQSubcriptionNotifications.json ==
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.history.html#/html/body/div/center/img/div/div/div/div/div/ul/li/a at Line 118, column 6: The link 'ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.html' for "Narrative Content" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.history.html#/html/body/div/center/img/div/div/div/div/div/ul/li/a at Line 124, column 8: The link 'ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.xml.html' for "XML" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.history.html#/html/body/div/center/img/div/div/div/div/div/ul/li/a at Line 131, column 8: The link 'ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.json.html' for "JSON" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.history.html#/html/body/div/center/img/div/div/div/div/div/ul/li/a at Line 138, column 8: The link 'ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.ttl.html' for "TTL" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension.history.html#/html/body/div/center/img/div/div/div/div/div/ul/li/a at Line 124, column 8: The link 'StructureDefinition-CEQextension.xml.html' for "XML" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension.history.html#/html/body/div/center/img/div/div/div/div/div/ul/li/a at Line 131, column 8: The link 'StructureDefinition-CEQextension.json.html' for "JSON" cannot be resolved
+ERROR: /home/loftwyr/FHIR/CEQSubscription/output/StructureDefinition-CEQextension.history.html#/html/body/div/center/img/div/div/div/div/div/ul/li/a at Line 138, column 8: The link 'StructureDefinition-CEQextension.ttl.html' for "TTL" cannot be resolved
+== /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.json ==
+INFORMATION: ImplementationGuide/sequoiaproject.fhir.us.pushnotifications: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /home/loftwyr/FHIR/CEQSubscription/input/examples/CapabilityStatement-ceqsubscribe-capabilitystatement.json ==
+INFORMATION: CapabilityStatement/ceqsubscribe-capabilitystatement: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/ceqsubscribe-capabilitystatement: CapabilityStatement.rest[0].security.service[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == /home/loftwyr/FHIR/CEQSubscription/input/examples/OperationDefinition-ceqsubscribe.json ==
+INFORMATION: OperationDefinition/ceqsubscribe: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
 == /home/loftwyr/FHIR/CEQSubscription/input/examples/Practitioner-DrDavidAnydoc.json ==
+INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner - listed in meta
 == /home/loftwyr/FHIR/CEQSubscription/input/examples/Subscription-CEQExample.json ==
+INFORMATION: Subscription/CEQExample: Subscription: Validate resource against profile https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription
 == /home/loftwyr/FHIR/CEQSubscription/input/extensions/StructureDefinition-CEQextension.json ==
+INFORMATION: StructureDefinition/CEQextension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQSubscriptionBundle.json ==
+INFORMATION: StructureDefinition/CEQSubscriptionBundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle'): The Implementation Guide contains no examples for this profile
 == /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQsubscription.json ==
+INFORMATION: StructureDefinition/CEQsubscription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQNotificationEvents.json ==
+INFORMATION: CodeSystem/CEQNotificationEvents: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-NHINPurposeOfUse.json ==
+INFORMATION: CodeSystem/NHINPurposeOfUse: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQPushEventCodes.json ==
+INFORMATION: ValueSet/CEQPushEventCodes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse.json ==
+INFORMATION: ValueSet/CEQSubscriberPurposeofUse: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

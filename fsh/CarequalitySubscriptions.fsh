@@ -1,7 +1,7 @@
 Extension: CEQextension
 Title: "Carequality Subscription Required Elements"
 Description: "Additional Elements to Support Carequality Subscription Notifications"
-Mixins: FHIRPushStructureDefinitionContent
+* insert FHIRPushStructureDefinitionContent
 * extension contains
     subIdentifier 1..1 MS and
     eventCode 1..* MS and
@@ -36,7 +36,7 @@ and an identifier be added to the resource.  The identifier element is the endpo
 [Base]/fhir/Subscription/[identifier]
 A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.
 """
-Mixins: FHIRPushStructureDefinitionContent
+* insert FHIRPushStructureDefinitionContent
 * extension contains CEQextension named ceqPushExtension 1..1
 
 * end 1..1
@@ -56,7 +56,7 @@ Parent: Bundle
 Title: "Carequality Subscription Bundle"
 Description: "Bundle to be submitted for Carequality subscription enrollment"
 
-Mixins: FHIRPushStructureDefinitionContent
+* insert FHIRPushStructureDefinitionContent
 
 * type = #transaction (exactly)
 * entry ^slicing.discriminator.type = #type

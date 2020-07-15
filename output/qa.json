@@ -1,9 +1,9 @@
 {
-  "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications",
-  "name": "CarequalitySubscriptionImplementationGuide",
-  "package-id": "CEQSubcriptionNotifications",
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
+  "name": "Carequality_Subscription_Implementation_Guide",
+  "package-id": "sequoiaproject.fhir.us.pushnotifications",
   "ig-ver": "0.1.0",
-  "date": "Tue, 14 Jul, 2020 10:25:44 -0400",
+  "date": "Wed, 15 Jul, 2020 15:37:45 -0400",
   "errs": 0,
   "warnings": 2,
   "hints": 0,

@@ -1,11 +1,11 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "CEQSubcriptionNotifications",
-  "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications",
+  "id": "sequoiaproject.fhir.us.pushnotifications",
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
   "version": "0.1.0",
-  "name": "CarequalitySubscriptionImplementationGuide",
+  "name": "Carequality_Subscription_Implementation_Guide",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
-  "status": "active",
+  "status": "draft",
   "contact": [
     {
       "name": "David Pyke",
@@ -18,7 +18,7 @@
     }
   ],
   "description": "An Implementation Guide for the Carequality Subscription Use Case",
-  "packageId": "CEQSubcriptionNotifications",
+  "packageId": "sequoiaproject.fhir.us.pushnotifications",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -168,7 +168,7 @@
       },
       {
         "code": "show-inherited-invariants",
-        "value": "false"
+        "value": "true"
       }
     ]
   }

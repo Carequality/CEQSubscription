@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="CEQSubcriptionNotifications"/>
+   <id value="sequoiaproject.fhir.us.pushnotifications"/>
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>CarequalitySubscriptionImplementationGuide</h2>
+         <h2>Carequality_Subscription_Implementation_Guide</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications</pre>
+         <pre>https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications</pre>
          <div>
             <p>An Implementation Guide for the Carequality Subscription Use Case</p>
          </div>
       </div>
    </text>
-   <url value="https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications"/>
+   <url value="https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications"/>
    <version value="0.1.0"/>
-   <name value="CarequalitySubscriptionImplementationGuide"/>
+   <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
-   <status value="active"/>
-   <date value="2020-07-14T10:25:44-04:00"/>
+   <status value="draft"/>
+   <date value="2020-07-15T15:37:45-04:00"/>
    <contact>
       <name value="David Pyke"/>
       <telecom>
@@ -26,7 +26,7 @@
       </telecom>
    </contact>
    <description value="An Implementation Guide for the Carequality Subscription Use Case"/>
-   <packageId value="CEQSubcriptionNotifications"/>
+   <packageId value="sequoiaproject.fhir.us.pushnotifications"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <dependsOn id="hl7_fhir_us_core">
@@ -337,7 +337,11 @@
       </parameter>
       <parameter>
          <code value="show-inherited-invariants"/>
-         <value value="false"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="autoload-resources"/>
+         <value value="true"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>

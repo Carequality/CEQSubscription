@@ -11,7 +11,7 @@
   "title": "Carequality Subscription Profile",
   "status": "draft",
   "experimental": true,
-  "date": "2020-07-14T10:25:44-04:00",
+  "date": "2020-07-15T15:37:45-04:00",
   "publisher": "Carequality",
   "contact": [
     {
@@ -403,8 +403,8 @@
         "id": "Subscription.extension:ceqPushExtension",
         "path": "Subscription.extension",
         "sliceName": "ceqPushExtension",
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
+        "short": "Extension",
+        "definition": "An Extension",
         "min": 1,
         "max": "1",
         "base": {
@@ -438,20 +438,10 @@
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Subscription"
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
+        "isModifier": false
       },
       {
         "id": "Subscription.extension:ceqPushExtension.id",

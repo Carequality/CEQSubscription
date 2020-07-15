@@ -1,122 +1,122 @@
 {
-  "ImplementationGuide/CEQSubcriptionNotifications": {
+  "ImplementationGuide/sequoiaproject.fhir.us.pushnotifications": {
     "history": false,
     "index": 0,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-CEQSubcriptionNotifications.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications",
-    "name": "CarequalitySubscriptionImplementationGuide",
+    "source": "/home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
+    "name": "Carequality_Subscription_Implementation_Guide",
     "title": "Carequality Subscription Implementation Guide for Push Notifications",
     "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "active"
-  },
-  "StructureDefinition/CEQSubscriptionBundle": {
-    "history": false,
-    "index": 1,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQSubscriptionBundle.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
-    "name": "CEQSubscriptionBundle",
-    "title": "Carequality Subscription Bundle",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
+    "date": "2020-07-15T15:37:45-04:00",
     "status": "draft"
-  },
-  "StructureDefinition/CEQsubscription": {
-    "history": false,
-    "index": 2,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQsubscription.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription",
-    "name": "CEQsubscription",
-    "title": "Carequality Subscription Profile",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "draft"
-  },
-  "StructureDefinition/CEQextension": {
-    "history": false,
-    "index": 3,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/extensions/StructureDefinition-CEQextension.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension",
-    "name": "CEQextension",
-    "title": "Carequality Subscription Required Elements",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "draft"
-  },
-  "ValueSet/CEQPushEventCodes": {
-    "history": false,
-    "index": 4,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQPushEventCodes.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
-    "name": "CEQPushEventCodes",
-    "title": "Carequality Push Notification Events",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "active"
-  },
-  "ValueSet/CEQSubscriberPurposeofUse": {
-    "history": false,
-    "index": 5,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
-    "name": "CEQSubscriberPurposeofUse",
-    "title": "Permitted Purposes Of Use",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "active"
-  },
-  "CodeSystem/CEQNotificationEvents": {
-    "history": false,
-    "index": 6,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQNotificationEvents.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
-    "name": "CEQNotificationEvents",
-    "title": "Carequality Push Notification Events",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "active"
-  },
-  "CodeSystem/NHINPurposeOfUse": {
-    "history": false,
-    "index": 7,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-NHINPurposeOfUse.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
-    "name": "NHINPurposeOfUse",
-    "title": "NHIN Purpose Of Use",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "active"
   },
   "Subscription/CEQExample": {
     "history": false,
-    "index": 8,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/examples/Subscription-CEQExample.json"
-  },
-  "Practitioner/DrDavidAnydoc": {
-    "history": false,
-    "index": 9,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/examples/Practitioner-DrDavidAnydoc.json"
-  },
-  "OperationDefinition/ceqsubscribe": {
-    "history": false,
-    "index": 10,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/examples/OperationDefinition-ceqsubscribe.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe",
-    "name": "CEQsubscribe",
-    "title": "Carequality Subscription Submission",
-    "version": "0.1.0",
-    "date": "2020-07-14T10:25:44-04:00",
-    "status": "draft"
+    "index": 1,
+    "source": "input/examples/Subscription-CEQExample.json"
   },
   "CapabilityStatement/ceqsubscribe-capabilitystatement": {
     "history": false,
-    "index": 11,
-    "source": "/home/loftwyr/FHIR/CEQSubscription/input/examples/CapabilityStatement-ceqsubscribe-capabilitystatement.json",
+    "index": 2,
+    "source": "input/examples/CapabilityStatement-ceqsubscribe-capabilitystatement.json",
     "url": "https://sequoiaproject.org/fhir/sphd-r4/CapabilityStatement/ceqsubscribe-capabilitystatement",
     "name": "CEQsubscribeCapabilityStatement",
     "title": "Carequality Subscription Submission Capability Statement",
     "version": "0.1.0",
     "date": "2020-05-07",
     "status": "draft"
+  },
+  "Practitioner/DrDavidAnydoc": {
+    "history": false,
+    "index": 3,
+    "source": "input/examples/Practitioner-DrDavidAnydoc.json"
+  },
+  "OperationDefinition/ceqsubscribe": {
+    "history": false,
+    "index": 4,
+    "source": "input/examples/OperationDefinition-ceqsubscribe.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe",
+    "name": "CEQsubscribe",
+    "title": "Carequality Subscription Submission",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "draft"
+  },
+  "StructureDefinition/CEQextension": {
+    "history": false,
+    "index": 5,
+    "source": "input/extensions/StructureDefinition-CEQextension.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension",
+    "name": "CEQextension",
+    "title": "Carequality Subscription Required Elements",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "draft"
+  },
+  "StructureDefinition/CEQsubscription": {
+    "history": false,
+    "index": 6,
+    "source": "input/profiles/StructureDefinition-CEQsubscription.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription",
+    "name": "CEQsubscription",
+    "title": "Carequality Subscription Profile",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "draft"
+  },
+  "StructureDefinition/CEQSubscriptionBundle": {
+    "history": false,
+    "index": 7,
+    "source": "input/profiles/StructureDefinition-CEQSubscriptionBundle.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
+    "name": "CEQSubscriptionBundle",
+    "title": "Carequality Subscription Bundle",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "draft"
+  },
+  "ValueSet/CEQSubscriberPurposeofUse": {
+    "history": false,
+    "index": 8,
+    "source": "input/vocabulary/ValueSet-CEQSubscriberPurposeofUse.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
+    "name": "CEQSubscriberPurposeofUse",
+    "title": "Permitted Purposes Of Use",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "active"
+  },
+  "ValueSet/CEQPushEventCodes": {
+    "history": false,
+    "index": 9,
+    "source": "input/vocabulary/ValueSet-CEQPushEventCodes.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
+    "name": "CEQPushEventCodes",
+    "title": "Carequality Push Notification Events",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "active"
+  },
+  "CodeSystem/CEQNotificationEvents": {
+    "history": false,
+    "index": 10,
+    "source": "input/vocabulary/CodeSystem-CEQNotificationEvents.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+    "name": "CEQNotificationEvents",
+    "title": "Carequality Push Notification Events",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "active"
+  },
+  "CodeSystem/NHINPurposeOfUse": {
+    "history": false,
+    "index": 11,
+    "source": "input/vocabulary/CodeSystem-NHINPurposeOfUse.json",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+    "name": "NHINPurposeOfUse",
+    "title": "NHIN Purpose Of Use",
+    "version": "0.1.0",
+    "date": "2020-07-15T15:37:45-04:00",
+    "status": "active"
   }
 }

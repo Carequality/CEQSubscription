@@ -1,9 +1,9 @@
 {
   "path": "http://hl7.org/fhir/R4/",
   "canonical": "https://sequoiaproject.org/fhir/sphd-r4",
-  "igId": "CEQSubcriptionNotifications",
-  "igName": "CarequalitySubscriptionImplementationGuide",
-  "packageId": "CEQSubcriptionNotifications",
+  "igId": "sequoiaproject.fhir.us.pushnotifications",
+  "igName": "Carequality_Subscription_Implementation_Guide",
+  "packageId": "sequoiaproject.fhir.us.pushnotifications",
   "igVer": "0.1.0",
   "errorCount": 0,
   "version": "4.0.1",
@@ -13,16 +13,16 @@
   "toolingRevision": "3",
   "toolingVersionFull": "4.4.0 (3)",
   "totalFiles": 12,
-  "processedFiles": 32,
-  "genDate": "Tue, Jul 14, 2020 10:25-0400",
-  "genDay": "14/07/2020",
+  "processedFiles": 31,
+  "genDate": "Wed, Jul 15, 2020 15:37-0400",
+  "genDay": "15/07/2020",
   "ig": {
-    "id": "CEQSubcriptionNotifications",
-    "name": "CarequalitySubscriptionImplementationGuide",
+    "id": "sequoiaproject.fhir.us.pushnotifications",
+    "name": "Carequality_Subscription_Implementation_Guide",
     "title": "Carequality Subscription Implementation Guide for Push Notifications",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/CEQSubcriptionNotifications",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
     "version": "0.1.0",
-    "status": "active",
+    "status": "draft",
     "experimental": false,
     "gitstatus": "master",
     "contact": [
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2020-07-14T10:25:44-04:00",
+    "date": "2020-07-15T15:37:45-04:00",
     "description": "An Implementation Guide for the Carequality Subscription Use Case",
     "fhirVersion": "4.0.1"
   },

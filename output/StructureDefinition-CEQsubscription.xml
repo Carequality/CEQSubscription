@@ -22,7 +22,7 @@
   <title value="Carequality Subscription Profile"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-07-14T10:25:44-04:00"/>
+  <date value="2020-07-15T15:37:45-04:00"/>
   <publisher value="Carequality"/>
   <contact>
     <name value="David Pyke"/>
@@ -342,8 +342,8 @@
     <element id="Subscription.extension:ceqPushExtension">
       <path value="Subscription.extension"/>
       <sliceName value="ceqPushExtension"/>
-      <short value="Optional Extensions Element"/>
-      <definition value="Optional Extension Element - found in all resources."/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -370,17 +370,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Subscription"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Subscription.extension:ceqPushExtension.id">
       <path value="Subscription.extension.id"/>

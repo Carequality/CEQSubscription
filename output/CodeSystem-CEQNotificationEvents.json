@@ -3,14 +3,14 @@
   "id": "CEQNotificationEvents",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">admit<a name=\"CEQNotificationEvents-admit\"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style=\"white-space:nowrap\">edadmit<a name=\"CEQNotificationEvents-edadmit\"> </a></td><td>ED Admit</td><td>Emergency Department Admission</td></tr><tr><td style=\"white-space:nowrap\">acadmit<a name=\"CEQNotificationEvents-acadmit\"> </a></td><td>Acute Admit</td><td>Acute Care Admission</td></tr><tr><td style=\"white-space:nowrap\">ambadmit<a name=\"CEQNotificationEvents-ambadmit\"> </a></td><td>Ambulatory Admit</td><td>Ambulatory Care Admission</td></tr><tr><td style=\"white-space:nowrap\">snradmit<a name=\"CEQNotificationEvents-snradmit\"> </a></td><td>Skilled/Rehab Admit</td><td>SKilled Nursing or Rehabilitation Center Admission</td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"CEQNotificationEvents-discharge\"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"CEQNotificationEvents-transfer\"> </a></td><td>Transfer</td><td>Transfer of a Patient</td></tr><tr><td style=\"white-space:nowrap\">arrival<a name=\"CEQNotificationEvents-arrival\"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style=\"white-space:nowrap\">caregap<a name=\"CEQNotificationEvents-caregap\"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style=\"white-space:nowrap\">refer<a name=\"CEQNotificationEvents-refer\"> </a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td style=\"white-space:nowrap\">delete<a name=\"CEQNotificationEvents-delete\"> </a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">admit<a name=\"CEQNotificationEvents-admit\"> </a></td><td>Admit</td><td>Admission event</td></tr><tr><td style=\"white-space:nowrap\">edadmit<a name=\"CEQNotificationEvents-edadmit\"> </a></td><td>ED Admit</td><td>Emergency Department Admission</td></tr><tr><td style=\"white-space:nowrap\">acadmit<a name=\"CEQNotificationEvents-acadmit\"> </a></td><td>Acute Admit</td><td>Acute Care Admission</td></tr><tr><td style=\"white-space:nowrap\">ambadmit<a name=\"CEQNotificationEvents-ambadmit\"> </a></td><td>Ambulatory Admit</td><td>Ambulatory Care Admission</td></tr><tr><td style=\"white-space:nowrap\">snradmit<a name=\"CEQNotificationEvents-snradmit\"> </a></td><td>Skilled/Rehab Admit</td><td>SKilled Nursing or Rehabilitation Center Admission</td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"CEQNotificationEvents-discharge\"> </a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style=\"white-space:nowrap\">transferall<a name=\"CEQNotificationEvents-transferall\"> </a></td><td>All Transfers</td><td>Any time a transfer order is generated</td></tr><tr><td style=\"white-space:nowrap\">transfersome<a name=\"CEQNotificationEvents-transfersome\"> </a></td><td>Relevant Transfers</td><td>Transfers that require separate subscriptions or to a separate facility</td></tr><tr><td style=\"white-space:nowrap\">arrival<a name=\"CEQNotificationEvents-arrival\"> </a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style=\"white-space:nowrap\">caregap<a name=\"CEQNotificationEvents-caregap\"> </a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style=\"white-space:nowrap\">refer<a name=\"CEQNotificationEvents-refer\"> </a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td style=\"white-space:nowrap\">delete<a name=\"CEQNotificationEvents-delete\"> </a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>"
   },
   "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
   "version": "0.1.0",
   "name": "CEQNotificationEvents",
   "title": "Carequality Push Notification Events",
   "status": "active",
-  "date": "2020-07-14T10:25:44-04:00",
+  "date": "2020-07-15T15:37:45-04:00",
   "contact": [
     {
       "name": "David Pyke",
@@ -24,7 +24,7 @@
   ],
   "description": "The codes to define each of the permitted events for Carequality Network Subscriptions",
   "content": "complete",
-  "count": 11,
+  "count": 12,
   "concept": [
     {
       "code": "admit",
@@ -57,9 +57,14 @@
       "definition": "Discharge event"
     },
     {
-      "code": "transfer",
-      "display": "Transfer",
-      "definition": "Transfer of a Patient"
+      "code": "transferall",
+      "display": "All Transfers",
+      "definition": "Any time a transfer order is generated"
+    },
+    {
+      "code": "transfersome",
+      "display": "Relevant Transfers",
+      "definition": "Transfers that require separate subscriptions or to a separate facility"
     },
     {
       "code": "arrival",

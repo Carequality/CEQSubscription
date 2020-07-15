@@ -30,7 +30,8 @@ Description: "The codes to define each of the permitted events for Carequality N
 * #ambadmit "Ambulatory Admit" "Ambulatory Care Admission"
 * #snradmit "Skilled/Rehab Admit" "SKilled Nursing or Rehabilitation Center Admission"
 * #discharge "Discharge" "Discharge event"
-* #transfer "Transfer" "Transfer of a Patient"
+* #transferall "All Transfers" "Any time a transfer order is generated"
+* #transfersome "Relevant Transfers" "Transfers that require separate subscriptions or to a separate facility"
 * #arrival "Arrival" "Arrival at a port of call or other location where people arrive"
 * #caregap "Gap in Care" "Implementer Defined"
 * #refer "Referral" "A Secondary Referral to another practitioner"
@@ -46,7 +47,8 @@ Description: "The codes to define each of the permitted events for Carequality N
 * CEQNotificationEvents#snradmit
 * CEQNotificationEvents#acadmit
 * CEQNotificationEvents#discharge
-* CEQNotificationEvents#transfer
+* CEQNotificationEvents#transferall
+* CEQNotificationEvents#transfersome
 * CEQNotificationEvents#arrival
 * CEQNotificationEvents#caregap
 * CEQNotificationEvents#refer

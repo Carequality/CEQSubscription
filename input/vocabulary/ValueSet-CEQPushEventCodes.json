@@ -31,7 +31,10 @@
             "code": "discharge"
           },
           {
-            "code": "transfer"
+            "code": "transferall"
+          },
+          {
+            "code": "transfersome"
           },
           {
             "code": "arrival"

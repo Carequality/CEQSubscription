@@ -1,6 +1,6 @@
 Instance: CEQSubscription-Recipient
 InstanceOf: CapabilityStatement
-Mixins: CEQsubscribeCapabilityStatementContent
+* insert CEQsubscribeCapabilityStatementContent
 
 * id = "ceqsubscribe-capabilitystatement"
 * name = "CEQsubscribeCapabilityStatement"

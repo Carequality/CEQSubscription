@@ -3,7 +3,7 @@
 
 err = 0, warn = 2, info = 0
 IG Publisher Version: v1.1.2 Out of date - current version is ?pub-ver-1?
-Generated Wed Jul 15 15:37:53 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+Generated Thu Jul 16 13:02:11 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
  Build Errors : 7 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0

@@ -40,6 +40,8 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 * extension contains CEQextension named ceqPushExtension 1..1
 
 * end 1..1
+* end ^comment = "Maximum 2 years"
+
 * criteria = "carequality" (exactly)
 * channel.type = #rest-hook (exactly)
 

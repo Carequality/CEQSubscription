@@ -22,7 +22,7 @@
   <title value="Carequality Subscription Profile"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-07-15T15:37:45-04:00"/>
+  <date value="2020-07-16T13:02:02-04:00"/>
   <publisher value="Carequality"/>
   <contact>
     <name value="David Pyke"/>
@@ -1558,7 +1558,7 @@
       <path value="Subscription.end"/>
       <short value="When to automatically delete the subscription"/>
       <definition value="The time for the server to turn the subscription off."/>
-      <comment value="The server is permitted to deviate from this time but should observe it."/>
+      <comment value="Maximum 2 years"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -1976,6 +1976,7 @@
     </element>
     <element id="Subscription.end">
       <path value="Subscription.end"/>
+      <comment value="Maximum 2 years"/>
       <min value="1"/>
     </element>
     <element id="Subscription.criteria">

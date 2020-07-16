@@ -120,6 +120,7 @@
       {
         "id": "Subscription.end",
         "path": "Subscription.end",
+        "comment": "Maximum 2 years",
         "min": 1
       },
       {

@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Carequality Subscription Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-07-15T15:37:45-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-07-16T13:02:02-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Carequality"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1972,7 +1972,7 @@
        fhir:ElementDefinition.path [ fhir:value "Subscription.end" ];
        fhir:ElementDefinition.short [ fhir:value "When to automatically delete the subscription" ];
        fhir:ElementDefinition.definition [ fhir:value "The time for the server to turn the subscription off." ];
-       fhir:ElementDefinition.comment [ fhir:value "The server is permitted to deviate from this time but should observe it." ];
+       fhir:ElementDefinition.comment [ fhir:value "Maximum 2 years" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -2517,6 +2517,7 @@
        fhir:index 7;
        fhir:Element.id [ fhir:value "Subscription.end" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.end" ];
+       fhir:ElementDefinition.comment [ fhir:value "Maximum 2 years" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
      ], [
        fhir:index 8;

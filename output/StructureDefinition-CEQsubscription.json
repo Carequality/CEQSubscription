@@ -11,7 +11,7 @@
   "title": "Carequality Subscription Profile",
   "status": "draft",
   "experimental": true,
-  "date": "2020-07-15T15:37:45-04:00",
+  "date": "2020-07-16T13:02:02-04:00",
   "publisher": "Carequality",
   "contact": [
     {
@@ -1885,7 +1885,7 @@
         "path": "Subscription.end",
         "short": "When to automatically delete the subscription",
         "definition": "The time for the server to turn the subscription off.",
-        "comment": "The server is permitted to deviate from this time but should observe it.",
+        "comment": "Maximum 2 years",
         "min": 1,
         "max": "1",
         "base": {
@@ -2402,6 +2402,7 @@
       {
         "id": "Subscription.end",
         "path": "Subscription.end",
+        "comment": "Maximum 2 years",
         "min": 1
       },
       {

@@ -1,11 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bef775ad-c99d-46d1-b81b-e264acfffe78"/>
+  <id value="106885ff-ebd3-4c62-82b2-39d35b8fbdcf"/>
   <meta>
-    <lastUpdated value="2020-07-16T13:02:02.942-04:00"/>
+    <lastUpdated value="2020-07-17T15:02:01.990-04:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQRestSecurityService"/>
+    <resource>
+      <ValueSet>
+        <id value="CEQRestSecurityService"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/codesystem-restful-security-service.html">RestfulSecurityService v4.0.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-CEQRestSecurityService.html">Carequality Extension on RestfulSecurityService v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-restful-security-service-OAuth"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-OAuth">OAuth</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+                <td>OAuth</td>
+                <td>OAuth (unspecified version see oauth.net).</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-restful-security-service-SMART-on-FHIR"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-SMART-on-FHIR">SMART-on-FHIR</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+                <td>SMART-on-FHIR</td>
+                <td>OAuth2 using SMART-on-FHIR profile (see http://docs.smarthealthit.org/).</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-restful-security-service-NTLM"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-NTLM">NTLM</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+                <td>NTLM</td>
+                <td>Microsoft NTLM Authentication.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-restful-security-service-Basic"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-Basic">Basic</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+                <td>Basic</td>
+                <td>Basic authentication defined in HTTP specification.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-restful-security-service-Kerberos"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-Kerberos">Kerberos</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+                <td>Kerberos</td>
+                <td>see http://www.ietf.org/rfc/rfc4120.txt.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-restful-security-service-Certificates"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-Certificates">Certificates</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+                <td>Certificates</td>
+                <td>SSL where client must have a certificate registered with the server.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQRestSecurityService-CEQFHIR"> </a>
+                  <a href="CodeSystem-CEQRestSecurityService.html#CEQRestSecurityService-CEQFHIR">CEQFHIR</a>
+                </td>
+                <td>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService</td>
+                <td>Carequality FHIR</td>
+                <td>Must follow requirements based on the Carequality FHIR Implementation Guide</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQRestSecurityService"/>
+        <version value="0.1.0"/>
+        <name value="CEQRestSecurityService"/>
+        <title value="Carequality Extension on RestfulSecurityService"/>
+        <status value="active"/>
+        <date value="2020-07-17T15:02:01-04:00"/>
+        <contact>
+          <name value="David Pyke"/>
+          <telecom>
+            <system value="email"/>
+            <value value="mailto:david.pyke@readycomputing.com"/>
+          </telecom>
+        </contact>
+        <description value="Adds requirement to abide by the Carequality FHIR Implementation Guide"/>
+        <expansion>
+          <identifier value="urn:uuid:58c08c48-8073-427d-b1f7-e39f4a497190"/>
+          <timestamp value="2020-07-17T15:02:05-04:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/restful-security-service|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+            <code value="OAuth"/>
+            <display value="OAuth"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+            <code value="SMART-on-FHIR"/>
+            <display value="SMART-on-FHIR"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+            <code value="NTLM"/>
+            <display value="NTLM"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+            <code value="Basic"/>
+            <display value="Basic"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+            <code value="Kerberos"/>
+            <display value="Kerberos"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+            <code value="Certificates"/>
+            <display value="Certificates"/>
+          </contains>
+          <contains>
+            <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService"/>
+            <code value="CEQFHIR"/>
+            <display value="Carequality FHIR"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse"/>
     <resource>
@@ -91,7 +261,7 @@
         <name value="CEQSubscriberPurposeofUse"/>
         <title value="Permitted Purposes Of Use"/>
         <status value="active"/>
-        <date value="2020-07-16T13:02:02-04:00"/>
+        <date value="2020-07-17T15:02:01-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -101,8 +271,8 @@
         </contact>
         <description value="These are the permitted Purpose of Use within the Carequality network"/>
         <expansion>
-          <identifier value="urn:uuid:207fe184-f015-4953-9aa0-ce8f82f8d3b9"/>
-          <timestamp value="2020-07-16T13:02:07-04:00"/>
+          <identifier value="urn:uuid:5d69498f-3eef-444b-a79c-26e60edccd59"/>
+          <timestamp value="2020-07-17T15:02:05-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -193,6 +363,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-acadmit"> </a>
+                  <a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-acadmit">acadmit</a>
+                </td>
+                <td>Acute Admit</td>
+                <td>Acute Care Admission</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-ambadmit"> </a>
                   <a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-ambadmit">ambadmit</a>
                 </td>
@@ -206,14 +384,6 @@
                 </td>
                 <td>Skilled/Rehab Admit</td>
                 <td>SKilled Nursing or Rehabilitation Center Admission</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-acadmit"> </a>
-                  <a href="CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-acadmit">acadmit</a>
-                </td>
-                <td>Acute Admit</td>
-                <td>Acute Care Admission</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -279,7 +449,7 @@
         <name value="CEQPushEventCodes"/>
         <title value="Carequality Push Notification Events"/>
         <status value="active"/>
-        <date value="2020-07-16T13:02:02-04:00"/>
+        <date value="2020-07-17T15:02:01-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -289,8 +459,8 @@
         </contact>
         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
         <expansion>
-          <identifier value="urn:uuid:b7daed5f-6524-49e8-a7c2-acd992dabd6f"/>
-          <timestamp value="2020-07-16T13:02:07-04:00"/>
+          <identifier value="urn:uuid:67d63f80-a01a-404c-848b-344320f62cdb"/>
+          <timestamp value="2020-07-17T15:02:05-04:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -312,6 +482,11 @@
           </contains>
           <contains>
             <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
+            <code value="acadmit"/>
+            <display value="Acute Admit"/>
+          </contains>
+          <contains>
+            <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
             <code value="ambadmit"/>
             <display value="Ambulatory Admit"/>
           </contains>
@@ -319,11 +494,6 @@
             <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
             <code value="snradmit"/>
             <display value="Skilled/Rehab Admit"/>
-          </contains>
-          <contains>
-            <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
-            <code value="acadmit"/>
-            <display value="Acute Admit"/>
           </contains>
           <contains>
             <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>

@@ -10,45 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
-        "concept": [
-          {
-            "code": "admit"
-          },
-          {
-            "code": "edadmit"
-          },
-          {
-            "code": "ambadmit"
-          },
-          {
-            "code": "snradmit"
-          },
-          {
-            "code": "acadmit"
-          },
-          {
-            "code": "discharge"
-          },
-          {
-            "code": "transferall"
-          },
-          {
-            "code": "transfersome"
-          },
-          {
-            "code": "arrival"
-          },
-          {
-            "code": "caregap"
-          },
-          {
-            "code": "refer"
-          },
-          {
-            "code": "delete"
-          }
-        ]
+        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
       }
     ]
   }

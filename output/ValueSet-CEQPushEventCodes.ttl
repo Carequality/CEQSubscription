@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "CEQPushEventCodes"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CEQNotificationEvents.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-admit\">admit</a></td><td>Admit</td><td>Admission event</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-edadmit\">edadmit</a></td><td>ED Admit</td><td>Emergency Department Admission</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-ambadmit\">ambadmit</a></td><td>Ambulatory Admit</td><td>Ambulatory Care Admission</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-snradmit\">snradmit</a></td><td>Skilled/Rehab Admit</td><td>SKilled Nursing or Rehabilitation Center Admission</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-acadmit\">acadmit</a></td><td>Acute Admit</td><td>Acute Care Admission</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-discharge\">discharge</a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transferall\">transferall</a></td><td>All Transfers</td><td>Any time a transfer order is generated</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transfersome\">transfersome</a></td><td>Relevant Transfers</td><td>Transfers that require separate subscriptions or to a separate facility</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-arrival\">arrival</a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-caregap\">caregap</a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer\">refer</a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-delete\">delete</a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CEQNotificationEvents.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "CEQPushEventCodes"];
   fhir:ValueSet.title [ fhir:value "Carequality Push Notification Events"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-07-16T13:02:02-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-07-17T15:02:01-04:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -31,44 +31,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "admit" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "edadmit" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "ambadmit" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "snradmit" ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "acadmit" ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "discharge" ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "transferall" ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "transfersome" ]
-       ], [
-         fhir:index 8;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "arrival" ]
-       ], [
-         fhir:index 9;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "caregap" ]
-       ], [
-         fhir:index 10;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "refer" ]
-       ], [
-         fhir:index 11;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "delete" ]
-       ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents" ]
      ]
   ] .
 

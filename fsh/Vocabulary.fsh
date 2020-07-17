@@ -41,15 +41,4 @@ ValueSet: CEQPushEventCodes
 Title: "Carequality Push Notification Events"
 Description: "The codes to define each of the permitted events for Carequality Network Subscriptions"
 
-* CEQNotificationEvents#admit
-* CEQNotificationEvents#edadmit
-* CEQNotificationEvents#ambadmit
-* CEQNotificationEvents#snradmit
-* CEQNotificationEvents#acadmit
-* CEQNotificationEvents#discharge
-* CEQNotificationEvents#transferall
-* CEQNotificationEvents#transfersome
-* CEQNotificationEvents#arrival
-* CEQNotificationEvents#caregap
-* CEQNotificationEvents#refer
-* CEQNotificationEvents#delete
+* include codes from system CEQNotificationEvents

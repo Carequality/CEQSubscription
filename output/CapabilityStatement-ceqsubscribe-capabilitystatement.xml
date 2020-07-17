@@ -32,8 +32,10 @@
     <security>
       <service>
         <coding>
-          <code value="CEQFHIR"/>
+          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+          <code value="OAuth"/>
         </coding>
+        <text value="Carequality FHIR IG"/>
       </service>
       <description value="Requires adherence to the Carequality FHIR Implementation Guide"/>
     </security>

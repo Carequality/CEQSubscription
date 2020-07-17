@@ -52,8 +52,10 @@
          fhir:index 0;
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.code [ fhir:value "CEQFHIR" ]
-         ]
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/restful-security-service" ];
+           fhir:Coding.code [ fhir:value "OAuth" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Carequality FHIR IG" ]
        ];
        fhir:CapabilityStatement.rest.security.description [ fhir:value "Requires adherence to the Carequality FHIR Implementation Guide" ]
      ];

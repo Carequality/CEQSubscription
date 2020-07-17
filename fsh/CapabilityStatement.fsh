@@ -8,7 +8,8 @@ InstanceOf: CapabilityStatement
 * description = "Capability Statement to describe the requirements for a Notification Recipient Actor"
 
 * rest.mode = #client
-* rest.security.service = #CEQFHIR
+* rest.security.service.coding = http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth (exactly)
+* rest.security.service.text = "Carequality FHIR IG" (exactly)
 * rest.security.description = "Requires adherence to the Carequality FHIR Implementation Guide"
 
 * rest.resource.profile = "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"

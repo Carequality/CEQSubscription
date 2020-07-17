@@ -1,8 +1,9 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "coding" : [{
-    "code" : "CEQFHIR"
-  }]
+    "code" : "OAuth"
+  }],
+  "text" : "Carequality FHIR IG"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -14,6 +15,6 @@
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"CEQFHIR\"); The code provided (#CEQFHIR) is not  valid in the value set RestfulSecurityService"
+  "error" : "The code system \"\" is not known (encountered paired with code = \"OAuth\"); The code provided (#OAuth, (Carequality FHIR IG)) is not  valid in the value set RestfulSecurityService"
 }
 -------------------------------------------------------------------------------------

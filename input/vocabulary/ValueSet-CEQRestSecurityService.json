@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CEQRestSecurityService",
+  "id": "CEQRestSecurityService",
+  "title": "Carequality Extension on RestfulSecurityService",
+  "description": "Adds requirement to abide by the Carequality FHIR Implementation Guide",
+  "version": "0.1.0",
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQRestSecurityService",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/restful-security-service"
+      },
+      {
+        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService"
+      }
+    ]
+  }
+}

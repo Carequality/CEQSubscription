@@ -123,7 +123,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#capability-statement-versioning-conformance" id="markdown-toc-capability-statement-versioning-conformance">Capability Statement Versioning Conformance</a></li>
+  <li><a href="#capability-statement-and-versioning-conformance" id="markdown-toc-capability-statement-and-versioning-conformance">Capability Statement and Versioning Conformance</a></li>
   <li><a href="#notification-generation-latency" id="markdown-toc-notification-generation-latency">Notification Generation Latency</a></li>
   <li><a href="#uptime" id="markdown-toc-uptime">Uptime</a></li>
   <li><a href="#unplanned-and-planned-downtime" id="markdown-toc-unplanned-and-planned-downtime">Unplanned and Planned Downtime</a></li>
@@ -131,8 +131,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <!-- Service_Level_Requirements.md  -->
-<h3 id="capability-statement-versioning-conformance">Capability Statement Versioning Conformance</h3>
-<p>Implementers shall support the notion of backwards compatibility until such a time that a particular version has been officially sun-setted by Carequality. Implementers shall list in their Capability Statement and in the Carequality Directory which subscription Topics they support. Carequality, with the input of the Implementer community, shall determine the appropriate live versions and backwards compatibility. This shall include the specific version and how long it shall be maintained.</p>
+<h3 id="capability-statement-and-versioning-conformance">Capability Statement and Versioning Conformance</h3>
+<p>Implementers shall support the notion of backwards compatibility until such a time that a particular version has been officially sun-setted by Carequality.  Carequality, with the input of the Implementer community, shall determine the appropriate live versions and backwards compatibility. This shall include the specific version and how long it shall be maintained.</p>
+
+<p>Implementers shall list in their Capability Statement <strong>and</strong> in the Carequality Directory which subscription Topics they support.</p>
 
 <h3 id="notification-generation-latency">Notification Generation Latency</h3>
 <p>Implementers should generate Notifications in response to specific triggering events. For example: The table below lists the scenario and maximum acceptable latency:</p>
@@ -154,16 +156,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Immediate</td>
     </tr>
     <tr>
-      <td>Gaps in Care</td>
-      <td>Batch within 24hrs</td>
-    </tr>
-    <tr>
       <td>Referral</td>
       <td>Immediate</td>
     </tr>
     <tr>
       <td>Transfer</td>
       <td>Immediate</td>
+    </tr>
+    <tr>
+      <td>Gaps in Care</td>
+      <td>If batch processing generation within 24hrs, otherwise immediate</td>
     </tr>
   </tbody>
 </table>
@@ -172,7 +174,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Implementers should measure uptime on a monthly basis at the Gateway level.  Such measurements should only take into account unplanned downtime. Implementers should strive to achieve 99.9% uptime. The SLA target uptime should be 99.5%.</p>
 
 <h3 id="unplanned-and-planned-downtime">Unplanned and Planned Downtime</h3>
-<p>As a best practice, Implementers should schedule planned downtime for windows with the least amount of traffic. For example, in many cases after midnight PST and before 6:00 am EST. Implementers should store outgoing notifications and distribute them when the planned or unplanned downtime has ended.</p>
+<p>Please see the Carequality FHIR Implementation Guide for downtime requirements.</p>
+
+<p>Implementers should store outgoing notifications and distribute them when the planned or unplanned downtime has ended.</p>
 
 
 
@@ -197,7 +201,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 20, 2020 10:24-0400">2020-07-20</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 20, 2020 14:27-0400">2020-07-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

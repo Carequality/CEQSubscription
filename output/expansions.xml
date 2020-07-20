@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d489b572-f39c-42dc-9ce4-29527645b01e"/>
+  <id value="8d5cea98-72f2-46ae-adcb-5f7185b7ef36"/>
   <meta>
-    <lastUpdated value="2020-07-20T10:24:44.103-04:00"/>
+    <lastUpdated value="2020-07-20T14:27:42.874-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -112,7 +112,7 @@
         <name value="CEQRestSecurityService"/>
         <title value="Carequality Extension on RestfulSecurityService"/>
         <status value="active"/>
-        <date value="2020-07-20T10:24:44-04:00"/>
+        <date value="2020-07-20T14:27:42-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -122,8 +122,8 @@
         </contact>
         <description value="Adds requirement to abide by the Carequality FHIR Implementation Guide"/>
         <expansion>
-          <identifier value="urn:uuid:9914ac5f-b5dd-41da-8f7f-885e1be8eda5"/>
-          <timestamp value="2020-07-20T10:24:49-04:00"/>
+          <identifier value="urn:uuid:ddbbda02-fc3a-4de4-93d3-2317e305f55c"/>
+          <timestamp value="2020-07-20T14:27:47-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -261,7 +261,7 @@
         <name value="CEQSubscriberPurposeofUse"/>
         <title value="Permitted Purposes Of Use"/>
         <status value="active"/>
-        <date value="2020-07-20T10:24:44-04:00"/>
+        <date value="2020-07-20T14:27:42-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -271,8 +271,8 @@
         </contact>
         <description value="These are the permitted Purpose of Use within the Carequality network"/>
         <expansion>
-          <identifier value="urn:uuid:c3cc43f4-eeb9-4b1c-bab8-37a82cd42883"/>
-          <timestamp value="2020-07-20T10:24:49-04:00"/>
+          <identifier value="urn:uuid:057cdd7e-9ba8-45f9-8415-61fa018b73bd"/>
+          <timestamp value="2020-07-20T14:27:47-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -449,7 +449,7 @@
         <name value="CEQPushEventCodes"/>
         <title value="Carequality Push Notification Events"/>
         <status value="active"/>
-        <date value="2020-07-20T10:24:44-04:00"/>
+        <date value="2020-07-20T14:27:42-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -459,8 +459,8 @@
         </contact>
         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
         <expansion>
-          <identifier value="urn:uuid:5ee0d193-0b5f-4ee8-96ca-cedc2576d2e5"/>
-          <timestamp value="2020-07-20T10:24:49-04:00"/>
+          <identifier value="urn:uuid:8ca4aead-db75-4258-ac28-d526a6d3a35a"/>
+          <timestamp value="2020-07-20T14:27:47-04:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>

@@ -14,7 +14,7 @@
   "toolingVersionFull": "4.4.0 (3)",
   "totalFiles": 14,
   "processedFiles": 33,
-  "genDate": "Mon, Jul 20, 2020 10:24-0400",
+  "genDate": "Mon, Jul 20, 2020 14:27-0400",
   "genDay": "20/07/2020",
   "ig": {
     "id": "sequoiaproject.fhir.us.pushnotifications",
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2020-07-20T10:24:44-04:00",
+    "date": "2020-07-20T14:27:42-04:00",
     "description": "An Implementation Guide for the Carequality Subscription Use Case",
     "fhirVersion": "4.0.1"
   },

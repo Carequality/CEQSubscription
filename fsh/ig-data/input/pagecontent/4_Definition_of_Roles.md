@@ -25,10 +25,6 @@ known to have a clinical relationship with the patient who is the subject of a s
 ![Scenario 4: Both Actors have Subscription Service](Scenario4.png "Scenario 4: Both Actors have Subscription Service")
 </span>
 
-
-
-
-
 #### Limitations to Subscription Services
 A Subscription Service may not impose any additional terms beyond the
 Carequality Elements, including fees, on Notification Recipients or Notification Generators on any organization that is using the Subscription Service endpoint only to send, pass on, or receive notifications or subscriptions, but are not otherwise contractually bound to that Subscription Service.

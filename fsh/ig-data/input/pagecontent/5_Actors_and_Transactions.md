@@ -1,4 +1,4 @@
-The Carequality Push Notifcation IG defines specific Actors and Transactions.  All transactions require following the policies and requirements of the Carequality FHIR Implementation Guide, available at: [LINK]
+The Carequality Push Notification IG defines specific Actors and Transactions.  All transactions require following the policies and requirements of the Carequality FHIR Implementation Guide, available at: [LINK]
 
 ### Actors
 The Push Notifications defines 4 Actors:

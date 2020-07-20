@@ -13,16 +13,42 @@ The Push Notifications defines 4 Actors:
 1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver.
 1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver.
 2. NotifyEvent -- Push a notification "knock".
-3. RetrieveResource -- Retrieve Resource included in the knock  -- outside of scope for the Subscription IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
+3. RetrieveResource -- Retrieve Resource included in the knock  -- outside of scope for the this IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
 
 The Actors work with the Transactions as follows:
 
-|Actor|Transactions|Optionality|
-|-------------|-------------------------------|:-----:|
-|Notification Recipient |RegisterSubscription<br>RetrieveResource |R<BR>O<sup>1|
-|Notification Generator |NotifyEvent |R|
-|RecipientSMS |RegisterSubscription<br>RetrieveResource |R<BR>O<sup>1|
-|GeneratorSMS |NotifyEvent |R|
+<table border=1>
+<thead>
+<tr>
+<th>Actor</th>
+<th>Transactions</th>
+<th style="text-align:center">Optionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Notification Recipient</td>
+<td>RegisterSubscription<br>RetrieveResource</td>
+<td style="text-align:center">R<BR>O<sup>1</sup></td>
+</tr>
+<tr>
+<td>Notification Generator</td>
+<td>NotifyEvent</td>
+<td style="text-align:center">R</td>
+</tr>
+<tr>
+<td>RecipientSMS</td>
+<td>RegisterSubscription<br>RetrieveResource</td>
+<td style="text-align:center">R<BR>O<sup>1</sup></td>
+</tr>
+<tr>
+<td>GeneratorSMS</td>
+<td>NotifyEvent</td>
+<td style="text-align:center">R</td>
+</tr>
+</tbody>
+</table>
+
 
 <sup>1</sup> The Notification Recipient and RecipientSMS may or may not fetch the notification listed Resource depending on business requirements
 

@@ -13,7 +13,7 @@ The concept of a role within the use case is central to this Implementation Guid
 By default, any requirement specified in Sections 3 through 6 of this Guide applies to any Implementer regardless of role. Requirements that apply only to those Implementers with a particular role or roles will clearly indicate the role or roles to which they apply.
 ### Notification Generator
 An Implementer with the declared role of a Notification Generator is any organization, vendor, or other entity that initiates a push notification in response to a triggering event within the generator’s system to a Notification Recipient.
-An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section ----- of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.
+An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section 4 of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.
 ### Notification Recipient
 An Implementer with the declared role of a Receiving System is any system that manages subscriptions and receives notifications.
 <span style="display:block;text-align:center">
@@ -25,7 +25,7 @@ An Implementer with the declared role of a Receiving System is any system that m
 An Implementer or CC with the declared role of an Subscription Service provides subscription data management, and forwards patient specific subscriptions, subscription requests, and push notifications sent to them by Implementers or CCs in the Notification Generator, Notification Receiver, and Subscription Service roles. In addition, Subscription Services provide a list of Implementers and/or CCs in the Notification Generator or Receiver role who potentially have, likely have, or are
 known to have a clinical relationship with the patient who is the subject of a subscription.
 * An Implementer in the Subscription Service (Subserv) role may have CCs in other roles, even if the Implementer itself only plays the Subscription Service role.
-* An Implementer or CC with the declared role of a Subscription Service shall support the technical actor(s) specified in Section XXXX of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Subscription Service role.
+* An Implementer or CC with the declared role of a Subscription Service shall support the technical actor(s) specified in Section 4 of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Subscription Service role.
 * The Subscription Service must have a Business Associate relationship with organizations for whom they are managing subscriptions.
 <span style="display:block;text-align:center">
 ![Scenario 2: Notification Receiver has Subscription Service](Scenario2.png "Scenario 2: Notification Receiver has Subscription Service")

@@ -147,41 +147,41 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 1a. UpdateSubscription – As per RegisterSubscription, Push a subscription bundle with changed events to the receiver.
 1b. TerminateSubscription – As per RegisterSubscription, Push a subscription bundle with a “delete” event to the receiver.</li>
   <li>NotifyEvent – Push a notification “knock”.</li>
-  <li>RetrieveResource – Retrieve Resource included in the knock  – outside of scope for the Subscription IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.</li>
+  <li>RetrieveResource – Retrieve Resource included in the knock  – outside of scope for the this IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.</li>
 </ol>
 
 <p>The Actors work with the Transactions as follows:</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Actor</th>
-      <th>Transactions</th>
-      <th style="text-align: center">Optionality</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Notification Recipient</td>
-      <td>RegisterSubscription<br />RetrieveResource</td>
-      <td style="text-align: center">R<br />O<sup>1</sup></td>
-    </tr>
-    <tr>
-      <td>Notification Generator</td>
-      <td>NotifyEvent</td>
-      <td style="text-align: center">R</td>
-    </tr>
-    <tr>
-      <td>RecipientSMS</td>
-      <td>RegisterSubscription<br />RetrieveResource</td>
-      <td style="text-align: center">R<br />O<sup>1</sup></td>
-    </tr>
-    <tr>
-      <td>GeneratorSMS</td>
-      <td>NotifyEvent</td>
-      <td style="text-align: center">R</td>
-    </tr>
-  </tbody>
+<table border="1">
+<thead>
+<tr>
+<th>Actor</th>
+<th>Transactions</th>
+<th style="text-align:center">Optionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Notification Recipient</td>
+<td>RegisterSubscription<br />RetrieveResource</td>
+<td style="text-align:center">R<br />O<sup>1</sup></td>
+</tr>
+<tr>
+<td>Notification Generator</td>
+<td>NotifyEvent</td>
+<td style="text-align:center">R</td>
+</tr>
+<tr>
+<td>RecipientSMS</td>
+<td>RegisterSubscription<br />RetrieveResource</td>
+<td style="text-align:center">R<br />O<sup>1</sup></td>
+</tr>
+<tr>
+<td>GeneratorSMS</td>
+<td>NotifyEvent</td>
+<td style="text-align:center">R</td>
+</tr>
+</tbody>
 </table>
 
 <p><sup>1</sup> The Notification Recipient and RecipientSMS may or may not fetch the notification listed Resource depending on business requirements</p>
@@ -229,7 +229,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 15:02-0400">2020-07-17</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 20, 2020 10:24-0400">2020-07-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -61,7 +61,13 @@
       "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Bundle",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation">operation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.name">name</a>" : "ceqsubscribe",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.definition">definition</a>" : "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe"
+            }
+          ]
         }
       ]
     }

@@ -54,7 +54,13 @@
       "resource": [
         {
           "type": "Bundle",
-          "profile": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"
+          "profile": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
+          "operation": [
+            {
+              "name": "ceqsubscribe",
+              "definition": "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe"
+            }
+          ]
         }
       ]
     }

@@ -148,12 +148,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Project results may be useful as a building block or launching point</li>
 </ul>
 
-<p>Subscriptions are system to system and the receiver of these subscriptions (Subscription Server or subscriber) must be able to route these messages to the appropriate end user (clinician(s), care team members) within their system. For auditing purposes, identification of a specific user is accomplished through FHIR authorizations as described in the FHIR Implementation Guide through SMART or oAuth.</p>
+<p>Subscriptions are system to system and the receiver of these subscriptions (Subscription Server or subscriber) must be able to route these messages to the appropriate end user (clinician(s), care team members) within their system. For auditing purposes, identification of a specific user is accomplished through FHIR authorizations as described in the FHIR Implementation Guide through SMART or OAuth.</p>
 
 <h3 id="definitions">Definitions</h3>
 <h4 id="topic">Topic</h4>
 <ul>
-  <li>Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an Ed admit): ‘admission’, ‘discharge’, ‘gap in care’, etc.</li>
+  <li>Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an ED admit): ‘admission’, ‘discharge’, ‘gap in care’, etc.</li>
   <li>Implementers (Notification Generators) choose which Topics to support.</li>
 </ul>
 
@@ -164,17 +164,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="notification">Notification</h4>
 <ul>
-  <li>Is a simple http ‘knock’ using POST and contaning only the FullURL of the Encounter resource created</li>
+  <li>Is a simple http ‘knock’ using POST and containing only the FullURL of the Encounter resource created</li>
 </ul>
 
 <h4 id="security-notes">Security Notes</h4>
 <ul>
-  <li>
-    <p>It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization</p>
-  </li>
-  <li>
-    <p>Servers should perform authorization checks prior to creating a Subscription to ensure it is valid.</p>
-  </li>
+  <li>It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization. Servers MUST perform authorization checks prior to creating a Subscription to ensure it is valid.</li>
 </ul>
 
 
@@ -200,7 +195,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 15:02-0400">2020-07-17</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 20, 2020 10:24-0400">2020-07-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

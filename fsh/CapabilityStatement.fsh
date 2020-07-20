@@ -14,3 +14,5 @@ InstanceOf: CapabilityStatement
 
 * rest.resource.profile = "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"
 * rest.resource.type = #Bundle
+* rest.resource.operation.name = "ceqsubscribe"
+* rest.resource.operation.definition = "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe"

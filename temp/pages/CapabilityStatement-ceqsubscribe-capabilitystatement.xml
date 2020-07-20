@@ -42,6 +42,10 @@
     <resource>
       <type value="Bundle"/>
       <profile value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"/>
+      <operation>
+        <name value="ceqsubscribe"/>
+        <definition value="https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe"/>
+      </operation>
     </resource>
   </rest>
 </CapabilityStatement>

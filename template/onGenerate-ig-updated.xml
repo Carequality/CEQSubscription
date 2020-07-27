@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-07-27T10:04:00-04:00"/>
+   <date value="2020-07-27T10:48:39-04:00"/>
    <contact>
       <name value="David Pyke"/>
       <telecom>
@@ -264,6 +264,11 @@
          <page>
             <nameUrl value="Notification_Triggers.html"/>
             <title value="Notification Triggers"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="Downloads.html"/>
+            <title value="Downloads"/>
             <generation value="markdown"/>
          </page>
          <page>

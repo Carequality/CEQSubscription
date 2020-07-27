@@ -154,6 +154,11 @@
           "nameUrl": "Notification_Triggers.html",
           "title": "Notification Triggers",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "Downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
         }
       ]
     },

@@ -1,88 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8d5cea98-72f2-46ae-adcb-5f7185b7ef36",
+  "id" : "d8e59c84-81c0-41dd-aa8f-3c7c4109d748",
   "meta" : {
-    "lastUpdated" : "2020-07-20T14:27:42.874-04:00"
+    "lastUpdated" : "2020-07-27T10:04:00.372-04:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQRestSecurityService",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "CEQRestSecurityService",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://hl7.org/fhir/R4/codesystem-restful-security-service.html\">RestfulSecurityService v4.0.1 (CodeSystem)</a></li><li><a href=\"CodeSystem-CEQRestSecurityService.html\">Carequality Extension on RestfulSecurityService v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-restful-security-service-OAuth\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-OAuth\">OAuth</a></td><td>http://terminology.hl7.org/CodeSystem/restful-security-service</td><td>OAuth</td><td>OAuth (unspecified version see oauth.net).</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-restful-security-service-SMART-on-FHIR\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-SMART-on-FHIR\">SMART-on-FHIR</a></td><td>http://terminology.hl7.org/CodeSystem/restful-security-service</td><td>SMART-on-FHIR</td><td>OAuth2 using SMART-on-FHIR profile (see http://docs.smarthealthit.org/).</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-restful-security-service-NTLM\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-NTLM\">NTLM</a></td><td>http://terminology.hl7.org/CodeSystem/restful-security-service</td><td>NTLM</td><td>Microsoft NTLM Authentication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-restful-security-service-Basic\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-Basic\">Basic</a></td><td>http://terminology.hl7.org/CodeSystem/restful-security-service</td><td>Basic</td><td>Basic authentication defined in HTTP specification.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-restful-security-service-Kerberos\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-Kerberos\">Kerberos</a></td><td>http://terminology.hl7.org/CodeSystem/restful-security-service</td><td>Kerberos</td><td>see http://www.ietf.org/rfc/rfc4120.txt.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-restful-security-service-Certificates\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-restful-security-service.html#restful-security-service-Certificates\">Certificates</a></td><td>http://terminology.hl7.org/CodeSystem/restful-security-service</td><td>Certificates</td><td>SSL where client must have a certificate registered with the server.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQRestSecurityService-CEQFHIR\"> </a><a href=\"CodeSystem-CEQRestSecurityService.html#CEQRestSecurityService-CEQFHIR\">CEQFHIR</a></td><td>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService</td><td>Carequality FHIR</td><td>Must follow requirements based on the Carequality FHIR Implementation Guide</td></tr></table></div>"
-      },
-      "url" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQRestSecurityService",
-      "version" : "0.1.0",
-      "name" : "CEQRestSecurityService",
-      "title" : "Carequality Extension on RestfulSecurityService",
-      "status" : "active",
-      "date" : "2020-07-20T14:27:42-04:00",
-      "contact" : [{
-        "name" : "David Pyke",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "mailto:david.pyke@readycomputing.com"
-        }]
-      }],
-      "description" : "Adds requirement to abide by the Carequality FHIR Implementation Guide",
-      "expansion" : {
-        "identifier" : "urn:uuid:ddbbda02-fc3a-4de4-93d3-2317e305f55c",
-        "timestamp" : "2020-07-20T14:27:47-04:00",
-        "total" : 7,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://terminology.hl7.org/CodeSystem/restful-security-service|4.0.1"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
-          "code" : "OAuth",
-          "display" : "OAuth"
-        },
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
-          "code" : "SMART-on-FHIR",
-          "display" : "SMART-on-FHIR"
-        },
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
-          "code" : "NTLM",
-          "display" : "NTLM"
-        },
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
-          "code" : "Basic",
-          "display" : "Basic"
-        },
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
-          "code" : "Kerberos",
-          "display" : "Kerberos"
-        },
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
-          "code" : "Certificates",
-          "display" : "Certificates"
-        },
-        {
-          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService",
-          "code" : "CEQFHIR",
-          "display" : "Carequality FHIR"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -96,7 +19,7 @@
       "name" : "CEQSubscriberPurposeofUse",
       "title" : "Permitted Purposes Of Use",
       "status" : "active",
-      "date" : "2020-07-20T14:27:42-04:00",
+      "date" : "2020-07-27T10:04:00-04:00",
       "contact" : [{
         "name" : "David Pyke",
         "telecom" : [{
@@ -106,8 +29,8 @@
       }],
       "description" : "These are the permitted Purpose of Use within the Carequality network",
       "expansion" : {
-        "identifier" : "urn:uuid:057cdd7e-9ba8-45f9-8415-61fa018b73bd",
-        "timestamp" : "2020-07-20T14:27:47-04:00",
+        "identifier" : "urn:uuid:1c5867cc-160a-47cb-aa3c-7b9ad17bdfc4",
+        "timestamp" : "2020-07-27T10:04:04-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -164,7 +87,7 @@
       "name" : "CEQPushEventCodes",
       "title" : "Carequality Push Notification Events",
       "status" : "active",
-      "date" : "2020-07-20T14:27:42-04:00",
+      "date" : "2020-07-27T10:04:00-04:00",
       "contact" : [{
         "name" : "David Pyke",
         "telecom" : [{
@@ -174,8 +97,8 @@
       }],
       "description" : "The codes to define each of the permitted events for Carequality Network Subscriptions",
       "expansion" : {
-        "identifier" : "urn:uuid:8ca4aead-db75-4258-ac28-d526a6d3a35a",
-        "timestamp" : "2020-07-20T14:27:47-04:00",
+        "identifier" : "urn:uuid:257b0fb2-6a95-4566-a1a7-e98981cee472",
+        "timestamp" : "2020-07-27T10:04:04-04:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",

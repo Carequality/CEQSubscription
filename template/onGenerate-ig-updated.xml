@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-07-20T14:27:42-04:00"/>
+   <date value="2020-07-27T10:04:00-04:00"/>
    <contact>
       <name value="David Pyke"/>
       <telecom>
@@ -232,34 +232,6 @@
          <exampleBoolean value="true"/>
          <groupingId value="_ex_example"/>
       </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ValueSet"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-CEQRestSecurityService.html"/>
-         </extension>
-         <reference>
-            <reference value="ValueSet/CEQRestSecurityService"/>
-         </reference>
-         <name value="Carequality Extension on RestfulSecurityService"/>
-         <description value="Adds requirement to abide by the Carequality FHIR Implementation Guide"/>
-         <groupingId value="_term_valueset"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CodeSystem"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-CEQRestSecurityService.html"/>
-         </extension>
-         <reference>
-            <reference value="CodeSystem/CEQRestSecurityService"/>
-         </reference>
-         <name value="Carequality Extension on RestfulSecurityService"/>
-         <description value="Adds requirement to abide by the Carequality FHIR Implementation Guide"/>
-         <groupingId value="_term_codesystem"/>
-      </resource>
       <page>
          <nameUrl value="toc.html"/>
          <title value="Table of Contents"/>
@@ -324,11 +296,6 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-CEQRestSecurityService.html"/>
-               <title value="Carequality Extension on RestfulSecurityService"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="CodeSystem-CEQNotificationEvents.html"/>
                <title value="Carequality Push Notification Events"/>
                <generation value="generated"/>
@@ -336,11 +303,6 @@
             <page>
                <nameUrl value="CodeSystem-NHINPurposeOfUse.html"/>
                <title value="NHIN Purpose Of Use"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CodeSystem-CEQRestSecurityService.html"/>
-               <title value="Carequality Extension on RestfulSecurityService"/>
                <generation value="generated"/>
             </page>
             <page>

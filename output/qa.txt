@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 1, info = 0
-IG Publisher Version: v1.1.3-SNAPSHOT Out of date - current version is 1.1.3
-Generated Mon Jul 20 14:27:51 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+IG Publisher Version: v1.1.3 Out of date - current version is 1.1.3
+Generated Mon Jul 27 10:04:08 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
  Build Errors : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0
@@ -15,10 +15,8 @@ Generated Mon Jul 20 14:27:51 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fh
  /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQSubscriptionBundle : 0 / 1
  /home/loftwyr/FHIR/CEQSubscription/input/profiles/StructureDefinition-CEQsubscription : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQNotificationEvents : 0 / 0
- /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQRestSecurityService : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-NHINPurposeOfUse : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQPushEventCodes : 0 / 0
- /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQRestSecurityService : 0 / 0
  /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse : 0 / 0
 </table>
 == n/a ==
@@ -42,13 +40,9 @@ WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r
 INFORMATION: StructureDefinition/CEQsubscription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQNotificationEvents.json ==
 INFORMATION: CodeSystem/CEQNotificationEvents: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-CEQRestSecurityService.json ==
-INFORMATION: CodeSystem/CEQRestSecurityService: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/CodeSystem-NHINPurposeOfUse.json ==
 INFORMATION: CodeSystem/NHINPurposeOfUse: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQPushEventCodes.json ==
 INFORMATION: ValueSet/CEQPushEventCodes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQRestSecurityService.json ==
-INFORMATION: ValueSet/CEQRestSecurityService: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /home/loftwyr/FHIR/CEQSubscription/input/vocabulary/ValueSet-CEQSubscriberPurposeofUse.json ==
 INFORMATION: ValueSet/CEQSubscriberPurposeofUse: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

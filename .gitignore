@@ -1,5 +1,7 @@
-input-cache/org.hl7.fhir.publisher.jar
 input-cache/publisher.jar
-input-cache/*
-output/*
-temp/*
+input-cache/**/
+input-cache/
+output/**/
+output/
+temp/**/
+temp/

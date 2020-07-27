@@ -14,6 +14,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | ig.ini                                                                  | generated | fsh/config.yaml                                               |
 | input/ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.json | generated | fsh/config.yaml, {all input resources and pages}              |
 | input/ignoreWarnings.txt                                                | generated |                                                               |
+| input/includes/menu.xml                                                 | generated | fsh/config.yaml                                               |
 | package-list.json                                                       | generated | fsh/config.yaml                                               |
 | input/images/NotificationFlow.png                                       | copied    | fsh/ig-data/input/images/NotificationFlow.png                 |
 | input/images/Scenario1.png                                              | copied    | fsh/ig-data/input/images/Scenario1.png                        |

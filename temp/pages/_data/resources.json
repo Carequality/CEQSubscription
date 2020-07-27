@@ -7,7 +7,7 @@
     "name": "Carequality_Subscription_Implementation_Guide",
     "title": "Carequality Subscription Implementation Guide for Push Notifications",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "draft"
   },
   "Subscription/CEQExample": {
@@ -39,7 +39,7 @@
     "name": "CEQsubscribe",
     "title": "Carequality Subscription Submission",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "draft"
   },
   "StructureDefinition/CEQextension": {
@@ -50,7 +50,7 @@
     "name": "CEQextension",
     "title": "Carequality Subscription Required Elements",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "draft"
   },
   "StructureDefinition/CEQsubscription": {
@@ -61,7 +61,7 @@
     "name": "CEQsubscription",
     "title": "Carequality Subscription Profile",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "draft"
   },
   "StructureDefinition/CEQSubscriptionBundle": {
@@ -72,73 +72,51 @@
     "name": "CEQSubscriptionBundle",
     "title": "Carequality Subscription Bundle",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "draft"
-  },
-  "ValueSet/CEQRestSecurityService": {
-    "history": false,
-    "index": 8,
-    "source": "input/vocabulary/ValueSet-CEQRestSecurityService.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQRestSecurityService",
-    "name": "CEQRestSecurityService",
-    "title": "Carequality Extension on RestfulSecurityService",
-    "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
-    "status": "active"
   },
   "ValueSet/CEQSubscriberPurposeofUse": {
     "history": false,
-    "index": 9,
+    "index": 8,
     "source": "input/vocabulary/ValueSet-CEQSubscriberPurposeofUse.json",
     "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
     "name": "CEQSubscriberPurposeofUse",
     "title": "Permitted Purposes Of Use",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "active"
   },
   "ValueSet/CEQPushEventCodes": {
     "history": false,
-    "index": 10,
+    "index": 9,
     "source": "input/vocabulary/ValueSet-CEQPushEventCodes.json",
     "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
     "name": "CEQPushEventCodes",
     "title": "Carequality Push Notification Events",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
-    "status": "active"
-  },
-  "CodeSystem/CEQRestSecurityService": {
-    "history": false,
-    "index": 11,
-    "source": "input/vocabulary/CodeSystem-CEQRestSecurityService.json",
-    "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQRestSecurityService",
-    "name": "CEQRestSecurityService",
-    "title": "Carequality Extension on RestfulSecurityService",
-    "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "active"
   },
   "CodeSystem/CEQNotificationEvents": {
     "history": false,
-    "index": 12,
+    "index": 10,
     "source": "input/vocabulary/CodeSystem-CEQNotificationEvents.json",
     "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
     "name": "CEQNotificationEvents",
     "title": "Carequality Push Notification Events",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "active"
   },
   "CodeSystem/NHINPurposeOfUse": {
     "history": false,
-    "index": 13,
+    "index": 11,
     "source": "input/vocabulary/CodeSystem-NHINPurposeOfUse.json",
     "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
     "name": "NHINPurposeOfUse",
     "title": "NHIN Purpose Of Use",
     "version": "0.1.0",
-    "date": "2020-07-20T14:27:42-04:00",
+    "date": "2020-07-27T10:04:00-04:00",
     "status": "active"
   }
 }

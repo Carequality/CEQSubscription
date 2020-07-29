@@ -7,7 +7,8 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
     eventCode 1..* MS and
     patientId 1..1 MS and
     subPurpose 1..1 MS and
-    subscriber 1..1 MS
+    subscriber 1..1 MS and
+    subserv 0..1 MS
 
 * extension[subIdentifier] ^short = "A Business Identifier"
 * extension[subIdentifier].value[x] only string
@@ -24,6 +25,9 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 
 * extension[subscriber] ^short = "End subscriber for the information"
 * extension[subscriber].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
+
+* extension[subserv] ^short = "Subscription Service acing as intermediary"
+* extension[subserv].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
 
 
 Profile: CEQsubscription
@@ -52,6 +56,7 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 * extension[ceqPushExtension].extension[subPurpose] 1..1
 * extension[ceqPushExtension].extension[subPurpose].valueCoding from CEQSubscriberPurposeofUse (extensible)
 * extension[ceqPushExtension].extension[subscriber] 1..1
+* extension[ceqPushExtension].extension[subserv] 0..1
 
 Profile: CEQSubscriptionBundle
 Parent: Bundle
@@ -67,7 +72,8 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry ^slicing.description = "Slice based on the entry.resource type"
 * entry contains
 	subsciptionentry 1..1 and
-	subscriberentry 1..1
+	subscriberentry 1..1 and
+  subserv 0..1
 
 * entry[subsciptionentry].resource 1..1
 * entry[subsciptionentry].resource only CEQsubscription
@@ -76,3 +82,7 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry[subscriberentry].resource 1..1
 * entry[subscriberentry].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or http://hl7.org/fhir/StructureDefinition/RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 * entry[subscriberentry].request.method = #POST
+
+* entry[subserv].resource 0..1
+* entry[subserv] only http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+* entry[subserv].request.method = #POST

@@ -26,4 +26,5 @@ Subscriptions are system to system and the receiver of these subscriptions (Subs
 * Is a simple http 'knock' using POST and containing only the FullURL of the Encounter resource created
 
 #### Security Notes
-* It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization. Servers MUST perform authorization checks prior to creating a Subscription to ensure it is valid.
+* It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization.
+* Notification Recipient and Notification Generators MUST follow all Carequality FHIR Implementation Guide steps for registration and authentication prior to any posting of subscription requests or sending notifications.

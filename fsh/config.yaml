@@ -51,8 +51,9 @@ menu:
   Table of Contents: toc.html
   Artifacts Summary: artifacts.html
   Service Level Requirements: Service_Level_Requirements.html
+  Actors and Transactions: Actors_and_Transactions.html
   Other Resources:
     Scenarios: Scenarios.html
-    Notification_Triggers: Notification_Triggers.html
+    Notification Triggers: Notification_Triggers.html
   Downloads: Downloads.html
 #     Artifact Index: artifacts.html

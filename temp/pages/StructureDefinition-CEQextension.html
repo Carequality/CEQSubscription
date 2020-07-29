@@ -189,9 +189,15 @@
   <!--Terminology Bindings heading in the fragment -->
   {%include StructureDefinition-CEQextension-tx.xhtml%}
 
+{% capture invariants %}
+  {% include StructureDefinition-CEQextension-inv.xhtml %}
+{% endcapture %}
+<!-- 218 is size of empty table -->
+{% unless invariants.size <= 218 %}
   <a name="inv"> </a>
   <!--Constraints  heading in the fragment -->
-  {%include StructureDefinition-CEQextension-inv.xhtml%}
+  {% include StructureDefinition-CEQextension-inv.xhtml %}
+{% endunless%}
 
   <!-- insert notes if present -->
   {% include fragment-notes.html type='StructureDefinition' id='CEQextension' %}

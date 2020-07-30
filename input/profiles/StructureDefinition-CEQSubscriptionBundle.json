@@ -174,7 +174,10 @@
         "path": "Bundle.entry.resource",
         "type": [
           {
-            "code": "Organization"
+            "code": "Organization",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+            ]
           }
         ]
       },

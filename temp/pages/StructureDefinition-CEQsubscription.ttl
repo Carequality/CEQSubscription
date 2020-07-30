@@ -27,7 +27,7 @@
   fhir:StructureDefinition.title [ fhir:value "Carequality Subscription Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-07-30T10:47:23-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-07-30T10:53:25-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Carequality"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1789,9 +1789,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
+           fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization>
          ]
        ];
        fhir:ElementDefinition.constraint [

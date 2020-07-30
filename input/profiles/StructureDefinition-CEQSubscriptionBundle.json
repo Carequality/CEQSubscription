@@ -161,6 +161,27 @@
         "id": "Bundle.entry:subscriberentry.request.method",
         "path": "Bundle.entry.request.method",
         "patternCode": "POST"
+      },
+      {
+        "id": "Bundle.entry:subserv",
+        "path": "Bundle.entry",
+        "sliceName": "subserv",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:subserv.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Organization"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:subserv.request.method",
+        "path": "Bundle.entry.request.method",
+        "patternCode": "POST"
       }
     ]
   }

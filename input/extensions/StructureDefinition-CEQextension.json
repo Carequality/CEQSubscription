@@ -211,6 +211,37 @@
         ]
       },
       {
+        "id": "Extension.extension:subserv",
+        "path": "Extension.extension",
+        "sliceName": "subserv",
+        "short": "Subscription Service acing as intermediary",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:subserv.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subserv.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subserv"
+      },
+      {
+        "id": "Extension.extension:subserv.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension"

@@ -22,6 +22,9 @@
   <li>
     <a href="Service_Level_Requirements.html">Service Level Requirements</a>
   </li>
+  <li>
+    <a href="Actors_and_Transactions.html">Actors and Transactions</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
       <b class="caret"></b>
@@ -31,7 +34,7 @@
         <a href="Scenarios.html">Scenarios</a>
       </li>
       <li>
-        <a href="Notification_Triggers.html">Notification_Triggers</a>
+        <a href="Notification_Triggers.html">Notification Triggers</a>
       </li>
     </ul>
   </li>

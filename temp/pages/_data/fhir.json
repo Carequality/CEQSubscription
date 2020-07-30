@@ -14,8 +14,8 @@
   "toolingVersionFull": "4.4.0 (3)",
   "totalFiles": 12,
   "processedFiles": 32,
-  "genDate": "Tue, Jul 28, 2020 18:57-0400",
-  "genDay": "28/07/2020",
+  "genDate": "Thu, Jul 30, 2020 10:47-0400",
+  "genDay": "30/07/2020",
   "ig": {
     "id": "sequoiaproject.fhir.us.pushnotifications",
     "name": "Carequality_Subscription_Implementation_Guide",
@@ -33,9 +33,12 @@
         ]
       }
     ],
-    "date": "2020-07-28T18:57:43-04:00",
+    "date": "2020-07-30T10:47:23-04:00",
     "description": "An Implementation Guide for the Carequality Subscription Use Case",
     "fhirVersion": "4.0.1"
   },
-  "hl7_fhir_us_core": "http://hl7.org/fhir/us/core"
+  "hl7_fhir_us_core": "http://hl7.org/fhir/us/core",
+  "ver": {
+    "hl7_fhir_us_core": "http://hl7.org/fhir/us/core/STU3.1"
+  }
 }

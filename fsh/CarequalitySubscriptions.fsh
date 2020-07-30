@@ -27,7 +27,7 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 * extension[subscriber].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
 
 * extension[subserv] ^short = "Subscription Service acing as intermediary"
-* extension[subserv].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
+* extension[subserv].value[x] only Reference(Organization)
 
 
 Profile: CEQsubscription
@@ -84,5 +84,5 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry[subscriberentry].request.method = #POST
 
 * entry[subserv].resource 0..1
-* entry[subserv] only http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+* entry[subserv].resource only Organization
 * entry[subserv].request.method = #POST

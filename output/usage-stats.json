@@ -12,6 +12,7 @@
         "Identifier",
         "Coding",
         "Reference",
+        "Reference",
         "base64Binary",
         "boolean",
         "canonical",

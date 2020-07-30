@@ -27,7 +27,7 @@
   fhir:StructureDefinition.title [ fhir:value "Carequality Subscription Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-07-28T18:57:43-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-07-30T10:47:23-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Carequality"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1611,6 +1611,210 @@
        ]
      ], [
        fhir:index 36;
+       fhir:Element.id [ fhir:value "Subscription.extension:ceqPushExtension.extension:subserv" ];
+       fhir:ElementDefinition.path [ fhir:value "Subscription.extension.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "subserv" ];
+       fhir:ElementDefinition.short [ fhir:value "Subscription Service acing as intermediary" ];
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.id [ fhir:value "Subscription.extension:ceqPushExtension.extension:subserv.id" ];
+       fhir:ElementDefinition.path [ fhir:value "Subscription.extension.extension.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.id [ fhir:value "Subscription.extension:ceqPushExtension.extension:subserv.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "Subscription.extension.extension.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.id [ fhir:value "Subscription.extension:ceqPushExtension.extension:subserv.url" ];
+       fhir:ElementDefinition.path [ fhir:value "Subscription.extension.extension.url" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "identifies the meaning of the extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Source of the definition for the extension code - a logical name or a URL." ];
+       fhir:ElementDefinition.comment [ fhir:value "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Extension.url" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "uri" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.fixedUri [ fhir:value "subserv" ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.id [ fhir:value "Subscription.extension:ceqPushExtension.extension:subserv.value[x]" ];
+       fhir:ElementDefinition.path [ fhir:value "Subscription.extension.extension.value[x]" ];
+       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Subscription.extension:ceqPushExtension.url" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.extension.url" ];
        fhir:ElementDefinition.representation [
@@ -1645,7 +1849,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Subscription.extension:ceqPushExtension.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.extension.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
@@ -1828,7 +2032,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Subscription.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -1885,7 +2089,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Subscription.status" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.status" ];
        fhir:ElementDefinition.short [ fhir:value "requested | active | error | off" ];
@@ -1936,7 +2140,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.status" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Subscription.contact" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.contact" ];
        fhir:ElementDefinition.short [ fhir:value "Contact details for source (e.g. troubleshooting)" ];
@@ -1976,7 +2180,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Subscription.end" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.end" ];
        fhir:ElementDefinition.short [ fhir:value "When to automatically delete the subscription" ];
@@ -2013,7 +2217,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.done[x]" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Subscription.reason" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Description of why this subscription was created" ];
@@ -2049,7 +2253,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.why[x]" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Subscription.criteria" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.criteria" ];
        fhir:ElementDefinition.short [ fhir:value "Rule for server push" ];
@@ -2082,7 +2286,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Subscription.error" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.error" ];
        fhir:ElementDefinition.short [ fhir:value "Latest error note" ];
@@ -2113,7 +2317,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 45;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Subscription.channel" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel" ];
        fhir:ElementDefinition.short [ fhir:value "The channel on which to report matches to the criteria" ];
@@ -2144,7 +2348,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Subscription.channel.id" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel.id" ];
        fhir:ElementDefinition.representation [
@@ -2177,7 +2381,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Subscription.channel.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2232,7 +2436,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Subscription.channel.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2292,7 +2496,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Subscription.channel.type" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel.type" ];
        fhir:ElementDefinition.short [ fhir:value "rest-hook | websocket | email | sms | message" ];
@@ -2337,7 +2541,7 @@
          ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Subscription.channel.endpoint" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel.endpoint" ];
        fhir:ElementDefinition.short [ fhir:value "Where the channel points to" ];
@@ -2369,7 +2573,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 51;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Subscription.channel.payload" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel.payload" ];
        fhir:ElementDefinition.short [ fhir:value "MIME type to send, or omit for no payload" ];
@@ -2418,7 +2622,7 @@
          ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Subscription.channel.header" ];
        fhir:ElementDefinition.path [ fhir:value "Subscription.channel.header" ];
        fhir:ElementDefinition.short [ fhir:value "Usage depends on the channel type" ];

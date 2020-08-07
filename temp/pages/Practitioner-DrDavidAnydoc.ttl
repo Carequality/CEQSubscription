@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: DrDavidAnydoc</p><p><b>meta</b>: </p><p><b>identifier</b>: 8274017284</p><p><b>name</b>: David Anydoc </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: DrDavidAnydoc</p><p><b>meta</b>: </p><p><b>identifier</b>: id: 8274017284</p><p><b>name</b>: David Anydoc </p></div>"
   ];
   fhir:Practitioner.identifier [
      fhir:index 0;

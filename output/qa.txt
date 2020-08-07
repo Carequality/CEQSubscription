@@ -2,47 +2,47 @@
 =========================================
 
 err = 0, warn = 1, info = 0
-IG Publisher Version: 1.1.6
-Generated Thu Jul 30 10:54:03 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+IG Publisher Version: 1.1.9 Out of date - current version is 1.1.10
+Generated Fri Aug 07 11:56:59 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
- Build Errors : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\CapabilityStatement-ceqsubscribe-capabilitystatement : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\Practitioner-DrDavidAnydoc : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\Subscription-CEQExample : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQextension : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQSubscriptionBundle : 0 / 1
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQsubscription : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\CodeSystem-CEQNotificationEvents : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\CodeSystem-NHINPurposeOfUse : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQPushEventCodes : 0 / 0
- C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQSubscriberPurposeofUse : 0 / 0
+ Build Errors : 0 / 0 / 0
+ C:\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\examples\CapabilityStatement-ceqsubscribe-capabilitystatement : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\examples\Practitioner-DrDavidAnydoc : 0 / 0 / 2
+ C:\FHIR\CEQSubscription\input\examples\Subscription-CEQExample : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQextension : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQSubscriptionBundle : 0 / 1 / 1
+ C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQsubscription : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\vocabulary\CodeSystem-CEQNotificationEvents : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\vocabulary\CodeSystem-NHINPurposeOfUse : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQPushEventCodes : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQSubscriberPurposeofUse : 0 / 0 / 1
 </table>
 == n/a ==
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.json ==
+== C:\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.json ==
 INFORMATION: ImplementationGuide/sequoiaproject.fhir.us.pushnotifications: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\CapabilityStatement-ceqsubscribe-capabilitystatement.json ==
+== C:\FHIR\CEQSubscription\input\examples\CapabilityStatement-ceqsubscribe-capabilitystatement.json ==
 INFORMATION: CapabilityStatement/ceqsubscribe-capabilitystatement: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe.json ==
+== C:\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe.json ==
 INFORMATION: OperationDefinition/ceqsubscribe: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\Practitioner-DrDavidAnydoc.json ==
+== C:\FHIR\CEQSubscription\input\examples\Practitioner-DrDavidAnydoc.json ==
 INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
 INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner - listed in meta
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\examples\Subscription-CEQExample.json ==
+== C:\FHIR\CEQSubscription\input\examples\Subscription-CEQExample.json ==
 INFORMATION: Subscription/CEQExample: Subscription: Validate resource against profile https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQextension.json ==
+== C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQextension.json ==
 INFORMATION: StructureDefinition/CEQextension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQSubscriptionBundle.json ==
+== C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQSubscriptionBundle.json ==
 INFORMATION: StructureDefinition/CEQSubscriptionBundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle'): The Implementation Guide contains no examples for this profile
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQsubscription.json ==
+== C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQsubscription.json ==
 INFORMATION: StructureDefinition/CEQsubscription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\CodeSystem-CEQNotificationEvents.json ==
+== C:\FHIR\CEQSubscription\input\vocabulary\CodeSystem-CEQNotificationEvents.json ==
 INFORMATION: CodeSystem/CEQNotificationEvents: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\CodeSystem-NHINPurposeOfUse.json ==
+== C:\FHIR\CEQSubscription\input\vocabulary\CodeSystem-NHINPurposeOfUse.json ==
 INFORMATION: CodeSystem/NHINPurposeOfUse: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQPushEventCodes.json ==
+== C:\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQPushEventCodes.json ==
 INFORMATION: ValueSet/CEQPushEventCodes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== C:\Users\Admin\Documents\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQSubscriberPurposeofUse.json ==
+== C:\FHIR\CEQSubscription\input\vocabulary\ValueSet-CEQSubscriberPurposeofUse.json ==
 INFORMATION: ValueSet/CEQSubscriberPurposeofUse: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

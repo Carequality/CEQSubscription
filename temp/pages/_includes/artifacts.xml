@@ -37,19 +37,21 @@
                   <a href="StructureDefinition-CEQSubscriptionBundle.html"
                      title="StructureDefinition/CEQSubscriptionBundle">Carequality Subscription Bundle</a>
                </td>
-               <td>Bundle to be submitted for Carequality subscription enrollment</td>
+               <td>{% capture desc %}Bundle to be submitted for Carequality subscription enrollment{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CEQsubscription.html"
                      title="StructureDefinition/CEQsubscription">Carequality Subscription Profile</a>
                </td>
-               <td>Extended Elements and Constraints Specific to the Carequality Use Case
+               <td>{% capture desc %}Extended Elements and Constraints Specific to the Carequality Use Case
 Carequality has defined a custom flow for a Subscription that removes the criteria use
 in favour of specific events defined as URIs.  This adds requirements that the PatientID
 and an identifier be added to the resource.  The identifier element is the endpoint id
 [Base]/fhir/Subscription/[identifier]
-A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.</td>
+A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
          </tbody>
       </table>
@@ -66,7 +68,8 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
                   <a href="StructureDefinition-CEQextension.html"
                      title="StructureDefinition/CEQextension">Carequality Subscription Required Elements</a>
                </td>
-               <td>Additional Elements to Support Carequality Subscription Notifications</td>
+               <td>{% capture desc %}Additional Elements to Support Carequality Subscription Notifications{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
          </tbody>
       </table>
@@ -83,14 +86,16 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
                   <a href="ValueSet-CEQPushEventCodes.html"
                      title="ValueSet/CEQPushEventCodes">Carequality Push Notification Events</a>
                </td>
-               <td>The codes to define each of the permitted events for Carequality Network Subscriptions</td>
+               <td>{% capture desc %}The codes to define each of the permitted events for Carequality Network Subscriptions{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CEQSubscriberPurposeofUse.html"
                      title="ValueSet/CEQSubscriberPurposeofUse">Permitted Purposes Of Use</a>
                </td>
-               <td>These are the permitted Purpose of Use within the Carequality network</td>
+               <td>{% capture desc %}These are the permitted Purpose of Use within the Carequality network{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
          </tbody>
       </table>
@@ -107,14 +112,16 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
                   <a href="CodeSystem-CEQNotificationEvents.html"
                      title="CodeSystem/CEQNotificationEvents">Carequality Push Notification Events</a>
                </td>
-               <td>The codes to define each of the permitted events for Carequality Network Subscriptions</td>
+               <td>{% capture desc %}The codes to define each of the permitted events for Carequality Network Subscriptions{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-NHINPurposeOfUse.html"
                      title="CodeSystem/NHINPurposeOfUse">NHIN Purpose Of Use</a>
                </td>
-               <td>These are the permitted Purpose of Use within the Carequality network</td>
+               <td>{% capture desc %}These are the permitted Purpose of Use within the Carequality network{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
          </tbody>
       </table>
@@ -130,28 +137,32 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
                <td style="column-width:30%">
                   <a href="Subscription-CEQExample.html" title="Subscription/CEQExample">Example Subscribing</a>
                </td>
-               <td>Example of the full Resource for a Carequality Subscription</td>
+               <td>{% capture desc %}Example of the full Resource for a Carequality Subscription{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Practitioner-DrDavidAnydoc.html"
                      title="Practitioner/DrDavidAnydoc">Dr. David Anydoc</a>
                </td>
-               <td>Practitioner for example use</td>
+               <td>{% capture desc %}Practitioner for example use{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="OperationDefinition-ceqsubscribe.html"
                      title="OperationDefinition/ceqsubscribe">CEQsubscription</a>
                </td>
-               <td>Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons</td>
+               <td>{% capture desc %}Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CapabilityStatement-ceqsubscribe-capabilitystatement.html"
                      title="CapabilityStatement/ceqsubscribe-capabilitystatement">CEQSubscription-Recipient</a>
                </td>
-               <td>Capability Statement to describe the requirements for a Notification Recipient Actor</td>
+               <td>{% capture desc %}Capability Statement to describe the requirements for a Notification Recipient Actor{% endcapture %}
+{{ desc | markdownify}}</td>
             </tr>
          </tbody>
       </table>

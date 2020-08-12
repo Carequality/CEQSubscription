@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-08-07T11:56:25-04:00"/>
+   <date value="2020-08-12T15:03:17-04:00"/>
    <contact>
       <name value="David Pyke"/>
       <telecom>
@@ -243,8 +243,13 @@
             <generation value="markdown"/>
          </page>
          <page>
-            <nameUrl value="Scenarios.html"/>
-            <title value="Scenarios"/>
+            <nameUrl value="Customizable_Principles_of_Trust.html"/>
+            <title value="Customizable Principles of Trust"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="Definition_of_Roles.html"/>
+            <title value="Definition of Roles"/>
             <generation value="markdown"/>
          </page>
          <page>
@@ -253,8 +258,8 @@
             <generation value="markdown"/>
          </page>
          <page>
-            <nameUrl value="Definition_of_Roles.html"/>
-            <title value="Definition of Roles"/>
+            <nameUrl value="Scenarios.html"/>
+            <title value="Scenarios"/>
             <generation value="markdown"/>
          </page>
          <page>

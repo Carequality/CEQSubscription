@@ -5,7 +5,7 @@ By default, any requirement specified in Sections 3 through 6 of this Guide appl
 An Implementer with the declared role of a Notification Generator is any organization, vendor, or other entity that initiates a push notification in response to a triggering event within the generator’s system to a Notification Recipient.
 An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section 4 of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.
 ### Notification Recipient
-An Implementer with the declared role of a Receiving System is any system that manages subscriptions and receives notifications.
+An Implementer with the declared role of a Notification Recipient is any system that manages subscriptions and receives notifications.
 <span style="display:block;text-align:center">
 ![Usage Scenario 1, No Intermediary](Scenario1.png "Scenario 1, No Intermediary")
 </span>

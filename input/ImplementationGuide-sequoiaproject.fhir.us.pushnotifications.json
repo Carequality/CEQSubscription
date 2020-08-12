@@ -131,8 +131,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "Scenarios.html",
-          "title": "Scenarios",
+          "nameUrl": "Customizable_Principles_of_Trust.html",
+          "title": "Customizable Principles of Trust",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Definition_of_Roles.html",
+          "title": "Definition of Roles",
           "generation": "markdown"
         },
         {
@@ -141,8 +146,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "Definition_of_Roles.html",
-          "title": "Definition of Roles",
+          "nameUrl": "Scenarios.html",
+          "title": "Scenarios",
           "generation": "markdown"
         },
         {

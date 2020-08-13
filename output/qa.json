@@ -3,10 +3,8 @@
   "name": "Carequality_Subscription_Implementation_Guide",
   "package-id": "sequoiaproject.fhir.us.pushnotifications",
   "ig-ver": "0.1.0",
-  "date": "Wed, 12 Aug, 2020 15:03:17 -0400",
-  "errs": 0,
-  "warnings": 1,
-  "hints": 0,
+  "date": "Thu, 13 Aug, 2020 10:22:36 -0400",
+  "exception": "C:\\FHIR\\CEQSubscription\\temp\\qa\\StructureDefinition-CEQextension-ttl-html.html (The requested operation cannot be performed on a file with a user-mapped section open)",
   "version": "4.0.1",
   "tool": "4.4.0 (3)"
 }

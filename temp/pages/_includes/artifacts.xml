@@ -34,6 +34,14 @@
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQNotificationBundle.html"
+                     title="StructureDefinition/CEQNotificationBundle">Carequality Notification Bundle</a>
+               </td>
+               <td>{% capture desc %}Bundle for Carequality subscription notification{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-CEQSubscriptionBundle.html"
                      title="StructureDefinition/CEQSubscriptionBundle">Carequality Subscription Bundle</a>
                </td>
@@ -69,6 +77,22 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
                      title="StructureDefinition/CEQextension">Carequality Subscription Required Elements</a>
                </td>
                <td>{% capture desc %}Additional Elements to Support Carequality Subscription Notifications{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQEventCode.html"
+                     title="StructureDefinition/CEQEventCode">Carequality event Code within the Notification Bundle</a>
+               </td>
+               <td>{% capture desc %}A code for inclusion in the notification bundle identifying the event type that triggered the notification{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQNotificationExtension.html"
+                     title="StructureDefinition/CEQNotificationExtension">Carequality Notification Code Extension</a>
+               </td>
+               <td>{% capture desc %}Additional Element to Support Carequality Subscription Notification Code{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>

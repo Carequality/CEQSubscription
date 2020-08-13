@@ -35,6 +35,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/CEQNotificationBundle"
+        },
+        "name": "Carequality Notification Bundle",
+        "description": "Bundle for Carequality subscription notification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/CEQSubscriptionBundle"
         },
         "name": "Carequality Subscription Bundle",

@@ -18,7 +18,7 @@
   fhir:OperationDefinition.title [ fhir:value "Carequality Subscription Submission"];
   fhir:OperationDefinition.status [ fhir:value "draft"];
   fhir:OperationDefinition.kind [ fhir:value "operation"];
-  fhir:OperationDefinition.date [ fhir:value "2020-08-12T15:03:17-04:00"^^xsd:dateTime];
+  fhir:OperationDefinition.date [ fhir:value "2020-08-13T10:22:36-04:00"^^xsd:dateTime];
   fhir:OperationDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];

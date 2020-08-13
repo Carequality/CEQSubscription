@@ -1,0 +1,161 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CEQNotificationBundle",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle",
+  "version": "0.1.0",
+  "name": "CEQNotificationBundle",
+  "title": "Carequality Notification Bundle",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Carequality",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://carequality.org/get-involved/technical-workgroup/"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:david.pyke@readycomputing.com"
+        }
+      ]
+    }
+  ],
+  "description": "Bundle for Carequality subscription notification",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "collection"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry.extension",
+        "path": "Bundle.entry.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry.extension:eventCode",
+        "path": "Bundle.entry.extension",
+        "sliceName": "eventCode",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.extension:eventCode.extension",
+        "path": "Bundle.entry.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.extension:eventCode.url",
+        "path": "Bundle.entry.extension.url",
+        "fixedUri": "eventCode"
+      },
+      {
+        "id": "Bundle.entry.extension:eventCode.value[x]",
+        "path": "Bundle.entry.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry.extension:eventCode.valueCoding",
+        "path": "Bundle.entry.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"
+        }
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "short": "URL of resource with details",
+        "min": 1
+      }
+    ]
+  }
+}

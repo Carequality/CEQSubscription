@@ -86,3 +86,21 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry[subserv].resource 0..1
 * entry[subserv].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 * entry[subserv].request.method = #POST
+
+
+
+Profile: CEQNotificationBundle
+Parent: Bundle
+Title: "Carequality Notification Bundle"
+Description: "Bundle for Carequality subscription notification"
+
+* insert FHIRPushStructureDefinitionContent
+
+* type = #collection (exactly)
+
+* entry 1..1
+* entry.extension contains eventCode 1..1 MS
+* entry.extension[eventCode].value[x] only Coding
+* entry.extension[eventCode].valueCoding from CEQPushEventCodes (required)
+* entry.fullUrl 1..1
+* entry.fullUrl ^short = "URL of resource with details"

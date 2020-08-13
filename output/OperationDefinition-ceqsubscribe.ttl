@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe> a fhir:OperationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ceqsubscribe"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CEQsubscribe</h2><p>OPERATION: CEQsubscribe</p><p>The official URL for this operation definition is: </p><pre>https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe</pre><div><p>Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subscription</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#canonical\">canonical</a></td><td/><td><div><p>The subscription request being submitted</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>If the operation outcome does not list any errors, then this is an indication that the operation would be expected to succeed</p>\n</div></td></tr></table></div>"
+  ];
+  fhir:OperationDefinition.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe"];
+  fhir:OperationDefinition.version [ fhir:value "0.1.0"];
+  fhir:OperationDefinition.name [ fhir:value "CEQsubscribe"];
+  fhir:OperationDefinition.title [ fhir:value "Carequality Subscription Submission"];
+  fhir:OperationDefinition.status [ fhir:value "draft"];
+  fhir:OperationDefinition.kind [ fhir:value "operation"];
+  fhir:OperationDefinition.date [ fhir:value "2020-08-13T10:36:53-04:00"^^xsd:dateTime];
+  fhir:OperationDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "David Pyke" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:david.pyke@readycomputing.com" ]
+     ]
+  ];
+  fhir:OperationDefinition.description [ fhir:value "Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons"];
+  fhir:OperationDefinition.code [ fhir:value "ceqsubscribe"];
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean];
+  fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.instance [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.parameter [
+     fhir:index 0;
+     fhir:OperationDefinition.parameter.name [ fhir:value "subscription" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The subscription request being submitted" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "canonical" ];
+     fhir:OperationDefinition.parameter.targetProfile [
+       fhir:value "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle";
+       fhir:index 0;
+       fhir:link <https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle>
+     ]
+  ], [
+     fhir:index 1;
+     fhir:OperationDefinition.parameter.name [ fhir:value "return" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "If the operation outcome does not list any errors, then this is an indication that the operation would be expected to succeed" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "OperationOutcome" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -22,8 +22,8 @@ The Push Notifications defines 4 Actors:
 1. RegisterSubscription -- Push a subscription (bundle) to the receiver.
 1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver.
 1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver.
-2. NotifyEvent -- Push a notification "knock".
-3. RetrieveResource -- Retrieve Resource included in the knock  -- outside of scope for the this IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
+2. NotifyEvent -- Push a notification "knock" bundle.
+3. RetrieveResource -- Retrieve Resource included in the bundle  -- outside of scope for the this IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
 
 The Actors work with the Transactions as follows:
 
@@ -71,9 +71,7 @@ The Notification Generator creates the Event and either requests the GeneratorSM
 
 A notification consists of a POST to the endpoint listed in the Subscription consisting only of a full URL to the Resource.  This "knock on the door" can activate the RetrieveResource transaction depending on the policy and procedures of the receiving organization.
 
-Notifications from event triggers are simplified to just an http 'knock'.  This follows the basic format of a POST to the Notification Recipient's endpoint with the FullURL of the Resource that has the data for the associated event.  e.g.,
-
-``` POST https://www.myserver.org/fhir/Encounter/ba90f9ab-fc56-4012-be4c-77cb9cf4cb84 ```
+Notifications from event triggers are simplified to just minimal bundle.  This bundle contains only the Topic code that categorizes the notification and a URL of the resource to be fetched that contains the information about the clinical event.
 
 This is sent to the endpoint specified in the Subscription resource that was POSTed to the Notification Generator e.g.,
 

@@ -1,0 +1,174 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "cc383b2f-bc18-45b7-9266-1aa623b019e3",
+  "meta" : {
+    "lastUpdated" : "2020-08-13T10:36:53.563-04:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "CEQPushEventCodes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 12 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CEQNotificationEvents.html\">Carequality Push Notification Events v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-CEQNotificationEvents.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-admit\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-admit\">admit</a></td><td>Admit</td><td>Admission event</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-edadmit\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-edadmit\">edadmit</a></td><td>ED Admit</td><td>Emergency Department Admission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-acadmit\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-acadmit\">acadmit</a></td><td>Acute Admit</td><td>Acute Care Admission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-ambadmit\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-ambadmit\">ambadmit</a></td><td>Ambulatory Admit</td><td>Ambulatory Care Admission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-snradmit\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-snradmit\">snradmit</a></td><td>Skilled/Rehab Admit</td><td>SKilled Nursing or Rehabilitation Center Admission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-discharge\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-discharge\">discharge</a></td><td>Discharge</td><td>Discharge event</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-transferall\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transferall\">transferall</a></td><td>All Transfers</td><td>Any time a transfer order is generated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-transfersome\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-transfersome\">transfersome</a></td><td>Relevant Transfers</td><td>Transfers that require separate subscriptions or to a separate facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-arrival\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-arrival\">arrival</a></td><td>Arrival</td><td>Arrival at a port of call or other location where people arrive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-caregap\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-caregap\">caregap</a></td><td>Gap in Care</td><td>Implementer Defined</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-refer\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-refer\">refer</a></td><td>Referral</td><td>A Secondary Referral to another practitioner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-CEQNotificationEvents-delete\"> </a><a href=\"CodeSystem-CEQNotificationEvents.html#CEQNotificationEvents-delete\">delete</a></td><td>Delete Subscription</td><td>Cancel subscription to all events</td></tr></table></div>"
+      },
+      "url" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
+      "version" : "0.1.0",
+      "name" : "CEQPushEventCodes",
+      "title" : "Carequality Push Notification Events",
+      "status" : "active",
+      "date" : "2020-08-13T10:36:53-04:00",
+      "contact" : [{
+        "name" : "David Pyke",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:david.pyke@readycomputing.com"
+        }]
+      }],
+      "description" : "The codes to define each of the permitted events for Carequality Network Subscriptions",
+      "expansion" : {
+        "identifier" : "urn:uuid:19c290c5-1ea7-4e4d-b175-4edf2bccb871",
+        "timestamp" : "2020-08-13T10:37:03-04:00",
+        "total" : 12,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "admit",
+          "display" : "Admit"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "edadmit",
+          "display" : "ED Admit"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "acadmit",
+          "display" : "Acute Admit"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "ambadmit",
+          "display" : "Ambulatory Admit"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "snradmit",
+          "display" : "Skilled/Rehab Admit"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "discharge",
+          "display" : "Discharge"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "transferall",
+          "display" : "All Transfers"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "transfersome",
+          "display" : "Relevant Transfers"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "arrival",
+          "display" : "Arrival"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "caregap",
+          "display" : "Gap in Care"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "refer",
+          "display" : "Referral"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+          "code" : "delete",
+          "display" : "Delete Subscription"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "CEQSubscriberPurposeofUse",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-NHINPurposeOfUse.html\">NHIN Purpose Of Use v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-NHINPurposeOfUse.html\"><code>https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-NHINPurposeOfUse-TREATMENT\"> </a><a href=\"CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-TREATMENT\">TREATMENT</a></td><td>Treatment</td><td>Per 45 CFR § 164.501</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-NHINPurposeOfUse-PAYMENT\"> </a><a href=\"CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-PAYMENT\">PAYMENT</a></td><td>Payment</td><td>Per 45 CFR § 164.501</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-NHINPurposeOfUse-OPERATIONS\"> </a><a href=\"CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-OPERATIONS\">OPERATIONS</a></td><td>Health Care Operations</td><td>Per 45 CFR § 164.501</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-NHINPurposeOfUse-PUBLICHEALTH\"> </a><a href=\"CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-PUBLICHEALTH\">PUBLICHEALTH</a></td><td>Public Health Activities</td><td>Per 45 CFR § 164.512(b)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-NHINPurposeOfUse-REQUEST\"> </a><a href=\"CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-REQUEST\">REQUEST</a></td><td>Patient Request</td><td>Directly initiated by the patient or the patient’s personal representative as defined by 45 CFR 164.502(g), via a personal health record or other consumer-facing application</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---sequoiaproject.org-fhir-sphd-r4-CodeSystem-NHINPurposeOfUse-COVERAGE\"> </a><a href=\"CodeSystem-NHINPurposeOfUse.html#NHINPurposeOfUse-COVERAGE\">COVERAGE</a></td><td>Coverage Determination</td><td/></tr></table></div>"
+      },
+      "url" : "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
+      "version" : "0.1.0",
+      "name" : "CEQSubscriberPurposeofUse",
+      "title" : "Permitted Purposes Of Use",
+      "status" : "active",
+      "date" : "2020-08-13T10:36:53-04:00",
+      "contact" : [{
+        "name" : "David Pyke",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:david.pyke@readycomputing.com"
+        }]
+      }],
+      "description" : "These are the permitted Purpose of Use within the Carequality network",
+      "expansion" : {
+        "identifier" : "urn:uuid:4cd48205-6985-434b-bacc-1405c978d6bd",
+        "timestamp" : "2020-08-13T10:37:03-04:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+          "code" : "TREATMENT",
+          "display" : "Treatment"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+          "code" : "PAYMENT",
+          "display" : "Payment"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+          "code" : "OPERATIONS",
+          "display" : "Health Care Operations"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+          "code" : "PUBLICHEALTH",
+          "display" : "Public Health Activities"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+          "code" : "REQUEST",
+          "display" : "Patient Request"
+        },
+        {
+          "system" : "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+          "code" : "COVERAGE",
+          "display" : "Coverage Determination"
+        }]
+      }
+    }
+  }]
+}

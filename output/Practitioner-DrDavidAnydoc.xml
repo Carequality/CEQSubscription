@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="DrDavidAnydoc"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: DrDavidAnydoc</p><p><b>meta</b>: </p><p><b>identifier</b>: id: 8274017284</p><p><b>name</b>: David Anydoc </p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="8274017284"/>
+  </identifier>
+  <name>
+    <family value="Anydoc"/>
+    <given value="David"/>
+    <suffix value="MD"/>
+  </name>
+</Practitioner>

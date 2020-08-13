@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ceqsubscribe-capabilitystatement",
+    "type": "CapabilityStatement",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/CapabilityStatement/ceqsubscribe-capabilitystatement",
+    "version": "0.1.0",
+    "name": "CEQsubscribeCapabilityStatement"
+  },
+  {
+    "id": "CEQNotificationEvents",
+    "type": "CodeSystem",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+    "version": "0.1.0",
+    "name": "CEQNotificationEvents"
+  },
+  {
+    "id": "NHINPurposeOfUse",
+    "type": "CodeSystem",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+    "version": "0.1.0",
+    "name": "NHINPurposeOfUse"
+  },
+  {
+    "id": "sequoiaproject.fhir.us.pushnotifications",
+    "type": "ImplementationGuide",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
+    "version": "0.1.0",
+    "name": "Carequality_Subscription_Implementation_Guide"
+  },
+  {
+    "id": "ceqsubscribe",
+    "type": "OperationDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe",
+    "version": "0.1.0",
+    "name": "CEQsubscribe"
+  },
+  {
+    "id": "CEQEventCode",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode",
+    "version": "0.1.0",
+    "name": "CEQNotificationEvent"
+  },
+  {
+    "id": "CEQNotificationBundle",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle",
+    "version": "0.1.0",
+    "name": "CEQNotificationBundle"
+  },
+  {
+    "id": "CEQNotificationExtension",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationExtension",
+    "version": "0.1.0",
+    "name": "CEQNotificationExtension"
+  },
+  {
+    "id": "CEQSubscriptionBundle",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
+    "version": "0.1.0",
+    "name": "CEQSubscriptionBundle"
+  },
+  {
+    "id": "CEQextension",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension",
+    "version": "0.1.0",
+    "name": "CEQextension"
+  },
+  {
+    "id": "CEQsubscription",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription",
+    "version": "0.1.0",
+    "name": "CEQsubscription"
+  },
+  {
+    "id": "CEQPushEventCodes",
+    "type": "ValueSet",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes",
+    "version": "0.1.0",
+    "name": "CEQPushEventCodes"
+  },
+  {
+    "id": "CEQSubscriberPurposeofUse",
+    "type": "ValueSet",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
+    "version": "0.1.0",
+    "name": "CEQSubscriberPurposeofUse"
+  }
+]

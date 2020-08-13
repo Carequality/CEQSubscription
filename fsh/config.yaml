@@ -42,7 +42,6 @@ template: fhir.carequality.template
 history:
   current: http://build.fhir.org/ig/DavidPyke/CEQSubscription/
 
-
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -50,10 +49,9 @@ menu:
   IG Home: index.html
   Table of Contents: toc.html
   Artifacts Summary: artifacts.html
+  Customizable Principles of Trust: Customizable_Principles_of_Trust.html
   Service Level Requirements: Service_Level_Requirements.html
   Actors and Transactions: Actors_and_Transactions.html
-  Other Resources:
-    Scenarios: Scenarios.html
-    Notification Triggers: Notification_Triggers.html
+  Notification Triggers: Notification_Triggers.html
+  Scenarios: Scenarios.html
   Downloads: Downloads.html
-#     Artifact Index: artifacts.html

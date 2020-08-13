@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CEQNotificationEvent"];
   fhir:StructureDefinition.title [ fhir:value "Carequality event Code within the Notification Bundle"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-08-13T12:06:37-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-08-13T13:21:23-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];

@@ -47,8 +47,8 @@ An Implementer is permitted to serve ONLY in the role of Notification Recipient 
 
 An Implementer who is, or who provides access to, directly or via its CCs, one or more organizations that are subject to the exceptions listed in the previous paragraph, MUST list each such organization – as defined in this specific case to be the smallest separate business entity that as a whole meets the exception requirements – in the Carequality Directory as a distinct, separate entry. For clarity, note that an individual in solo practice could be an “organization” for purposes of this requirement. These entries must label the organization, in the Organization Type (Org-Type) field, as one of the following values, as appropriate based on that organization’s exception:
 
-•	Government Agency (Notification Recipient Only)
-•	Provider Organization (Notification Recipient Only)
+*	Government Agency (Notification Recipient Only)
+*	Provider Organization (Notification Recipient Only)
 
 Organizations that do not qualify for the exceptions listed in the previous paragraph MUST NOT be assigned these Org-Type values, so that the Carequality community can immediately discern which organizations are claiming an exception.
 

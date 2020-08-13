@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="07a0bd96-730d-4d82-a81a-385ffa2f55c5"/>
+  <id value="716fc83b-fa36-46c4-969f-d4861d9e988d"/>
   <meta>
-    <lastUpdated value="2020-08-13T12:06:37.706-04:00"/>
+    <lastUpdated value="2020-08-13T13:21:23.141-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -139,7 +139,7 @@
         <name value="CEQPushEventCodes"/>
         <title value="Carequality Push Notification Events"/>
         <status value="active"/>
-        <date value="2020-08-13T12:06:37-04:00"/>
+        <date value="2020-08-13T13:21:23-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -149,8 +149,8 @@
         </contact>
         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
         <expansion>
-          <identifier value="urn:uuid:d78f39fd-5090-4363-8198-6f89f2ba7a3f"/>
-          <timestamp value="2020-08-13T12:06:46-04:00"/>
+          <identifier value="urn:uuid:fd7eff69-72ce-4af8-88a8-9055669b99ec"/>
+          <timestamp value="2020-08-13T13:21:32-04:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -309,7 +309,7 @@
         <name value="CEQSubscriberPurposeofUse"/>
         <title value="Permitted Purposes Of Use"/>
         <status value="active"/>
-        <date value="2020-08-13T12:06:37-04:00"/>
+        <date value="2020-08-13T13:21:23-04:00"/>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -319,8 +319,8 @@
         </contact>
         <description value="These are the permitted Purpose of Use within the Carequality network"/>
         <expansion>
-          <identifier value="urn:uuid:f629a828-a76d-4bf3-ba4b-5703b35db4cd"/>
-          <timestamp value="2020-08-13T12:06:46-04:00"/>
+          <identifier value="urn:uuid:8223d9aa-2d32-4293-8eeb-e59e2a1ef4c8"/>
+          <timestamp value="2020-08-13T13:21:32-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>

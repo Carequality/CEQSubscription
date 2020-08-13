@@ -5,7 +5,7 @@
 1. Authentication and Authorization conducted as per Carequality Implementation Guide.
 2. PCP either has knowledge of or PCP EMR does query by demographics to determine Hospital PatientID.
 3. PCP/Care Coordinator is the Notification Recipient.
-4. Subscription, when created, knows Patient, PCP, CareCoordinator, etc.
+4. Subscription, when created, knows Patient, PCP, Care Coordinator, etc.
 5. Consent has been captured (if needed).
 6. Notification Recipient and Hospital know the patient, so they can create a subscription or find via RLS/eMPI call.
 7. Phase 1 assume patients are “known” by both Notification Recipient and Hospital (Notification Generator).

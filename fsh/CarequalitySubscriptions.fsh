@@ -102,5 +102,6 @@ Description: "Bundle for Carequality subscription notification"
 * entry.extension contains eventCode 1..1 MS
 * entry.extension[eventCode].value[x] only Coding
 * entry.extension[eventCode].valueCoding from CEQPushEventCodes (required)
+
 * entry.fullUrl 1..1
 * entry.fullUrl ^short = "URL of resource with details"

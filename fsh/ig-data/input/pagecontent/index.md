@@ -35,7 +35,7 @@ The Carequality and its community of member organizations have collaborated to d
 * Is a request for notifications based on a one or more Topics.  The end date is required and is a maximum of two years, without renewal.
 
 #### Notification
-* Is a simple http 'knock' using POST and containing only the FullURL of the Encounter resource created
+* Is a simple http 'knock' using a bundle containing only the Topic code and FullURL of the relevant resource created
 
 #### Security Notes
 * It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization.

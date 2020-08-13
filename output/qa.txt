@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 4, info = 0
-IG Publisher Version: 1.1.10
-Generated Thu Aug 13 10:37:20 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+IG Publisher Version: 1.1.11
+Generated Thu Aug 13 12:07:01 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
  Build Errors : 0 / 0 / 0
  C:\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0 / 1

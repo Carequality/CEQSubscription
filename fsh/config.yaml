@@ -48,10 +48,12 @@ history:
 menu:
   IG Home: index.html
   Table of Contents: toc.html
-  Artifacts Summary: artifacts.html
-  Customizable Principles of Trust: Customizable_Principles_of_Trust.html
-  Service Level Requirements: Service_Level_Requirements.html
-  Actors and Transactions: Actors_and_Transactions.html
-  Notification Triggers: Notification_Triggers.html
+  Policy Information:
+    Customizable Principles of Trust: Customizable_Principles_of_Trust.html
+    Service Level Requirements: Service_Level_Requirements.html
+  Technical Information:
+    Artifacts Summary: artifacts.html
+    Actors and Transactions: Actors_and_Transactions.html
+    Notification Triggers: Notification_Triggers.html
   Scenarios: Scenarios.html
   Downloads: Downloads.html

@@ -1,4 +1,4 @@
 input-cache/publisher.jar
-input-cache/**/
-output/**/
-temp/**/
+input-cache/*/
+output/*/
+temp/*/

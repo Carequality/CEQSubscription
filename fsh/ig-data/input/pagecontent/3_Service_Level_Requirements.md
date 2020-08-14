@@ -8,12 +8,12 @@ Implementers should generate Notifications in response to specific triggering ev
 
 |Trigger|Latency|
 |--------|---------|
-|Admission|Immediate (5 minutes or less)|
+|Admission|Immediate<sup>*</sup>|
 |Discharge|Immediate|
 |Referral|Immediate|
 |Transfer|Immediate|
 |Gaps in Care|If batch processing generation within 24hrs, otherwise immediate|
-
+<sup>*</sup> 5 minutes or less
 ### Uptime
 Implementers should measure uptime on a monthly basis at the Gateway level.  Such measurements should only take into account unplanned downtime. Implementers should strive to achieve 99.9% uptime. The SLA target uptime should be 99.5%.
 

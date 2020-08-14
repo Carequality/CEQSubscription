@@ -50,7 +50,7 @@ The Actors work with the Transactions as follows:
 </table>
 
 
-<sup>1</sup> The Notification Recipient and RecipientSMS may or may not fetch the notification listed Resource depending on business requirements
+<sup>1</sup> The Notification Recipient and RecipientSMS may or may not fetch the notification's listed Resource depending on business requirements.
 
 #### RegisterSubscription
 The Notification Recipient or RecipientSMS creates the Subscription resource.  The Subscription is Bundled with the Resource that defines the Notification Recipient (Practitioner, Organization, Patient or RelatedPerson)

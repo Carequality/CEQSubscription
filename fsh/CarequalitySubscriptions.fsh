@@ -71,7 +71,8 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry contains
   subsciptionentry 1..1 and
 	subscriberentry 1..1 and
-  subserv 0..1
+  subserv 0..1 and
+  subscriptionTopic 1..1
 
 * entry[subsciptionentry].resource 1..1
 * entry[subsciptionentry].resource only CEQsubscription
@@ -84,6 +85,9 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry[subserv].resource 0..1
 * entry[subserv].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 * entry[subserv].request.method = #POST
+
+* entry[subscriptionTopic].resource 1..1
+* entry[subscriptionTopic].resource only CEQTopic
 
 
 
@@ -107,7 +111,7 @@ Id:          CEQ-topic
 Title:       "Carequality R5 SubscriptionTopic replacement"
 Description: "Reference to the subscription topic being subscribed to."
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
-* code = http://terminology.hl7.org/CodeSystem/basic-resource-type#adminact
+* code = http://terminology.hl7.org/CodeSystem/basic-resource-type#adminact (exactly)
 * extension contains eventCode 1..1 MS
 * extension[eventCode].value[x] only Coding
 * extension[eventCode].valueCoding from CEQPushEventCodes (required)

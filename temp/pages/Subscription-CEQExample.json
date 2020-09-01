@@ -46,7 +46,10 @@
           }
         },
         {
-          "url": "subscriptionTopic"
+          "url": "subscriptionTopic",
+          "valueReference": {
+            "reference": "Basic/CEQExample"
+          }
         }
       ],
       "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension"

@@ -55,7 +55,11 @@
        ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "subscriptionTopic" ]
+       fhir:Extension.url [ fhir:value "subscriptionTopic" ];
+       fhir:Extension.valueReference [
+         fhir:link <https://sequoiaproject.org/fhir/sphd-r4/Basic/CEQExample>;
+         fhir:Reference.reference [ fhir:value "Basic/CEQExample" ]
+       ]
      ];
      fhir:Extension.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension" ]
   ];

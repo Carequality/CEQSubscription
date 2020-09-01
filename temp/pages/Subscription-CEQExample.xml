@@ -35,7 +35,11 @@
         <reference value="Practitioner/DrDavidAnydoc"/>
       </valueReference>
     </extension>
-    <extension url="subscriptionTopic"/>
+    <extension url="subscriptionTopic">
+      <valueReference>
+        <reference value="Basic/CEQExample"/>
+      </valueReference>
+    </extension>
   </extension>
   <status value="active"/>
   <contact>

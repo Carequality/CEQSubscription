@@ -54,12 +54,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Basic.code","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
 ","Kind of Resource","Identifies the 'type' of resource - equivalent to the resource name for other resources.","Because resource references will only be able to indicate 'Basic', the type of reference will need to be specified in a Profile identified as part of the resource.  Refer to the resource notes section for information on appropriate terminologies for this code.
 
-This element is labeled as a modifier because it defines the meaning of the resource and cannot be ignored.","Must be able to distinguish different types of Basic resources.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+This element is labeled as a modifier because it defines the meaning of the resource and cannot be ignored.","Must be able to distinguish different types of Basic resources.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/basic-resource-type""/>
     <code value=""adminact""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes for identifying types of resources not yet defined by FHIR.","http://hl7.org/fhir/ValueSet/basic-resource-type","",,,,"Basic.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","","",,"example","Codes for identifying types of resources not yet defined by FHIR.","http://hl7.org/fhir/ValueSet/basic-resource-type","",,,,"Basic.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","FiveWs.what[x]"
 "Basic.subject","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","Identifies the focus of this resource","Identifies the patient, practitioner, device or any other resource that is the ""focus"" of this resource.","Optional as not all potential resources will have subjects.  Resources associated with multiple subjects can handle this via extension.","Needed for partitioning the resource by Patient.","","","","","","","",,,,,"",,,,"Basic.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

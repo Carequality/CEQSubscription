@@ -113,6 +113,9 @@
     ]
   },
   "usage": {
+    "eventCode": [
+      "Basic"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

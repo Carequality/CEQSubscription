@@ -190,6 +190,13 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Basic-CEQExample.html" title="Basic/CEQExample">Example Subscribing Topic</a>
+               </td>
+               <td>{% capture desc %}Example of the subscription Topic  for a Carequality Subscription{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Practitioner-DrDavidAnydoc.html"
                      title="Practitioner/DrDavidAnydoc">Dr. David Anydoc</a>
                </td>

@@ -112,7 +112,7 @@
       {
         "id": "Basic.code",
         "path": "Basic.code",
-        "patternCodeableConcept": {
+        "fixedCodeableConcept": {
           "coding": [
             {
               "code": "adminact",

@@ -47,7 +47,7 @@ Subscriptions are system to system and the receiver of these subscriptions (Subs
 * Is a request for notifications based on a one or more Topics.  The end date is required and is a maximum of two years, without renewal.
 
 #### Notification
-* Is a simple FHIR 'knock' using a bundle containing only the Topic code and FullURL of the relevant resource created
+* Is a simple FHIR  bundle containing only the Subscription Status (a resource including the Topic code and notification count) and FullURL of the relevant resource created
 
 #### Security Notes
 * It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization.

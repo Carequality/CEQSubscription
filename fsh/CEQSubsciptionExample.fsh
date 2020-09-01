@@ -18,7 +18,6 @@ Title:   "Example Subscribing"
 Description: "Example of the full Resource for a Carequality Subscription"
 Usage:  #example
 
-
 * id = "CEQExample"
 * status = #active
 
@@ -41,3 +40,14 @@ Usage:  #example
 * extension[ceqPushExtension].extension[subPurpose].valueCoding = SubPoU#TREATMENT
 
 * extension[ceqPushExtension].extension[subscriber].valueReference = Reference(DrDavidAnydoc)
+* extension[ceqPushExtension].extension[subscriptionTopic].valueReference = Reference(CEQSubscriptionTopicExample)
+
+Instance: CEQSubscriptionTopicExample
+InstanceOf: CEQTopic
+Title:   "Example Subscribing Topic"
+
+Description: "Example of the subscription Topic  for a Carequality Subscription"
+Usage:  #example
+
+* id = "CEQExample"
+* extension[eventCode].valueCoding = PushCode#snradmit

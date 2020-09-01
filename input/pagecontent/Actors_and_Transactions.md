@@ -22,7 +22,7 @@ The Push Notifications defines 4 Actors:
 1. RegisterSubscription -- Push a subscription (bundle) to the receiver.
 1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver.
 1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver.
-2. NotifyEvent -- Push a notification "knock" bundle.
+2. NotifyEvent -- Push a notification bundle.
 3. RetrieveResource -- Retrieve Resource included in the bundle  -- outside of scope for the this IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
 
 The Actors work with the Transactions as follows:
@@ -69,11 +69,11 @@ The Notification Recipient or RecipientSMS creates the Subscription resource.  T
 #### NotifyEvent
 The Notification Generator creates the Event and either requests the GeneratorSMS to notify the receiver or sends the notification to the receiver directly, depending on business requirements.
 
-A notification consists of a POST to the endpoint listed in the Subscription consisting only of a full URL to the Resource.  This "knock on the door" can activate the RetrieveResource transaction depending on the policy and procedures of the receiving organization.
+A notification consists of a POST to the endpoint listed in the Subscription consisting of a Bundle.  This "knock on the door" can activate the RetrieveResource transaction depending on the policy and procedures of the receiving organization.
 
-Notifications from event triggers are simplified to just minimal bundle.  This bundle contains only the Topic code that categorizes the notification and a URL of the resource to be fetched that contains the information about the clinical event.
+Notifications from event triggers are simplified to just minimal bundle.  This bundle contains two entries, the Subscription status (including topic code) and, a URL of the resource to be fetched that contains the information about the clinical event.  The Subscription status also includes a count of notifications to date, that allows for missed notification tracking.
 
-This is sent to the endpoint specified in the Subscription resource that was POSTed to the Notification Generator e.g.,
+This Bundle is sent to the endpoint specified in the Subscription resource that was POSTed to the Notification Generator e.g.,
 
 ```http://www.example.org/fhir/subscription/sub123```
 

@@ -123,6 +123,14 @@
       },
       {
         "reference": {
+          "reference": "Basic/CEQExample"
+        },
+        "name": "Example Subscribing Topic",
+        "description": "Example of the subscription Topic  for a Carequality Subscription",
+        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
+      },
+      {
+        "reference": {
           "reference": "Practitioner/DrDavidAnydoc"
         },
         "name": "Dr. David Anydoc",

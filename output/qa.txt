@@ -1,21 +1,22 @@
 ﻿Carequality_Subscription_Implementation_Guide : Validation Results
 =========================================
 
-err = 1, warn = 7, info = 0
+err = 1, warn = 6, info = 0
 IG Publisher Version: 1.1.17
-Generated Tue Sep 01 11:50:48 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+Generated Tue Sep 01 14:26:43 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
  Build Errors : 0 / 0 / 0
  C:\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\examples\Basic-CEQExample : 1 / 0 / 1
  C:\FHIR\CEQSubscription\input\examples\CapabilityStatement-ceqsubscribe-capabilitystatement : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\examples\Practitioner-DrDavidAnydoc : 0 / 0 / 2
- C:\FHIR\CEQSubscription\input\examples\Subscription-CEQExample : 1 / 0 / 1
+ C:\FHIR\CEQSubscription\input\examples\Subscription-CEQExample : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQEventCode : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQNotificationExtension : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQextension : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-subscription-status : 0 / 1 / 1
- C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic : 0 / 1 / 1
+ C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQNotificationBundle : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQSubscriptionBundle : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQsubscription : 0 / 0 / 1
@@ -28,6 +29,9 @@ Generated Tue Sep 01 11:50:48 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fh
 == n/a ==
 == C:\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications.json ==
 INFORMATION: ImplementationGuide/sequoiaproject.fhir.us.pushnotifications: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== C:\FHIR\CEQSubscription\input\examples\Basic-CEQExample.json ==
+INFORMATION: Basic/CEQExample: Basic: Validate resource against profile https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic
+ERROR: Basic/CEQExample: Basic.extension[0]: Extension.url must be an absolute URL
 == C:\FHIR\CEQSubscription\input\examples\CapabilityStatement-ceqsubscribe-capabilitystatement.json ==
 INFORMATION: CapabilityStatement/ceqsubscribe-capabilitystatement: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 == C:\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe.json ==
@@ -37,7 +41,6 @@ INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against
 INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner - listed in meta
 == C:\FHIR\CEQSubscription\input\examples\Subscription-CEQExample.json ==
 INFORMATION: Subscription/CEQExample: Subscription: Validate resource against profile https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription
-ERROR: Subscription/CEQExample: Subscription.extension[0].extension[4]: ext-1: Must have either extensions or value[x], not both [extension.exists() != value.exists()]
 == C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQEventCode.json ==
 INFORMATION: StructureDefinition/CEQEventCode: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode'): The Implementation Guide contains no examples for this extension
@@ -51,7 +54,6 @@ INFORMATION: StructureDefinition/CEQ-subscription-status: StructureDefinition: V
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status'): The Implementation Guide contains no examples for this profile
 == C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic.json ==
 INFORMATION: StructureDefinition/CEQ-topic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic'): The Implementation Guide contains no examples for this profile
 == C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQNotificationBundle.json ==
 INFORMATION: StructureDefinition/CEQNotificationBundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle'): The Implementation Guide contains no examples for this profile

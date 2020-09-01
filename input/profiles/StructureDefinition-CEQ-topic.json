@@ -1,0 +1,125 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CEQ-topic",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic",
+  "version": "0.1.0",
+  "name": "CEQTopic",
+  "title": "Carequality R5 SubscriptionTopic replacement",
+  "status": "active",
+  "description": "Reference to the subscription topic being subscribed to.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Basic",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Basic",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Basic.extension",
+        "path": "Basic.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Basic.extension:eventCode",
+        "path": "Basic.extension",
+        "sliceName": "eventCode",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Basic.extension:eventCode.extension",
+        "path": "Basic.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Basic.extension:eventCode.url",
+        "path": "Basic.extension.url",
+        "fixedUri": "eventCode"
+      },
+      {
+        "id": "Basic.extension:eventCode.value[x]",
+        "path": "Basic.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:eventCode.valueCoding",
+        "path": "Basic.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"
+        }
+      },
+      {
+        "id": "Basic.code",
+        "path": "Basic.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "subscriptionTopic"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

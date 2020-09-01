@@ -24,9 +24,9 @@
       "title": "Carequality Subscription Required Elements",
       "types": [
         "string",
-        "Coding",
         "Identifier",
         "Coding",
+        "Reference",
         "Reference",
         "Reference",
         "base64Binary",
@@ -83,6 +83,18 @@
     }
   ],
   "profiles": {
+    "Parameters": [
+      {
+        "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/backport-subscription-status",
+        "title": "Backported R5 Subscription Notification Status"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic",
+        "title": "Carequality R5 SubscriptionTopic replacement"
+      }
+    ],
     "Bundle": [
       {
         "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle",

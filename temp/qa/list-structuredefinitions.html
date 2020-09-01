@@ -4,22 +4,14 @@
   <link rel="stylesheet" href="fhir.css"/>
 </head>
 <body>
- <li><a href="StructureDefinition-CEQEventCode.html">Carequality event Code within the Notification Bundle</a> <p>A code for inclusion in the notification bundle identifying the event type that triggered the notification</p>
-</li>
- <li><a href="StructureDefinition-CEQextension.html">Carequality Subscription Required Elements</a> <p>Additional Elements to Support Carequality Subscription Notifications</p>
-</li>
- <li><a href="StructureDefinition-CEQNotificationExtension.html">Carequality Notification Code Extension</a> <p>Additional Element to Support Carequality Subscription Notification Code</p>
-</li>
- <li><a href="StructureDefinition-CEQNotificationBundle.html">Carequality Notification Bundle</a> <p>Bundle for Carequality subscription notification</p>
-</li>
- <li><a href="StructureDefinition-CEQsubscription.html">Carequality Subscription Profile</a> <p>Extended Elements and Constraints Specific to the Carequality Use Case
-Carequality has defined a custom flow for a Subscription that removes the criteria use
-in favour of specific events defined as URIs.  This adds requirements that the PatientID
-and an identifier be added to the resource.  The identifier element is the endpoint id
-[Base]/fhir/Subscription/[identifier]
-A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.</p>
-</li>
- <li><a href="StructureDefinition-CEQSubscriptionBundle.html">Carequality Subscription Bundle</a> <p>Bundle to be submitted for Carequality subscription enrollment</p>
-</li>
+ <li><a href="StructureDefinition-CEQEventCode.html">Carequality event Code within the Notification Bundle</a> CEQNotificationEvent</li>
+ <li><a href="StructureDefinition-CEQextension.html">Carequality Subscription Required Elements</a> CEQextension</li>
+ <li><a href="StructureDefinition-CEQNotificationExtension.html">Carequality Notification Code Extension</a> CEQNotificationExtension</li>
+ <li><a href="StructureDefinition-backport-subscription-status.html">Backported R5 Subscription Notification Status</a> BackportSubscriptionStatus</li>
+ <li><a href="StructureDefinition-CEQ-subscription-status.html">CEQ R5 Subscription Notification Status</a> CEQSubscriptionStatus</li>
+ <li><a href="StructureDefinition-CEQ-topic.html">Carequality R5 SubscriptionTopic replacement</a> CEQTopic</li>
+ <li><a href="StructureDefinition-CEQNotificationBundle.html">Carequality Notification Bundle</a> CEQNotificationBundle</li>
+ <li><a href="StructureDefinition-CEQsubscription.html">Carequality Subscription Profile</a> CEQsubscription</li>
+ <li><a href="StructureDefinition-CEQSubscriptionBundle.html">Carequality Subscription Bundle</a> CEQSubscriptionBundle</li>
 </body>
 </html>

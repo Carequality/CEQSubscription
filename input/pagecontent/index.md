@@ -10,18 +10,7 @@
 {% endcomment %} -->
 ### Introduction
 #### Vision
-Improve care management across settings/systems for patients via push notifications.
-
-#### Goals
-* Remove the need to poll for solicited:
-  *  High-frequency events.
-  *  High-urgency events.
-* Ensure a “low bar” for server and client implementation.
-* Consider security, confidentiality, and scale during design.
-* **NOT focused on unsolicited notifications**
-* Project results may be useful as a building block or launching point
-
-Subscriptions are system to system and the receiver of these subscriptions (Subscription Server or subscriber) must be able to route these messages to the appropriate end user (clinician(s), care team members) within their system. For auditing purposes, identification of a specific user is accomplished through FHIR authorizations as described in the Carequality FHIR Implementation Guide through SMART on FHIR or OAuth.
+Improve care management across settings/systems for patients via subscription-based push notifications.
 
 ### Introduction
 This Implementation Guide outlines policy, technical, and process requirements for Implementers of the Push Notifications Use Case, under the terms of the Carequality Connected Agreement (CCA), and their Carequality Connections (CCs), under the Carequality Connection Terms.
@@ -36,6 +25,19 @@ The Carequality framework can be leveraged to support notifications when those i
 
 The Carequality and its community of member organizations have collaborated to define exactly how notifications can be shared across different health and service sectors so that members have confidence in their capability to commit to implementing consistent notification services. This Guide covers technical specifications as well as policy and process requirements for Push Notifications
 
+
+#### Goals
+* Remove the need to poll for solicited:
+  *  High-frequency events.
+  *  High-urgency events.
+* Ensure a “low bar” for server and client implementation.
+* Consider security, confidentiality, and scale during design.
+* **NOT focused on unsolicited notifications**
+* Project results may be useful as a building block or launching point
+
+Subscriptions are system to system and the receiver of these subscriptions (Subscription Server or subscriber) must be able to route these messages to the appropriate end user (clinician(s), care team members, etc.) within their system. For auditing purposes, identification of a specific user is accomplished through FHIR authorizations as described in the Carequality FHIR Implementation Guide through SMART on FHIR or OAuth.
+
+
 ### Definitions
 #### Topic
 * Is a well-defined event and can be specialized to an environment (e.g., an acute admit versus an ED admit): ‘admission’, ‘discharge’, ‘gap in care', etc.
@@ -45,7 +47,7 @@ The Carequality and its community of member organizations have collaborated to d
 * Is a request for notifications based on a one or more Topics.  The end date is required and is a maximum of two years, without renewal.
 
 #### Notification
-* Is a simple http 'knock' using a bundle containing only the Topic code and FullURL of the relevant resource created
+* Is a simple FHIR 'knock' using a bundle containing only the Topic code and FullURL of the relevant resource created
 
 #### Security Notes
 * It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [LINK] for details on Registration and Authorization.

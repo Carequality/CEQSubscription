@@ -14,7 +14,6 @@
     <sch:rule context="f:Extension">
       <sch:assert test="count(f:extension[@url = 'subIdentifier']) &gt;= 1">extension with URL = 'subIdentifier': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'subIdentifier']) &lt;= 1">extension with URL = 'subIdentifier': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'eventCode']) &gt;= 1">extension with URL = 'eventCode': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'patientId']) &gt;= 1">extension with URL = 'patientId': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'patientId']) &lt;= 1">extension with URL = 'patientId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'subPurpose']) &gt;= 1">extension with URL = 'subPurpose': minimum cardinality of 'extension' is 1</sch:assert>
@@ -22,6 +21,8 @@
       <sch:assert test="count(f:extension[@url = 'subscriber']) &gt;= 1">extension with URL = 'subscriber': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'subscriber']) &lt;= 1">extension with URL = 'subscriber': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'subserv']) &lt;= 1">extension with URL = 'subserv': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'subscriptionTopic']) &gt;= 1">extension with URL = 'subscriptionTopic': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'subscriptionTopic']) &lt;= 1">extension with URL = 'subscriptionTopic': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

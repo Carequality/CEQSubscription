@@ -10,7 +10,7 @@
   "name": "Carequality_Subscription_Implementation_Guide",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
   "status": "draft",
-  "date": "2020-08-13T13:21:23-04:00",
+  "date": "2020-09-01T10:33:04-04:00",
   "contact": [
     {
       "name": "David Pyke",
@@ -357,6 +357,42 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-CEQ-subscription-status.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CEQ-subscription-status"
+        },
+        "name": "CEQ R5 Subscription Notification Status",
+        "description": "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-CEQ-topic.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CEQ-topic"
+        },
+        "name": "Carequality R5 SubscriptionTopic replacement",
+        "description": "Reference to the subscription topic being subscribed to.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-CEQsubscription.html"
           }
         ],
@@ -562,6 +598,23 @@
         },
         "name": "Carequality Notification Code Extension",
         "description": "Additional Element to Support Carequality Subscription Notification Code"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-backport-subscription-status.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/backport-subscription-status"
+        },
+        "name": "Backported R5 Subscription Notification Status",
+        "description": "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."
       }
     ],
     "page": {

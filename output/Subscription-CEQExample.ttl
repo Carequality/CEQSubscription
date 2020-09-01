@@ -27,13 +27,6 @@
        fhir:Extension.valueString [ fhir:value "sub123" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "eventCode" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents" ];
-         fhir:Coding.code [ fhir:value "admit" ]
-       ]
-     ], [
-       fhir:index 2;
        fhir:Extension.url [ fhir:value "patientId" ];
        fhir:Extension.valueIdentifier [
          fhir:Identifier.type [
@@ -47,19 +40,22 @@
          fhir:Identifier.value [ fhir:value "MRN123" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 2;
        fhir:Extension.url [ fhir:value "subPurpose" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse" ];
          fhir:Coding.code [ fhir:value "TREATMENT" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 3;
        fhir:Extension.url [ fhir:value "subscriber" ];
        fhir:Extension.valueReference [
          fhir:link <https://sequoiaproject.org/fhir/sphd-r4/Practitioner/DrDavidAnydoc>;
          fhir:Reference.reference [ fhir:value "Practitioner/DrDavidAnydoc" ]
        ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "subscriptionTopic" ]
      ];
      fhir:Extension.url [ fhir:value "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension" ]
   ];

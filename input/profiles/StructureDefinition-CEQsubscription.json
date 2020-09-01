@@ -98,21 +98,6 @@
         ]
       },
       {
-        "id": "Subscription.extension:ceqPushExtension.extension:eventCode",
-        "path": "Subscription.extension.extension",
-        "sliceName": "eventCode"
-      },
-      {
-        "id": "Subscription.extension:ceqPushExtension.extension:eventCode.valueCoding",
-        "path": "Subscription.extension.extension.valueCoding",
-        "min": 0,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"
-        }
-      },
-      {
         "id": "Subscription.extension:ceqPushExtension.extension:subPurpose",
         "path": "Subscription.extension.extension",
         "sliceName": "subPurpose"

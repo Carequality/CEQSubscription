@@ -86,6 +86,9 @@
       <li>
         <a href="Service_Level_Requirements.html">Service Level Requirements</a>
       </li>
+      <li>
+        <a href="Definition_of_Roles.html">Definition of Roles</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -196,6 +199,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQ-subscription-status.html"
+                     title="StructureDefinition/CEQ-subscription-status">CEQ R5 Subscription Notification Status</a>
+               </td>
+               <td>
+<p>Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQ-topic.html"
+                     title="StructureDefinition/CEQ-topic">Carequality R5 SubscriptionTopic replacement</a>
+               </td>
+               <td>
+<p>Reference to the subscription topic being subscribed to.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-CEQsubscription.html"
                      title="StructureDefinition/CEQsubscription">Carequality Subscription Profile</a>
                </td>
@@ -206,6 +227,15 @@ in favour of specific events defined as URIs.  This adds requirements that the P
 and an identifier be added to the resource.  The identifier element is the endpoint id
 [Base]/fhir/Subscription/[identifier]
 A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-backport-subscription-status.html"
+                     title="StructureDefinition/backport-subscription-status">Backported R5 Subscription Notification Status</a>
+               </td>
+               <td>
+<p>Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.</p>
 </td>
             </tr>
          </tbody>
@@ -371,7 +401,7 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 13:21-0400">2020-08-13</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 1, 2020 10:33-0400">2020-09-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

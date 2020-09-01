@@ -4,16 +4,11 @@
   <link rel="stylesheet" href="fhir.css"/>
 </head>
 <body>
- <tr><td><a href="StructureDefinition-CEQNotificationBundle.html">Carequality Notification Bundle</a> </td><td><p>Bundle for Carequality subscription notification</p>
-</td><td></td></tr>
- <tr><td><a href="StructureDefinition-CEQSubscriptionBundle.html">Carequality Subscription Bundle</a> </td><td><p>Bundle to be submitted for Carequality subscription enrollment</p>
-</td><td></td></tr>
- <tr><td><a href="StructureDefinition-CEQsubscription.html">Carequality Subscription Profile</a> </td><td><p>Extended Elements and Constraints Specific to the Carequality Use Case
-Carequality has defined a custom flow for a Subscription that removes the criteria use
-in favour of specific events defined as URIs.  This adds requirements that the PatientID
-and an identifier be added to the resource.  The identifier element is the endpoint id
-[Base]/fhir/Subscription/[identifier]
-A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.</p>
-</td><td></td></tr>
+ <tr><td><a href="StructureDefinition-backport-subscription-status.html">Backported R5 Subscription Notification Status</a> </td><td>BackportSubscriptionStatus</td><td></td></tr>
+ <tr><td><a href="StructureDefinition-CEQ-subscription-status.html">CEQ R5 Subscription Notification Status</a> </td><td>CEQSubscriptionStatus</td><td></td></tr>
+ <tr><td><a href="StructureDefinition-CEQNotificationBundle.html">Carequality Notification Bundle</a> </td><td>CEQNotificationBundle</td><td></td></tr>
+ <tr><td><a href="StructureDefinition-CEQ-topic.html">Carequality R5 SubscriptionTopic replacement</a> </td><td>CEQTopic</td><td></td></tr>
+ <tr><td><a href="StructureDefinition-CEQSubscriptionBundle.html">Carequality Subscription Bundle</a> </td><td>CEQSubscriptionBundle</td><td></td></tr>
+ <tr><td><a href="StructureDefinition-CEQsubscription.html">Carequality Subscription Profile</a> </td><td>CEQsubscription</td><td></td></tr>
 </body>
 </html>

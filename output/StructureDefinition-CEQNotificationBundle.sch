@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Bundle</sch:title>
     <sch:rule context="f:Bundle">
-      <sch:assert test="count(f:entry) &gt;= 1">entry: minimum cardinality of 'entry' is 1</sch:assert>
-      <sch:assert test="count(f:entry) &lt;= 1">entry: maximum cardinality of 'entry' is 1</sch:assert>
+      <sch:assert test="count(f:entry) &gt;= 2">entry: minimum cardinality of 'entry' is 2</sch:assert>
+      <sch:assert test="count(f:entry) &lt;= 2">entry: maximum cardinality of 'entry' is 2</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -107,8 +107,6 @@
   <sch:pattern>
     <sch:title>f:Bundle/f:entry</sch:title>
     <sch:rule context="f:Bundle/f:entry">
-      <sch:assert test="count(f:extension[@url = 'eventCode']) &gt;= 1">extension with URL = 'eventCode': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'eventCode']) &lt;= 1">extension with URL = 'eventCode': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:fullUrl) &gt;= 1">fullUrl: minimum cardinality of 'fullUrl' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -125,30 +123,6 @@
     <sch:rule context="f:Bundle/f:entry/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Bundle/f:entry/f:extension</sch:title>
-    <sch:rule context="f:Bundle/f:entry/f:extension">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
-      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>Bundle.entry.extension.extension</sch:title>
-    <sch:rule context="f:Bundle/f:entry/f:extension/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>Bundle.entry.extension.value[x] 1</sch:title>
-    <sch:rule context="f:Bundle/f:entry/f:extension/f:value[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

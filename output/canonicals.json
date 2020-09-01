@@ -35,6 +35,20 @@
     "name": "CEQsubscribe"
   },
   {
+    "id": "CEQ-subscription-status",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status",
+    "version": "0.1.0",
+    "name": "CEQSubscriptionStatus"
+  },
+  {
+    "id": "CEQ-topic",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic",
+    "version": "0.1.0",
+    "name": "CEQTopic"
+  },
+  {
     "id": "CEQEventCode",
     "type": "StructureDefinition",
     "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode",
@@ -75,6 +89,13 @@
     "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription",
     "version": "0.1.0",
     "name": "CEQsubscription"
+  },
+  {
+    "id": "backport-subscription-status",
+    "type": "StructureDefinition",
+    "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/backport-subscription-status",
+    "version": "0.1.0",
+    "name": "BackportSubscriptionStatus"
   },
   {
     "id": "CEQPushEventCodes",

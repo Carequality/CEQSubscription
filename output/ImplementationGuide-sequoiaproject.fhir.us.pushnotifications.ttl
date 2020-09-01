@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Carequality_Subscription_Implementation_Guide"];
   fhir:ImplementationGuide.title [ fhir:value "Carequality Subscription Implementation Guide for Push Notifications"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-08-13T13:21:23-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-09-01T10:33:04-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
@@ -343,6 +343,42 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-CEQ-subscription-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CEQ-subscription-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CEQ R5 Subscription Notification Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-CEQ-topic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CEQ-topic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Carequality R5 SubscriptionTopic replacement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Reference to the subscription topic being subscribed to." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-CEQsubscription.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -353,7 +389,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -371,7 +407,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional Elements to Support Carequality Subscription Notifications" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -389,7 +425,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The codes to define each of the permitted events for Carequality Network Subscriptions" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -407,7 +443,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the permitted Purpose of Use within the Carequality network" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -425,7 +461,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The codes to define each of the permitted events for Carequality Network Subscriptions" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -443,7 +479,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the permitted Purpose of Use within the Carequality network" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -464,7 +500,7 @@
          fhir:link <https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -482,7 +518,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner for example use" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -500,7 +536,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -518,7 +554,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Capability Statement to describe the requirements for a Notification Recipient Actor" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -535,7 +571,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Carequality event Code within the Notification Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code for inclusion in the notification bundle identifying the event type that triggered the notification" ]
      ], [
-       fhir:index 13;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -551,6 +587,23 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Carequality Notification Code Extension" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional Element to Support Carequality Subscription Notification Code" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/backport-subscription-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 Subscription Notification Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4." ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

@@ -12,12 +12,6 @@
     <extension url="subIdentifier">
       <valueString value="sub123"/>
     </extension>
-    <extension url="eventCode">
-      <valueCoding>
-        <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
-        <code value="admit"/>
-      </valueCoding>
-    </extension>
     <extension url="patientId">
       <valueIdentifier>
         <type>
@@ -41,6 +35,7 @@
         <reference value="Practitioner/DrDavidAnydoc"/>
       </valueReference>
     </extension>
+    <extension url="subscriptionTopic"/>
   </extension>
   <status value="active"/>
   <contact>

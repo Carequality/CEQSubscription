@@ -92,35 +92,6 @@
         ]
       },
       {
-        "id": "Extension.extension:eventCode",
-        "path": "Extension.extension",
-        "sliceName": "eventCode",
-        "short": "The Carequality code for the Event",
-        "comment": "One or more of the Carequality defined set of notification codes.  Sending the payload has obvious security implications. The server is responsible for ensuring that the content is appropriately secured",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "Extension.extension:eventCode.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:eventCode.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "eventCode"
-      },
-      {
-        "id": "Extension.extension:eventCode.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ]
-      },
-      {
         "id": "Extension.extension:patientId",
         "path": "Extension.extension",
         "sliceName": "patientId",
@@ -237,6 +208,36 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subscriptionTopic",
+        "path": "Extension.extension",
+        "sliceName": "subscriptionTopic",
+        "short": "Reference to CEQ SubscriptionTopic replacement",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:subscriptionTopic.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subscriptionTopic.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subscriptionTopic"
+      },
+      {
+        "id": "Extension.extension:subscriptionTopic.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
             ]
           }
         ]

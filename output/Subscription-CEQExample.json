@@ -18,13 +18,6 @@
           "valueString": "sub123"
         },
         {
-          "url": "eventCode",
-          "valueCoding": {
-            "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
-            "code": "admit"
-          }
-        },
-        {
           "url": "patientId",
           "valueIdentifier": {
             "type": {
@@ -51,6 +44,9 @@
           "valueReference": {
             "reference": "Practitioner/DrDavidAnydoc"
           }
+        },
+        {
+          "url": "subscriptionTopic"
         }
       ],
       "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension"

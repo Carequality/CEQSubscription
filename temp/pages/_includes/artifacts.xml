@@ -50,6 +50,22 @@
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQ-subscription-status.html"
+                     title="StructureDefinition/CEQ-subscription-status">CEQ R5 Subscription Notification Status</a>
+               </td>
+               <td>{% capture desc %}Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQ-topic.html"
+                     title="StructureDefinition/CEQ-topic">Carequality R5 SubscriptionTopic replacement</a>
+               </td>
+               <td>{% capture desc %}Reference to the subscription topic being subscribed to.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-CEQsubscription.html"
                      title="StructureDefinition/CEQsubscription">Carequality Subscription Profile</a>
                </td>
@@ -59,6 +75,14 @@ in favour of specific events defined as URIs.  This adds requirements that the P
 and an identifier be added to the resource.  The identifier element is the endpoint id
 [Base]/fhir/Subscription/[identifier]
 A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-backport-subscription-status.html"
+                     title="StructureDefinition/backport-subscription-status">Backported R5 Subscription Notification Status</a>
+               </td>
+               <td>{% capture desc %}Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>

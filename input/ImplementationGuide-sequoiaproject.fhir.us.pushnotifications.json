@@ -51,6 +51,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/CEQ-subscription-status"
+        },
+        "name": "CEQ R5 Subscription Notification Status",
+        "description": "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CEQ-topic"
+        },
+        "name": "Carequality R5 SubscriptionTopic replacement",
+        "description": "Reference to the subscription topic being subscribed to.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/CEQsubscription"
         },
         "name": "Carequality Subscription Profile",

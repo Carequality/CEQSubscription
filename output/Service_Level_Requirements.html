@@ -86,6 +86,9 @@
       <li>
         <a href="Service_Level_Requirements.html">Service Level Requirements</a>
       </li>
+      <li>
+        <a href="Definition_of_Roles.html">Definition of Roles</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -170,37 +173,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="notification-generation-latency">Notification Generation Latency</h3>
 <p>Implementers should generate Notifications in response to specific triggering events. For example: The table below lists the scenario and maximum acceptable latency:</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Trigger</th>
-      <th>Latency</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Admission</td>
-      <td>Immediate (5 minutes or less)</td>
-    </tr>
-    <tr>
-      <td>Discharge</td>
-      <td>Immediate</td>
-    </tr>
-    <tr>
-      <td>Referral</td>
-      <td>Immediate</td>
-    </tr>
-    <tr>
-      <td>Transfer</td>
-      <td>Immediate</td>
-    </tr>
-    <tr>
-      <td>Gaps in Care</td>
-      <td>If batch processing generation within 24hrs, otherwise immediate</td>
-    </tr>
-  </tbody>
-</table>
-
+<p>|Trigger|Latency|
+|——–|———|
+|Admission|Immediate<sup>*</sup>|
+|Discharge|Immediate|
+|Referral|Immediate|
+|Transfer|Immediate|
+|Gaps in Care|If batch processing generation within 24hrs, otherwise immediate|
+<sup>*</sup> 5 minutes or less</p>
 <h3 id="uptime">Uptime</h3>
 <p>Implementers should measure uptime on a monthly basis at the Gateway level.  Such measurements should only take into account unplanned downtime. Implementers should strive to achieve 99.9% uptime. The SLA target uptime should be 99.5%.</p>
 
@@ -232,7 +212,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 13:21-0400">2020-08-13</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:david.pyke@readycomputing.com"></a>.  Package sequoiaproject.fhir.us.pushnotifications#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 1, 2020 10:33-0400">2020-09-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

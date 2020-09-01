@@ -115,7 +115,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "subscriptionTopic"
+              "code": "adminact",
+              "system": "http://terminology.hl7.org/CodeSystem/basic-resource-type"
             }
           ]
         }

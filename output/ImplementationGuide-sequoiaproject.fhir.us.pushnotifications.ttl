@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Carequality_Subscription_Implementation_Guide"];
   fhir:ImplementationGuide.title [ fhir:value "Carequality Subscription Implementation Guide for Push Notifications"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-09-01T10:33:04-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-09-01T11:50:16-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];

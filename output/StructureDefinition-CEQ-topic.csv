@@ -56,7 +56,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 This element is labeled as a modifier because it defines the meaning of the resource and cannot be ignored.","Must be able to distinguish different types of Basic resources.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <code value=""subscriptionTopic""/>
+    <system value=""http://terminology.hl7.org/CodeSystem/basic-resource-type""/>
+    <code value=""adminact""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes for identifying types of resources not yet defined by FHIR.","http://hl7.org/fhir/ValueSet/basic-resource-type","",,,,"Basic.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","FiveWs.what[x]"

@@ -1,9 +1,9 @@
 ﻿Carequality_Subscription_Implementation_Guide : Validation Results
 =========================================
 
-err = 1, warn = 9, info = 0
+err = 1, warn = 7, info = 0
 IG Publisher Version: 1.1.17
-Generated Tue Sep 01 10:33:38 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+Generated Tue Sep 01 11:50:48 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
  Build Errors : 0 / 0 / 0
  C:\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0 / 1
@@ -15,7 +15,7 @@ Generated Tue Sep 01 10:33:38 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fh
  C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQNotificationExtension : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQextension : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-subscription-status : 0 / 1 / 1
- C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic : 0 / 3 / 1
+ C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQNotificationBundle : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQSubscriptionBundle : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQsubscription : 0 / 0 / 1
@@ -51,8 +51,6 @@ INFORMATION: StructureDefinition/CEQ-subscription-status: StructureDefinition: V
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status'): The Implementation Guide contains no examples for this profile
 == C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic.json ==
 INFORMATION: StructureDefinition/CEQ-topic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/CEQ-topic: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/CEQ-topic: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic'): The Implementation Guide contains no examples for this profile
 == C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQNotificationBundle.json ==
 INFORMATION: StructureDefinition/CEQNotificationBundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

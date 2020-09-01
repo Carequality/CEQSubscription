@@ -107,7 +107,7 @@ Id:          CEQ-topic
 Title:       "Carequality R5 SubscriptionTopic replacement"
 Description: "Reference to the subscription topic being subscribed to."
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
-* code = #subscriptionTopic
+* code = http://terminology.hl7.org/CodeSystem/basic-resource-type#adminact
 * extension contains eventCode 1..1 MS
 * extension[eventCode].value[x] only Coding
 * extension[eventCode].valueCoding from CEQPushEventCodes (required)

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3a5d285b-6156-4793-b970-0f8a09eadd48",
+  "id" : "53d1bf95-0e9b-4cf1-a953-8e64cd95a459",
   "meta" : {
-    "lastUpdated" : "2020-09-02T10:23:23.838-04:00"
+    "lastUpdated" : "2020-09-02T14:53:56.643-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "CEQPushEventCodes",
       "title" : "Carequality Push Notification Events",
       "status" : "active",
-      "date" : "2020-09-02T10:23:23-04:00",
+      "date" : "2020-09-02T14:53:56-04:00",
       "publisher" : "Carequality",
       "contact" : [{
         "name" : "Carequality",
@@ -41,8 +41,8 @@
       }],
       "description" : "The codes to define each of the permitted events for Carequality Network Subscriptions",
       "expansion" : {
-        "identifier" : "urn:uuid:167492d0-fbcd-4589-9e79-0c5eccacdd84",
-        "timestamp" : "2020-09-02T10:23:35-04:00",
+        "identifier" : "urn:uuid:76a6c115-55b8-4493-898e-6d695e24e71b",
+        "timestamp" : "2020-09-02T14:54:09-04:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -129,7 +129,7 @@
       "name" : "CEQSubscriberPurposeofUse",
       "title" : "Permitted Purposes Of Use",
       "status" : "active",
-      "date" : "2020-09-02T10:23:23-04:00",
+      "date" : "2020-09-02T14:53:56-04:00",
       "publisher" : "Carequality",
       "contact" : [{
         "name" : "Carequality",
@@ -151,8 +151,8 @@
       }],
       "description" : "These are the permitted Purpose of Use within the Carequality network",
       "expansion" : {
-        "identifier" : "urn:uuid:06afdb72-9996-47db-9b64-e546f7eb8a4e",
-        "timestamp" : "2020-09-02T10:23:35-04:00",
+        "identifier" : "urn:uuid:85719fa8-2020-4ced-82c0-471024b858c8",
+        "timestamp" : "2020-09-02T14:54:09-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",

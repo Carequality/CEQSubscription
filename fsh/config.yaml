@@ -16,7 +16,10 @@ version: 0.1.0
 name: Carequality_Subscription_Implementation_Guide
 title: "Carequality Subscription Implementation Guide for Push Notifications"
 status: draft
-publisher: Carequality
+publisher:
+  name: Carequality
+  url: http://www.carequality.org
+  email: info@carequality.org
 contact:
   - name: David Pyke
     telecom:

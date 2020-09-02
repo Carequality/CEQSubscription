@@ -77,14 +77,6 @@ and an identifier be added to the resource.  The identifier element is the endpo
 A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-backport-subscription-status.html"
-                     title="StructureDefinition/backport-subscription-status">Backported R5 Subscription Notification Status</a>
-               </td>
-               <td>{% capture desc %}Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
          </tbody>
       </table>
    </p>
@@ -97,26 +89,18 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-CEQEventCode.html"
+                     title="StructureDefinition/CEQEventCode">CEQ Event Codes</a>
+               </td>
+               <td>{% capture desc %}Event Code Extension for use in Topics and Status{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-CEQextension.html"
                      title="StructureDefinition/CEQextension">Carequality Subscription Required Elements</a>
                </td>
                <td>{% capture desc %}Additional Elements to Support Carequality Subscription Notifications{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CEQEventCode.html"
-                     title="StructureDefinition/CEQEventCode">Carequality event Code within the Notification Bundle</a>
-               </td>
-               <td>{% capture desc %}A code for inclusion in the notification bundle identifying the event type that triggered the notification{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CEQNotificationExtension.html"
-                     title="StructureDefinition/CEQNotificationExtension">Carequality Notification Code Extension</a>
-               </td>
-               <td>{% capture desc %}Additional Element to Support Carequality Subscription Notification Code{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>
@@ -183,14 +167,15 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Subscription-CEQExample.html" title="Subscription/CEQExample">Example Subscribing</a>
+                  <a href="Subscription-CEQSubscriptionExample.html"
+                     title="Subscription/CEQSubscriptionExample">Example Subscribing</a>
                </td>
                <td>{% capture desc %}Example of the full Resource for a Carequality Subscription{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Basic-CEQExample.html" title="Basic/CEQExample">Example Subscribing Topic</a>
+                  <a href="Basic-CEQTopicExample.html" title="Basic/CEQTopicExample">Example Subscribing Topic</a>
                </td>
                <td>{% capture desc %}Example of the subscription Topic  for a Carequality Subscription{% endcapture %}
 {{ desc | markdownify}}</td>

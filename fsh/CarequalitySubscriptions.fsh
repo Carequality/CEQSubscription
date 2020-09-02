@@ -105,6 +105,12 @@ Description: "Bundle for Carequality subscription notification"
 // * entry[1].resource = Reference(CEQSubscriptionStatus)
 
 
+Extension: CEQEventCode
+Id: CEQEventCode
+Title: "CEQ Event Codes"
+Description: "Event Code Extension for use in Topics and Status"
+* value[x] only Coding
+
 Profile:   CEQTopic
 Parent: Basic
 Id:          CEQ-topic
@@ -112,8 +118,7 @@ Title:       "Carequality R5 SubscriptionTopic replacement"
 Description: "Reference to the subscription topic being subscribed to."
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * code = http://terminology.hl7.org/CodeSystem/basic-resource-type#adminact (exactly)
-* extension contains eventCode 1..1 MS
-* extension[eventCode].value[x] only Coding
+* extension contains CEQEventCode named eventCode 1..1 MS
 * extension[eventCode].valueCoding from CEQPushEventCodes (required)
 
 Profile:     CEQSubscriptionStatus

@@ -18,15 +18,12 @@ Title:   "Example Subscribing"
 Description: "Example of the full Resource for a Carequality Subscription"
 Usage:  #example
 
-* id = "CEQExample"
+* id = "CEQSubscriptionExample"
 * status = #active
-
 * contact.system = #phone
 * contact.value = "212-877-3307 ext 5001"
 * end = "2021-01-01T00:00:00Z"
-
 * reason = "Example"
-
 * criteria = "carequality"
 * channel.type = #rest-hook
 * channel.endpoint = "http://www.example.org/fhir/subscription/sub123"
@@ -45,9 +42,8 @@ Usage:  #example
 Instance: CEQSubscriptionTopicExample
 InstanceOf: CEQTopic
 Title:   "Example Subscribing Topic"
-
 Description: "Example of the subscription Topic  for a Carequality Subscription"
 Usage:  #example
 
-* id = "CEQExample"
+* id = "CEQTopicExample"
 * extension[eventCode].valueCoding = PushCode#snradmit

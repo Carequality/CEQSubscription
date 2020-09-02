@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="CEQTopicExample"/>
+  <meta>
+    <profile value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: CEQTopicExample</p><p><b>meta</b>: </p><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/basic-resource-type adminact}">Administrative Activity</span></p></div>
+  </text>
+  <extension url="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode">
+    <valueCoding>
+      <system value="https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"/>
+      <code value="snradmit"/>
+    </valueCoding>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/basic-resource-type"/>
+      <code value="adminact"/>
+    </coding>
+  </code>
+</Basic>

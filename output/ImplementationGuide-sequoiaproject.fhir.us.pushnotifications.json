@@ -10,7 +10,7 @@
   "name": "Carequality_Subscription_Implementation_Guide",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
   "status": "draft",
-  "date": "2020-09-01T14:26:10-04:00",
+  "date": "2020-09-02T10:12:27-04:00",
   "contact": [
     {
       "name": "David Pyke",
@@ -411,6 +411,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-CEQEventCode.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CEQEventCode"
+        },
+        "name": "CEQ Event Codes",
+        "description": "Event Code Extension for use in Topics and Status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-CEQextension.html"
           }
         ],
@@ -501,11 +519,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Subscription-CEQExample.html"
+            "valueUri": "Subscription-CEQSubscriptionExample.html"
           }
         ],
         "reference": {
-          "reference": "Subscription/CEQExample"
+          "reference": "Subscription/CEQSubscriptionExample"
         },
         "name": "Example Subscribing",
         "description": "Example of the full Resource for a Carequality Subscription",
@@ -519,11 +537,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Basic-CEQExample.html"
+            "valueUri": "Basic-CEQTopicExample.html"
           }
         ],
         "reference": {
-          "reference": "Basic/CEQExample"
+          "reference": "Basic/CEQTopicExample"
         },
         "name": "Example Subscribing Topic",
         "description": "Example of the subscription Topic  for a Carequality Subscription",
@@ -582,57 +600,6 @@
         "name": "CEQSubscription-Recipient",
         "description": "Capability Statement to describe the requirements for a Notification Recipient Actor",
         "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-CEQEventCode.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CEQEventCode"
-        },
-        "name": "Carequality event Code within the Notification Bundle",
-        "description": "A code for inclusion in the notification bundle identifying the event type that triggered the notification"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-CEQNotificationExtension.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CEQNotificationExtension"
-        },
-        "name": "Carequality Notification Code Extension",
-        "description": "Additional Element to Support Carequality Subscription Notification Code"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-backport-subscription-status.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/backport-subscription-status"
-        },
-        "name": "Backported R5 Subscription Notification Status",
-        "description": "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."
       }
     ],
     "page": {

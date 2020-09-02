@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "CEQPushEventCodes"];
   fhir:ValueSet.title [ fhir:value "Carequality Push Notification Events"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-09-01T14:26:10-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-09-02T10:12:27-04:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];

@@ -68,36 +68,15 @@
         "sliceName": "eventCode",
         "min": 1,
         "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Basic.extension:eventCode.extension",
-        "path": "Basic.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Basic.extension:eventCode.url",
-        "path": "Basic.extension.url",
-        "fixedUri": "eventCode"
-      },
-      {
-        "id": "Basic.extension:eventCode.value[x]",
-        "path": "Basic.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
-            "code": "Coding"
+            "code": "Extension",
+            "profile": [
+              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode"
+            ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Basic.extension:eventCode.valueCoding",

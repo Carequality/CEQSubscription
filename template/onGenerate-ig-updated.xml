@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-09-01T14:26:10-04:00"/>
+   <date value="2020-09-02T10:12:27-04:00"/>
    <contact>
       <name value="David Pyke"/>
       <telecom>
@@ -148,6 +148,21 @@
             <valueString value="StructureDefinition:extension"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-CEQEventCode.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/CEQEventCode"/>
+         </reference>
+         <name value="CEQ Event Codes"/>
+         <description value="Event Code Extension for use in Topics and Status"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-CEQextension.html"/>
          </extension>
          <reference>
@@ -223,10 +238,10 @@
             <valueString value="Subscription"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Subscription-CEQExample.html"/>
+            <valueUri value="Subscription-CEQSubscriptionExample.html"/>
          </extension>
          <reference>
-            <reference value="Subscription/CEQExample"/>
+            <reference value="Subscription/CEQSubscriptionExample"/>
          </reference>
          <name value="Example Subscribing"/>
          <description value="Example of the full Resource for a Carequality Subscription"/>
@@ -238,10 +253,10 @@
             <valueString value="Basic"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Basic-CEQExample.html"/>
+            <valueUri value="Basic-CEQTopicExample.html"/>
          </extension>
          <reference>
-            <reference value="Basic/CEQExample"/>
+            <reference value="Basic/CEQTopicExample"/>
          </reference>
          <name value="Example Subscribing Topic"/>
          <description value="Example of the subscription Topic  for a Carequality Subscription"/>
@@ -292,48 +307,6 @@
          <description value="Capability Statement to describe the requirements for a Notification Recipient Actor"/>
          <exampleBoolean value="true"/>
          <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:extension"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-CEQEventCode.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/CEQEventCode"/>
-         </reference>
-         <name value="Carequality event Code within the Notification Bundle"/>
-         <description value="A code for inclusion in the notification bundle identifying the event type that triggered the notification"/>
-         <groupingId value="_str_extension"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:extension"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-CEQNotificationExtension.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/CEQNotificationExtension"/>
-         </reference>
-         <name value="Carequality Notification Code Extension"/>
-         <description value="Additional Element to Support Carequality Subscription Notification Code"/>
-         <groupingId value="_str_extension"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-backport-subscription-status.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/backport-subscription-status"/>
-         </reference>
-         <name value="Backported R5 Subscription Notification Status"/>
-         <description value="Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."/>
-         <groupingId value="_str_profile"/>
       </resource>
       <page>
          <nameUrl value="toc.html"/>
@@ -409,23 +382,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-backport-subscription-status.html"/>
-               <title value="Backported R5 Subscription Notification Status"/>
+               <nameUrl value="StructureDefinition-CEQEventCode.html"/>
+               <title value="CEQ Event Codes"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="StructureDefinition-CEQextension.html"/>
                <title value="Carequality Subscription Required Elements"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-CEQEventCode.html"/>
-               <title value="Carequality event Code within the Notification Bundle"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-CEQNotificationExtension.html"/>
-               <title value="Carequality Notification Code Extension"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -449,12 +412,12 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Subscription-CEQExample.html"/>
+               <nameUrl value="Subscription-CEQSubscriptionExample.html"/>
                <title value="Example Subscribing"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Basic-CEQExample.html"/>
+               <nameUrl value="Basic-CEQTopicExample.html"/>
                <title value="Example Subscribing Topic"/>
                <generation value="generated"/>
             </page>

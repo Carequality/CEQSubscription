@@ -1,0 +1,26 @@
+{
+  "resourceType": "Basic",
+  "id": "CEQTopicExample",
+  "meta": {
+    "profile": [
+      "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "adminact",
+        "system": "http://terminology.hl7.org/CodeSystem/basic-resource-type"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode",
+      "valueCoding": {
+        "code": "snradmit",
+        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
+      }
+    }
+  ]
+}

@@ -5,17 +5,8 @@
   "extensions": [
     {
       "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode",
-      "title": "Carequality event Code within the Notification Bundle",
+      "title": "CEQ Event Codes",
       "types": [
-        "Coding",
-        "Coding"
-      ]
-    },
-    {
-      "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationExtension",
-      "title": "Carequality Notification Code Extension",
-      "types": [
-        "Coding",
         "Coding"
       ]
     },
@@ -85,8 +76,8 @@
   "profiles": {
     "Parameters": [
       {
-        "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/backport-subscription-status",
-        "title": "Backported R5 Subscription Notification Status"
+        "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status",
+        "title": "CEQ R5 Subscription Notification Status"
       }
     ],
     "Basic": [
@@ -113,9 +104,6 @@
     ]
   },
   "usage": {
-    "eventCode": [
-      "Basic"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -148,6 +136,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode": [
+      "Basic"
     ],
     "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension": [
       "Subscription"

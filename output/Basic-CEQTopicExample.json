@@ -1,0 +1,30 @@
+{
+  "resourceType": "Basic",
+  "id": "CEQTopicExample",
+  "meta": {
+    "profile": [
+      "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: CEQTopicExample</p><p><b>meta</b>: </p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/basic-resource-type adminact}\">Administrative Activity</span></p></div>"
+  },
+  "extension": [
+    {
+      "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode",
+      "valueCoding": {
+        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents",
+        "code": "snradmit"
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/basic-resource-type",
+        "code": "adminact"
+      }
+    ]
+  }
+}

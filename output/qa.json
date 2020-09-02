@@ -3,9 +3,9 @@
   "name": "Carequality_Subscription_Implementation_Guide",
   "package-id": "sequoiaproject.fhir.us.pushnotifications",
   "ig-ver": "0.1.0",
-  "date": "Tue, 01 Sep, 2020 14:26:10 -0400",
-  "errs": 1,
-  "warnings": 6,
+  "date": "Wed, 02 Sep, 2020 10:12:27 -0400",
+  "errs": 0,
+  "warnings": 3,
   "hints": 0,
   "version": "4.0.1",
   "tool": "4.5.0 (3)"

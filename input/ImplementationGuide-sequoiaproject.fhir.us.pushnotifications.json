@@ -75,6 +75,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/CEQEventCode"
+        },
+        "name": "CEQ Event Codes",
+        "description": "Event Code Extension for use in Topics and Status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/CEQextension"
         },
         "name": "Carequality Subscription Required Elements",
@@ -115,7 +123,7 @@
       },
       {
         "reference": {
-          "reference": "Subscription/CEQExample"
+          "reference": "Subscription/CEQSubscriptionExample"
         },
         "name": "Example Subscribing",
         "description": "Example of the full Resource for a Carequality Subscription",
@@ -123,7 +131,7 @@
       },
       {
         "reference": {
-          "reference": "Basic/CEQExample"
+          "reference": "Basic/CEQTopicExample"
         },
         "name": "Example Subscribing Topic",
         "description": "Example of the subscription Topic  for a Carequality Subscription",

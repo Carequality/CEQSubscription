@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Basic</sch:title>
     <sch:rule context="f:Basic">
-      <sch:assert test="count(f:extension[@url = 'eventCode']) &gt;= 1">extension with URL = 'eventCode': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'eventCode']) &lt;= 1">extension with URL = 'eventCode': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode']) &gt;= 1">extension with URL = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode']) &lt;= 1">extension with URL = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -56,7 +56,7 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -70,8 +70,8 @@
   <sch:pattern>
     <sch:title>Basic.extension.extension</sch:title>
     <sch:rule context="f:Basic/f:extension/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

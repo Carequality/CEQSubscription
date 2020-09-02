@@ -27,10 +27,22 @@
   fhir:StructureDefinition.title [ fhir:value "Carequality Subscription Bundle"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-09-02T10:12:27-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-09-02T10:23:23-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Carequality"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Carequality" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.carequality.org" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@carequality.org" ]
+     ]
+  ], [
+     fhir:index 1;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;

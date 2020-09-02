@@ -15,6 +15,19 @@
   "publisher": "Carequality",
   "contact": [
     {
+      "name": "Carequality",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.carequality.org"
+        },
+        {
+          "system": "email",
+          "value": "info@carequality.org"
+        }
+      ]
+    },
+    {
       "name": "David Pyke",
       "telecom": [
         {

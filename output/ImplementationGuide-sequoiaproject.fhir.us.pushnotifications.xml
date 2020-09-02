@@ -11,7 +11,19 @@
   <name value="Carequality_Subscription_Implementation_Guide"/>
   <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
   <status value="draft"/>
-  <date value="2020-09-02T10:12:27-04:00"/>
+  <date value="2020-09-02T10:23:23-04:00"/>
+  <publisher value="Carequality"/>
+  <contact>
+    <name value="Carequality"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.carequality.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@carequality.org"/>
+    </telecom>
+  </contact>
   <contact>
     <name value="David Pyke"/>
     <telecom>

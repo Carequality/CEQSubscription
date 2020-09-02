@@ -17,9 +17,22 @@
   fhir:CodeSystem.name [ fhir:value "CEQNotificationEvents"];
   fhir:CodeSystem.title [ fhir:value "Carequality Push Notification Events"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-09-02T10:12:27-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-09-02T10:23:23-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Carequality"];
   fhir:CodeSystem.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Carequality" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.carequality.org" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@carequality.org" ]
+     ]
+  ], [
+     fhir:index 1;
      fhir:ContactDetail.name [ fhir:value "David Pyke" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;

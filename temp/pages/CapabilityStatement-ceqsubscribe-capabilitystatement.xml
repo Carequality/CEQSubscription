@@ -15,6 +15,17 @@
   <date value="2020-05-07"/>
   <publisher value="Carequality"/>
   <contact>
+    <name value="Carequality"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.carequality.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@carequality.org"/>
+    </telecom>
+  </contact>
+  <contact>
     <name value="David Pyke"/>
     <telecom>
       <system value="email"/>

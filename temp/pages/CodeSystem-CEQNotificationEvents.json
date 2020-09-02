@@ -10,8 +10,22 @@
   "name": "CEQNotificationEvents",
   "title": "Carequality Push Notification Events",
   "status": "active",
-  "date": "2020-09-02T10:12:27-04:00",
+  "date": "2020-09-02T10:23:23-04:00",
+  "publisher": "Carequality",
   "contact": [
+    {
+      "name": "Carequality",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.carequality.org"
+        },
+        {
+          "system": "email",
+          "value": "info@carequality.org"
+        }
+      ]
+    },
     {
       "name": "David Pyke",
       "telecom": [

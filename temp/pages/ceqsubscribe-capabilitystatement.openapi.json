@@ -9,8 +9,9 @@
     },
     "version": "0.1.0",
     "contact": {
-      "name": "David Pyke",
-      "email": "mailto:david.pyke@readycomputing.com"
+      "name": "Carequality",
+      "email": "info@carequality.org",
+      "url": "http://www.carequality.org"
     }
   },
   "externalDocs": {

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "eb226606-9f08-4fb4-b879-a86c5186d4ab",
+  "id" : "3a5d285b-6156-4793-b970-0f8a09eadd48",
   "meta" : {
-    "lastUpdated" : "2020-09-02T10:12:27.651-04:00"
+    "lastUpdated" : "2020-09-02T10:23:23.838-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,8 +19,20 @@
       "name" : "CEQPushEventCodes",
       "title" : "Carequality Push Notification Events",
       "status" : "active",
-      "date" : "2020-09-02T10:12:27-04:00",
+      "date" : "2020-09-02T10:23:23-04:00",
+      "publisher" : "Carequality",
       "contact" : [{
+        "name" : "Carequality",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.carequality.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@carequality.org"
+        }]
+      },
+      {
         "name" : "David Pyke",
         "telecom" : [{
           "system" : "email",
@@ -29,8 +41,8 @@
       }],
       "description" : "The codes to define each of the permitted events for Carequality Network Subscriptions",
       "expansion" : {
-        "identifier" : "urn:uuid:e542801d-12ae-4751-8cac-448aaaec16cc",
-        "timestamp" : "2020-09-02T10:12:39-04:00",
+        "identifier" : "urn:uuid:167492d0-fbcd-4589-9e79-0c5eccacdd84",
+        "timestamp" : "2020-09-02T10:23:35-04:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -117,8 +129,20 @@
       "name" : "CEQSubscriberPurposeofUse",
       "title" : "Permitted Purposes Of Use",
       "status" : "active",
-      "date" : "2020-09-02T10:12:27-04:00",
+      "date" : "2020-09-02T10:23:23-04:00",
+      "publisher" : "Carequality",
       "contact" : [{
+        "name" : "Carequality",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.carequality.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@carequality.org"
+        }]
+      },
+      {
         "name" : "David Pyke",
         "telecom" : [{
           "system" : "email",
@@ -127,8 +151,8 @@
       }],
       "description" : "These are the permitted Purpose of Use within the Carequality network",
       "expansion" : {
-        "identifier" : "urn:uuid:40ad30a2-e0e2-4699-b0db-36e56a2cbc69",
-        "timestamp" : "2020-09-02T10:12:39-04:00",
+        "identifier" : "urn:uuid:06afdb72-9996-47db-9b64-e546f7eb8a4e",
+        "timestamp" : "2020-09-02T10:23:35-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",

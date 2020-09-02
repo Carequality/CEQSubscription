@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="eb226606-9f08-4fb4-b879-a86c5186d4ab"/>
+  <id value="3a5d285b-6156-4793-b970-0f8a09eadd48"/>
   <meta>
-    <lastUpdated value="2020-09-02T10:12:27.651-04:00"/>
+    <lastUpdated value="2020-09-02T10:23:23.838-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -139,7 +139,19 @@
         <name value="CEQPushEventCodes"/>
         <title value="Carequality Push Notification Events"/>
         <status value="active"/>
-        <date value="2020-09-02T10:12:27-04:00"/>
+        <date value="2020-09-02T10:23:23-04:00"/>
+        <publisher value="Carequality"/>
+        <contact>
+          <name value="Carequality"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.carequality.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@carequality.org"/>
+          </telecom>
+        </contact>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -149,8 +161,8 @@
         </contact>
         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
         <expansion>
-          <identifier value="urn:uuid:e542801d-12ae-4751-8cac-448aaaec16cc"/>
-          <timestamp value="2020-09-02T10:12:39-04:00"/>
+          <identifier value="urn:uuid:167492d0-fbcd-4589-9e79-0c5eccacdd84"/>
+          <timestamp value="2020-09-02T10:23:35-04:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -309,7 +321,19 @@
         <name value="CEQSubscriberPurposeofUse"/>
         <title value="Permitted Purposes Of Use"/>
         <status value="active"/>
-        <date value="2020-09-02T10:12:27-04:00"/>
+        <date value="2020-09-02T10:23:23-04:00"/>
+        <publisher value="Carequality"/>
+        <contact>
+          <name value="Carequality"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.carequality.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@carequality.org"/>
+          </telecom>
+        </contact>
         <contact>
           <name value="David Pyke"/>
           <telecom>
@@ -319,8 +343,8 @@
         </contact>
         <description value="These are the permitted Purpose of Use within the Carequality network"/>
         <expansion>
-          <identifier value="urn:uuid:40ad30a2-e0e2-4699-b0db-36e56a2cbc69"/>
-          <timestamp value="2020-09-02T10:12:39-04:00"/>
+          <identifier value="urn:uuid:06afdb72-9996-47db-9b64-e546f7eb8a4e"/>
+          <timestamp value="2020-09-02T10:23:35-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>

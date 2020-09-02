@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "NHINPurposeOfUse"];
   fhir:CodeSystem.title [ fhir:value "NHIN Purpose Of Use"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-09-02T14:53:56-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-09-02T15:52:15-04:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "Carequality"];
   fhir:CodeSystem.contact [
      fhir:index 0;

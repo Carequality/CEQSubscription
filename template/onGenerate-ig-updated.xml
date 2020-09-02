@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-09-02T14:53:56-04:00"/>
+   <date value="2020-09-02T15:52:15-04:00"/>
    <publisher value="Carequality"/>
    <contact>
       <name value="Carequality"/>
@@ -262,6 +262,21 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Parameters"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Parameters-CEQSubscriptionStatusExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Parameters/CEQSubscriptionStatusExample"/>
+         </reference>
+         <name value="SubscriptionStatus Example"/>
+         <description value="An example of the Carequality Susbscription Status Profile"/>
+         <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Basic"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -426,6 +441,11 @@
             <page>
                <nameUrl value="Subscription-CEQSubscriptionExample.html"/>
                <title value="Example Subscribing"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Parameters-CEQSubscriptionStatusExample.html"/>
+               <title value="SubscriptionStatus Example"/>
                <generation value="generated"/>
             </page>
             <page>

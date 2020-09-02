@@ -10,7 +10,7 @@
   "name": "Carequality_Subscription_Implementation_Guide",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
   "status": "draft",
-  "date": "2020-09-02T14:53:56-04:00",
+  "date": "2020-09-02T15:52:15-04:00",
   "publisher": "Carequality",
   "contact": [
     {
@@ -542,6 +542,24 @@
         "name": "Example Subscribing",
         "description": "Example of the full Resource for a Carequality Subscription",
         "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Parameters-CEQSubscriptionStatusExample.html"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/CEQSubscriptionStatusExample"
+        },
+        "name": "SubscriptionStatus Example",
+        "description": "An example of the Carequality Susbscription Status Profile",
+        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
       },
       {
         "extension": [

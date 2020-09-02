@@ -1,20 +1,21 @@
 ﻿Carequality_Subscription_Implementation_Guide : Validation Results
 =========================================
 
-err = 0, warn = 3, info = 0
+err = 0, warn = 2, info = 0
 IG Publisher Version: 1.1.17
-Generated Wed Sep 02 14:54:29 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
+Generated Wed Sep 02 15:52:45 EDT 2020. FHIR version 4.0.1 for sequoiaproject.fhir.us.pushnotifications#0.1.0 (canonical = https://sequoiaproject.org/fhir/sphd-r4)
 
  Build Errors : 0 / 0 / 0
  C:\FHIR\CEQSubscription\input\ImplementationGuide-sequoiaproject.fhir.us.pushnotifications : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\examples\Basic-CEQTopicExample : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\examples\CapabilityStatement-ceqsubscribe-capabilitystatement : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe : 0 / 0 / 1
+ C:\FHIR\CEQSubscription\input\examples\Parameters-CEQSubscriptionStatusExample : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\examples\Practitioner-DrDavidAnydoc : 0 / 0 / 2
  C:\FHIR\CEQSubscription\input\examples\Subscription-CEQSubscriptionExample : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQEventCode : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\extensions\StructureDefinition-CEQextension : 0 / 0 / 1
- C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-subscription-status : 0 / 1 / 1
+ C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-subscription-status : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic : 0 / 0 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQNotificationBundle : 0 / 1 / 1
  C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQSubscriptionBundle : 0 / 1 / 1
@@ -33,6 +34,8 @@ INFORMATION: Basic/CEQTopicExample: Basic: Validate resource against profile htt
 INFORMATION: CapabilityStatement/ceqsubscribe-capabilitystatement: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 == C:\FHIR\CEQSubscription\input\examples\OperationDefinition-ceqsubscribe.json ==
 INFORMATION: OperationDefinition/ceqsubscribe: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
+== C:\FHIR\CEQSubscription\input\examples\Parameters-CEQSubscriptionStatusExample.json ==
+INFORMATION: Parameters/CEQSubscriptionStatusExample: Parameters: Validate resource against profile https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status
 == C:\FHIR\CEQSubscription\input\examples\Practitioner-DrDavidAnydoc.json ==
 INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
 INFORMATION: Practitioner/DrDavidAnydoc: Practitioner: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner - listed in meta
@@ -44,7 +47,6 @@ INFORMATION: StructureDefinition/CEQEventCode: StructureDefinition: Validate res
 INFORMATION: StructureDefinition/CEQextension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-subscription-status.json ==
 INFORMATION: StructureDefinition/CEQ-subscription-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status'): The Implementation Guide contains no examples for this profile
 == C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQ-topic.json ==
 INFORMATION: StructureDefinition/CEQ-topic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\FHIR\CEQSubscription\input\profiles\StructureDefinition-CEQNotificationBundle.json ==

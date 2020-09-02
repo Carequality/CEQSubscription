@@ -175,6 +175,14 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Parameters-CEQSubscriptionStatusExample.html"
+                     title="Parameters/CEQSubscriptionStatusExample">SubscriptionStatus Example</a>
+               </td>
+               <td>{% capture desc %}An example of the Carequality Susbscription Status Profile{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Basic-CEQTopicExample.html" title="Basic/CEQTopicExample">Example Subscribing Topic</a>
                </td>
                <td>{% capture desc %}Example of the subscription Topic  for a Carequality Subscription{% endcapture %}

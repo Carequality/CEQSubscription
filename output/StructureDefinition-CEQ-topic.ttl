@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "CEQTopic"];
   fhir:StructureDefinition.title [ fhir:value "Carequality R5 SubscriptionTopic replacement"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-09-02T14:53:56-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-09-02T15:52:15-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Carequality"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

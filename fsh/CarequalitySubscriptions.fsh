@@ -136,7 +136,6 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
     contains subscriptionUrl 1..1 MS
     and eventCode 0..1 MS
     and status 1..1 MS
-    and type 1..1 MS
     and subscriptionEventCount 1..1 MS
 
 * parameter[subscriptionUrl].name = "subscription-url" (exactly)
@@ -149,7 +148,7 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter[status].name = "status" (exactly)
 * parameter[status].value[x] 1..1 MS
 * parameter[status].value[x] only code
-* parameter[status].value[x] from http://hl7.org/fhir/ValueSet/subscription-status
+* parameter[status].valueCode from http://hl7.org/fhir/ValueSet/subscription-status
 * parameter[subscriptionEventCount].name = "subscription-event-count" (exactly)
 * parameter[subscriptionEventCount].value[x] 1..1 MS
 * parameter[subscriptionEventCount].value[x] only unsignedInt

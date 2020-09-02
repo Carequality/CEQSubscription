@@ -145,6 +145,14 @@
       },
       {
         "reference": {
+          "reference": "Parameters/CEQSubscriptionStatusExample"
+        },
+        "name": "SubscriptionStatus Example",
+        "description": "An example of the Carequality Susbscription Status Profile",
+        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
+      },
+      {
+        "reference": {
           "reference": "Basic/CEQTopicExample"
         },
         "name": "Example Subscribing Topic",

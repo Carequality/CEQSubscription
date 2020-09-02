@@ -1,0 +1,30 @@
+{
+  "resourceType": "Parameters",
+  "id": "CEQSubscriptionStatusExample",
+  "meta": {
+    "profile": [
+      "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
+    ]
+  },
+  "parameter": [
+    {
+      "name": "subscription-url",
+      "valueUri": "http://example.org/subscription/uri"
+    },
+    {
+      "name": "status",
+      "valueCode": "active"
+    },
+    {
+      "name": "subscription-event-count",
+      "valueUnsignedInt": 25
+    },
+    {
+      "name": "subscription-event-code",
+      "valueCoding": {
+        "code": "admit",
+        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
+      }
+    }
+  ]
+}

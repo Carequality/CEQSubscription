@@ -1,0 +1,81 @@
+{
+  "resourceType": "Bundle",
+  "id": "NotificationBundleExample",
+  "meta": {
+    "profile": [
+      "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle"
+    ]
+  },
+  "type": "batch-response",
+  "entry": [
+    {
+      "response": {
+        "status": "Delivered",
+        "lastModified": "2020-08-09T00:04:00Z"
+      },
+      "fullUrl": "http://www.example.org/fhir/Parameters/6b90b3bf-7564-4f4b-95c8-b06ce70699dd",
+      "resource": {
+        "resourceType": "Parameters",
+        "id": "CEQSubscriptionStatusExample",
+        "meta": {
+          "profile": [
+            "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
+          ]
+        },
+        "parameter": [
+          {
+            "name": "status",
+            "valueCode": "active"
+          },
+          {
+            "name": "subscription-event-count",
+            "valueUnsignedInt": 25
+          },
+          {
+            "name": "subscription-practitioner-name",
+            "valueHumanName": {
+              "family": "Rowlf",
+              "given": [
+                "Bob"
+              ],
+              "prefix": [
+                "Dr."
+              ]
+            }
+          },
+          {
+            "name": "subscription-patient-name",
+            "valueHumanName": {
+              "family": "Wanda",
+              "given": [
+                "Wayne"
+              ]
+            }
+          },
+          {
+            "name": "subscription-Organization-name",
+            "valueString": "Veterinarian's Hospital"
+          },
+          {
+            "name": "subscription-name",
+            "valueString": "Sub84849-26"
+          },
+          {
+            "name": "subscription-event-code",
+            "valueCoding": {
+              "code": "admit",
+              "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "response": {
+        "status": "Triggered",
+        "lastModified": "2020-08-09T00:00:00Z"
+      },
+      "fullUrl": "http://www.example.org/fhir/Encounter/ed5feed2-f04b-4674-8f75-86410a7f87e9"
+    }
+  ]
+}

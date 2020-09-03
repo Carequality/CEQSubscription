@@ -52,7 +52,7 @@
           "reference": "StructureDefinition/CEQNotificationBundle"
         },
         "name": "Carequality Notification Bundle",
-        "description": "Bundle for Carequality subscription notification",
+        "description": "This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic\ninformation about the subscription and the time the subscription was sent; the second is the FullUrl of thead\npayload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a\nnon-resource entry in the Bundle which requires the response.status element in all entries.",
         "exampleBoolean": false
       },
       {
@@ -148,7 +148,7 @@
           "reference": "Parameters/CEQSubscriptionStatusExample"
         },
         "name": "SubscriptionStatus Example",
-        "description": "An example of the Carequality Susbscription Status Profile",
+        "description": "An example of the Carequality Subscription Status Profile",
         "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
       },
       {
@@ -166,6 +166,22 @@
         "name": "Dr. David Anydoc",
         "description": "Practitioner for example use",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/NotificationBundleExample"
+        },
+        "name": "CQ Notification Bundle Example",
+        "description": "Example of the CQ Notification Bundle with a SubscriptionStatus and payload URL",
+        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/SubscriptionBundleExample"
+        },
+        "name": "CQ Subscription Bundle Example",
+        "description": "Example of the CQ Subscription Bundle",
+        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"
       },
       {
         "reference": {

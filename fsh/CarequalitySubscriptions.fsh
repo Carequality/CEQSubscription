@@ -16,9 +16,6 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 * extension[patientId] ^short = "The DataSource Patient MRN"
 * extension[patientId].value[x] only Identifier
 
-* extension[subPurpose] ^short = "Purpose of Use for this Subscription"
-* extension[subPurpose].value[x] only Coding
-
 * extension[subscriber] ^short = "End subscriber for the information"
 * extension[subscriber].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
 
@@ -50,8 +47,6 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 
 * extension[ceqPushExtension].extension[subIdentifier] 1..1
 * extension[ceqPushExtension].extension[patientId] 1..1
-* extension[ceqPushExtension].extension[subPurpose] 1..1
-* extension[ceqPushExtension].extension[subPurpose].valueCoding from CEQSubscriberPurposeofUse (extensible)
 * extension[ceqPushExtension].extension[subscriber] 1..1
 * extension[ceqPushExtension].extension[subserv] 0..1
 * extension[ceqPushExtension].extension[subscriptionTopic]  1..1
@@ -69,40 +64,56 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry ^slicing.rules = #closed
 * entry ^slicing.description = "Slice based on the entry.resource type"
 * entry contains
-  subsciptionentry 1..1 and
+  subscriptionentry 1..1 and
 	subscriberentry 1..1 and
-  subserv 0..1 and
-  subscriptionTopic 1..1
+  subscriptionTopic 1..1 and
+  subserv 0..1
 
-* entry[subsciptionentry].resource 1..1
-* entry[subsciptionentry].resource only CEQsubscription
-* entry[subsciptionentry].request.method = #POST
+* entry[subscriptionentry].resource 1..1
+* entry[subscriptionentry].resource only CEQsubscription
+* entry[subscriptionentry].request.method = #POST
 
 * entry[subscriberentry].resource 1..1
 * entry[subscriberentry].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or http://hl7.org/fhir/StructureDefinition/RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 * entry[subscriberentry].request.method = #POST
 
+* entry[subscriptionTopic].resource  1..1
+* entry[subscriptionTopic].resource only CEQTopic
+* entry[subscriptionTopic].request.method = #POST
+
 * entry[subserv].resource 0..1
 * entry[subserv].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 * entry[subserv].request.method = #POST
 
-* entry[subscriptionTopic].resource 1..1
-* entry[subscriptionTopic].resource only CEQTopic
+
 
 
 
 Profile: CEQNotificationBundle
 Parent: Bundle
 Title: "Carequality Notification Bundle"
-Description: "Bundle for Carequality subscription notification"
+Description: """This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic
+information about the subscription and the time the subscription was sent; the second is the FullUrl of thead
+payload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a
+non-resource entry in the Bundle which requires the response.status element in all entries."""
 
 * insert FHIRPushStructureDefinitionContent
 
-* type = #collection (exactly)
+* entry  ^slicing.discriminator.type = #value
+* entry  ^slicing.discriminator.path = "response.status"
+* entry  ^slicing.rules = #closed
+* entry  ^slicing.ordered = true
+* entry  ^slicing.description = "Slice on response status descriptor"
 
+* type = #batch-response  (exactly)
 * entry 2..2
-* entry.fullUrl 1..1
-// * entry[1].resource = Reference(CEQSubscriptionStatus)
+* entry contains sub-status 1..1 MS and sub-payload 1..1 MS
+* entry[sub-status].resource only CEQSubscriptionStatus
+* entry[sub-status].response.status = "Delivered" (exactly)
+* entry[sub-status].response.lastModified 1..1
+* entry[sub-payload].fullUrl 1..1
+* entry[sub-payload].response.status = "Triggered" (exactly)
+* entry[sub-payload].response.lastModified 1..1
 
 
 Extension: CEQEventCode
@@ -133,14 +144,18 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter  ^slicing.ordered = false
 * parameter  ^slicing.description = "Slice on parameter name"
 * parameter
-    contains subscriptionUrl 1..1 MS
+    contains subIdentifier 0..1 MS
     and eventCode 0..1 MS
     and status 1..1 MS
     and subscriptionEventCount 1..1 MS
+    and subscriptionPractitioner 1..1 MS
+    and subscriptionPatient 1..1 MS
+    and subscriptionOrganization 1..1 MS
 
-* parameter[subscriptionUrl].name = "subscription-url" (exactly)
-* parameter[subscriptionUrl].value[x] 1..1 MS
-* parameter[subscriptionUrl].value[x] only uri
+* parameter[subIdentifier].name = "subscription-name" (exactly)
+* parameter[subIdentifier].name ^short = "Business Name of the subscription submitted"
+* parameter[subIdentifier].value[x] 0..1 MS
+* parameter[subIdentifier].value[x] only string
 * parameter[eventCode].name = "subscription-event-code" (exactly)
 * parameter[eventCode].value[x] 0..1 MS
 * parameter[eventCode].value[x] only Coding
@@ -151,4 +166,14 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter[status].valueCode from http://hl7.org/fhir/ValueSet/subscription-status
 * parameter[subscriptionEventCount].name = "subscription-event-count" (exactly)
 * parameter[subscriptionEventCount].value[x] 1..1 MS
+//Added to handle CMS information requirements for patient, practitioner and org names
 * parameter[subscriptionEventCount].value[x] only unsignedInt
+* parameter[subscriptionPractitioner].name = "subscription-practitioner-name" (exactly)
+* parameter[subscriptionPractitioner].value[x] 1..1 MS
+* parameter[subscriptionPractitioner].value[x] only HumanName
+* parameter[subscriptionPatient].name = "subscription-patient-name" (exactly)
+* parameter[subscriptionPatient].value[x] 1..1 MS
+* parameter[subscriptionPatient].value[x] only HumanName
+* parameter[subscriptionOrganization].name = "subscription-Organization-name" (exactly)
+* parameter[subscriptionOrganization].value[x] 1..1 MS
+* parameter[subscriptionOrganization].value[x] only string

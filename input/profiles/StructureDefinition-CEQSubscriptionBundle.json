@@ -98,14 +98,14 @@
         "min": 3
       },
       {
-        "id": "Bundle.entry:subsciptionentry",
+        "id": "Bundle.entry:subscriptionentry",
         "path": "Bundle.entry",
-        "sliceName": "subsciptionentry",
+        "sliceName": "subscriptionentry",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Bundle.entry:subsciptionentry.resource",
+        "id": "Bundle.entry:subscriptionentry.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -118,7 +118,7 @@
         ]
       },
       {
-        "id": "Bundle.entry:subsciptionentry.request.method",
+        "id": "Bundle.entry:subscriptionentry.request.method",
         "path": "Bundle.entry.request.method",
         "patternCode": "POST"
       },
@@ -163,6 +163,31 @@
         "patternCode": "POST"
       },
       {
+        "id": "Bundle.entry:subscriptionTopic",
+        "path": "Bundle.entry",
+        "sliceName": "subscriptionTopic",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:subscriptionTopic.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Basic",
+            "profile": [
+              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:subscriptionTopic.request.method",
+        "path": "Bundle.entry.request.method",
+        "patternCode": "POST"
+      },
+      {
         "id": "Bundle.entry:subserv",
         "path": "Bundle.entry",
         "sliceName": "subserv",
@@ -185,26 +210,6 @@
         "id": "Bundle.entry:subserv.request.method",
         "path": "Bundle.entry.request.method",
         "patternCode": "POST"
-      },
-      {
-        "id": "Bundle.entry:subscriptionTopic",
-        "path": "Bundle.entry",
-        "sliceName": "subscriptionTopic",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Bundle.entry:subscriptionTopic.resource",
-        "path": "Bundle.entry.resource",
-        "min": 1,
-        "type": [
-          {
-            "code": "Basic",
-            "profile": [
-              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
-            ]
-          }
-        ]
       }
     ]
   }

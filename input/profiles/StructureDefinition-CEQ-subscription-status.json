@@ -57,28 +57,28 @@
           "ordered": false,
           "description": "Slice on parameter name"
         },
-        "min": 3
+        "min": 5
       },
       {
-        "id": "Parameters.parameter:subscriptionUrl",
+        "id": "Parameters.parameter:subIdentifier",
         "path": "Parameters.parameter",
-        "sliceName": "subscriptionUrl",
-        "min": 1,
+        "sliceName": "subIdentifier",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Parameters.parameter:subscriptionUrl.name",
+        "id": "Parameters.parameter:subIdentifier.name",
         "path": "Parameters.parameter.name",
-        "fixedString": "subscription-url"
+        "short": "Business Name of the subscription submitted",
+        "fixedString": "subscription-name"
       },
       {
-        "id": "Parameters.parameter:subscriptionUrl.value[x]",
+        "id": "Parameters.parameter:subIdentifier.value[x]",
         "path": "Parameters.parameter.value[x]",
-        "min": 1,
         "type": [
           {
-            "code": "uri"
+            "code": "string"
           }
         ],
         "mustSupport": true
@@ -190,6 +190,78 @@
         "type": [
           {
             "code": "unsignedInt"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Parameters.parameter:subscriptionPractitioner",
+        "path": "Parameters.parameter",
+        "sliceName": "subscriptionPractitioner",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Parameters.parameter:subscriptionPractitioner.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "subscription-practitioner-name"
+      },
+      {
+        "id": "Parameters.parameter:subscriptionPractitioner.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Parameters.parameter:subscriptionPatient",
+        "path": "Parameters.parameter",
+        "sliceName": "subscriptionPatient",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Parameters.parameter:subscriptionPatient.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "subscription-patient-name"
+      },
+      {
+        "id": "Parameters.parameter:subscriptionPatient.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Parameters.parameter:subscriptionOrganization",
+        "path": "Parameters.parameter",
+        "sliceName": "subscriptionOrganization",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Parameters.parameter:subscriptionOrganization.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "subscription-Organization-name"
+      },
+      {
+        "id": "Parameters.parameter:subscriptionOrganization.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
           }
         ],
         "mustSupport": true

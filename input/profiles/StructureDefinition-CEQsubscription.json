@@ -98,21 +98,6 @@
         ]
       },
       {
-        "id": "Subscription.extension:ceqPushExtension.extension:subPurpose",
-        "path": "Subscription.extension.extension",
-        "sliceName": "subPurpose"
-      },
-      {
-        "id": "Subscription.extension:ceqPushExtension.extension:subPurpose.valueCoding",
-        "path": "Subscription.extension.extension.valueCoding",
-        "min": 0,
-        "max": "1",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse"
-        }
-      },
-      {
         "id": "Subscription.end",
         "path": "Subscription.end",
         "comment": "Maximum 2 years",

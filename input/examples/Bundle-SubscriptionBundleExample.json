@@ -9,6 +9,11 @@
   "type": "transaction",
   "entry": [
     {
+      "request": {
+        "method": "POST",
+        "url": "http://www.example.org/fhir/70cba71d-f5e4-4355-9a2f-365ae7b8c694"
+      },
+      "fullUrl": "http://www.example.org/fhir/Subscription/70cba71d-f5e4-4355-9a2f-365ae7b8c694",
       "resource": {
         "resourceType": "Subscription",
         "id": "CEQSubscriptionExample",
@@ -42,13 +47,6 @@
                 }
               },
               {
-                "url": "subPurpose",
-                "valueCoding": {
-                  "code": "TREATMENT",
-                  "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse"
-                }
-              },
-              {
                 "url": "subscriber",
                 "valueReference": {
                   "reference": "Practitioner/DrDavidAnydoc"
@@ -79,6 +77,11 @@
       }
     },
     {
+      "request": {
+        "method": "POST",
+        "url": "http://www.example.org/fhir/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
+      },
+      "fullUrl": "http://www.example.org/fhir/Practitioner/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3",
       "resource": {
         "resourceType": "Practitioner",
         "id": "DrDavidAnydoc",
@@ -107,6 +110,11 @@
       }
     },
     {
+      "request": {
+        "method": "POST",
+        "url": "http://www.example.org/fhir/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
+      },
+      "fullUrl": "http://www.example.org/fhir/Basic/0537166c-5db3-4b0e-97bd-1a59e6f3d080",
       "resource": {
         "resourceType": "Basic",
         "id": "CEQTopicExample",

@@ -5,7 +5,6 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 * extension contains
     subIdentifier 1..1 MS and
     patientId 1..1 MS and
-    subPurpose 1..1 MS and
     subscriber 1..1 MS and
     subserv 0..1 MS and
     subscriptionTopic 1..1
@@ -59,9 +58,10 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * insert FHIRPushStructureDefinitionContent
 
 * type = #transaction (exactly)
+* entry ^slicing.ordered = true
+* entry ^slicing.rules = #open
 * entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "Resource"
-* entry ^slicing.rules = #closed
+* entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.description = "Slice based on the entry.resource type"
 * entry contains
   subscriptionentry 1..1 and

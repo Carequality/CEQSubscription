@@ -34,9 +34,8 @@ Usage:  #example
 * extension[ceqPushExtension].extension[patientId].valueIdentifier.system = "urn:oid:1.2.36.146.595.217.0.1"
 * extension[ceqPushExtension].extension[patientId].valueIdentifier.value = "MRN123"
 
-* extension[ceqPushExtension].extension[subPurpose].valueCoding = SubPoU#TREATMENT
-
 * extension[ceqPushExtension].extension[subscriber].valueReference = Reference(DrDavidAnydoc)
+
 * extension[ceqPushExtension].extension[subscriptionTopic].valueReference = Reference(CEQSubscriptionTopicExample)
 
 Instance: CEQSubscriptionTopicExample

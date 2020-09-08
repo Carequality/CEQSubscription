@@ -86,13 +86,14 @@
         "id": "Bundle.entry",
         "path": "Bundle.entry",
         "slicing": {
+          "ordered": true,
+          "rules": "open",
           "discriminator": [
             {
               "type": "type",
-              "path": "Resource"
+              "path": "resource"
             }
           ],
-          "rules": "closed",
           "description": "Slice based on the entry.resource type"
         },
         "min": 3

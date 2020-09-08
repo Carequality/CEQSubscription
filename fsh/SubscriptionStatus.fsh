@@ -37,6 +37,18 @@ Title: "CQ Subscription Bundle Example"
 Description: "Example of the CQ Subscription Bundle"
 Usage: #example
 
+* entry[subscriptionentry].fullUrl = "http://www.example.org/fhir/Subscription/70cba71d-f5e4-4355-9a2f-365ae7b8c694"
 * entry[subscriptionentry].resource = CEQsubscriptionExample
+* entry[subscriptionentry].request.method = #POST
+* entry[subscriptionentry].request.url = "http://www.example.org/fhir/70cba71d-f5e4-4355-9a2f-365ae7b8c694"
+
+* entry[subscriberentry].fullUrl = "http://www.example.org/fhir/Practitioner/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
 * entry[subscriberentry].resource = DrDavidAnydoc
+* entry[subscriberentry].request.method = #POST
+* entry[subscriberentry].request.url = "http://www.example.org/fhir/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
+
+
+* entry[subscriptionTopic].fullUrl = "http://www.example.org/fhir/Basic/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
 * entry[subscriptionTopic].resource = CEQSubscriptionTopicExample
+* entry[subscriptionTopic].request.method = #POST
+* entry[subscriptionTopic].request.url = "http://www.example.org/fhir/0537166c-5db3-4b0e-97bd-1a59e6f3d080"

@@ -31,13 +31,6 @@
           }
         },
         {
-          "url": "subPurpose",
-          "valueCoding": {
-            "code": "TREATMENT",
-            "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse"
-          }
-        },
-        {
           "url": "subscriber",
           "valueReference": {
             "reference": "Practitioner/DrDavidAnydoc"

@@ -86,7 +86,7 @@
         "id": "Bundle.entry",
         "path": "Bundle.entry",
         "slicing": {
-          "ordered": true,
+          "ordered": false,
           "rules": "open",
           "discriminator": [
             {
@@ -96,7 +96,7 @@
           ],
           "description": "Slice based on the entry.resource type"
         },
-        "min": 3
+        "min": 1
       },
       {
         "id": "Bundle.entry:subscriptionentry",
@@ -120,95 +120,6 @@
       },
       {
         "id": "Bundle.entry:subscriptionentry.request.method",
-        "path": "Bundle.entry.request.method",
-        "patternCode": "POST"
-      },
-      {
-        "id": "Bundle.entry:subscriberentry",
-        "path": "Bundle.entry",
-        "sliceName": "subscriberentry",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Bundle.entry:subscriberentry.resource",
-        "path": "Bundle.entry.resource",
-        "min": 1,
-        "type": [
-          {
-            "code": "Patient",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-            ]
-          },
-          {
-            "code": "Practitioner",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
-            ]
-          },
-          {
-            "code": "RelatedPerson"
-          },
-          {
-            "code": "Organization",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:subscriberentry.request.method",
-        "path": "Bundle.entry.request.method",
-        "patternCode": "POST"
-      },
-      {
-        "id": "Bundle.entry:subscriptionTopic",
-        "path": "Bundle.entry",
-        "sliceName": "subscriptionTopic",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Bundle.entry:subscriptionTopic.resource",
-        "path": "Bundle.entry.resource",
-        "min": 1,
-        "type": [
-          {
-            "code": "Basic",
-            "profile": [
-              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:subscriptionTopic.request.method",
-        "path": "Bundle.entry.request.method",
-        "patternCode": "POST"
-      },
-      {
-        "id": "Bundle.entry:subserv",
-        "path": "Bundle.entry",
-        "sliceName": "subserv",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Bundle.entry:subserv.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Organization",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:subserv.request.method",
         "path": "Bundle.entry.request.method",
         "patternCode": "POST"
       }

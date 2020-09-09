@@ -58,32 +58,18 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * insert FHIRPushStructureDefinitionContent
 
 * type = #transaction (exactly)
-* entry ^slicing.ordered = true
+* entry ^slicing.ordered = false
 * entry ^slicing.rules = #open
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.description = "Slice based on the entry.resource type"
 * entry contains
-  subscriptionentry 1..1 and
-	subscriberentry 1..1 and
-  subscriptionTopic 1..1 and
-  subserv 0..1
-
+  subscriptionentry 1..1
 * entry[subscriptionentry].resource 1..1
 * entry[subscriptionentry].resource only CEQsubscription
 * entry[subscriptionentry].request.method = #POST
 
-* entry[subscriberentry].resource 1..1
-* entry[subscriberentry].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or http://hl7.org/fhir/StructureDefinition/RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
-* entry[subscriberentry].request.method = #POST
 
-* entry[subscriptionTopic].resource  1..1
-* entry[subscriptionTopic].resource only CEQTopic
-* entry[subscriptionTopic].request.method = #POST
-
-* entry[subserv].resource 0..1
-* entry[subserv].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
-* entry[subserv].request.method = #POST
 
 
 

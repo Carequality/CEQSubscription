@@ -77,10 +77,6 @@
       }
     },
     {
-      "request": {
-        "method": "POST",
-        "url": "http://www.example.org/fhir/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
-      },
       "fullUrl": "http://www.example.org/fhir/Practitioner/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3",
       "resource": {
         "resourceType": "Practitioner",
@@ -107,13 +103,13 @@
             ]
           }
         ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://www.example.org/fhir/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
       }
     },
     {
-      "request": {
-        "method": "POST",
-        "url": "http://www.example.org/fhir/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
-      },
       "fullUrl": "http://www.example.org/fhir/Basic/0537166c-5db3-4b0e-97bd-1a59e6f3d080",
       "resource": {
         "resourceType": "Basic",
@@ -140,6 +136,10 @@
             }
           }
         ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://www.example.org/fhir/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
       }
     }
   ]

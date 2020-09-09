@@ -52,6 +52,7 @@ Only applies to Secondary Referrals (i.e., referrals not made by the Notificatio
 Transfer Type 1: When a transfer is ordered to any external (any location that would not trigger an internal Admit notification) location. For example
 * Any transfer that crosses between EHRs (even when internal to one organization) shall generate a notification; and/or
 * Any transfer within a system that crosses between settings (ED, Skilled Nursing, etc.) shall generate a notification.
+
 Transfer Type 2: Any time a transfer order is generated.
 
 #### Gaps in Care

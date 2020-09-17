@@ -69,12 +69,6 @@ Description: "Bundle to be submitted for Carequality subscription enrollment"
 * entry[subscriptionentry].resource only CEQsubscription
 * entry[subscriptionentry].request.method = #POST
 
-
-
-
-
-
-
 Profile: CEQNotificationBundle
 Parent: Bundle
 Title: "Carequality Notification Bundle"
@@ -85,21 +79,36 @@ non-resource entry in the Bundle which requires the response.status element in a
 
 * insert FHIRPushStructureDefinitionContent
 
-* entry  ^slicing.discriminator.type = #value
-* entry  ^slicing.discriminator.path = "response.status"
-* entry  ^slicing.rules = #closed
-* entry  ^slicing.ordered = true
-* entry  ^slicing.description = "Slice on response status descriptor"
+* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry ^slicing.ordered = false
+* entry ^slicing.description = "Slice based on resource"
 
-* type = #batch-response  (exactly)
-* entry 2..2
-* entry contains sub-status 1..1 MS and sub-payload 1..1 MS
-* entry[sub-status].resource only CEQSubscriptionStatus
-* entry[sub-status].response.status = "Delivered" (exactly)
-* entry[sub-status].response.lastModified 1..1
-* entry[sub-payload].fullUrl 1..1
-* entry[sub-payload].response.status = "Triggered" (exactly)
-* entry[sub-payload].response.lastModified 1..1
+* type = #history  (exactly)
+* entry 4..*
+* entry contains subscriptionStatus 1..1 MS
+  and subscriptionPatient 1..1 MS
+  and subscriptionPractitioner 1..* MS
+  and subscriptionOrganization 1..1 MS
+  and subscriptionDiagnosis 0..1 MS
+
+* entry[subscriptionStatus].resource only CEQSubscriptionStatus
+* entry[subscriptionStatus].request.method = #GET (exactly)
+* entry[subscriptionStatus].response.status = "200" (exactly)
+* entry[subscriptionPatient].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+* entry[subscriptionPatient].request.method = #POST (exactly)
+* entry[subscriptionPatient].response.status = "201" (exactly)
+* entry[subscriptionPractitioner].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+* entry[subscriptionPractitioner].request.method = #POST (exactly)
+* entry[subscriptionPractitioner].response.status = "201" (exactly)
+* entry[subscriptionOrganization].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+* entry[subscriptionOrganization].request.method = #POST (exactly)
+* entry[subscriptionOrganization].response.status = "201" (exactly)
+* entry[subscriptionDiagnosis].resource only http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
+* entry[subscriptionDiagnosis].request.method = #POST (exactly)
+* entry[subscriptionDiagnosis].response.status = "201" (exactly)
+
 
 
 Extension: CEQEventCode
@@ -134,9 +143,7 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
     and eventCode 0..1 MS
     and status 1..1 MS
     and subscriptionEventCount 1..1 MS
-    and subscriptionPractitioner 1..1 MS
-    and subscriptionPatient 1..1 MS
-    and subscriptionOrganization 1..1 MS
+
 
 * parameter[subIdentifier].name = "subscription-name" (exactly)
 * parameter[subIdentifier].name ^short = "Business Name of the subscription submitted"
@@ -152,14 +159,16 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter[status].valueCode from http://hl7.org/fhir/ValueSet/subscription-status
 * parameter[subscriptionEventCount].name = "subscription-event-count" (exactly)
 * parameter[subscriptionEventCount].value[x] 1..1 MS
-//Added to handle CMS information requirements for patient, practitioner and org names
 * parameter[subscriptionEventCount].value[x] only unsignedInt
-* parameter[subscriptionPractitioner].name = "subscription-practitioner-name" (exactly)
-* parameter[subscriptionPractitioner].value[x] 1..1 MS
-* parameter[subscriptionPractitioner].value[x] only HumanName
-* parameter[subscriptionPatient].name = "subscription-patient-name" (exactly)
-* parameter[subscriptionPatient].value[x] 1..1 MS
-* parameter[subscriptionPatient].value[x] only HumanName
-* parameter[subscriptionOrganization].name = "subscription-Organization-name" (exactly)
-* parameter[subscriptionOrganization].value[x] 1..1 MS
-* parameter[subscriptionOrganization].value[x] only string
+
+
+Instance: CEQSubscriptionStatusExample
+InstanceOf: CEQSubscriptionStatus
+Title: "SubscriptionStatus Example"
+Description: "An example of the Carequality Subscription Status Profile"
+Usage: #example
+
+* parameter[status].valueCode = #active
+* parameter[subIdentifier].valueString = "Sub84849-26"
+* parameter[eventCode].valueCoding = PushCode#admit
+* parameter[subscriptionEventCount].valueUnsignedInt = 25

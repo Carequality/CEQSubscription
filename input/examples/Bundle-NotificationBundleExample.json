@@ -6,11 +6,15 @@
       "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle"
     ]
   },
-  "type": "batch-response",
+  "type": "history",
   "entry": [
     {
+      "request": {
+        "method": "GET",
+        "url": "https://example.org/fhir/r4/Subscription/admission/$status"
+      },
       "response": {
-        "status": "Delivered",
+        "status": "200",
         "lastModified": "2020-08-09T00:04:00Z"
       },
       "fullUrl": "http://www.example.org/fhir/Parameters/6b90b3bf-7564-4f4b-95c8-b06ce70699dd",
@@ -32,31 +36,6 @@
             "valueUnsignedInt": 25
           },
           {
-            "name": "subscription-practitioner-name",
-            "valueHumanName": {
-              "family": "Rowlf",
-              "given": [
-                "Bob"
-              ],
-              "prefix": [
-                "Dr."
-              ]
-            }
-          },
-          {
-            "name": "subscription-patient-name",
-            "valueHumanName": {
-              "family": "Wanda",
-              "given": [
-                "Wayne"
-              ]
-            }
-          },
-          {
-            "name": "subscription-Organization-name",
-            "valueString": "Veterinarian's Hospital"
-          },
-          {
             "name": "subscription-name",
             "valueString": "Sub84849-26"
           },
@@ -71,11 +50,96 @@
       }
     },
     {
-      "response": {
-        "status": "Triggered",
-        "lastModified": "2020-08-09T00:00:00Z"
+      "request": {
+        "method": "POST",
+        "url": "https://example.org/fhir/r4/Subscription/admission/$status"
       },
-      "fullUrl": "http://www.example.org/fhir/Encounter/ed5feed2-f04b-4674-8f75-86410a7f87e9"
+      "response": {
+        "status": "201"
+      },
+      "fullUrl": "http://www.example.org/fhir/Patient/90477e1c-2be1-4302-af4a-7b46da998296",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "EveAnyperson",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:uuid:23667766-1c34-4ab8-9903-48c3afc9fb34",
+            "value": "anyperson"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Eve"
+            ],
+            "family": "Anyperson"
+          }
+        ],
+        "birthDate": "1960-04-25",
+        "gender": "female"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "https://example.org/fhir/r4/Subscription/admission/$status"
+      },
+      "response": {
+        "status": "201"
+      },
+      "fullUrl": "http://www.example.org/fhir/Practitioner/e650c774-8a53-4e75-8cab-43d9f204b1c8",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "DrDavidAnydoc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "8274017284"
+          }
+        ],
+        "name": [
+          {
+            "family": "Anydoc",
+            "given": [
+              "David"
+            ],
+            "suffix": [
+              "MD"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "https://example.org/fhir/r4/Subscription/admission/$status"
+      },
+      "response": {
+        "status": "201"
+      },
+      "fullUrl": "http://www.example.org/fhir/Organization/6da3decd-9df9-40c4-ae82-525d27f171de",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "VeterinariansHospital",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+          ]
+        },
+        "active": true,
+        "name": "Veterinarian's Hospital"
+      }
     }
   ]
 }

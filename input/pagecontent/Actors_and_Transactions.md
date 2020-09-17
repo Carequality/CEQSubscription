@@ -8,7 +8,7 @@
 * ig-data\input\pagecontent\5_Actors_and_Transactions.md                                *
 *****************************************************************************************
 {% endcomment %} -->
-The Carequality Push Notification IG defines specific Actors and Transactions. All transactions require following the policies and requirements of the Carequality FHIR Implementation Guide, available at: [LINK]
+The Carequality Push Notification IG defines specific Actors and Transactions. All transactions require following the security and authentication policies and requirements of the Carequality FHIR Implementation Guide, available at: [LINK]
 
 ### Actors
 
@@ -23,7 +23,11 @@ The Push Notifications defines 4 Actors:
 
 These Actors have 3 possible transactions:
 
-1. RegisterSubscription -- Push a subscription (bundle) to the receiver. 1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver. 1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver.
+1. RegisterSubscription -- Push a subscription (bundle) to the receiver.
+
+   1a. UpdateSubscription -- As per RegisterSubscription, Push a subscription bundle with changed events to the receiver.
+
+   1b. TerminateSubscription -- As per RegisterSubscription, Push a subscription bundle with a "delete" event to the receiver.
 2. NotifyEvent -- Push a notification bundle.
 3. RetrieveResource -- Retrieve Resource included in the bundle -- outside of scope for the this IG and subject to the Carequality FHIR Implementation Guide, available at [URL]. Included for completeness.
 
@@ -73,9 +77,9 @@ The Notification Recipient or RecipientSMS creates the Subscription resource. Th
 
 The Notification Generator creates the Event and either requests the GeneratorSMS to notify the receiver or sends the notification to the receiver directly, depending on business requirements.
 
-A notification consists of a POST to the endpoint listed in the Subscription consisting of a Bundle. This "knock on the door" can activate the RetrieveResource transaction depending on the policy and procedures of the receiving organization.
+A notification consists of a [history bundle](http://hl7.org/fhir/http.html#history) sent to the endpoint listed in the Subscription. This notification can activate the RetrieveResource transaction depending on the policy and procedures of the receiving organization.
 
-Notifications from event triggers are simplified to just minimal bundle. This bundle contains two entries, the Subscription status (including topic code) and, a URL of the resource to be fetched that contains the information about the clinical event. The Subscription status also includes a count of notifications to date, that allows for missed notification tracking.
+The Notication bundle contains a minimum of four entries, the Subscription status (including topic code), the Patient, the Practitioner, the sending Organization, optionally, a Condition (if required by local law or regulation) and, one or more resources that contain the information about the clinical event. The Subscription status resource also includes a count of notifications to date, allowing for missed notification tracking.
 
 This Bundle is sent to the endpoint specified in the Subscription resource that was POSTed to the Notification Generator e.g.,
 
@@ -83,4 +87,4 @@ This Bundle is sent to the endpoint specified in the Subscription resource that 
 
 #### RetrieveResource
 
-Once notified via the NotifyEvent transaction the Notification Recipient/RecipientSMS can retrieve the Resource and internalize it as dictated by business processes.
+Once notified via the NotifyEvent transaction the Notification Recipient/RecipientSMS can retrieve additional Resources and internalize them as dictated by business processes.

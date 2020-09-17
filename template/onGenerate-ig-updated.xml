@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-09-15T13:41:59-04:00"/>
+   <date value="2020-09-17T15:19:49-04:00"/>
    <publisher value="Carequality"/>
    <contact>
       <name value="Carequality"/>
@@ -301,7 +301,37 @@
             <reference value="Practitioner/DrDavidAnydoc"/>
          </reference>
          <name value="Dr. David Anydoc"/>
-         <description value="Practitioner for example use"/>
+         <description value="Example of a US Core R4 Practitioner"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-EveAnyperson.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/EveAnyperson"/>
+         </reference>
+         <name value="Eve Anyperson"/>
+         <description value="Example of a US Core R4 Patient"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Encounter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Encounter-ExampleDischarge.html"/>
+         </extension>
+         <reference>
+            <reference value="Encounter/ExampleDischarge"/>
+         </reference>
+         <name value="An Example Discharge Encounter"/>
+         <description value="Example of a US Core R4 Encounter"/>
          <exampleBoolean value="true"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -333,6 +363,21 @@
          <name value="CQ Subscription Bundle Example"/>
          <description value="Example of the CQ Subscription Bundle"/>
          <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-VeterinariansHospital.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/VeterinariansHospital"/>
+         </reference>
+         <name value="Veterinarian's Hospital"/>
+         <description value="Example of a US Core R4 Organization"/>
+         <exampleBoolean value="true"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -489,6 +534,16 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Patient-EveAnyperson.html"/>
+               <title value="Eve Anyperson"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Encounter-ExampleDischarge.html"/>
+               <title value="An Example Discharge Encounter"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Bundle-NotificationBundleExample.html"/>
                <title value="CQ Notification Bundle Example"/>
                <generation value="generated"/>
@@ -496,6 +551,11 @@
             <page>
                <nameUrl value="Bundle-SubscriptionBundleExample.html"/>
                <title value="CQ Subscription Bundle Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-VeterinariansHospital.html"/>
+               <title value="Veterinarian's Hospital"/>
                <generation value="generated"/>
             </page>
             <page>

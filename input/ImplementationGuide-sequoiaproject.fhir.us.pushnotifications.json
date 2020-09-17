@@ -164,7 +164,23 @@
           "reference": "Practitioner/DrDavidAnydoc"
         },
         "name": "Dr. David Anydoc",
-        "description": "Practitioner for example use",
+        "description": "Example of a US Core R4 Practitioner",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/EveAnyperson"
+        },
+        "name": "Eve Anyperson",
+        "description": "Example of a US Core R4 Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/ExampleDischarge"
+        },
+        "name": "An Example Discharge Encounter",
+        "description": "Example of a US Core R4 Encounter",
         "exampleBoolean": true
       },
       {
@@ -182,6 +198,14 @@
         "name": "CQ Subscription Bundle Example",
         "description": "Example of the CQ Subscription Bundle",
         "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"
+      },
+      {
+        "reference": {
+          "reference": "Organization/VeterinariansHospital"
+        },
+        "name": "Veterinarian's Hospital",
+        "description": "Example of a US Core R4 Organization",
+        "exampleBoolean": true
       },
       {
         "reference": {

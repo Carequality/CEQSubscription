@@ -80,7 +80,7 @@
       {
         "id": "Bundle.type",
         "path": "Bundle.type",
-        "fixedCode": "batch-response"
+        "fixedCode": "history"
       },
       {
         "id": "Bundle.entry",
@@ -88,27 +88,26 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "response.status"
+              "type": "type",
+              "path": "resource"
             }
           ],
-          "rules": "closed",
-          "ordered": true,
-          "description": "Slice on response status descriptor"
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on resource"
         },
-        "min": 2,
-        "max": "2"
+        "min": 4
       },
       {
-        "id": "Bundle.entry:sub-status",
+        "id": "Bundle.entry:subscriptionStatus",
         "path": "Bundle.entry",
-        "sliceName": "sub-status",
+        "sliceName": "subscriptionStatus",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Bundle.entry:sub-status.resource",
+        "id": "Bundle.entry:subscriptionStatus.resource",
         "path": "Bundle.entry.resource",
         "type": [
           {
@@ -120,37 +119,134 @@
         ]
       },
       {
-        "id": "Bundle.entry:sub-status.response.status",
+        "id": "Bundle.entry:subscriptionStatus.request.method",
+        "path": "Bundle.entry.request.method",
+        "fixedCode": "GET"
+      },
+      {
+        "id": "Bundle.entry:subscriptionStatus.response.status",
         "path": "Bundle.entry.response.status",
-        "fixedString": "Delivered"
+        "fixedString": "200"
       },
       {
-        "id": "Bundle.entry:sub-status.response.lastModified",
-        "path": "Bundle.entry.response.lastModified",
-        "min": 1
-      },
-      {
-        "id": "Bundle.entry:sub-payload",
+        "id": "Bundle.entry:subscriptionPatient",
         "path": "Bundle.entry",
-        "sliceName": "sub-payload",
+        "sliceName": "subscriptionPatient",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Bundle.entry:sub-payload.fullUrl",
-        "path": "Bundle.entry.fullUrl",
-        "min": 1
+        "id": "Bundle.entry:subscriptionPatient.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            ]
+          }
+        ]
       },
       {
-        "id": "Bundle.entry:sub-payload.response.status",
+        "id": "Bundle.entry:subscriptionPatient.request.method",
+        "path": "Bundle.entry.request.method",
+        "fixedCode": "POST"
+      },
+      {
+        "id": "Bundle.entry:subscriptionPatient.response.status",
         "path": "Bundle.entry.response.status",
-        "fixedString": "Triggered"
+        "fixedString": "201"
       },
       {
-        "id": "Bundle.entry:sub-payload.response.lastModified",
-        "path": "Bundle.entry.response.lastModified",
-        "min": 1
+        "id": "Bundle.entry:subscriptionPractitioner",
+        "path": "Bundle.entry",
+        "sliceName": "subscriptionPractitioner",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:subscriptionPractitioner.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Practitioner",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:subscriptionPractitioner.request.method",
+        "path": "Bundle.entry.request.method",
+        "fixedCode": "POST"
+      },
+      {
+        "id": "Bundle.entry:subscriptionPractitioner.response.status",
+        "path": "Bundle.entry.response.status",
+        "fixedString": "201"
+      },
+      {
+        "id": "Bundle.entry:subscriptionOrganization",
+        "path": "Bundle.entry",
+        "sliceName": "subscriptionOrganization",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:subscriptionOrganization.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Organization",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:subscriptionOrganization.request.method",
+        "path": "Bundle.entry.request.method",
+        "fixedCode": "POST"
+      },
+      {
+        "id": "Bundle.entry:subscriptionOrganization.response.status",
+        "path": "Bundle.entry.response.status",
+        "fixedString": "201"
+      },
+      {
+        "id": "Bundle.entry:subscriptionDiagnosis",
+        "path": "Bundle.entry",
+        "sliceName": "subscriptionDiagnosis",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:subscriptionDiagnosis.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Condition",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:subscriptionDiagnosis.request.method",
+        "path": "Bundle.entry.request.method",
+        "fixedCode": "POST"
+      },
+      {
+        "id": "Bundle.entry:subscriptionDiagnosis.response.status",
+        "path": "Bundle.entry.response.status",
+        "fixedString": "201"
       }
     ]
   }

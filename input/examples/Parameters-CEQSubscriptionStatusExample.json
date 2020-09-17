@@ -16,31 +16,6 @@
       "valueUnsignedInt": 25
     },
     {
-      "name": "subscription-practitioner-name",
-      "valueHumanName": {
-        "family": "Rowlf",
-        "given": [
-          "Bob"
-        ],
-        "prefix": [
-          "Dr."
-        ]
-      }
-    },
-    {
-      "name": "subscription-patient-name",
-      "valueHumanName": {
-        "family": "Wanda",
-        "given": [
-          "Wayne"
-        ]
-      }
-    },
-    {
-      "name": "subscription-Organization-name",
-      "valueString": "Veterinarian's Hospital"
-    },
-    {
       "name": "subscription-name",
       "valueString": "Sub84849-26"
     },

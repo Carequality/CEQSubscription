@@ -6,6 +6,7 @@
   "name": "CEQTopicExtension",
   "title": "CEQ Extension for the Profile on Basic",
   "status": "active",
+  "description": "Extension to create a SusbscriptionTopic style resource for use with Basic containing the event code and patient for the subscription",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

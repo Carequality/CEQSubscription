@@ -92,6 +92,7 @@
           "reference": "StructureDefinition/CEQTopicExtension"
         },
         "name": "CEQ Extension for the Profile on Basic",
+        "description": "Extension to create a SusbscriptionTopic style resource for use with Basic containing the event code and patient for the subscription",
         "exampleBoolean": false
       },
       {

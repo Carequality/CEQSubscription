@@ -4,16 +4,12 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 * insert FHIRPushStructureDefinitionContent
 * extension contains
     subIdentifier 1..1 MS and
-    patientId 1..1 MS and
     subscriber 1..1 MS and
     subserv 0..1 MS and
     subscriptionTopic 1..1
 
 * extension[subIdentifier] ^short = "A Business Identifier"
 * extension[subIdentifier].value[x] only string
-
-* extension[patientId] ^short = "The DataSource Patient MRN"
-* extension[patientId].value[x] only Identifier
 
 * extension[subscriber] ^short = "End subscriber for the information"
 * extension[subscriber].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient or http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner or RelatedPerson or http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
@@ -45,7 +41,6 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 * channel.type = #rest-hook (exactly)
 
 * extension[ceqPushExtension].extension[subIdentifier] 1..1
-* extension[ceqPushExtension].extension[patientId] 1..1
 * extension[ceqPushExtension].extension[subscriber] 1..1
 * extension[ceqPushExtension].extension[subserv] 0..1
 * extension[ceqPushExtension].extension[subscriptionTopic]  1..1
@@ -111,11 +106,17 @@ non-resource entry in the Bundle which requires the response.status element in a
 
 
 
-Extension: CEQEventCode
-Id: CEQEventCode
-Title: "CEQ Event Codes"
-Description: "Event Code Extension for use in Topics and Status"
-* value[x] only Coding
+Extension: CEQTopicExtension
+Title: "CEQ Extension for the Profile on Basic"
+Description: "Extension to create a SusbscriptionTopic style resource for use with Basic containing the event code and patient for the subscription"
+* extension contains
+      eventCode 1..1 MS
+  and PatientIdentifier 0..1  MS
+  and PatientReference 0..1  MS
+
+* extension[eventCode].value[x] only Coding
+* extension[PatientIdentifier].value[x] only Identifier
+* extension[PatientReference].value[x] only Reference
 
 Profile:   CEQTopic
 Parent: Basic
@@ -124,8 +125,10 @@ Title:       "Carequality R5 SubscriptionTopic replacement"
 Description: "Reference to the subscription topic being subscribed to."
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * code = http://terminology.hl7.org/CodeSystem/basic-resource-type#adminact (exactly)
-* extension contains CEQEventCode named eventCode 1..1 MS
-* extension[eventCode].valueCoding from CEQPushEventCodes (required)
+* extension contains CEQTopicExtension named SubscriptionTopic 1..1 MS
+
+* extension[SubscriptionTopic].extension[eventCode].valueCoding from CEQPushEventCodes
+* extension[SubscriptionTopic].extension[PatientReference].valueReference only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 
 Profile:     CEQSubscriptionStatus
 Parent:      Parameters

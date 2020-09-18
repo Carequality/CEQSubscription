@@ -20,10 +20,6 @@ Usage:  #example
 
 * extension[ceqPushExtension].extension[subIdentifier].valueString = "sub123"
 
-* extension[ceqPushExtension].extension[patientId].valueIdentifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
-* extension[ceqPushExtension].extension[patientId].valueIdentifier.system = "urn:oid:1.2.36.146.595.217.0.1"
-* extension[ceqPushExtension].extension[patientId].valueIdentifier.value = "MRN123"
-
 * extension[ceqPushExtension].extension[subscriber].valueReference = Reference(DrDavidAnydoc)
 
 * extension[ceqPushExtension].extension[subscriptionTopic].valueReference = Reference(CEQSubscriptionTopicExample)
@@ -35,8 +31,8 @@ Description: "Example of the subscription Topic  for a Carequality Subscription"
 Usage:  #example
 
 * id = "CEQTopicExample"
-* extension[eventCode].valueCoding = PushCode#snradmit
-
+* extension[SubscriptionTopic].extension[eventCode].valueCoding = PushCode#snradmit
+* extension[SubscriptionTopic].extension[PatientReference].valueReference = Reference(EveAnyperson)
 
 Instance: SubscriptionBundleExample
 InstanceOf: CEQSubscriptionBundle

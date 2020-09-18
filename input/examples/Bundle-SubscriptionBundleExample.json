@@ -32,21 +32,6 @@
                 "valueString": "sub123"
               },
               {
-                "url": "patientId",
-                "valueIdentifier": {
-                  "type": {
-                    "coding": [
-                      {
-                        "code": "MR",
-                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
-                      }
-                    ]
-                  },
-                  "system": "urn:oid:1.2.36.146.595.217.0.1",
-                  "value": "MRN123"
-                }
-              },
-              {
                 "url": "subscriber",
                 "valueReference": {
                   "reference": "Practitioner/DrDavidAnydoc"
@@ -129,11 +114,22 @@
         },
         "extension": [
           {
-            "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode",
-            "valueCoding": {
-              "code": "snradmit",
-              "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
-            }
+            "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQTopicExtension",
+            "extension": [
+              {
+                "url": "eventCode",
+                "valueCoding": {
+                  "code": "snradmit",
+                  "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
+                }
+              },
+              {
+                "url": "PatientReference",
+                "valueReference": {
+                  "reference": "Patient/EveAnyperson"
+                }
+              }
+            ]
           }
         ]
       },

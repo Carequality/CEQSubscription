@@ -63,30 +63,54 @@
         "min": 1
       },
       {
-        "id": "Basic.extension:eventCode",
+        "id": "Basic.extension:SubscriptionTopic",
         "path": "Basic.extension",
-        "sliceName": "eventCode",
+        "sliceName": "SubscriptionTopic",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode"
+              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQTopicExtension"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "Basic.extension:eventCode.valueCoding",
-        "path": "Basic.extension.valueCoding",
+        "id": "Basic.extension:SubscriptionTopic.extension:eventCode",
+        "path": "Basic.extension.extension",
+        "sliceName": "eventCode"
+      },
+      {
+        "id": "Basic.extension:SubscriptionTopic.extension:eventCode.valueCoding",
+        "path": "Basic.extension.extension.valueCoding",
         "min": 0,
         "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"
         }
+      },
+      {
+        "id": "Basic.extension:SubscriptionTopic.extension:PatientReference",
+        "path": "Basic.extension.extension",
+        "sliceName": "PatientReference"
+      },
+      {
+        "id": "Basic.extension:SubscriptionTopic.extension:PatientReference.valueReference",
+        "path": "Basic.extension.extension.valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Basic.code",

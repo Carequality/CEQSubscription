@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-09-17T15:19:49-04:00"/>
+   <date value="2020-09-18T15:07:39-04:00"/>
    <publisher value="Carequality"/>
    <contact>
       <name value="Carequality"/>
@@ -160,13 +160,12 @@
             <valueString value="StructureDefinition:extension"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-CEQEventCode.html"/>
+            <valueUri value="StructureDefinition-CEQTopicExtension.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/CEQEventCode"/>
+            <reference value="StructureDefinition/CEQTopicExtension"/>
          </reference>
-         <name value="CEQ Event Codes"/>
-         <description value="Event Code Extension for use in Topics and Status"/>
+         <name value="CEQ Extension for the Profile on Basic"/>
          <exampleBoolean value="false"/>
          <groupingId value="_str_extension"/>
       </resource>
@@ -410,6 +409,20 @@
          <exampleBoolean value="true"/>
          <groupingId value="_ex_example"/>
       </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-CEQEventCode.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/CEQEventCode"/>
+         </reference>
+         <name value="CEQ Event Codes"/>
+         <description value="Event Code Extension for use in Topics and Status"/>
+         <groupingId value="_str_extension"/>
+      </resource>
       <page>
          <nameUrl value="toc.html"/>
          <title value="Table of Contents"/>
@@ -484,13 +497,18 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-CEQEventCode.html"/>
-               <title value="CEQ Event Codes"/>
+               <nameUrl value="StructureDefinition-CEQTopicExtension.html"/>
+               <title value="CEQ Extension for the Profile on Basic"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="StructureDefinition-CEQextension.html"/>
                <title value="Carequality Subscription Required Elements"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-CEQEventCode.html"/>
+               <title value="CEQ Event Codes"/>
                <generation value="generated"/>
             </page>
             <page>

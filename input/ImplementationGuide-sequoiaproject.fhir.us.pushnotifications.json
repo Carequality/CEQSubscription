@@ -89,10 +89,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/CEQEventCode"
+          "reference": "StructureDefinition/CEQTopicExtension"
         },
-        "name": "CEQ Event Codes",
-        "description": "Event Code Extension for use in Topics and Status",
+        "name": "CEQ Extension for the Profile on Basic",
         "exampleBoolean": false
       },
       {

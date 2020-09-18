@@ -16,11 +16,22 @@
   },
   "extension": [
     {
-      "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQEventCode",
-      "valueCoding": {
-        "code": "snradmit",
-        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
-      }
+      "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQTopicExtension",
+      "extension": [
+        {
+          "url": "eventCode",
+          "valueCoding": {
+            "code": "snradmit",
+            "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
+          }
+        },
+        {
+          "url": "PatientReference",
+          "valueReference": {
+            "reference": "Patient/EveAnyperson"
+          }
+        }
+      ]
     }
   ]
 }

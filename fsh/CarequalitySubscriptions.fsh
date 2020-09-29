@@ -113,10 +113,14 @@ Description: "Extension to create a SusbscriptionTopic style resource for use wi
       eventCode 1..1 MS
   and PatientIdentifier 0..1  MS
   and PatientReference 0..1  MS
+  and title 0..1 MS
+  and status 0..1 MS
 
 * extension[eventCode].value[x] only Coding
 * extension[PatientIdentifier].value[x] only Identifier
 * extension[PatientReference].value[x] only Reference
+* extension[title].value[x] only string
+* extension[status].value[x] only code
 
 Profile:   CEQTopic
 Parent: Basic
@@ -126,9 +130,14 @@ Description: "Reference to the subscription topic being subscribed to."
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * code = http://terminology.hl7.org/CodeSystem/basic-resource-type#adminact (exactly)
 * extension contains CEQTopicExtension named SubscriptionTopic 1..1 MS
-
 * extension[SubscriptionTopic].extension[eventCode].valueCoding from CEQPushEventCodes
+* extension[SubscriptionTopic].extension[eventCode] ^short = "Subscription Event being Subscribed to"
+* extension[SubscriptionTopic].extension[PatientIdentifier] ^short = "MRN or other identifier for the subject"
 * extension[SubscriptionTopic].extension[PatientReference].valueReference only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
+* extension[SubscriptionTopic].extension[PatientReference] ^short = "Resource reference of the Patient subject"
+* extension[SubscriptionTopic].extension[title] ^short = "Human readable title of this Topic"
+* extension[SubscriptionTopic].extension[status].valueCode from http://hl7.org/fhir/ValueSet/publication-status
+* extension[SubscriptionTopic].extension[status] ^short = "Status of this Topic resource"
 
 Profile:     CEQSubscriptionStatus
 Parent:      Parameters

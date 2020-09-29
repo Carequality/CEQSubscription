@@ -33,6 +33,8 @@ Usage:  #example
 * id = "CEQTopicExample"
 * extension[SubscriptionTopic].extension[eventCode].valueCoding = PushCode#snradmit
 * extension[SubscriptionTopic].extension[PatientReference].valueReference = Reference(EveAnyperson)
+* extension[SubscriptionTopic].extension[title].valueString = "Example Carequality Topic for subscribing"
+* extension[SubscriptionTopic].extension[status].valueCode = #active
 
 Instance: SubscriptionBundleExample
 InstanceOf: CEQSubscriptionBundle

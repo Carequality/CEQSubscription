@@ -10,13 +10,13 @@ Implementers should generate Notifications in response to specific triggering ev
 
 |Trigger      | Latency|
 |------------ | ----------------------------------------------------------------|
-Admission    | Immediate<sup>*</sup>
-Discharge    | Immediate
-Referral     | Immediate
-Transfer     | Immediate
-Gaps in Care | If batch processing generation within 24hrs, otherwise immediate
+Admission    | 5 minutes or less
+Discharge    | 5 minutes or less
+Referral     | 5 minutes or less
+Transfer     | 5 minutes or less
+Gaps in Care | If batch processing generation within 24hrs, otherwise 5 minutes or less
 
-<sup>*</sup> 5 minutes or less
+Implementers receiving timeouts on delivery attempts must retry those attempts every five (5) minutes for a minimum of 60 minutes before terminating attempts. 
 
 ### Uptime
 

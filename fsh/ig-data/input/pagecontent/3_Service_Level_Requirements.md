@@ -16,7 +16,7 @@ Referral     | 5 minutes or less
 Transfer     | 5 minutes or less
 Gaps in Care | If batch processing generation within 24hrs, otherwise 5 minutes or less
 
-Implementers receiving timeouts on delivery attempts must retry those attempts every five (5) minutes for a minimum of 60 minutes before terminating attempts. 
+Notification Generators receiving timeouts on delivery attempts must retry those attempts every five (5) minutes for a minimum of sixty (60) minutes before terminating attempts.
 
 ### Uptime
 
@@ -26,4 +26,4 @@ Implementers should measure uptime on a monthly basis at the Gateway level. Such
 
 Please see the Carequality FHIR Implementation Guide for downtime requirements.
 
-Implementers should store outgoing notifications and distribute them when the planned or unplanned downtime has ended.
+Notification Generators should store outgoing notifications and distribute them when their planned or unplanned downtime has ended.

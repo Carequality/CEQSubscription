@@ -27,6 +27,7 @@ Usage:  #example
 * extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
 * extension[ceqPushExtension].extension[searchvalue].valueString = "MRN123"
 
+/*
 Instance: CEQSubscriptionTopicExample
 InstanceOf: CEQTopic
 Title:   "Example Subscribing Topic"
@@ -38,7 +39,7 @@ Usage:  #example
 * extension[SubscriptionTopic].extension[PatientReference].valueReference = Reference(EveAnyperson)
 * extension[SubscriptionTopic].extension[title].valueString = "Example Carequality Topic for subscribing"
 * extension[SubscriptionTopic].extension[status].valueCode = #active
-
+*/
 
 Instance: SubscriptionBundleExample
 InstanceOf: CEQSubscriptionBundle
@@ -55,11 +56,24 @@ Usage: #example
 * entry[1].resource = DrDavidAnydoc
 * entry[1].request.method = #POST
 * entry[1].request.url = "http://www.example.org/fhir/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
-
+/*
 * entry[2].fullUrl = "http://www.example.org/fhir/Basic/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
 * entry[2].resource = CEQSubscriptionTopicExample
 * entry[2].request.method = #POST
 * entry[2].request.url = "http://www.example.org/fhir/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
+*/
+
+Instance: CEQSubscriptionStatusExample
+InstanceOf: CEQSubscriptionStatus
+Title: "SubscriptionStatus Example"
+Description: "An example of the Carequality Subscription Status Profile"
+Usage: #example
+
+* parameter[status].valueCode = #active
+* parameter[subIdentifier].valueString = "Sub84849-26"
+* parameter[event].valueCanonical = "http://www.carequality.net/CEQTopic/admit"
+* parameter[subscriptionEventCount].valueUnsignedInt = 8
+
 
 Instance: NotificationBundleExample
 InstanceOf: CEQNotificationBundle

@@ -73,26 +73,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/CEQ-topic"
-        },
-        "name": "Carequality R5 SubscriptionTopic replacement",
-        "description": "Reference to the subscription topic being subscribed to.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/CEQsubscription"
         },
         "name": "Carequality Subscription Profile",
         "description": "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/CEQTopicExtension"
-        },
-        "name": "CEQ Extension for the Profile on Basic",
-        "description": "Extension to create a SusbscriptionTopic style resource for use with Basic containing the event code and patient for the subscription",
         "exampleBoolean": false
       },
       {
@@ -105,26 +89,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/CEQPushEventCodes"
-        },
-        "name": "Carequality Push Notification Events",
-        "description": "The codes to define each of the permitted events for Carequality Network Subscriptions",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/CEQSubscriberPurposeofUse"
         },
         "name": "Permitted Purposes Of Use",
         "description": "These are the permitted Purpose of Use within the Carequality network",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/CEQNotificationEvents"
-        },
-        "name": "Carequality Push Notification Events",
-        "description": "The codes to define each of the permitted events for Carequality Network Subscriptions",
         "exampleBoolean": false
       },
       {
@@ -150,14 +118,6 @@
         "name": "SubscriptionStatus Example",
         "description": "An example of the Carequality Subscription Status Profile",
         "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
-      },
-      {
-        "reference": {
-          "reference": "Basic/CEQTopicExample"
-        },
-        "name": "Example Subscribing Topic",
-        "description": "Example of the subscription Topic  for a Carequality Subscription",
-        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
       },
       {
         "reference": {

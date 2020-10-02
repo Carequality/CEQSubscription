@@ -33,7 +33,7 @@
           },
           {
             "name": "subscription-event-count",
-            "valueUnsignedInt": 25
+            "valueUnsignedInt": 8
           },
           {
             "name": "subscription-name",
@@ -41,10 +41,7 @@
           },
           {
             "name": "subscription-event-code",
-            "valueCoding": {
-              "code": "admit",
-              "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
-            }
+            "valueCanonical": "http://www.carequality.net/CEQTopic/admit"
           }
         ]
       }

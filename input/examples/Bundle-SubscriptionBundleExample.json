@@ -103,58 +103,6 @@
         "method": "POST",
         "url": "http://www.example.org/fhir/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
       }
-    },
-    {
-      "fullUrl": "http://www.example.org/fhir/Basic/0537166c-5db3-4b0e-97bd-1a59e6f3d080",
-      "resource": {
-        "resourceType": "Basic",
-        "id": "CEQTopicExample",
-        "meta": {
-          "profile": [
-            "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "adminact",
-              "system": "http://terminology.hl7.org/CodeSystem/basic-resource-type"
-            }
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQTopicExtension",
-            "extension": [
-              {
-                "url": "eventCode",
-                "valueCoding": {
-                  "code": "snradmit",
-                  "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents"
-                }
-              },
-              {
-                "url": "PatientReference",
-                "valueReference": {
-                  "reference": "Patient/EveAnyperson"
-                }
-              },
-              {
-                "url": "title",
-                "valueString": "Example Carequality Topic for subscribing"
-              },
-              {
-                "url": "status",
-                "valueCode": "active"
-              }
-            ]
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "http://www.example.org/fhir/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
-      }
     }
   ]
 }

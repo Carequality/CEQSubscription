@@ -124,7 +124,7 @@ non-resource entry in the Bundle which requires the response.status element in a
 * entry[subscriptionDiagnosis].request.method = #POST (exactly)
 * entry[subscriptionDiagnosis].response.status = "201" (exactly)
 
-
+/*
 
 Extension: CEQTopicExtension
 Title: "CEQ Extension for the Profile on Basic"
@@ -158,7 +158,7 @@ Description: "Reference to the subscription topic being subscribed to."
 * extension[SubscriptionTopic].extension[title] ^short = "Human readable title of this Topic"
 * extension[SubscriptionTopic].extension[status].valueCode from http://hl7.org/fhir/ValueSet/publication-status
 * extension[SubscriptionTopic].extension[status] ^short = "Status of this Topic resource"
-
+*/
 Profile:     CEQSubscriptionStatus
 Parent:      Parameters
 Id:          CEQ-subscription-status
@@ -172,7 +172,7 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter  ^slicing.description = "Slice on parameter name"
 * parameter
     contains subIdentifier 0..1 MS
-    and eventCode 0..1 MS
+    and event 0..1 MS
     and status 1..1 MS
     and subscriptionEventCount 1..1 MS
 
@@ -181,10 +181,10 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter[subIdentifier].name ^short = "Business Name of the subscription submitted"
 * parameter[subIdentifier].value[x] 0..1 MS
 * parameter[subIdentifier].value[x] only string
-* parameter[eventCode].name = "subscription-event-code" (exactly)
-* parameter[eventCode].value[x] 0..1 MS
-* parameter[eventCode].value[x] only Coding
-* parameter[eventCode].valueCoding from CEQPushEventCodes (required)
+* parameter[event].name = "subscription-event-code" (exactly)
+* parameter[event].value[x] 0..1 MS
+* parameter[event].value[x] only canonical
+// * parameter[event].valueCoding from CEQPushEventCodes (required)
 * parameter[status].name = "status" (exactly)
 * parameter[status].value[x] 1..1 MS
 * parameter[status].value[x] only code
@@ -192,15 +192,3 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter[subscriptionEventCount].name = "subscription-event-count" (exactly)
 * parameter[subscriptionEventCount].value[x] 1..1 MS
 * parameter[subscriptionEventCount].value[x] only unsignedInt
-
-
-Instance: CEQSubscriptionStatusExample
-InstanceOf: CEQSubscriptionStatus
-Title: "SubscriptionStatus Example"
-Description: "An example of the Carequality Subscription Status Profile"
-Usage: #example
-
-* parameter[status].valueCode = #active
-* parameter[subIdentifier].valueString = "Sub84849-26"
-* parameter[eventCode].valueCoding = PushCode#admit
-* parameter[subscriptionEventCount].valueUnsignedInt = 25

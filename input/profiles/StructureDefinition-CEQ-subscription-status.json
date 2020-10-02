@@ -84,47 +84,27 @@
         "mustSupport": true
       },
       {
-        "id": "Parameters.parameter:eventCode",
+        "id": "Parameters.parameter:event",
         "path": "Parameters.parameter",
-        "sliceName": "eventCode",
+        "sliceName": "event",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Parameters.parameter:eventCode.name",
+        "id": "Parameters.parameter:event.name",
         "path": "Parameters.parameter.name",
         "fixedString": "subscription-event-code"
       },
       {
-        "id": "Parameters.parameter:eventCode.value[x]",
+        "id": "Parameters.parameter:event.value[x]",
         "path": "Parameters.parameter.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
-            "code": "Coding"
+            "code": "canonical"
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Parameters.parameter:eventCode.valueCoding",
-        "path": "Parameters.parameter.valueCoding",
-        "min": 0,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQPushEventCodes"
-        }
       },
       {
         "id": "Parameters.parameter:status",

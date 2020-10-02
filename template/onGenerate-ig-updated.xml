@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-10-02T08:44:03-04:00"/>
+   <date value="2020-10-02T14:15:01-04:00"/>
    <publisher value="Carequality"/>
    <contact>
       <name value="Carequality"/>
@@ -130,21 +130,6 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-CEQ-topic.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/CEQ-topic"/>
-         </reference>
-         <name value="Carequality R5 SubscriptionTopic replacement"/>
-         <description value="Reference to the subscription topic being subscribed to."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-CEQsubscription.html"/>
          </extension>
          <reference>
@@ -154,21 +139,6 @@
          <description value="Extended Elements and Constraints Specific to the Carequality Use Case&#xA;Carequality has defined a custom flow for a Subscription that removes the criteria use&#xA;in favour of specific events defined as URIs.  This adds requirements that the PatientID&#xA;and an identifier be added to the resource.  The identifier element is the endpoint id&#xA;[Base]/fhir/Subscription/[identifier]&#xA;A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal."/>
          <exampleBoolean value="false"/>
          <groupingId value="_str_profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:extension"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-CEQTopicExtension.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/CEQTopicExtension"/>
-         </reference>
-         <name value="CEQ Extension for the Profile on Basic"/>
-         <description value="Extension to create a SusbscriptionTopic style resource for use with Basic containing the event code and patient for the subscription"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="_str_extension"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -190,21 +160,6 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-CEQPushEventCodes.html"/>
-         </extension>
-         <reference>
-            <reference value="ValueSet/CEQPushEventCodes"/>
-         </reference>
-         <name value="Carequality Push Notification Events"/>
-         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="_term_valueset"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ValueSet"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-CEQSubscriberPurposeofUse.html"/>
          </extension>
          <reference>
@@ -214,21 +169,6 @@
          <description value="These are the permitted Purpose of Use within the Carequality network"/>
          <exampleBoolean value="false"/>
          <groupingId value="_term_valueset"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CodeSystem"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-CEQNotificationEvents.html"/>
-         </extension>
-         <reference>
-            <reference value="CodeSystem/CEQNotificationEvents"/>
-         </reference>
-         <name value="Carequality Push Notification Events"/>
-         <description value="The codes to define each of the permitted events for Carequality Network Subscriptions"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="_term_codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -273,21 +213,6 @@
          <name value="SubscriptionStatus Example"/>
          <description value="An example of the Carequality Subscription Status Profile"/>
          <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Basic"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Basic-CEQTopicExample.html"/>
-         </extension>
-         <reference>
-            <reference value="Basic/CEQTopicExample"/>
-         </reference>
-         <name value="Example Subscribing Topic"/>
-         <description value="Example of the subscription Topic  for a Carequality Subscription"/>
-         <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-topic"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -474,18 +399,8 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-CEQ-topic.html"/>
-               <title value="Carequality R5 SubscriptionTopic replacement"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="StructureDefinition-CEQsubscription.html"/>
                <title value="Carequality Subscription Profile"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-CEQTopicExtension.html"/>
-               <title value="CEQ Extension for the Profile on Basic"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -494,18 +409,8 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-CEQPushEventCodes.html"/>
-               <title value="Carequality Push Notification Events"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="ValueSet-CEQSubscriberPurposeofUse.html"/>
                <title value="Permitted Purposes Of Use"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CodeSystem-CEQNotificationEvents.html"/>
-               <title value="Carequality Push Notification Events"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -521,11 +426,6 @@
             <page>
                <nameUrl value="Parameters-CEQSubscriptionStatusExample.html"/>
                <title value="SubscriptionStatus Example"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Basic-CEQTopicExample.html"/>
-               <title value="Example Subscribing Topic"/>
                <generation value="generated"/>
             </page>
             <page>

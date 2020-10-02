@@ -79,7 +79,7 @@ The Notification Generator creates the Event and either requests the GeneratorSM
 
 A notification consists of a [history bundle](http://hl7.org/fhir/http.html#history) sent to the endpoint listed in the Subscription. This notification can activate the RetrieveResource transaction depending on the policy and procedures of the receiving organization.
 
-The Notication bundle contains a minimum of four entries, the Subscription status (including topic code), the Patient, the Practitioner, the sending Organization, optionally, a Condition (if required by local law or regulation) and, one or more resources that contain the information about the clinical event. The Subscription status resource also includes a count of notifications to date, allowing for missed notification tracking.
+The Notification bundle contains a minimum of four entries, the Subscription status (including topic code), the Patient, the Practitioner, the sending Organization, optionally, a Condition (if required by local law or regulation) and, one or more resources that contain the information about the clinical event. The Subscription status resource also includes a count of notifications to date, allowing for missed notification tracking.
 
 This Bundle is sent to the endpoint specified in the Subscription resource that was POSTed to the Notification Generator e.g.,
 

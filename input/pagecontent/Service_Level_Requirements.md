@@ -26,7 +26,7 @@ Referral     | 5 minutes or less
 Transfer     | 5 minutes or less
 Gaps in Care | If batch processing generation within 24hrs, otherwise 5 minutes or less
 
-Notification Generators receiving timeouts on delivery attempts must retry those attempts every five (5) minutes for a minimum of sixty (60) minutes before terminating attempts.
+Notification Generators receiving timeouts on delivery attempts must retry those attempts at least every five (5) minutes for a minimum of sixty (60) minutes before terminating attempts.
 
 ### Uptime
 

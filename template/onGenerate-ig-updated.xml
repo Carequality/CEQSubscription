@@ -17,7 +17,7 @@
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-09-29T13:44:09-04:00"/>
+   <date value="2020-10-02T08:44:03-04:00"/>
    <publisher value="Carequality"/>
    <contact>
       <name value="Carequality"/>
@@ -629,6 +629,10 @@
       <parameter>
          <code value="path-resource"/>
          <value value="input/history"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="fsh-generated/resources"/>
       </parameter>
       <parameter>
          <code value="path-pages"/>

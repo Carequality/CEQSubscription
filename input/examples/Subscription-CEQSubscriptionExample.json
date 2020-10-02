@@ -23,9 +23,19 @@
         },
         {
           "url": "subscriptionTopic",
-          "valueReference": {
-            "reference": "Basic/CEQTopicExample"
-          }
+          "valueCanonical": "http://www.carequality.org/fhir/CEQTopic/snradmit"
+        },
+        {
+          "url": "searchParamName",
+          "valueString": "PatientID"
+        },
+        {
+          "url": "searchModifier",
+          "valueCode": "eq"
+        },
+        {
+          "url": "searchvalue",
+          "valueString": "MRN123"
         }
       ]
     }

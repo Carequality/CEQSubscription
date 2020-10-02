@@ -2,11 +2,13 @@ Extension: CEQextension
 Title: "Carequality Subscription Required Elements"
 Description: "Additional Elements to Support Carequality Subscription Notifications"
 * insert FHIRPushStructureDefinitionContent
-* extension contains
-    subIdentifier 1..1 MS and
-    subscriber 1..1 MS and
-    subserv 0..1 MS and
-    subscriptionTopic 1..1
+* extension contains subIdentifier 1..1 MS
+    and subscriber 1..1 MS
+    and subserv 0..1 MS
+    and subscriptionTopic 1..*
+    and searchParamName 1..1
+    and searchModifier 1..1
+    and searchvalue 1..1
 
 * extension[subIdentifier] ^short = "A Business Identifier"
 * extension[subIdentifier].value[x] only string
@@ -17,9 +19,22 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 * extension[subserv] ^short = "Subscription Service acing as intermediary"
 * extension[subserv].value[x] only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
 
-* extension[subscriptionTopic] ^short = "Reference to CEQ SubscriptionTopic replacement"
-* extension[subscriptionTopic].value[x] only Reference(CEQTopic)
+* extension[subscriptionTopic] ^short = "Canonical Reference to CEQ SubscriptionTopic replacement"
+* extension[subscriptionTopic].value[x] only canonical
 
+* extension[searchParamName] ^short = "Filter label"
+* extension[searchParamName].value[x] only string
+
+* extension[searchModifier] ^short = "= | eq | ne | gt | lt | ge | le | sa | eb | ap | above | below | in | not-in | of-type"
+* extension[searchModifier].value[x] only code
+
+* extension[searchvalue] ^short = "Literal value"
+* extension[searchvalue].value[x] only string
+
+Invariant:  CEQ-Param-Name
+Description: "searchParamName shall be Patient or PatientID"
+Expression: "Subscription.extension('ceqPushExtension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
+Severity:   #error
 
 Profile: CEQsubscription
 Parent: Subscription
@@ -32,6 +47,7 @@ and an identifier be added to the resource.  The identifier element is the endpo
 A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.
 """
 * insert FHIRPushStructureDefinitionContent
+* obeys CEQ-Param-Name
 * extension contains CEQextension named ceqPushExtension 1..1
 
 * end 1..1
@@ -43,7 +59,11 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 * extension[ceqPushExtension].extension[subIdentifier] 1..1
 * extension[ceqPushExtension].extension[subscriber] 1..1
 * extension[ceqPushExtension].extension[subserv] 0..1
-* extension[ceqPushExtension].extension[subscriptionTopic]  1..1
+* extension[ceqPushExtension].extension[subscriptionTopic].valueCanonical 1..1
+* extension[ceqPushExtension].extension[searchParamName].valueString 1..1
+* extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
+* extension[ceqPushExtension].extension[searchvalue] 1..1
+
 
 Profile: CEQSubscriptionBundle
 Parent: Bundle

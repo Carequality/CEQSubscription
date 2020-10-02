@@ -22,7 +22,10 @@ Usage:  #example
 
 * extension[ceqPushExtension].extension[subscriber].valueReference = Reference(DrDavidAnydoc)
 
-* extension[ceqPushExtension].extension[subscriptionTopic].valueReference = Reference(CEQSubscriptionTopicExample)
+* extension[ceqPushExtension].extension[subscriptionTopic].valueCanonical = "http://www.carequality.org/fhir/CEQTopic/snradmit"
+* extension[ceqPushExtension].extension[searchParamName].valueString = "PatientID"
+* extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
+* extension[ceqPushExtension].extension[searchvalue].valueString = "MRN123"
 
 Instance: CEQSubscriptionTopicExample
 InstanceOf: CEQTopic
@@ -35,6 +38,7 @@ Usage:  #example
 * extension[SubscriptionTopic].extension[PatientReference].valueReference = Reference(EveAnyperson)
 * extension[SubscriptionTopic].extension[title].valueString = "Example Carequality Topic for subscribing"
 * extension[SubscriptionTopic].extension[status].valueCode = #active
+
 
 Instance: SubscriptionBundleExample
 InstanceOf: CEQSubscriptionBundle

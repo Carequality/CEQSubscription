@@ -10,7 +10,7 @@ When a patient has been checked into the EHR system.  The URLs vary by venue typ
 <tr>
 <th>Venue</th>
 <th>Definition</th>
-<th>Code</th>
+<th>Canonical URL</th>
 </tr>
 </thead>
 <tbody>
@@ -45,12 +45,12 @@ When a patient has been checked into the EHR system.  The URLs vary by venue typ
 #### Discharge
 Push Notification Implementers should use the same criteria for the Discharge trigger that they use for meaningful use reporting.  (i.e., patient's status is changed to "discharged"). Notes, such as Against Medical Advice, are included in or attached to the resulting Encounter Resource.
 
-The canonical url for this event is http://www.carequality.net/CEQTopic/discharge
+The canonical URL for this event is http://www.carequality.net/CEQTopic/discharge
 
 #### Referrals
 Only applies to Secondary Referrals (i.e., referrals not made by the Notification Recipient).  Internal consults are not included.
 
-The canonical url for this event is http://www.carequality.net/CEQTopic/referred
+The canonical URL for this event is http://www.carequality.net/CEQTopic/referred
 
 #### Transfer
 Transfer Type 1: When a transfer is ordered to any external (any location that would not trigger an internal Admit notification) location. For example
@@ -59,9 +59,9 @@ Transfer Type 1: When a transfer is ordered to any external (any location that w
 
 Transfer Type 2: Any time a transfer order is generated.
 
-The canonical url for these event is http://www.carequality.net/CEQTopic/transfer-ext (Type 1) and  http://www.carequality.net/CEQTopic/transfer-all (Type 2)
+The canonical URLs for these events are http://www.carequality.net/CEQTopic/transfer-ext (Type 1) and  http://www.carequality.net/CEQTopic/transfer-all (Type 2)
 
 #### Gaps in Care
 A trigger based on the [eCQM as defined by CMS](https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/ClinicalQualityMeasures "Electronic Clinical Quality Measures Basics") or other request for follow-up based on Notification Generator policy or process.
 
-The canonical url for this event is http://www.carequality.net/CEQTopic/caregap
+The canonical URL for this event is http://www.carequality.net/CEQTopic/caregap

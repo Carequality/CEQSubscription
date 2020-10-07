@@ -33,7 +33,7 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 
 Invariant:  CEQ-Param-Name
 Description: "searchParamName shall be Patient or PatientID"
-Expression: "Subscription.extension('ceqPushExtension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
+Expression: "extension('ceqPushExtension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
 Severity:   #error
 
 Profile: CEQsubscription

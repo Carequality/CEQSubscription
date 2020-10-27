@@ -11,7 +11,7 @@
       "valueCode": "not-classified"
     }
   ],
-  "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle",
+  "url": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQNotificationBundle",
   "version": "0.1.0",
   "name": "CEQNotificationBundle",
   "title": "Carequality Notification Bundle",
@@ -96,7 +96,8 @@
           "ordered": false,
           "description": "Slice based on resource"
         },
-        "min": 4
+        "min": 1,
+        "max": "3"
       },
       {
         "id": "Bundle.entry:subscriptionStatus",
@@ -113,7 +114,7 @@
           {
             "code": "Parameters",
             "profile": [
-              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
+              "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQ-subscription-status"
             ]
           }
         ]
@@ -129,124 +130,48 @@
         "fixedString": "200"
       },
       {
-        "id": "Bundle.entry:subscriptionPatient",
+        "id": "Bundle.entry:SubEncounter",
         "path": "Bundle.entry",
-        "sliceName": "subscriptionPatient",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry:subscriptionPatient.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Patient",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:subscriptionPatient.request.method",
-        "path": "Bundle.entry.request.method",
-        "fixedCode": "POST"
-      },
-      {
-        "id": "Bundle.entry:subscriptionPatient.response.status",
-        "path": "Bundle.entry.response.status",
-        "fixedString": "201"
-      },
-      {
-        "id": "Bundle.entry:subscriptionPractitioner",
-        "path": "Bundle.entry",
-        "sliceName": "subscriptionPractitioner",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry:subscriptionPractitioner.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Practitioner",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:subscriptionPractitioner.request.method",
-        "path": "Bundle.entry.request.method",
-        "fixedCode": "POST"
-      },
-      {
-        "id": "Bundle.entry:subscriptionPractitioner.response.status",
-        "path": "Bundle.entry.response.status",
-        "fixedString": "201"
-      },
-      {
-        "id": "Bundle.entry:subscriptionOrganization",
-        "path": "Bundle.entry",
-        "sliceName": "subscriptionOrganization",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry:subscriptionOrganization.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Organization",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:subscriptionOrganization.request.method",
-        "path": "Bundle.entry.request.method",
-        "fixedCode": "POST"
-      },
-      {
-        "id": "Bundle.entry:subscriptionOrganization.response.status",
-        "path": "Bundle.entry.response.status",
-        "fixedString": "201"
-      },
-      {
-        "id": "Bundle.entry:subscriptionDiagnosis",
-        "path": "Bundle.entry",
-        "sliceName": "subscriptionDiagnosis",
+        "sliceName": "SubEncounter",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Bundle.entry:subscriptionDiagnosis.resource",
+        "id": "Bundle.entry:SubEncounter.resource",
         "path": "Bundle.entry.resource",
         "type": [
           {
-            "code": "Condition",
-            "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-            ]
+            "code": "Encounter"
           }
         ]
       },
       {
-        "id": "Bundle.entry:subscriptionDiagnosis.request.method",
+        "id": "Bundle.entry:SubEncounter.request.method",
         "path": "Bundle.entry.request.method",
-        "fixedCode": "POST"
+        "fixedCode": "GET"
       },
       {
-        "id": "Bundle.entry:subscriptionDiagnosis.response.status",
+        "id": "Bundle.entry:SubEncounter.response.status",
         "path": "Bundle.entry.response.status",
-        "fixedString": "201"
+        "fixedString": "200"
+      },
+      {
+        "id": "Bundle.entry:SubCareGap",
+        "path": "Bundle.entry",
+        "sliceName": "SubCareGap",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:SubCareGap.request.method",
+        "path": "Bundle.entry.request.method",
+        "fixedCode": "GET"
+      },
+      {
+        "id": "Bundle.entry:SubCareGap.response.status",
+        "path": "Bundle.entry.response.status",
+        "fixedString": "200"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "sequoiaproject.fhir.us.pushnotifications",
-  "url": "https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
+  "url": "https://sequoiaproject.org/fhir/push-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
   "version": "0.1.0",
   "name": "Carequality_Subscription_Implementation_Guide",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
@@ -43,6 +43,12 @@
       "version": "3.1.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
+    },
+    {
+      "packageId": "sequoiaproject.fhir.us.sphd-stu3",
+      "uri": "https://sequoiaproject.org/fhir/sphd-stu3",
+      "version": "0.0.1",
+      "id": "sequoiaproject_fhir_us_sphd_stu3"
     }
   ],
   "definition": {
@@ -53,14 +59,6 @@
         },
         "name": "Carequality Notification Bundle",
         "description": "This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic\ninformation about the subscription and the time the subscription was sent; the second is the FullUrl of thead\npayload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a\nnon-resource entry in the Bundle which requires the response.status element in all entries.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/CEQSubscriptionBundle"
-        },
-        "name": "Carequality Subscription Bundle",
-        "description": "Bundle to be submitted for Carequality subscription enrollment",
         "exampleBoolean": false
       },
       {
@@ -109,7 +107,7 @@
         },
         "name": "Example Subscribing",
         "description": "Example of the full Resource for a Carequality Subscription",
-        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"
+        "exampleCanonical": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQsubscription"
       },
       {
         "reference": {
@@ -117,7 +115,7 @@
         },
         "name": "SubscriptionStatus Example",
         "description": "An example of the Carequality Subscription Status Profile",
-        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
+        "exampleCanonical": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQ-subscription-status"
       },
       {
         "reference": {
@@ -149,15 +147,7 @@
         },
         "name": "CQ Notification Bundle Example",
         "description": "Example of the CQ Notification Bundle with a SubscriptionStatus and payload URL",
-        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/SubscriptionBundleExample"
-        },
-        "name": "CQ Subscription Bundle Example",
-        "description": "Example of the CQ Subscription Bundle",
-        "exampleCanonical": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"
+        "exampleCanonical": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQNotificationBundle"
       },
       {
         "reference": {
@@ -169,16 +159,16 @@
       },
       {
         "reference": {
-          "reference": "OperationDefinition/ceqsubscribe"
+          "reference": "CapabilityStatement/ceqsubscribe-capabilitystatement"
         },
-        "name": "CEQsubscription",
+        "name": "CEQSubscription-Recipient",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/ceqsubscribe-capabilitystatement"
+          "reference": "Encounter/CEQ-Encounter"
         },
-        "name": "CEQSubscription-Recipient",
+        "name": "CEQ-Encounter",
         "exampleBoolean": true
       }
     ],

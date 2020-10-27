@@ -1,11 +1,11 @@
 ### Scenario 1
 
-- Jerry is a 68-year-old male in the mid-Atlantic with asthma and Type 2 Diabetes. He is a member of a patient-centered medical home, and required EMS assistance for severe dehydration, fever, and coughing.
+- Jerry is a 68-year-old male in the mid-Atlantic with asthma and Type 2 Diabetes. He is a member of a patient-centered medical home.  He recently became ill, and required EMS assistance and transport to the hospital where he was diagnosed with a community acquired pneumonia with severe dehydration, fever, and coughing.
 
 #### Assumptions:
 
 1. Authentication and Authorization conducted as per Carequality Implementation Guide.
-2. PCP either has knowledge of or PCP EMR does query by demographics to determine Hospital PatientID.
+2. PCP either has knowledge of or PCP EHR does query by demographics to determine Hospital PatientID.
 3. PCP/Care Coordinator is the Notification Recipient.
 4. Subscription, when created, knows Patient, PCP, Care Coordinator, etc.
 5. Consent has been captured (if needed).
@@ -14,8 +14,12 @@
 
 #### Subscription
 
-- Jerry's prior events are stored in the care team notifications service in an actionable way and aligned with computable reimbursement incentive rules for his health plan. ![PCP Subscribes to Events at Hospital](SubscriptionFlow.png "Subscription Flow")
+- Jerry's prior events are stored in the care team notifications service in an actionable way and aligned with computable reimbursement incentive rules for his health plan.
+
+  ![PCP Subscribes to Events at Hospital](SubscriptionFlow.png "Subscription Flow")
 
 #### Notification
 
-- Jerry's PCP at the patient-centered medical home received a clinical encounter notification that Jerry was admitted to the hospital. The Notification Recipient EHR fetched the resource giving details and the PCP was able to call the hospital and provide a brief history of Jerry's co-morbidities, which improved Jerry's recovery time. ![PCP Receives Admit Notification from Hospital](NotificationFlow.png "Notification Flow")
+- Jerry's PCP at the patient-centered medical home received a clinical encounter notification that Jerry was admitted to the hospital. The Notification Recipient EHR fetched the resource giving details and the PCP was able to push a C-CDA to the hospital providing a patient summary including Jerry's co-morbidities, (problem list), medications, allergies and immunizations which improved Jerry’s hospital care and recovery.
+
+  ![PCP Receives Admit Notification from Hospital](NotificationFlow.png "Notification Flow")

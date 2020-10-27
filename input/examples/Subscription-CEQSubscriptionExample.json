@@ -3,23 +3,17 @@
   "id": "CEQSubscriptionExample",
   "meta": {
     "profile": [
-      "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"
+      "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQsubscription"
     ]
   },
   "criteria": "carequality",
   "extension": [
     {
-      "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension",
+      "url": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQextension",
       "extension": [
         {
           "url": "subIdentifier",
           "valueString": "sub123"
-        },
-        {
-          "url": "subscriber",
-          "valueReference": {
-            "reference": "Practitioner/DrDavidAnydoc"
-          }
         },
         {
           "url": "subscriptionTopic",
@@ -36,6 +30,16 @@
         {
           "url": "searchvalue",
           "valueString": "MRN123"
+        },
+        {
+          "url": "endUser",
+          "valueString": "Dr. David AnyDoc"
+        },
+        {
+          "url": "CQOrganization",
+          "valueReference": {
+            "reference": "update-success-example2"
+          }
         }
       ]
     }

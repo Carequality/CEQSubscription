@@ -3,7 +3,7 @@
   "id": "CEQSubscriptionStatusExample",
   "meta": {
     "profile": [
-      "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"
+      "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQ-subscription-status"
     ]
   },
   "parameter": [

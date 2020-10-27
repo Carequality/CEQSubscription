@@ -7,11 +7,31 @@
       "valueString": "Foundation.Other"
     }
   ],
-  "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status",
+  "url": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQ-subscription-status",
   "version": "0.1.0",
   "name": "CEQSubscriptionStatus",
   "title": "CEQ R5 Subscription Notification Status",
-  "status": "active",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Carequality",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://carequality.org/get-involved/technical-workgroup/"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:david.pyke@readycomputing.com"
+        }
+      ]
+    }
+  ],
   "description": "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.",
   "jurisdiction": [
     {

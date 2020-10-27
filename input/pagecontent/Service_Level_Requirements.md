@@ -12,7 +12,7 @@
 
 Implementers shall support the notion of backwards compatibility until such a time that a particular version has been officially sun-setted by Carequality. Carequality, with the input of the Implementer community, shall determine the appropriate live versions and backwards compatibility. This shall include the specific version and how long it shall be maintained.
 
-Implementers shall list in their Capability Statement **and** in the Carequality Directory which subscription Topics they support.
+Implementers shall list this IG in their Capability Statement **and** which subscription topics they support in the Carequality Directory.
 
 ### Notification Generation Latency
 

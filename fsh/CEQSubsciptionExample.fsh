@@ -20,48 +20,14 @@ Usage:  #example
 
 * extension[ceqPushExtension].extension[subIdentifier].valueString = "sub123"
 
-* extension[ceqPushExtension].extension[subscriber].valueReference = Reference(DrDavidAnydoc)
-
 * extension[ceqPushExtension].extension[subscriptionTopic].valueCanonical = "http://www.carequality.org/fhir/CEQTopic/snradmit"
 * extension[ceqPushExtension].extension[searchParamName].valueString = "PatientID"
 * extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
 * extension[ceqPushExtension].extension[searchvalue].valueString = "MRN123"
+* extension[ceqPushExtension].extension[endUser].valueString = "Dr. David AnyDoc"
+* extension[ceqPushExtension].extension[CQOrganization].valueReference = Reference(update-success-example2)
 
-/*
-Instance: CEQSubscriptionTopicExample
-InstanceOf: CEQTopic
-Title:   "Example Subscribing Topic"
-Description: "Example of the subscription Topic  for a Carequality Subscription"
-Usage:  #example
 
-* id = "CEQTopicExample"
-* extension[SubscriptionTopic].extension[eventCode].valueCoding = PushCode#snradmit
-* extension[SubscriptionTopic].extension[PatientReference].valueReference = Reference(EveAnyperson)
-* extension[SubscriptionTopic].extension[title].valueString = "Example Carequality Topic for subscribing"
-* extension[SubscriptionTopic].extension[status].valueCode = #active
-*/
-
-Instance: SubscriptionBundleExample
-InstanceOf: CEQSubscriptionBundle
-Title: "CQ Subscription Bundle Example"
-Description: "Example of the CQ Subscription Bundle"
-Usage: #example
-
-* entry[subscriptionentry].fullUrl = "http://www.example.org/fhir/Subscription/70cba71d-f5e4-4355-9a2f-365ae7b8c694"
-* entry[subscriptionentry].resource = CEQsubscriptionExample
-* entry[subscriptionentry].request.method = #POST
-* entry[subscriptionentry].request.url = "http://www.example.org/fhir/70cba71d-f5e4-4355-9a2f-365ae7b8c694"
-
-* entry[1].fullUrl = "http://www.example.org/fhir/Practitioner/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
-* entry[1].resource = DrDavidAnydoc
-* entry[1].request.method = #POST
-* entry[1].request.url = "http://www.example.org/fhir/1adc15a2-bee5-4cfa-a6de-7ec2ce37dfe3"
-/*
-* entry[2].fullUrl = "http://www.example.org/fhir/Basic/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
-* entry[2].resource = CEQSubscriptionTopicExample
-* entry[2].request.method = #POST
-* entry[2].request.url = "http://www.example.org/fhir/0537166c-5db3-4b0e-97bd-1a59e6f3d080"
-*/
 
 Instance: CEQSubscriptionStatusExample
 InstanceOf: CEQSubscriptionStatus
@@ -89,20 +55,7 @@ Usage: #example
 * entry[subscriptionStatus].response.status = "200"
 * entry[subscriptionStatus].response.lastModified = "2020-08-09T00:04:00Z"
 
-* entry[subscriptionPatient].fullUrl = "http://www.example.org/fhir/Patient/90477e1c-2be1-4302-af4a-7b46da998296"
-* entry[subscriptionPatient].resource = EveAnyperson
-* entry[subscriptionPatient].request.method = #POST
-* entry[subscriptionPatient].request.url = "https://example.org/fhir/r4/Subscription/admission/$status"
-* entry[subscriptionPatient].response.status = "201"
-
-* entry[subscriptionPractitioner].fullUrl = "http://www.example.org/fhir/Practitioner/e650c774-8a53-4e75-8cab-43d9f204b1c8"
-* entry[subscriptionPractitioner].resource = DrDavidAnydoc
-* entry[subscriptionPractitioner].request.method = #POST
-* entry[subscriptionPractitioner].request.url = "https://example.org/fhir/r4/Subscription/admission/$status"
-* entry[subscriptionPractitioner].response.status = "201"
-
-* entry[subscriptionOrganization].fullUrl = "http://www.example.org/fhir/Organization/6da3decd-9df9-40c4-ae82-525d27f171de"
-* entry[subscriptionOrganization].resource = VeterinariansHospital
-* entry[subscriptionOrganization].request.method = #POST
-* entry[subscriptionOrganization].request.url = "https://example.org/fhir/r4/Subscription/admission/$status"
-* entry[subscriptionOrganization].response.status = "201"
+* entry[SubEncounter].fullUrl = "http://www.example.org/fhir/Encounter/29a0ed75-6760-40ca-ae2f-7ee8ad9edd60"
+* entry[SubEncounter].resource = CEQ-Encounter
+* entry[SubEncounter].request.url = "https://example.org/fhir/r4/Encounter/CEQ-Encounter"
+* entry[SubEncounter].response.status = "200"

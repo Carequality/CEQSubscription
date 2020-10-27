@@ -1,6 +1,6 @@
 {
   "package-id": "sequoiaproject.fhir.us.pushnotifications",
-  "canonical": "https://sequoiaproject.org/fhir/sphd-r4",
+  "canonical": "https://sequoiaproject.org/fhir/push-r4",
   "title": "Carequality Subscription Implementation Guide for Push Notifications",
   "introduction": "An Implementation Guide for the Carequality Subscription Use Case",
   "list": [

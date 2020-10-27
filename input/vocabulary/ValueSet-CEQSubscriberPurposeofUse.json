@@ -6,11 +6,11 @@
   "title": "Permitted Purposes Of Use",
   "description": "These are the permitted Purpose of Use within the Carequality network",
   "version": "0.1.0",
-  "url": "https://sequoiaproject.org/fhir/sphd-r4/ValueSet/CEQSubscriberPurposeofUse",
+  "url": "https://sequoiaproject.org/fhir/push-r4/ValueSet/CEQSubscriberPurposeofUse",
   "compose": {
     "include": [
       {
-        "system": "https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse",
+        "system": "https://sequoiaproject.org/fhir/push-r4/CodeSystem/NHINPurposeOfUse",
         "concept": [
           {
             "code": "TREATMENT"

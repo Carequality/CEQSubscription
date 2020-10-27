@@ -12,7 +12,7 @@
     "xml"
   ],
   "implementationGuide": [
-    "https://build.fhir.org/ig/DavidPyke/CEQSubscription/index.html"
+    "https://www.carequality.org/fhir/sphd-r4/CEQSubscription"
   ],
   "name": "CEQsubscribeCapabilityStatement",
   "title": "Carequality Subscription Submission Capability Statement",

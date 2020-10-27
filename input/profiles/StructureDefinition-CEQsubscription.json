@@ -11,7 +11,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription",
+  "url": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQsubscription",
   "version": "0.1.0",
   "name": "CEQsubscription",
   "title": "Carequality Subscription Profile",
@@ -125,8 +125,8 @@
             "key": "CEQ-Param-Name",
             "severity": "error",
             "human": "searchParamName shall be Patient or PatientID",
-            "expression": "Subscription.extension('ceqPushExtension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )",
-            "source": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"
+            "expression": "extension('ceqPushExtension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )",
+            "source": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQsubscription"
           }
         ]
       },
@@ -155,7 +155,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQextension"
+              "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQextension"
             ]
           }
         ]

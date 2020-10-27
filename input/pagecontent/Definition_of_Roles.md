@@ -8,11 +8,11 @@
 * ig-data\input\pagecontent\2_Definition_of_Roles.md                                    *
 *****************************************************************************************
 {% endcomment %} -->
-The concept of a role within the use case is central to this Implementation Guide and to defining the rights, obligations, and responsibilities of Carequality Implementers. Implementers play a declared role or roles, and Implementers must indicate to Carequality, during the application process for each use case, which role or roles the Implementer will fill, and which role or roles each of its fill. By default, any requirement specified in Sections 3 through 6 of this Guide applies to any Implementer regardless of role. Requirements that apply only to those Implementers with a particular role or roles will clearly indicate the role or roles to which they apply.
+The concept of a role within the use case is central to this Implementation Guide and to defining the rights, obligations, and responsibilities of Carequality Implementers. Implementers play a declared role or roles, and Implementers must indicate to Carequality, during the application process for each use case, which role or roles the Implementer will fill, and which role or roles each of its fill. By default, any requirement specified in Sections 3 through 6 of this Guide applies to any Implementer regardless of role. Requirements that apply only to those Implementers with a particular role or roles must clearly indicate the role or roles that they are applying for.
 
 ### Notification Generator
 
-An Implementer with the declared role of a Notification Generator is any organization, vendor, or other entity that initiates a push notification in response to a triggering event within the generator's system to a Notification Recipient. An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section 4 of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.
+An Implementer with the declared role of a Notification Generator is any organization, vendor, or other entity that initiates a push notification in response to a triggering event within the generator's system to a Notification Recipient. An Implementer with the declared role of a Notification Generator shall support the technical actor(s) specified in Section 6 of this Guide and comply with any other requirements throughout this Guide that are specifically described as applying to the Notification Generator role.
 
 ### Notification Recipient
 
@@ -26,7 +26,7 @@ An Implementer with the declared role of a Notification Recipient is any system 
 
 #### Definition
 
-An Implementer or CC with the declared role of an Subscription Service provides subscription data management, and forwards patient specific subscriptions, subscription requests, and push notifications sent to them by Implementers or CCs in the Notification Generator, Notification Receiver, and Subscription Service roles. In addition, Subscription Services provide a list of Implementers and/or CCs in the Notification Generator or Receiver role who potentially have, likely have, or are known to have a clinical relationship with the patient who is the subject of a subscription.
+An Implementer or CC with the declared role of Subscription Service provides subscription data management, and forwards patient specific subscriptions, subscription requests, and push notifications sent to them by Implementers or CCs in the Notification Generator, Notification Receiver, and Subscription Service roles. In addition, Subscription Services provide a list of Implementers and/or CCs in the Notification Generator or Receiver role who potentially have, likely have, or are known to have a clinical relationship with the patient who is the subject of a subscription.
 
 - An Implementer in the Subscription Service (Subserv) role may have CCs in other roles, even if the Implementer itself only plays the Subscription Service role.
 - An Implementer or CC with the declared role of a Subscription Service shall support the technical actor(s) specified in Section 4 of this Guide, and comply with any other requirements throughout this Guide that are specifically described as applying to the Subscription Service role.

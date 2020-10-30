@@ -25,7 +25,7 @@ Usage:  #example
 * extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
 * extension[ceqPushExtension].extension[searchvalue].valueString = "MRN123"
 * extension[ceqPushExtension].extension[endUser].valueString = "Dr. David AnyDoc"
-* extension[ceqPushExtension].extension[CQOrganization].valueReference = Reference(update-success-example2)
+* extension[ceqPushExtension].extension[CQOrganization].valueString = "02yr0qwy40"
 
 
 

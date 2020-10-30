@@ -58,14 +58,14 @@ Push Notification Implementers should use the same criteria for the Discharge tr
 The canonical URL for this event is http://www.carequality.net/CEQTopic/discharge
 
 #### Referrals
-Only applies to Secondary Referrals (i.e., referrals not made by the Notification Recipient).  Internal consults are not included.
+Only applies to Secondary Referrals (i.e., referrals not made by the Notification Recipient, e.g. Notification Recipient (PCP) orders a referral to specialist A, specialist A refers the patient to specialist B – A to B referral is a secondary referral ). Internal (e.g. within an IDN)  consults are not included.
 
 The canonical URL for this event is http://www.carequality.net/CEQTopic/referred
 
 #### Transfer
 Transfer Type 1: When a transfer is ordered to any external (any location that would not trigger an internal Admit notification) location. For example
 * Any transfer that crosses between EHRs (even when internal to one organization) shall generate a notification; and/or
-* Any transfer within a system that crosses between settings (ED, Skilled Nursing, etc.) shall generate a notification.
+* Any transfer within a EHR that crosses between settings (ED, Skilled Nursing, etc.) shall generate a notification.
 
 Transfer Type 2: Any time a transfer order is generated.
 

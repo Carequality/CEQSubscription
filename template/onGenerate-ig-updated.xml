@@ -6,18 +6,18 @@
       <div xmlns="http://www.w3.org/1999/xhtml">
          <h2>Carequality_Subscription_Implementation_Guide</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications</pre>
+         <pre>https://sequoiaproject.org/fhir/push-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications</pre>
          <div>
             <p>An Implementation Guide for the Carequality Subscription Use Case</p>
          </div>
       </div>
    </text>
-   <url value="https://sequoiaproject.org/fhir/sphd-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications"/>
+   <url value="https://sequoiaproject.org/fhir/push-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications"/>
    <version value="0.1.0"/>
    <name value="Carequality_Subscription_Implementation_Guide"/>
    <title value="Carequality Subscription Implementation Guide for Push Notifications"/>
    <status value="draft"/>
-   <date value="2020-10-14T15:46:38-04:00"/>
+   <date value="2020-10-30T14:03:19-04:00"/>
    <publisher value="Carequality"/>
    <contact>
       <name value="Carequality"/>
@@ -44,7 +44,7 @@
    <dependsOn id="hl7_fhir_us_core">
       <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
       <packageId value="hl7.fhir.us.core"/>
-      <version value="3.1.0"/>
+      <version value="3.1.1"/>
    </dependsOn>
    <definition>
 
@@ -91,22 +91,7 @@
             <reference value="StructureDefinition/CEQNotificationBundle"/>
          </reference>
          <name value="Carequality Notification Bundle"/>
-         <description value="This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic&#xA;information about the subscription and the time the subscription was sent; the second is the FullUrl of thead&#xA;payload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a&#xA;non-resource entry in the Bundle which requires the response.status element in all entries."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-CEQSubscriptionBundle.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/CEQSubscriptionBundle"/>
-         </reference>
-         <name value="Carequality Subscription Bundle"/>
-         <description value="Bundle to be submitted for Carequality subscription enrollment"/>
+         <description value="This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic&#xA;information about the subscription and the time the subscription was sent; the second is the FullUrl of the&#xA;payload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a&#xA;non-resource entry in the Bundle which requires the response.status element in all entries."/>
          <exampleBoolean value="false"/>
          <groupingId value="_str_profile"/>
       </resource>
@@ -136,7 +121,7 @@
             <reference value="StructureDefinition/CEQsubscription"/>
          </reference>
          <name value="Carequality Subscription Profile"/>
-         <description value="Extended Elements and Constraints Specific to the Carequality Use Case&#xA;Carequality has defined a custom flow for a Subscription that removes the criteria use&#xA;in favour of specific events defined as URIs.  This adds requirements that the PatientID&#xA;and an identifier be added to the resource.  The identifier element is the endpoint id&#xA;[Base]/fhir/Subscription/[identifier]&#xA;A termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal."/>
+         <description value="Extended Elements and Constraints Specific to the Carequality Use Case&#xA;Carequality has defined a custom flow for a Subscription that removes the criteria use&#xA;in favor of specific events defined as URIs.  This adds requirements that the PatientID&#xA;and an identifier be added to the resource.  The identifier element is the endpoint id&#xA;[Base]/fhir/Subscription/[identifier]&#xA;A termination (Subscription.end) date is required and may not be more than 2 years from original date of subscription without renewal."/>
          <exampleBoolean value="false"/>
          <groupingId value="_str_profile"/>
       </resource>
@@ -187,6 +172,21 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Encounter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Encounter-CEQ-Encounter.html"/>
+         </extension>
+         <reference>
+            <reference value="Encounter/CEQ-Encounter"/>
+         </reference>
+         <name value="Example Encounter"/>
+         <description value="Example Encounter for use within the Example Notification Bundle"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Subscription"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -197,7 +197,7 @@
          </reference>
          <name value="Example Subscribing"/>
          <description value="Example of the full Resource for a Carequality Subscription"/>
-         <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQsubscription"/>
+         <exampleCanonical value="https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQsubscription"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -212,7 +212,7 @@
          </reference>
          <name value="SubscriptionStatus Example"/>
          <description value="An example of the Carequality Subscription Status Profile"/>
-         <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQ-subscription-status"/>
+         <exampleCanonical value="https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQ-subscription-status"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -227,6 +227,21 @@
          </reference>
          <name value="Dr. David Anydoc"/>
          <description value="Example of a US Core R4 Practitioner"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-Enc-location.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/Enc-location"/>
+         </reference>
+         <name value="Example Location"/>
+         <description value="Example Location for use within the Example Encounter"/>
          <exampleBoolean value="true"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -272,22 +287,7 @@
          </reference>
          <name value="CQ Notification Bundle Example"/>
          <description value="Example of the CQ Notification Bundle with a SubscriptionStatus and payload URL"/>
-         <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQNotificationBundle"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Bundle"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Bundle-SubscriptionBundleExample.html"/>
-         </extension>
-         <reference>
-            <reference value="Bundle/SubscriptionBundleExample"/>
-         </reference>
-         <name value="CQ Subscription Bundle Example"/>
-         <description value="Example of the CQ Subscription Bundle"/>
-         <exampleCanonical value="https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle"/>
+         <exampleCanonical value="https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQNotificationBundle"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -302,21 +302,6 @@
          </reference>
          <name value="Veterinarian's Hospital"/>
          <description value="Example of a US Core R4 Organization"/>
-         <exampleBoolean value="true"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="OperationDefinition"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="OperationDefinition-ceqsubscribe.html"/>
-         </extension>
-         <reference>
-            <reference value="OperationDefinition/ceqsubscribe"/>
-         </reference>
-         <name value="CEQsubscription"/>
-         <description value="Operation for pushing a Bundle to the Notification Generator that includes the Subscription resource and the Resource indicating the end user of the notificaitons"/>
          <exampleBoolean value="true"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -389,11 +374,6 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-CEQSubscriptionBundle.html"/>
-               <title value="Carequality Subscription Bundle"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="StructureDefinition-CEQ-subscription-status.html"/>
                <title value="CEQ R5 Subscription Notification Status"/>
                <generation value="generated"/>
@@ -419,6 +399,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Encounter-CEQ-Encounter.html"/>
+               <title value="Example Encounter"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Subscription-CEQSubscriptionExample.html"/>
                <title value="Example Subscribing"/>
                <generation value="generated"/>
@@ -431,6 +416,11 @@
             <page>
                <nameUrl value="Practitioner-DrDavidAnydoc.html"/>
                <title value="Dr. David Anydoc"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-Enc-location.html"/>
+               <title value="Example Location"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -449,18 +439,8 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Bundle-SubscriptionBundleExample.html"/>
-               <title value="CQ Subscription Bundle Example"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="Organization-VeterinariansHospital.html"/>
                <title value="Veterinarian's Hospital"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="OperationDefinition-ceqsubscribe.html"/>
-               <title value="CEQsubscription"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -572,7 +552,7 @@
       </parameter>
       <parameter>
          <code value="path-history"/>
-         <value value="https://sequoiaproject.org/fhir/sphd-r4/history.html"/>
+         <value value="https://sequoiaproject.org/fhir/push-r4/history.html"/>
       </parameter>
       <parameter>
          <code value="template-html"/>

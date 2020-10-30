@@ -231,7 +231,7 @@
         "id": "Extension.extension:CQOrganization",
         "path": "Extension.extension",
         "sliceName": "CQOrganization",
-        "short": "Recipient CQ Directory Reference",
+        "short": "SHall be the value of Organization.id from the CQ FHIR Directory until the CQ Directory FHIR R4 FHIR IG is available",
         "min": 1,
         "max": "1"
       },
@@ -244,6 +244,15 @@
         "id": "Extension.extension:CQOrganization.url",
         "path": "Extension.extension.url",
         "fixedUri": "CQOrganization"
+      },
+      {
+        "id": "Extension.extension:CQOrganization.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
       },
       {
         "id": "Extension.url",

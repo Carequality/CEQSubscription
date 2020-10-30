@@ -37,9 +37,7 @@
         },
         {
           "url": "CQOrganization",
-          "valueReference": {
-            "reference": "update-success-example2"
-          }
+          "valueString": "02yr0qwy40"
         }
       ]
     }

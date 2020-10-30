@@ -46,3 +46,27 @@ Usage:  #example
 * type =  http://snomed.info/sct#448337001 "Telemedicine consultation with patient"
 * subject = Reference(EveAnyperson)
 * reasonCode = http://snomed.info/sct#1917008 "Patient discharge, deceased, medicolegal case"
+
+Instance: CEQ-Encounter
+InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
+Title: "Example Encounter"
+Description: "Example Encounter for use within the Example Notification Bundle"
+Usage: #example
+
+* status = #finished
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
+* type = http://www.ama-assn.org/go/cpt#99201
+* subject = Reference(EveAnyperson)
+* participant.individual = Reference(DrDavidAnydoc)
+* location.location = Reference(Enc-location)
+* period.start = 2020-10-01T17:00:14-05:00
+* period.end = 2020-10-01T18:00:14-05:00
+
+Instance: Enc-location
+InstanceOf: Location
+Title: "Example Location"
+Description: "Example Location for use within the Example Encounter"
+Usage: #example
+* status = #active
+* name = "North Wing of Verteranairan's Hospital"
+* managingOrganization = Reference(VeterinariansHospital)

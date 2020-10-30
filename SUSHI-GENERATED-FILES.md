@@ -16,7 +16,6 @@ lists those files generated from project configs or the contents in the ig-data 
 | input\ignoreWarnings.txt                                                | generated |                                                                     |
 | input\includes\menu.xml                                                 | generated | fsh\config.yaml                                                     |
 | package-list.json                                                       | generated | fsh\config.yaml                                                     |
-| input\examples\Encounter-CEQ-Encounter.json                             | copied    | fsh\ig-data\input\examples\encounter-example-f001-heart.json        |
 | input\images\NotificationFlow.png                                       | copied    | fsh\ig-data\input\images\NotificationFlow.png                       |
 | input\images\Scenario1.png                                              | copied    | fsh\ig-data\input\images\Scenario1.png                              |
 | input\images\Scenario2.png                                              | copied    | fsh\ig-data\input\images\Scenario2.png                              |

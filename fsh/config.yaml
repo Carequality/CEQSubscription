@@ -29,10 +29,11 @@ description: An Implementation Guide for the Carequality Subscription Use Case
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 3.1.0
-  sequoiaproject.fhir.us.sphd-stu3:
-    uri: https://sequoiaproject.org/fhir/sphd-stu3
-    version: 0.0.1
+  hl7.fhir.us.core: 3.1.1
+#  sequoiaproject.fhir.us.sphd-stu3:
+#    uri: https://sequoiaproject.org/fhir/sphd-stu3/
+#    version: 1.2.0
+
 parameters:
   show-inherited-invariants: true
 copyrightYear: 2020+

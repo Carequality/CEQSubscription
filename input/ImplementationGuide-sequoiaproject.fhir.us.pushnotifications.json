@@ -40,15 +40,9 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.0",
+      "version": "3.1.1",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
-    },
-    {
-      "packageId": "sequoiaproject.fhir.us.sphd-stu3",
-      "uri": "https://sequoiaproject.org/fhir/sphd-stu3",
-      "version": "0.0.1",
-      "id": "sequoiaproject_fhir_us_sphd_stu3"
     }
   ],
   "definition": {
@@ -58,7 +52,7 @@
           "reference": "StructureDefinition/CEQNotificationBundle"
         },
         "name": "Carequality Notification Bundle",
-        "description": "This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic\ninformation about the subscription and the time the subscription was sent; the second is the FullUrl of thead\npayload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a\nnon-resource entry in the Bundle which requires the response.status element in all entries.",
+        "description": "This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic\ninformation about the subscription and the time the subscription was sent; the second is the FullUrl of the\npayload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a\nnon-resource entry in the Bundle which requires the response.status element in all entries.",
         "exampleBoolean": false
       },
       {
@@ -74,7 +68,7 @@
           "reference": "StructureDefinition/CEQsubscription"
         },
         "name": "Carequality Subscription Profile",
-        "description": "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favour of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from date of subscription without renewal.",
+        "description": "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favor of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from original date of subscription without renewal.",
         "exampleBoolean": false
       },
       {
@@ -103,6 +97,14 @@
       },
       {
         "reference": {
+          "reference": "Encounter/CEQ-Encounter"
+        },
+        "name": "Example Encounter",
+        "description": "Example Encounter for use within the Example Notification Bundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Subscription/CEQSubscriptionExample"
         },
         "name": "Example Subscribing",
@@ -123,6 +125,14 @@
         },
         "name": "Dr. David Anydoc",
         "description": "Example of a US Core R4 Practitioner",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Location/Enc-location"
+        },
+        "name": "Example Location",
+        "description": "Example Location for use within the Example Encounter",
         "exampleBoolean": true
       },
       {
@@ -162,13 +172,6 @@
           "reference": "CapabilityStatement/ceqsubscribe-capabilitystatement"
         },
         "name": "CEQSubscription-Recipient",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Encounter/CEQ-Encounter"
-        },
-        "name": "CEQ-Encounter",
         "exampleBoolean": true
       }
     ],

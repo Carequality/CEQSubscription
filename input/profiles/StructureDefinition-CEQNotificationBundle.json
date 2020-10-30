@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "description": "This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic\ninformation about the subscription and the time the subscription was sent; the second is the FullUrl of thead\npayload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a\nnon-resource entry in the Bundle which requires the response.status element in all entries.",
+  "description": "This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic\ninformation about the subscription and the time the subscription was sent; the second is the FullUrl of the\npayload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a\nnon-resource entry in the Bundle which requires the response.status element in all entries.",
   "jurisdiction": [
     {
       "coding": [

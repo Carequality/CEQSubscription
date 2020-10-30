@@ -30,7 +30,7 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 * extension[endUser].value[x] only string
 
 * extension[CQOrganization] ^short = "Recipient CQ Directory Reference"
-* extension[CQOrganization] ^short = "SHall be the value of Organization.id from the CQ FHIR Directory until the CQ Directory FHIR R4 FHIR IG is available"
+* extension[CQOrganization] ^short = "Shall be the value of Organization.id from the CQ FHIR Directory until the CQ Directory FHIR R4 FHIR IG is available"
 * extension[CQOrganization].value[x] only string
 
 Invariant:  CEQ-Param-Name

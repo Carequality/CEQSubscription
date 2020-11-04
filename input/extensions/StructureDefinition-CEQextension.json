@@ -231,7 +231,7 @@
         "id": "Extension.extension:CQOrganization",
         "path": "Extension.extension",
         "sliceName": "CQOrganization",
-        "short": "SHall be the value of Organization.id from the CQ FHIR Directory until the CQ Directory FHIR R4 FHIR IG is available",
+        "short": "Shall be the value of Organization.id from the CQ FHIR Directory until the CQ Directory FHIR R4 FHIR IG is available",
         "min": 1,
         "max": "1"
       },

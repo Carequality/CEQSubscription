@@ -33,19 +33,7 @@
           }
         ],
         "description": "Requires adherence to the Carequality FHIR Implementation Guide"
-      },
-      "resource": [
-        {
-          "profile": "https://sequoiaproject.org/fhir/sphd-r4/StructureDefinition/CEQSubscriptionBundle",
-          "type": "Bundle",
-          "operation": [
-            {
-              "name": "ceqsubscribe",
-              "definition": "https://sequoiaproject.org/fhir/sphd-r4/OperationDefinition/ceqsubscribe"
-            }
-          ]
-        }
-      ]
+      }
     }
   ]
 }

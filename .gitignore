@@ -1,5 +1,8 @@
 input-cache/publisher.jar
-input-cache/
-output/
-temp/
-
+.DS_Store
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/template
+/temp

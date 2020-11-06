@@ -69,10 +69,9 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 Profile: CEQNotificationBundle
 Parent: Bundle
 Title: "Carequality Notification Bundle"
-Description: """This Bundle has exactly two entries, the first contains CEQSubscriptionStatus Profile that has the basic
-information about the subscription and the time the subscription was sent; the second is the FullUrl of the
-payload with the date and time the topic was triggered.  It is configured as a batch-response to allow for a
-non-resource entry in the Bundle which requires the response.status element in all entries."""
+Description: """This Bundle is configured as a history bundle and has exactly two entries, the first is the CEQSubscriptionStatus Profile
+that has the basic information with the date and time the topic was triggered, number of notifications to date and, the second is the
+Encounter (or other, if CareGap) Resource. """
 
 * insert FHIRPushStructureDefinitionContent
 

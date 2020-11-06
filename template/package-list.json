@@ -11,5 +11,13 @@
       "status": "ci-build",
       "current": true
     }
+    {
+      "version": "0.1.0",
+      "desc": "stable for use with sushi 0.16.0",
+      "path": "https://build.fhir.org/ig/HL7/ig-template-carequality/0.1.0",
+      "status": "release",
+      "sequence": "Publications",
+      "date": "2020-11-05"
+    }
   ]
 }

@@ -6,7 +6,7 @@ Implementers shall list this IG in their Capability Statement **and** which subs
 
 ### Notification Generation Latency
 
-Implementers should generate Notifications in response to specific triggering events. For example: The table below lists the scenario and maximum acceptable latency:
+Implementers should generate Notifications in response to specific triggering events. For example: The table below lists the scenario and maximum acceptable latency.  Notifications must acheive these requirements for at least 99% of notifications.:
 
 |Trigger      | Latency|
 |------------ | ----------------------------------------------------------------|
@@ -16,7 +16,7 @@ Referral     | 5 minutes or less
 Transfer     | 5 minutes or less
 Gaps in Care | If batch processing generation within 24hrs, otherwise 5 minutes or less
 
-Notification Generators receiving timeouts on delivery attempts must retry those attempts at least every five (5) minutes for a minimum of sixty (60) minutes before terminating attempts.
+Notification Generators encountering timeouts on delivery attempts shall retry these attempts at reasonable intervals for at least sixty (60) minutes before terminating attempts.  The timelines for retries will be re-evaluated after one year to determine if additional requirements are necessary.
 
 ### Uptime
 

@@ -12,7 +12,7 @@ Currently, patients access healthcare services and products and health-related s
 
 Many individuals, especially those with multiple chronic conditions or disabilities, and those facing circumstances of social disadvantage, will benefit from coordination among their healthcare providers and the social and ancillary health service organizations who are assisting on their journey to improved health and well-being (e.g., transportation, housing, nutrition, early childhood programs).  Seamless sharing of notifications about patients and their healthcare event is essential to delivering appropriate services that improve the well-being of individuals.
 
-Carequality is ideally suited to bring added value beyond simple point-to-point notification services, and can instead enable by enabling stakeholders to implement consistent approaches to notifications that are only possible at a national, cross-platform, multi-service scale.
+Carequality is ideally suited to bring added value beyond simple point-to-point notification services, and can instead enable stakeholders to implement consistent approaches to notifications that are only possible at a national, cross-platform, multi-service scale.
 
 The Carequality framework can be leveraged to support notifications when those involved in the patient's care are affiliated with many different organizations, and use many different systems or applications. These notifications are designed to support all relevant individuals in learning about care events in real time, giving a person's extended care team the information they need about a person to improve health outcomes.
 
@@ -42,7 +42,7 @@ Subscriptions are system to system and the receiver of these subscriptions (Subs
 
 #### Subscription
 
-- Is a request for notifications based on a one or more Topics. The end date is required and is a maximum of two years, without renewal.
+- Is a request for notifications based on a one or more Topics. The end date is required and is a maximum of two years in the future.  Renewals may be sent as subscription updates prior to expiry for up to an additional 2 years per renewal.
 
 #### Notification
 

@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "description": "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favor of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from original date of subscription without renewal.",
+  "description": "Extended Elements and Constraints Specific to the Carequality Use Case\nCarequality has defined a custom flow for a Subscription that removes the criteria use\nin favor of specific events defined as URIs.  This adds requirements that the PatientID\nand an identifier be added to the resource.  The identifier element is the endpoint id\n[Base]/fhir/Subscription/[identifier]\nA termination (Subscription.end) date is required and may not be more than 2 years from original date of subscription.  A renewal may be submitted prior to expiry for a period of up to two additional years.",
   "jurisdiction": [
     {
       "coding": [
@@ -143,7 +143,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 1
+        "min": 2
       },
       {
         "id": "Subscription.extension:ceqPushExtension",
@@ -159,32 +159,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Subscription.extension:ceqPushExtension.extension:subscriptionTopic",
-        "path": "Subscription.extension.extension",
-        "sliceName": "subscriptionTopic"
-      },
-      {
-        "id": "Subscription.extension:ceqPushExtension.extension:subscriptionTopic.value[x]",
-        "path": "Subscription.extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Subscription.extension:ceqPushExtension.extension:subscriptionTopic.valueCanonical",
-        "path": "Subscription.extension.extension.valueCanonical",
-        "min": 1,
-        "max": "1"
       },
       {
         "id": "Subscription.extension:ceqPushExtension.extension:searchParamName",
@@ -225,15 +199,30 @@
         "patternCode": "eq"
       },
       {
+        "id": "Subscription.extension:subscriptionTopic",
+        "path": "Subscription.extension",
+        "sliceName": "subscriptionTopic",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/backport-topic-canonical"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Subscription.end",
         "path": "Subscription.end",
-        "comment": "Maximum 2 years",
+        "comment": "Maximum 2 years from date of subscription submission",
         "min": 1
       },
       {
         "id": "Subscription.criteria",
         "path": "Subscription.criteria",
-        "fixedString": "carequality"
+        "short": "Literal value for SearchParamName matching"
       },
       {
         "id": "Subscription.channel.type",

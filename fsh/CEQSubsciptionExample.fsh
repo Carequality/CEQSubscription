@@ -14,16 +14,14 @@ Usage:  #example
 * contact.value = "212-877-3307 ext 5001"
 * end = "2021-01-01T00:00:00Z"
 * reason = "Example"
-* criteria = "carequality"
+* criteria = "MRN123"
 * channel.type = #rest-hook
 * channel.endpoint = "http://www.example.org/fhir/subscription/sub123"
 
+* extension[subscriptionTopic].valueCanonical = "http://www.carequality.org/fhir/CEQTopic/snradmit"
 * extension[ceqPushExtension].extension[subIdentifier].valueString = "sub123"
-
-* extension[ceqPushExtension].extension[subscriptionTopic].valueCanonical = "http://www.carequality.org/fhir/CEQTopic/snradmit"
 * extension[ceqPushExtension].extension[searchParamName].valueString = "PatientID"
 * extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
-* extension[ceqPushExtension].extension[searchvalue].valueString = "MRN123"
 * extension[ceqPushExtension].extension[endUser].valueString = "Dr. David AnyDoc"
 * extension[ceqPushExtension].extension[CQOrganization].valueString = "02yr0qwy40"
 
@@ -36,9 +34,9 @@ Description: "An example of the Carequality Subscription Status Profile"
 Usage: #example
 
 * parameter[status].valueCode = #active
-* parameter[subIdentifier].valueString = "Sub84849-26"
-* parameter[event].valueCanonical = "http://www.carequality.net/CEQTopic/admit"
-* parameter[subscriptionEventCount].valueUnsignedInt = 8
+* parameter[subscription].valueString = "Sub84849-26"
+* parameter[topic].valueCanonical = "http://www.carequality.net/CEQTopic/admit"
+* parameter[eventsSinceSubscriptionStart].valueUnsignedInt = 8
 
 
 Instance: NotificationBundleExample

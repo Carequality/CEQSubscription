@@ -67,8 +67,6 @@ The Actors work with the Transactions as follows:
 
 <sup>1</sup> The Notification Recipient and RecipientSMS may or may not fetch the notification's listed Resource depending on business requirements.
 
- The Notification Recipient and Subscription Service may or may not fetch the notification's listed Resource depending on business requirements.
-
 #### RegisterSubscription
 
 The Notification Recipient or RecipientSMS creates the Subscription Profile. The Subscription Profile contains the canonical URL that represents the events that the Notification Recipient wishes to subscribe to and the Patient identifier or Patient ResourceID in addition to other business information.

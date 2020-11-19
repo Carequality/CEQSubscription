@@ -61,7 +61,7 @@
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 7
+        "min": 5
       },
       {
         "id": "Extension.extension:subIdentifier",
@@ -88,33 +88,6 @@
         "type": [
           {
             "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:subscriptionTopic",
-        "path": "Extension.extension",
-        "sliceName": "subscriptionTopic",
-        "short": "Canonical Reference to CEQ SubscriptionTopic replacement",
-        "min": 1,
-        "max": "*"
-      },
-      {
-        "id": "Extension.extension:subscriptionTopic.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:subscriptionTopic.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "subscriptionTopic"
-      },
-      {
-        "id": "Extension.extension:subscriptionTopic.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "canonical"
           }
         ]
       },
@@ -169,33 +142,6 @@
         "type": [
           {
             "code": "code"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:searchvalue",
-        "path": "Extension.extension",
-        "sliceName": "searchvalue",
-        "short": "Literal value",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:searchvalue.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:searchvalue.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "searchvalue"
-      },
-      {
-        "id": "Extension.extension:searchvalue.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
           }
         ]
       },

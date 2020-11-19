@@ -32,7 +32,7 @@
             "valueCode": "active"
           },
           {
-            "name": "subscription-event-count",
+            "name": "Events-Since-Subscription-Created",
             "valueUnsignedInt": 8
           },
           {

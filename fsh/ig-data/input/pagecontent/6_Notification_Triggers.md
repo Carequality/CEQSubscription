@@ -65,3 +65,9 @@ The canonical URLs for these events are http://www.carequality.net/CEQTopic/tran
 A trigger based on the [eCQM as defined by CMS](https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/ClinicalQualityMeasures "Electronic Clinical Quality Measures Basics") or other request for follow-up based on Notification Generator policy or process.
 
 The canonical URL for this event is http://www.carequality.net/CEQTopic/caregap
+
+#### Termination of Subscriptions
+
+To terminate subscriptions for all events for a patient, the subscription update event should be marked as "delete".  
+
+The canonical URL for this event is http://www.carequality.net/CEQTopic/delete

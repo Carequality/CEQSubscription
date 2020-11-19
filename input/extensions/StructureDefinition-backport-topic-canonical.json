@@ -1,0 +1,80 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "backport-topic-canonical",
+  "url": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/backport-topic-canonical",
+  "version": "0.1.0",
+  "name": "BackportTopicCanonical",
+  "title": "Backport R5 Subscription Topic Canonical",
+  "status": "active",
+  "description": "Canonical reference to the subscription topic being subscribed to.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/backport-topic-canonical"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueCanonical",
+        "path": "Extension.valueCanonical",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

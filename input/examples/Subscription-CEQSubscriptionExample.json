@@ -6,7 +6,6 @@
       "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQsubscription"
     ]
   },
-  "criteria": "carequality",
   "extension": [
     {
       "url": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQextension",
@@ -14,10 +13,6 @@
         {
           "url": "subIdentifier",
           "valueString": "sub123"
-        },
-        {
-          "url": "subscriptionTopic",
-          "valueCanonical": "http://www.carequality.org/fhir/CEQTopic/snradmit"
         },
         {
           "url": "searchParamName",
@@ -28,10 +23,6 @@
           "valueCode": "eq"
         },
         {
-          "url": "searchvalue",
-          "valueString": "MRN123"
-        },
-        {
           "url": "endUser",
           "valueString": "Dr. David AnyDoc"
         },
@@ -40,6 +31,10 @@
           "valueString": "02yr0qwy40"
         }
       ]
+    },
+    {
+      "url": "https://sequoiaproject.org/fhir/push-r4/StructureDefinition/backport-topic-canonical",
+      "valueCanonical": "http://www.carequality.org/fhir/CEQTopic/snradmit"
     }
   ],
   "channel": {
@@ -54,5 +49,6 @@
     }
   ],
   "end": "2021-01-01T00:00:00Z",
-  "reason": "Example"
+  "reason": "Example",
+  "criteria": "MRN123"
 }

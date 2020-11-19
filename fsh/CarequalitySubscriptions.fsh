@@ -3,27 +3,19 @@ Title: "Carequality Subscription Required Elements"
 Description: "Additional Elements to Support Carequality Subscription Notifications"
 * insert FHIRPushStructureDefinitionContent
 * extension contains subIdentifier 1..1 MS
-    and subscriptionTopic 1..*
     and searchParamName 1..1
     and searchModifier 1..1
-    and searchvalue 1..1
     and endUser 1..1
     and CQOrganization 1..1
 
 * extension[subIdentifier] ^short = "A Business Identifier"
 * extension[subIdentifier].value[x] only string
 
-* extension[subscriptionTopic] ^short = "Canonical Reference to CEQ SubscriptionTopic replacement"
-* extension[subscriptionTopic].value[x] only canonical
-
 * extension[searchParamName] ^short = "Filter label"
 * extension[searchParamName].value[x] only string
 
 * extension[searchModifier] ^short = "= | eq | ne | gt | lt | ge | le | sa | eb | ap | above | below | in | not-in | of-type"
 * extension[searchModifier].value[x] only code
-
-* extension[searchvalue] ^short = "Literal value"
-* extension[searchvalue].value[x] only string
 
 * extension[endUser] ^short = "End recipient of the notification"
 * extension[endUser] ^comment = "Full name of the patient, related person, practitioner or organization which is the end receiver of the notification"
@@ -38,6 +30,14 @@ Description: "searchParamName shall be Patient or PatientID"
 Expression: "extension('ceqPushExtension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
 Severity:   #error
 
+Extension:   BackportTopicCanonical
+Id:          backport-topic-canonical
+Title:       "Backport R5 Subscription Topic Canonical"
+Description: "Canonical reference to the subscription topic being subscribed to."
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* value[x] only canonical
+* valueCanonical 1..1 MS
+
 Profile: CEQsubscription
 Parent: Subscription
 Title: "Carequality Subscription Profile"
@@ -46,23 +46,23 @@ Carequality has defined a custom flow for a Subscription that removes the criter
 in favor of specific events defined as URIs.  This adds requirements that the PatientID
 and an identifier be added to the resource.  The identifier element is the endpoint id
 [Base]/fhir/Subscription/[identifier]
-A termination (Subscription.end) date is required and may not be more than 2 years from original date of subscription without renewal.
-"""
+A termination (Subscription.end) date is required and may not be more than 2 years from original date of
+ subscription.  A renewal may be submitted prior to expiry for a period of up to two additional years."""
 * insert FHIRPushStructureDefinitionContent
 * obeys CEQ-Param-Name
 * extension contains CEQextension named ceqPushExtension 1..1
-
+* extension contains backport-topic-canonical named subscriptionTopic 1..*
 * end 1..1
-* end ^comment = "Maximum 2 years"
+* end ^comment = "Maximum 2 years from date of subscription submission"
 
-* criteria = "carequality" (exactly)
+* criteria ^short = "Literal value for SearchParamName matching"
 * channel.type = #rest-hook (exactly)
 
+* extension[subscriptionTopic].valueCanonical 1..1
+
 * extension[ceqPushExtension].extension[subIdentifier] 1..1
-* extension[ceqPushExtension].extension[subscriptionTopic].valueCanonical 1..1
 * extension[ceqPushExtension].extension[searchParamName].valueString 1..1
 * extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
-* extension[ceqPushExtension].extension[searchvalue] 1..1
 * extension[ceqPushExtension].extension[endUser] 1..1
 * extension[ceqPushExtension].extension[CQOrganization] 1..1
 
@@ -71,7 +71,7 @@ Parent: Bundle
 Title: "Carequality Notification Bundle"
 Description: """This Bundle is configured as a history bundle and has exactly two entries, the first is the CEQSubscriptionStatus Profile
 that has the basic information with the date and time the topic was triggered, number of notifications to date and, the second is the
-Encounter (or other, if CareGap) Resource. """
+Encounter (or other, if CareGap) Resource."""
 
 * insert FHIRPushStructureDefinitionContent
 
@@ -113,23 +113,22 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter  ^slicing.ordered = false
 * parameter  ^slicing.description = "Slice on parameter name"
 * parameter
-    contains subIdentifier 0..1 MS
-    and event 0..1 MS
+    contains subscription 0..1 MS
+    and topic 0..1 MS
     and status 1..1 MS
-    and subscriptionEventCount 1..1 MS
+    and eventsSinceSubscriptionStart 1..1 MS
 
-* parameter[subIdentifier].name = "subscription-name" (exactly)
-* parameter[subIdentifier].name ^short = "Business Name of the subscription submitted"
-* parameter[subIdentifier].value[x] 0..1 MS
-* parameter[subIdentifier].value[x] only string
-* parameter[event].name = "subscription-event-code" (exactly)
-* parameter[event].value[x] 0..1 MS
-* parameter[event].value[x] only canonical
-// * parameter[event].valueCoding from CEQPushEventCodes (required)
+* parameter[subscription].name = "subscription-name" (exactly)
+* parameter[subscription].name ^short = "Business Name of the subscription submitted"
+* parameter[subscription].value[x] 0..1 MS
+* parameter[subscription].value[x] only string
+* parameter[topic].name = "subscription-event-code" (exactly)
+* parameter[topic].value[x] 1..1 MS
+* parameter[topic].value[x] only canonical
 * parameter[status].name = "status" (exactly)
 * parameter[status].value[x] 1..1 MS
 * parameter[status].value[x] only code
-* parameter[status].valueCode from http://hl7.org/fhir/ValueSet/subscription-status
-* parameter[subscriptionEventCount].name = "subscription-event-count" (exactly)
-* parameter[subscriptionEventCount].value[x] 1..1 MS
-* parameter[subscriptionEventCount].value[x] only unsignedInt
+* parameter[status].value[x] from http://hl7.org/fhir/ValueSet/subscription-status
+* parameter[eventsSinceSubscriptionStart].name = "Events-Since-Subscription-Created" (exactly)
+* parameter[eventsSinceSubscriptionStart].value[x] 1..1 MS
+* parameter[eventsSinceSubscriptionStart].value[x] only unsignedInt

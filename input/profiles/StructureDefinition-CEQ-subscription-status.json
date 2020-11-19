@@ -80,21 +80,21 @@
         "min": 2
       },
       {
-        "id": "Parameters.parameter:subIdentifier",
+        "id": "Parameters.parameter:subscription",
         "path": "Parameters.parameter",
-        "sliceName": "subIdentifier",
+        "sliceName": "subscription",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Parameters.parameter:subIdentifier.name",
+        "id": "Parameters.parameter:subscription.name",
         "path": "Parameters.parameter.name",
         "short": "Business Name of the subscription submitted",
         "fixedString": "subscription-name"
       },
       {
-        "id": "Parameters.parameter:subIdentifier.value[x]",
+        "id": "Parameters.parameter:subscription.value[x]",
         "path": "Parameters.parameter.value[x]",
         "type": [
           {
@@ -104,21 +104,22 @@
         "mustSupport": true
       },
       {
-        "id": "Parameters.parameter:event",
+        "id": "Parameters.parameter:topic",
         "path": "Parameters.parameter",
-        "sliceName": "event",
+        "sliceName": "topic",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Parameters.parameter:event.name",
+        "id": "Parameters.parameter:topic.name",
         "path": "Parameters.parameter.name",
         "fixedString": "subscription-event-code"
       },
       {
-        "id": "Parameters.parameter:event.value[x]",
+        "id": "Parameters.parameter:topic.value[x]",
         "path": "Parameters.parameter.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "canonical"
@@ -142,49 +143,33 @@
       {
         "id": "Parameters.parameter:status.value[x]",
         "path": "Parameters.parameter.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "code"
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "Parameters.parameter:status.valueCode",
-        "path": "Parameters.parameter.valueCode",
-        "min": 0,
-        "max": "1",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org/fhir/ValueSet/subscription-status"
         }
       },
       {
-        "id": "Parameters.parameter:subscriptionEventCount",
+        "id": "Parameters.parameter:eventsSinceSubscriptionStart",
         "path": "Parameters.parameter",
-        "sliceName": "subscriptionEventCount",
+        "sliceName": "eventsSinceSubscriptionStart",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Parameters.parameter:subscriptionEventCount.name",
+        "id": "Parameters.parameter:eventsSinceSubscriptionStart.name",
         "path": "Parameters.parameter.name",
-        "fixedString": "subscription-event-count"
+        "fixedString": "Events-Since-Subscription-Created"
       },
       {
-        "id": "Parameters.parameter:subscriptionEventCount.value[x]",
+        "id": "Parameters.parameter:eventsSinceSubscriptionStart.value[x]",
         "path": "Parameters.parameter.value[x]",
         "min": 1,
         "type": [

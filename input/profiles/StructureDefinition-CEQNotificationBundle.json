@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "description": "This Bundle is configured as a history bundle and has exactly two entries, the first is the CEQSubscriptionStatus Profile\nthat has the basic information with the date and time the topic was triggered, number of notifications to date and, the second is the\nEncounter (or other, if CareGap) Resource. ",
+  "description": "This Bundle is configured as a history bundle and has exactly two entries, the first is the CEQSubscriptionStatus Profile\nthat has the basic information with the date and time the topic was triggered, number of notifications to date and, the second is the\nEncounter (or other, if CareGap) Resource.",
   "jurisdiction": [
     {
       "coding": [

@@ -1,9 +1,0 @@
-{
-  "resourceType": "Location",
-  "id": "Enc-location",
-  "status": "active",
-  "name": "North Wing of Verteranairan's Hospital",
-  "managingOrganization": {
-    "reference": "Organization/VeterinariansHospital"
-  }
-}

@@ -65,3 +65,21 @@ menu:
     Notification Triggers: Notification_Triggers.html
   Scenarios: Scenarios.html
   Downloads: Downloads.html
+
+Pages:
+    index.md:
+      title: Home
+    Customizable_Principles_of_Trust.md:
+      title: Customizable Principles of Trust
+    Service_Level_Requirements.md:
+      title: Service Level Requirements
+    Definition_of_Roles.md:
+      title: Definition of Roles
+    Actors_and_Transactions.md:
+      title: Actors and Transactions
+    Notification_Triggers.md:
+      title: Notification Triggers
+    Scenarios.md:
+      title: Scenarios
+    Downloads.md:
+      title: Downloads

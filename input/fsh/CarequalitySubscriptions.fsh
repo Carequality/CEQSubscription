@@ -69,7 +69,7 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 Profile: CEQNotificationBundle
 Parent: Bundle
 Title: "Carequality Notification Bundle"
-Description: """This Bundle is configured as a history bundle and has exactly two entries, the first is the CEQSubscriptionStatus Profile
+Description: """This Bundle is configured as a history bundle and has at least two entries, the first is the CEQSubscriptionStatus Profile
 that has the basic information with the date and time the topic was triggered, number of notifications to date and, the second is the
 Encounter (or other, if CareGap) Resource."""
 

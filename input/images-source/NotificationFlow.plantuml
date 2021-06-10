@@ -1,0 +1,32 @@
+@startuml
+title Notification Flow
+
+skinparam sequence {
+backgroundColor DeepSkyBlue
+BorderColor DarkSlateGray
+ArrowColor Blue
+}
+
+skinparam Note {
+BackgroundColor LightBlue
+BorderColor Blue
+}
+
+skinparam Participant {
+FontName Arial
+Style awesome
+BorderColor DeepSkyBlue
+BackgroundColor LightBlue
+}
+
+participant "PCP\n(Subscriber)" as PCP
+participant "Hospital\n(Notification Generator)" as Hospital
+
+note over Hospital: 2.1 Patient enters the ED “Admit Event”
+Hospital -> Hospital: 2.2 EMR generates\n subscription notification
+Hospital -> PCP: 2.3 EMR sends notification\n to the endpoint
+note left of PCP: 2.4 PCP’s EMR\n receives notification
+PCP <-> Hospital: 2.5 PCP requests Encounter\n Resource from notification
+
+PCP -> PCP: 2.6 PCP’s EMR Distributes admit\n alert to PCP (and/or CC)
+@enduml

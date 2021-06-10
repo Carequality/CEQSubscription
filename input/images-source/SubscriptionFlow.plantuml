@@ -1,0 +1,30 @@
+@startuml
+
+skinparam sequence {
+backgroundColor DeepSkyBlue
+BorderColor DarkSlateGray
+ArrowColor Blue
+}
+
+skinparam Note {
+BackgroundColor LightBlue
+BorderColor Blue
+}
+
+skinparam Participant {
+FontName Arial
+Style awesome
+BorderColor DeepSkyBlue
+BackgroundColor LightBlue
+}
+title Subscription Flow
+participant "PCP\n(Subscriber)" as PCP
+participant "Hospital\n(Generator)" as Hospital
+
+note over PCP, Hospital:  1.0 Patient has a Treatment relationship\n with PCP (with consent as needed),\nand patient is known to exist at the Hospital
+PCP -> Hospital: 1.1 PCP subscribes for Admits & Discharges
+Hospital -> Hospital: 1.2 EMR creates subscription\n(assume patient is known)
+
+
+Hospital -> PCP: 1.2 Subscription Acknowledgement response\n(or send an error if the patient does not exist)
+@enduml

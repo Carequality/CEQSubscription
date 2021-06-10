@@ -16,10 +16,19 @@
 
 - Jerry's prior events are stored in the care team notifications service in an actionable way and aligned with computable reimbursement incentive rules for his health plan.
 
-  ![PCP Subscribes to Events at Hospital](SubscriptionFlow.png "Subscription Flow")
+<div>
+{%include SubscriptionFlow.svg%}
+</div>
+
+**Figure 1: PCP Subscribes to Events at Hospital**
 
 #### Notification
 
 - Jerry's PCP at the patient-centered medical home received a clinical encounter notification that Jerry was admitted to the hospital. The Notification Recipient EHR fetched the resource giving details and the PCP was able to push a C-CDA to the hospital providing a patient summary including Jerry's co-morbidities, (problem list), medications, allergies and immunizations which improved Jerry’s hospital care and recovery.
 
-  ![PCP Receives Admit Notification from Hospital](NotificationFlow.png "Notification Flow")
+<div>
+{%include NotificationFlow.svg%}
+</div>
+
+**Figure 2: PCP Receives Admit Notification from Hospital**
+

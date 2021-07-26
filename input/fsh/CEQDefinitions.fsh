@@ -9,7 +9,7 @@ RuleSet: FHIRPushStructureDefinitionContent
 * ^contact[1].telecom.value = "mailto:david.pyke@readycomputing.com"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#US
 
- RuleSet: FHIRPushDefinitionContent
+RuleSet: FHIRPushDefinitionContent
 * ^status = #draft      // draft until final published
 * ^experimental = true  // true until ready for pilot, then false
 * ^version = "0.1.0"    // Follow IG Versioning rules
@@ -19,7 +19,6 @@ RuleSet: FHIRPushStructureDefinitionContent
 * ^contact[1].telecom.system = #email
 * ^contact[1].telecom.value = "mailto:david.pyke@readycomputing.com"
 * jurisdiction.coding = urn:iso:std:iso:3166#US
-
 
 RuleSet: CEQsubscribeCapabilityStatementContent
 * status = #draft

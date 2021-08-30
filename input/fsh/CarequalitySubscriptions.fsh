@@ -27,7 +27,7 @@ Description: "Additional Elements to Support Carequality Subscription Notificati
 
 Invariant:  CEQ-Param-Name
 Description: "searchParamName shall be Patient or PatientID"
-Expression: "extension('ceqPushExtension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
+Expression: "extension('https://sequoiaproject.org/fhir/push-r4/StructureDefinition/CEQextension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
 Severity:   #error
 
 Extension:   BackportTopicCanonical

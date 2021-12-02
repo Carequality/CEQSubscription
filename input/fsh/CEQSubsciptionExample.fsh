@@ -14,7 +14,7 @@ Usage:  #example
 * contact.value = "212-877-3307 ext 5001"
 * end = "2021-01-01T00:00:00Z"
 * reason = "Example"
-* criteria = "MRN123"
+* criteria = "Patient?identifier=MRN123"
 * channel.type = #rest-hook
 * channel.endpoint = "http://www.example.org/fhir/subscription/sub123"
 

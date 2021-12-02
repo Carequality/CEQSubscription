@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: sequoiaproject.fhir.us.pushnotifications
 canonical: https://sequoiaproject.org/fhir/push-r4
-version: 0.1.0
+version: 0.1.1
 name: Carequality_Subscription_Implementation_Guide
 title: "Carequality Subscription Implementation Guide for Push Notifications"
 status: draft
@@ -29,7 +29,7 @@ description: An Implementation Guide for the Carequality Subscription Use Case
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 3.1.1
+  hl7.fhir.us.core: 4.0.0
 #  sequoiaproject.fhir.us.sphd-stu3:
 #    uri: https://sequoiaproject.org/fhir/sphd-stu3/
 #    version: 1.2.0

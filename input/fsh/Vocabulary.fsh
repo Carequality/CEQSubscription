@@ -2,6 +2,7 @@ CodeSystem: NHINPurposeOfUse
 Title: "NHIN Purpose Of Use"
 Description: "These are the permitted Purpose of Use within the Carequality network"
 
+* ^caseSensitive = true
 * #TREATMENT "Treatment" "Per 45 CFR § 164.501"
 * #PAYMENT "Payment" "Per 45 CFR § 164.501"
 * #OPERATIONS "Health Care Operations" "Per 45 CFR § 164.501"
@@ -19,28 +20,3 @@ Description: "These are the permitted Purpose of Use within the Carequality netw
 * NHINPurposeOfUse#PUBLICHEALTH
 * NHINPurposeOfUse#REQUEST
 * NHINPurposeOfUse#COVERAGE
-
-/*
-CodeSystem: CEQNotificationEvents
-Title: "Carequality Push Notification Events"
-Description: "The codes to define each of the permitted events for Carequality Network Subscriptions"
-
-* #admit "Admit" "Admission event"
-* #edadmit "ED Admit" "Emergency Department Admission"
-* #acadmit "Acute Admit" "Acute Care Admission"
-* #ambadmit "Ambulatory Admit" "Ambulatory Care Admission"
-* #snradmit "Skilled/Rehab Admit" "SKilled Nursing or Rehabilitation Center Admission"
-* #discharge "Discharge" "Discharge event"
-* #transferall "All Transfers" "Any time a transfer order is generated"
-* #transfersome "Relevant Transfers" "Transfers that require separate subscriptions or to a separate facility"
-* #arrival "Arrival" "Arrival at a port of call or other location where people arrive"
-* #caregap "Gap in Care" "Implementer Defined"
-* #refer "Referral" "A Secondary Referral to another practitioner"
-* #delete "Delete Subscription" "Cancel subscription to all events"
-
-ValueSet: CEQPushEventCodes
-Title: "Carequality Push Notification Events"
-Description: "The codes to define each of the permitted events for Carequality Network Subscriptions"
-
-* include codes from system CEQNotificationEvents
-*/

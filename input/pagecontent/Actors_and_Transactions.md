@@ -61,7 +61,8 @@ The Actors work with the Transactions as follows:
 
 The Notification Recipient or RecipientSMS creates the Subscription Profile. The Subscription Profile contains the canonical URL that represents the events that the Notification Recipient wishes to subscribe to and the Patient identifier or Patient ResourceID in addition to other business information.
 
-The Subscription is Bundled with the Profile or Resource that defines the Notification Recipient (Practitioner, Organization, Patient or RelatedPerson).
+The Subscription.criteria element is formatted as a simple Patient search string using either ```Patient?id=<identifier>``` or ```Patient?identifer=<MRN>```.  This is to allow for compliance with current FHIR R4 requirements.
+
 
 #### NotifyEvent
 

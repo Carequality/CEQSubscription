@@ -55,7 +55,7 @@ A termination (Subscription.end) date is required and may not be more than 2 yea
 * end 1..1
 * end ^comment = "Maximum 2 years from date of subscription submission"
 
-* criteria ^short = "Literal value for SearchParamName matching"
+* criteria ^short = "Simplified query string for Patient using ?id= or ?identifier="
 * channel.type = #rest-hook (exactly)
 
 * extension[subscriptionTopic].valueCanonical 1..1

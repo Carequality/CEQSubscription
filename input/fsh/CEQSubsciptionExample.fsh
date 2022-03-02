@@ -11,7 +11,7 @@ Usage:  #example
 * id = "CEQSubscriptionExample"
 * status = #active
 * contact.system = #phone
-* contact.value = "212-877-3307 ext 5001"
+* contact.value = "555-555-5555"
 * end = "2021-01-01T00:00:00Z"
 * reason = "Example"
 * criteria = "Patient?identifier=MRN123"

@@ -1,2 +1,9 @@
 /output
-
+/input-cache
+_gencontinuous.sh
+_gencontinuous.bat
+_genonce.sh
+_genonce.bat
+_updatepublisher.bat
+_updatepublisher.sh
+full-ig.zip

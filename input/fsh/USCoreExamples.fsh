@@ -65,8 +65,8 @@ Usage: #example
 * subject.display = "Eve Anyperson"
 * participant.individual = Reference(DrDavidAnydoc)
 * participant.individual.display = "Dr. David Anydoc"
-* diagnosis.condition.display = "Cardiac Arrest"
 * diagnosis.condition = Reference(CEQ-Condition)
+* diagnosis.condition.display = "Cardiac Arrest"
 * location.location = Reference(Enc-location)
 * period.start = 2020-10-01T17:00:14-05:00
 * period.end = 2020-10-01T18:00:14-05:00

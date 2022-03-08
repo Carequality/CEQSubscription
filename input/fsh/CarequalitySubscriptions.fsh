@@ -71,7 +71,10 @@ Parent: Bundle
 Title: "Carequality Notification Bundle"
 Description: """This Bundle is configured as a history bundle and has at least two entries, the first is the CEQSubscriptionStatus Profile
 that has the basic information with the date and time the topic was triggered, number of notifications to date and, the second is the
-Encounter (or other, if CareGap) Resource."""
+Encounter (or other, if CareGap) Resource.
+
+Display names must be present for Encounter.subject, Encounter.participant.individual and Encounter.diagnosis.condition for compliance with HHS Notification regulations or those resources must be included in the bundle.
+"""
 
 * insert FHIRPushStructureDefinitionContent
 
@@ -91,7 +94,7 @@ Encounter (or other, if CareGap) Resource."""
 * entry[subscriptionStatus].request.method = #GET (exactly)
 * entry[subscriptionStatus].response.status = "200" (exactly)
 
-* entry[SubEncounter].resource only Encounter
+* entry[SubEncounter].resource only us-core-encounter
 * entry[SubEncounter].request.method = #GET (exactly)
 * entry[SubEncounter].response.status = "200" (exactly)
 

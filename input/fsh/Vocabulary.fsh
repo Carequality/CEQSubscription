@@ -1,3 +1,4 @@
+/*
 CodeSystem: NHINPurposeOfUse
 Title: "NHIN Purpose Of Use"
 Description: "These are the permitted Purpose of Use within the Carequality network"
@@ -20,3 +21,4 @@ Description: "These are the permitted Purpose of Use within the Carequality netw
 * NHINPurposeOfUse#PUBLICHEALTH
 * NHINPurposeOfUse#REQUEST
 * NHINPurposeOfUse#COVERAGE
+*/

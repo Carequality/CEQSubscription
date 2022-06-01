@@ -15,7 +15,7 @@ The first four terms are used as defined in the Health Insurance Portability and
 An Implementer may claim the Other Authorization-Based Disclosures permitted purpose if the request is pursuant to an authorization as defined by HIPAA, and the request does not qualify for the Coverage Determination permitted purpose as defined above.
 
 Not every Implementer will support all of the Permitted Purposes allowed for the Push Notification Use Case. Therefore, each Implementer shall identify to Carequality the Permitted Purposes that it and each of its CCs support.
-
+<!--
 When Notification Recipient initiates a subscription, it shall clearly identify the specific Permitted Purpose for the subscription in the Subscription resource for the message, according to the NHIN Authorization Framework 3.0 specification, section 3.2.2.6, Purpose Of Use Attribute, as referenced in this Guide. By asserting a Permitted Purpose, a Notification Recipient certifies that the context of its request meets the requirements for the stated Permitted Purpose as defined above. Note that the Permitted Purposes allowed for Carequality are a subset of those defined in the NHIN Authorization Framework, with the caveat that Other Authorization-Based Disclosures provides some additional flexibility. See the table below for additional information on the Other Authorization-Based Disclosures permitted purpose. The specific NHIN PurposeOfUse values that may be used to represent the Carequality permitted purposes are as follows:
 
 | Carequality Permitted Purpose of Use | NHIN PurposeOfUse code|
@@ -28,7 +28,7 @@ Coverage Determination   | COVERAGE
 Healthcare Operations    | OPERATIONS
 
 Note that the PurposeOfUse codes defined by the NHIN Authorization Framework encompass two separate concepts – the immediate use to which the information released will be put, and other attributes of the request that may impact the Notification Generator's access policies. Carequality divides these two concepts into the Permitted Purpose, and Access Policy Assertions (the latter fully described below). For example, Carequality has defined a Policy Assertion to indicate when a request is being made in an emergency situation. The information released in such a case is most likely going to be used for Treatment, so in Carequality's defined structure the PurposeOfUse is Treatment, with a Policy Assertion of Emergency, potentially among others that may also apply.
-
+-->
 ### Full Participation
 
 It is important that all Implementers, CCs and their End Users understand that others are committed to participate in this Use Case so that all those who participate can realize value for their investment of time and resources. An Implementer or CC that plays the role of Notification Generator for this Use Case, is strongly encouraged to provide information in response to valid subscriptions for Treatment, unless doing so would violate applicable law or the Implementer's or CC's local access policies, or unless the data available through the Implementer is of a nature such that it is inappropriate for Treatment. An Implementer or CC may provide notifications in response to subscriptions for other Permitted Purposes, but is not required to do so.

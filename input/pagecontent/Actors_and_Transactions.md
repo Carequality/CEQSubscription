@@ -34,13 +34,13 @@ The Actors work with the Transactions as follows:
 <tbody>
 <tr>
 <td>Notification Recipient</td>
-<td>RegisterSubscription<br>RetrieveResource</td>
-<td style="text-align:center">R<BR>O<sup>1</sup></td>
+<td>RegisterSubscription<br>RetrieveResource<br>NotifyEvent</td>
+<td style="text-align:center">R<BR>O<sup>1</sup><br>R</td>
 </tr>
 <tr>
 <td>Notification Generator</td>
-<td>NotifyEvent</td>
-<td style="text-align:center">R</td>
+<td>NotifyEvent<BR>RegisterSubscription</td>
+<td style="text-align:center">R<br>R</td>
 </tr>
 <tr>
 <td>RecipientSMS</td>
@@ -59,7 +59,7 @@ The Actors work with the Transactions as follows:
 
 #### RegisterSubscription
 
-The Notification Recipient or RecipientSMS creates the Subscription Profile. The Subscription Profile contains the canonical URL that represents the events that the Notification Recipient wishes to subscribe to and the Patient identifier or Patient ResourceID in addition to other business information.
+The Notification Recipient or RecipientSMS creates the Subscription resource. The Subscription resource contains the canonical URL that represents the events that the Notification Recipient wishes to subscribe to and the Patient identifier or Patient ResourceID in addition to other business information.
 
 The Subscription.criteria element is formatted as a simple Patient search string using either ```Patient?id=<identifier>``` or ```Patient?identifer=<MRN>```.  This is to allow for compliance with current FHIR R4 requirements.
 

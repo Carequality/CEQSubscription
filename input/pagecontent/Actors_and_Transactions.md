@@ -29,6 +29,7 @@ The Actors work with the Transactions as follows:
 <th>Actor</th>
 <th>Transactions</th>
 <th style="text-align:center">Optionality</th>
+
 </tr>
 </thead>
 <tbody>

@@ -52,3 +52,6 @@ Subscriptions are system to system and the receiver of these subscriptions (Subs
 
 - It is beyond the scope of this project to define security and authentication procedures. Please see the Carequality FHIR Implementation Guide at [carequality.org](https://carequality.org/wp-content/uploads/2020/12/Carequality-FHIR-Implementation-Guide.pdf) for details on Registration and Authorization.
 - Notification Recipient and Notification Generators MUST follow all Carequality FHIR Implementation Guide steps for registration and authentication prior to any posting of subscription requests or sending notifications.
+
+### Legal Statements
+{% include ip-statements.xhtml %}

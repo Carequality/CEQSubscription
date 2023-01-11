@@ -24,7 +24,7 @@ contact:
   - name: David Pyke
     telecom:
       - system: email
-        value: mailto:david.pyke@ainq.com
+        value: mailto:david.pyke@pointclickcare.com
 description: An Implementation Guide for the Carequality Subscription Use Case
 license: CC0-1.0
 fhirVersion: 4.0.1

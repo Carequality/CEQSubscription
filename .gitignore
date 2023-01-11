@@ -1,9 +1,10 @@
-/temp
-/template
-/output
+.DS_Store
+Thumbs.db
 /fsh-generated
 /input-cache
-Thumbs.db
-.DS_Store
-.DS_Store?
-*.bak
+/output
+/temp
+/template
+/bin/
+.project
+.vscode

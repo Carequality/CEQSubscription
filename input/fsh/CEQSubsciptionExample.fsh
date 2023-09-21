@@ -5,7 +5,7 @@ Alias: SubPoU = https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOf
 Instance:  CEQsubscriptionExample
 InstanceOf: CEQsubscription
 Title:   "Example Subscribing"
-Description: "Example of the full Resource for a Carequality Subscription"
+Description: "Example of a full Resource for a Carequality Subscription"
 Usage:  #example
 
 * id = "CEQSubscriptionExample"

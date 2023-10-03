@@ -1,5 +1,6 @@
 Instance: CEQSubscription-Recipient
 InstanceOf: CapabilityStatement
+Usage: #example
 * insert CEQsubscribeCapabilityStatementContent
 
 * id = "ceqsubscribe-capabilitystatement"

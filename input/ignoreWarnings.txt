@@ -1,6 +1,9 @@
 == Suppressed Messages ==
 # CPT codesystem has issues
-WARNING: Encounter/CEQ-Encounter: Encounter.type[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated]
-INFORMATION: Encounter/CEQ-Encounter: Encounter.type[0].coding[0]: Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
-WARNING: Bundle/NotificationBundleExample: Bundle.entry[1].resource/*Encounter/CEQ-Encounter*/.type[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated]
-INFORMATION: Bundle/NotificationBundleExample: Bundle.entry[1].resource/*Encounter/CEQ-Encounter*/.type[0].coding[0]: Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
+The definition for the Code System with URI 'http://www.ama-assn.org/go/cpt' doesnt provide any codes so the code cannot be validated
+
+# Reference is intentional
+Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+
+# They're root level
+Review the extension type for

@@ -46,14 +46,14 @@ Description: "Example of the CQ Notification Bundle with a SubscriptionStatus an
 Usage: #example
 
 * type = #history
-* entry[subscriptionStatus].fullUrl = "http://www.example.org/fhir/Parameters/6b90b3bf-7564-4f4b-95c8-b06ce70699dd"
+* entry[subscriptionStatus].fullUrl = "http://www.example.org/fhir/Parameters/CEQSubscriptionStatusExample"
 * entry[subscriptionStatus].resource = CEQSubscriptionStatusExample
 * entry[subscriptionStatus].request.method = #GET
 * entry[subscriptionStatus].request.url = "https://example.org/fhir/r4/Subscription/admission/$status"
 * entry[subscriptionStatus].response.status = "200"
 * entry[subscriptionStatus].response.lastModified = "2020-08-09T00:04:00Z"
 
-* entry[SubEncounter].fullUrl = "http://www.example.org/fhir/Encounter/29a0ed75-6760-40ca-ae2f-7ee8ad9edd60"
+* entry[SubEncounter].fullUrl = "http://www.example.org/fhir/Encounter/CEQ-Encounter"
 * entry[SubEncounter].resource = CEQ-Encounter
 * entry[SubEncounter].request.url = "https://example.org/fhir/r4/Encounter/CEQ-Encounter"
 * entry[SubEncounter].response.status = "200"

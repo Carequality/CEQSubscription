@@ -60,7 +60,7 @@ Usage: #example
 
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
-* type = http://www.ama-assn.org/go/cpt#99201
+* type = http://www.ama-assn.org/go/cpt#99211
 * subject = Reference(EveAnyperson)
 * subject.display = "Eve Anyperson"
 * participant.individual = Reference(DrDavidAnydoc)

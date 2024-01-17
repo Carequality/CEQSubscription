@@ -1,6 +1,7 @@
 Extension: CEQextension
 Title: "Carequality Subscription Required Elements"
 Description: "Additional Elements to Support Carequality Subscription Notifications"
+Context: Subscription
 * insert FHIRPushStructureDefinitionContent
 * extension contains subIdentifier 1..1 MS
     and searchParamName 1..1
@@ -34,6 +35,7 @@ Extension:   BackportTopicCanonical
 Id:          backport-topic-canonical
 Title:       "Backport R5 Subscription Topic Canonical"
 Description: "Canonical reference to the subscription topic being subscribed to."
+Context: Subscription
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * value[x] only canonical
 * valueCanonical 1..1 MS

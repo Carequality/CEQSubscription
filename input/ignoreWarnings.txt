@@ -1,6 +1,3 @@
 == Suppressed Messages ==
 # Reference is intentional
 %Reference to draft CodeSystem %
-
-# Complex extension is accurate
-%CEQ-Param-Name: Reference to an unknown extension - double check that the URL 'searchParamName' is correct

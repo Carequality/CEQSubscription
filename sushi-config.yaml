@@ -39,19 +39,7 @@ parameters:
 copyrightYear: 2020+
 releaseLabel: CI Build
 
-# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
-# │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# template: fhir.carequality.template
-# ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
-# │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# history:
-#  current: http://build.fhir.org/ig/DavidPyke/CEQSubscription/
 
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
   Table of Contents: toc.html

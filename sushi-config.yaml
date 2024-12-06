@@ -11,8 +11,8 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: sequoiaproject.fhir.us.pushnotifications
-canonical: https://sequoiaproject.org/fhir/push-r4
-version: 0.1.1
+canonical: https://carequality.org/push-notifications-IG
+version: 1.0.0
 name: Carequality_Subscription_Implementation_Guide
 title: "Carequality Subscription Implementation Guide for Push Notifications"
 status: draft
@@ -24,7 +24,7 @@ contact:
   - name: David Pyke
     telecom:
       - system: email
-        value: mailto:david.pyke@pointclickcare.com
+        value: mailto:david.pyke@dogwoodhc.com
 description: An Implementation Guide for the Carequality Subscription Use Case
 license: CC0-1.0
 fhirVersion: 4.0.1

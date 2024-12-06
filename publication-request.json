@@ -1,0 +1,14 @@
+{
+    "package-id" : "sequoiaproject.fhir.us.pushnotifications",
+    "version" : "1.0.0",
+    "path" : "https://carequality.org/push-notifications-IG/",
+    "mode" : "milestone",
+    "status" : "release",
+    "sequence" : "Releases",
+    "desc" : "Initial release.",
+    "first" : true,
+    "title" : "Carequality Subscription Implementation Guide for Push Notifications",
+    "ci-build" : "https://build.fhir.org/ig/Carequality/CEQSubscription/",
+    "category" : "CareCommunication",
+    "introduction" : "This Implementation Guide outlines policy, technical, and process requirements for Implementers of the Push Notifications Use Case, under the terms of the Carequality Connected Agreement (CCA), and their Carequality Connections (CCs), under the Carequality Connection Terms."
+ }

@@ -1,6 +1,6 @@
 
-Alias: PushCode = https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/CEQNotificationEvents
-Alias: SubPoU = https://sequoiaproject.org/fhir/sphd-r4/CodeSystem/NHINPurposeOfUse
+Alias: PushCode = https://carequality.org/push-notifications-IG/CodeSystem/CEQNotificationEvents
+Alias: SubPoU = https://carequality.org/push-notifications-IG/CodeSystem/NHINPurposeOfUse
 
 Instance:  CEQsubscriptionExample
 InstanceOf: CEQsubscription

@@ -1,6 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "sequoiaproject.fhir.us.pushnotifications",
+  "id": "carequality.push-notifications",
   "url": "https://sequoiaproject.org/fhir/push-r4/ImplementationGuide/sequoiaproject.fhir.us.pushnotifications",
   "version": "0.1.0",
   "name": "Carequality_Subscription_Implementation_Guide",

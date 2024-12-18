@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: carequality.fhir.push-notifications
-canonical: https://carequality.org/push-notifications-IG
+canonical: https://carequality.org/IG/push-notifications
 version: 1.0.0
 name: Carequality_Subscription_Implementation_Guide
 title: "Carequality Subscription Implementation Guide for Push Notifications"

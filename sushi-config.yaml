@@ -24,15 +24,13 @@ contact:
   - name: David Pyke
     telecom:
       - system: email
-        value: mailto:david.pyke@dogwoodhc.com
+        value: mailto:david@pyke.ca
 description: An Implementation Guide for the Carequality Subscription Use Case
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 4.0.0
-#  sequoiaproject.fhir.us.sphd-stu3:
-#    uri: https://sequoiaproject.org/fhir/sphd-stu3/
-#    version: 1.2.0
+
 
 parameters:
   show-inherited-invariants: true

@@ -6,7 +6,7 @@ RuleSet: FHIRPushStructureDefinitionContent
 * ^contact[0].telecom.system = #url
 * ^contact[0].telecom.value = "https://carequality.org/get-involved/technical-workgroup/"
 * ^contact[1].telecom.system = #email
-* ^contact[1].telecom.value = "mailto:david.pyke@readycomputing.com"
+* ^contact[1].telecom.value = "mailto:david@pyke.ca"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#US
 
 RuleSet: FHIRPushDefinitionContent
@@ -17,7 +17,7 @@ RuleSet: FHIRPushDefinitionContent
 * ^contact[0].telecom.system = #url
 * ^contact[0].telecom.value = "https://carequality.org/get-involved/technical-workgroup/"
 * ^contact[1].telecom.system = #email
-* ^contact[1].telecom.value = "mailto:david.pyke@readycomputing.com"
+* ^contact[1].telecom.value = "mailto:david@pyke.ca"
 * jurisdiction.coding = urn:iso:std:iso:3166#US
 
 RuleSet: CEQsubscribeCapabilityStatementContent
@@ -29,4 +29,4 @@ RuleSet: CEQsubscribeCapabilityStatementContent
 * fhirVersion = #4.0.1
 * format[0] = #json
 * format[1] = #xml
-* implementationGuide = "https://build.fhir.org/ig/DavidPyke/CEQSubscription/index.html"
+* implementationGuide = "https://carequality.org/IG/push-notifications/CEQSubscription/index.html"

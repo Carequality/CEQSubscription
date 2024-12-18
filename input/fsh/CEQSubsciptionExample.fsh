@@ -1,6 +1,6 @@
 
-Alias: PushCode = https://carequality.org/push-notifications-IG/CodeSystem/CEQNotificationEvents
-Alias: SubPoU = https://carequality.org/push-notifications-IG/CodeSystem/NHINPurposeOfUse
+Alias: PushCode = https://carequality.org/IG/push-notifications/CodeSystem/CEQNotificationEvents
+Alias: SubPoU = https://carequality.org/IG/push-notifications/CodeSystem/NHINPurposeOfUse
 
 Instance:  CEQsubscriptionExample
 InstanceOf: CEQsubscription
@@ -18,7 +18,7 @@ Usage:  #example
 * channel.type = #rest-hook
 * channel.endpoint = "http://www.example.org/fhir/subscription/sub123"
 
-* extension[subscriptionTopic].valueCanonical = "http://www.carequality.org/fhir/CEQTopic/snradmit"
+* extension[subscriptionTopic].valueCanonical = "http://www.carequality.org/CEQTopic/snradmit"
 * extension[ceqPushExtension].extension[subIdentifier].valueString = "sub123"
 * extension[ceqPushExtension].extension[searchParamName].valueString = "PatientID"
 * extension[ceqPushExtension].extension[searchModifier].valueCode = http://terminology.hl7.org/CodeSystem/subscription-search-modifier#eq
@@ -35,7 +35,7 @@ Usage: #example
 
 * parameter[status].valueCode = #active
 * parameter[subscription].valueString = "Sub84849-26"
-* parameter[topic].valueCanonical = "http://www.carequality.net/CEQTopic/admit"
+* parameter[topic].valueCanonical = "http://www.carequality.org/CEQTopic/admit"
 * parameter[eventsSinceSubscriptionStart].valueUnsignedInt = 8
 
 

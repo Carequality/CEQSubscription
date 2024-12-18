@@ -28,7 +28,7 @@ Context: Subscription
 
 Invariant:  CEQ-Param-Name
 Description: "searchParamName shall be Patient or PatientID"
-Expression: "extension('https://carequality.org/push-notifications-IG/StructureDefinition/CEQextension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
+Expression: "extension('https://carequality.org/IG/push-notifications/StructureDefinition/CEQextension').extension('searchParamName').value in ( 'Patient' | 'PatientID' )"
 Severity:   #error
 
 Extension:   BackportTopicCanonical
